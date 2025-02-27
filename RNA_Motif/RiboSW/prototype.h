@@ -1,0 +1,14 @@
+inline float pairRatio (int, int, float); 
+resultOfPair getRnP (const string, const shape_inf, const int, const string, const string);
+reportStruct reportParse (string);
+reportSEQ reporter (const reportStruct, const string, const string, const string, const string, const string);
+bool report_seq_info (resultOfPair, string);
+inline bool pattern_match (string, string);
+inline bool match (char, char);
+vector< vector <int> > searchStemPair (string, string, int, int, int, const int);
+shape_inf tokenSplit (const string);
+template <class T> T from_string(const std::string& s, std::ios_base& (*f) (std::ios_base&));
+void seq_checking (reportSEQ);
+void report_checking (reportStruct);
+void report_pairing_result4debug (string, vector < vector <int> >, vector <int>);
+template <class T> void dump_vector (vector <T>);

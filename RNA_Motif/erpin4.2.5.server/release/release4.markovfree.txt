@@ -1,0 +1,85 @@
+
+ 12/02/04
+
+ REVISION VISANT A SUPPRIMER LES CHAINES DE MARKOV DANS LA GESTION
+ DES BRINS SANS GAPS.
+ on utilisera plutot des matrices de poids (modele a bases independantes).
+ But: simplification des algorithmes, amelioration de l'echantillonnage.
+
+ include/rnaII.h -> include/rnaIV.h
+ lib/librnaII.a  -> lib/librnaIV.a
+
+ a modifications:
+ profs.c:
+ ========
+ la ref. a LogDataTransits est supprimee.
+ Les fonct. 'ATGCstat', 'GetTransits' et 'GetStTransits' sont supprimees.
+ scores.c:
+ =========
+ 'GetStNoGScore' remplace 'GetStTransitsScore' + modifs induites
+ env.c:
+ ======
+ 'LogDataTransits' et 'OldLogDataTransits' sont supprimes.
+ tscores.c:
+ ==========
+ 'GetWeightsTScore' est supprimee, son contenu est deplace dans 'GetStTScore'.
+ bkgstat.c:
+ ==========
+ dans ResetBkgFreqs, suppression de 'LogDataTransits'.
+ fstat.c:
+ ========
+ suppression des transitions.
+ histools:
+ =========
+ 'WRndFScores' est remplace par 'RndAlnScores'
+ 'RndNoGScores' est cree pour les brins sans gaps.
+ Les fonctions concernant les profils de Markov sont supprimees.
+ mhisto.c:
+ =========
+ 'GetMarkovHist' est remplace par 'GetNoGHist'.
+ sstat.c:
+ ========
+ Les references aux probabilites de transitions sont supprimees.
+ Le contenu de 'ChWeight' est deplace dans 'ChStStat.
+ 'ChWeight' et 'ChTransits' sont supprimees.
+ tscores.c:
+ ==========
+ Le contenu de 'GetWeightsTScore' est deplace dans 'GetStTScore'.
+ 'GetWeightsTScore' est ensuite supprimee.
+
+ simple copie:
+ align.c, args.c, atom.c, cdf.c, cfg.c, cfgstr.c, conv.c, ctrlcfgs.c, dhisto.c,
+ dmp.c, Evals.c, helix.c, io.c, lfit.c, list.c, maps.c, mask.c, maskcfgs.c,
+ masks.c, Seqs.c, strand.c, tab1.c, tab2.c, thresholds, trset.c, mscores.c, 
+ msearch.c, outputs.c, pattern.c.
+
+ compilation de 'librnaIV.a'  OK
+
+ -> Version 4.1.0.alfa
+===============================================================================
+
+ Les frequences du fond sont gerees par des tableaux et des pointeurs declares
+ dans 'env.c':
+
+ double  *LogDataFreqs, *OldLogDataFreqs;            /* pointeurs non alloues */
+ double  *LogDataFreqs1, *LogDataFreqs2;                 /* pointeurs alloues */
+ 
+ Les frequences courantes sont actuellement pointees par 'OldLogDataFreqs' ce qui
+ introduit une confusion.
+ On change dans tous les fichiers les noms des pointeurs, de sorte que
+ 'LogDataFreqs' designe desormais le tableau des valeurs courantes:
+
+ LogDataFreqs devient: NewLogDataFreqs
+ OldLogDataFreqs devient: LogDataFreqs
+
+ -> Version 4.1.1.alfa
+===============================================================================
+ 24/02/04
+
+ On repare un oubli de la modif. du 12/02/04:
+ Dans la fonction 'GetWeights' de 'profs.c' on supprime la reference a la
+ "probabilite des gaps du fond".
+ Ceci devrait decaller les elements du profil d'une quantite fixe. On fera le
+ test a l'aide du programme 'Strand' dand le repertoire 'tools'. --> OK
+ 
+ Le numero de distribution n'est pas modifie (4.1.1.alfa).

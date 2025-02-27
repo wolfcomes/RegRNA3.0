@@ -1,0 +1,43 @@
+Notes on miRanda-3.0 code
+1. The seed region match when running miRanda in strict mode were extended to 2-8.
+Also, changes were made to the scan.c that checks for seed matches.
+
+2. Reported hits output the position of the target site on the miRNA (query) and mRNA(ref). The coordinates for
+miRNA are in reference to the 3' end. For example:
+
+  Forward:     Score: 176.000000  Q:3 to 22  R:4502 to 4530 Align Len (27) (70.37%) (74.07%)
+
+   Query:    3' ucUCGAUGUC--ACG-----AAGUAGAGU 5'
+                  ||:|||||  |||     |||||||||
+   Ref:      5' taAGTTACAGTTTGCACAAGTTCATCTCA 3'
+
+   Energy:  -23.830000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-143__c gi|34485724|ref|NM_033360.2|    176.00  -23.83  0.00    0.000000e+00    3 23    4502 4530       27      70.37%  74.07%
+
+Note that "Q:3 to 22" means that the alignment actually end 3 nt from the miRNA 3'end.
+This should be "Q:1 to 20" - correct either in miRanda code or in parsing. 
+
+3. Results from (Genes&Dev, 2004:504-511) and (Nature Biotech, 2005,23,1440) suggests G:U wobbles
+ in seed regions interferes with miRNA activity. In accordance, the match5p matrix was modified such that 
+ G:U pairs are scored as mismatches.
+ 
+4. Changed G:U wobble weights in match matrix (scmatrix.h) from 2 to 0. Reduce the influance of G:U wobble on the alignments 
+5. miRanda does not report back a single max alignment but all alignments that pass the score threshold value.
+
+6. Changed match weights of A:U to 4 and kept G:C as 5. 
+7. Energy cutoff makes a difference. Lower energy cutoff to -18 or -16
+8. Run miranda mouse predictions with the following flags "-go -4.0 -ge -9.0 -en -16.0 -strict"
+ using Pablo miRNA sequences.
+
+9. The reported percent identity and percent similarity are related to the aligned region and not the entire length of the seq
+ From example:
+   Forward:     Score: 154.000000  Q:2 to 13  R:1 to 13 Align Len (11) (90.91%) (100.00%)
+
+   Query:    3' uugauauguuGGAUGAUGGAGu 5'
+                          |||:|||||||
+   Ref:      5' ---------cCCTGCTACCTCc 3'
+  
+10. Beyond the strict matching, targets that have near perfect alignments with one mismatch or G:U in the seed region but very
+ high %identity throughout the miRNA sequence should also be considered. 

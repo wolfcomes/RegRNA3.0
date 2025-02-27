@@ -1,0 +1,1280 @@
+ID:              U0001;  date: 30-07-1997
+Name:            Histone 3'UTR stem-loop structure (HSL3)
+Pattern:         r1={au,ua,gc,cg,gu,ug}
+                 0...1 mmmm p1=ggyyy u hhuh a r1~p1 mm 0...3
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     Metazoan histone 3'-UTR mRNAs, lacking a polyA tail, 
+                 contain a highly conserved stem-loop structure with a 
+                 six base stem and a four base loop. This stem-loop 
+                 structure plays a different role in the nucleus and in 
+                 the cytoplasm. In the nucleus, it is involved in pre-mRNA 
+                 processing and nucleocytoplasmic transport, whereas in the 
+                 cytoplasm it enhances translation efficiency and regulates 
+                 histone mRNA stability. The trans-acting factor which 
+                 interacts with the 3'-UTR hairpin structure of histone 
+                 mRNAs is a 31 kDa stem-loop binding protein in mammals 
+                 (SLBP) present both in nuclei and polyribosomes.
+                 In mammals in addition to SLBP histone mRNA processing requires 
+                 at least one additional factor: the U7 snRNP, which binds 
+                 a purine-rich element 10-20 nt downstream of the stem-loop 
+                 sequence (Histone Downstream Element, HDE).
+                 The consensus stem-loop structure is shown below:
+                 
+                        H U
+                      H     H
+                        U-A
+                        Y-R
+                        Y-R
+                        Y-R
+                        G-C
+                        G-C
+                    CCAAA  ACCCA 
+                 
+                 In all histone mRNAs analyzed so far  no G has been 
+                 observed in the four base loop. In all metazoan except 
+                 C. elegans , there are two invariant urydines in the first 
+                 and third base of the loop.
+                 In C.elegans the first base of the loop is C. Either 5' and 3' 
+                 flanking sequences are necessary for high affinity binding 
+                 of SLBP. The 5' flanking sequence consensus is CCAAA and 
+                 the 3' flanking sequence consensus is ACCCA or ACCA with
+                 cleavage occuring after the A. 
+                 The histone 3'-UTR hairpin structure is peculiar in that 
+                 the bases of the stem are conserved unlike most functional 
+                 hairpin motifs where conserved bases are found in single 
+                 stranded loop regions only. The sequence of the stem and 
+                 flanking sequences are critical for binding of the SLBP.
+Bibliography:    [1]
+   Authors       A.S. Williams and W.F.Marzluff (1995)
+   Title         "The sequence of the stem and flanking sequences at the 3'end of histone
+   Title         mRNA are critical determinants for the binding of the stemm-loop binding
+   Title         protein"
+   Journal       Nucleic Acid Research vol.23 n.4
+//
+ID:              U0002;  date: 30-07-1997
+Name:            Iron Responsive Element (IRE)
+Pattern:         r1={au,ua,gc,cg,gu,ug}
+                 (p1=2...8 c p2=5...5 CAGWGH r1~p2 r1~p1 | 
+                 p3=2...8 nnc p4=5...5 CAGWGH r1~p4 n r1~p3)
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     The "iron-responsive element" (IRE) is a particular 
+                 hairpin structure located in the 5'-untranslated region 
+                 (5'-UTR) or in the 3'-untranslated region (3'-UTR) of 
+                 various mRNAs coding for proteins involved in cellular 
+                 iron metabolism. The IREs are recognized by trans-acting 
+                 proteins known as Iron Regulatory Proteins (IRPs) that 
+                 control mRNA translation rate and stability. Two closely 
+                 related IRPs, denoted as IRP-1 and IRP-2, have been 
+                 identified so far which bind IREs and become inactivated 
+                 (IRP-1) or degradated (IRP-2) when the iron level in the 
+                 cell increases. IRPs show a significant degree of similarity 
+                 to mitochondrial aconitase (EC 4.2.1.3). It has been shown 
+                 that under high iron conditions IRP-1, which contains a 
+                 4Fe-4S cluster that possibly acts as a cellular iron 
+                 biosensor, has enzymatic activity and may act as a 
+                 cytosolic aconitase. Cellular iron homeostasis in 
+                 mammalian cells is maintained by the coordinate 
+                 regulation of the expression of "Transferrin receptor", 
+                 which determines the amount of iron acquired by the cell, 
+                 and of "Ferritin", an iron storage protein, which determines 
+                 the degree of intracellular iron sequestration. Thus if 
+                 the cell requires more iron, the level of transferrin 
+                 receptor has to increase and conversely the level of 
+                 ferritin has to decrease. Ferritin, in vertebrates, 
+                 consists of 24 protein subunits of two types, type H 
+                 with Mr of 21 kDa and type L with Mr of 19-20 kDa. 
+                 The apoprotein (Mr 450 kDa) is able to store up to 4500 
+                 Fe (III) atoms. The 5'-UTR of H- and L ferritin mRNAs 
+                 contain one IRE whereas multiple IREs are located 
+                 in the 3'-UTR of transferrin receptor mRNA.
+                 In the case of low iron concentration, IRPs are able to 
+                 bind the IREs in the 5'-UTR of H- and L-Ferritin mRNAs 
+                 repressing their translation and the IREs in the 3'-UTR 
+                 of transferrin mRNA increasing its stability. Conversely, 
+                 if iron concentration is high, IRP binding is diminished, 
+                 which increases translation of ferritins and downregulate 
+                 expression of the transferrin receptor.
+                 IREs have also been found in the mRNAs of other proteins 
+                 involved in iron metabolism like "erythroid 
+                 5-aminolevulinic-acid synthase (eALAS) " involved in 
+                 heme biosynthesis, the mRNA encoding the mitochondrial 
+                 aconitase (a citric acid cycle enzyme) and the mRNA 
+                 encoding the iron-sulfur subunit of succinate dehydrogenase 
+                 (another citric acid cycle enzyme)  in Drosophila melanogaster.
+                 Two alternative IRE consensus have been found. In certain 
+                 IREs the bulge is best drawn with a single unpaired cytosine, 
+                 whereas in others the cytosine nucleotide and two additional 
+                 bases seem to oppose one free 3' nucleotide. Some evidences 
+                 also suggest a structured loop with an interaction between 
+                 nucleotide one and nucleotide five (in boldcase).
+                 
+                 	 G  W                    G  W  
+                 	A    G                  A    G
+                 	 C  H                    C  H  
+                 	  NN                      NN       
+                 	  NN                      NN      
+                 	  NN                      NN     
+                 	  NN                      NN     
+                 	  NN                      NN       
+                 	 C                      C
+                 	  NN                   N    N
+                 	  NN                    N
+                 	  NN                      NN
+                 	  NN                      NN
+                 	  NN                      NN
+                 
+                 The lower stem can be of variable length and is AU-rich 
+                 in transferrin mRNA. W=A,U and D=not G.
+Bibliography:    [1]
+   Authors       Hentze M.W. and Kuhn L.C. (1996)
+   Title         "Molecular control of vertebrate iron metabolism: mRNA based regulatory
+   Title         circuits operated by iron, nitric oxide, and oxidative stress"
+   Journal       Proc. Natl. Acad. Sci. USA 93: 8175-8182
+//
+ID:              U0003;  date: 30-07-1997
+Name:            Selenocysteine Insertion Sequence (SECIS) - type 1
+Pattern:         r1={au,ua,gc,cg,gu,ug}
+                 p1=4...19
+                 p2=2...9  r
+                 ugan
+                 p3=8...12 p4=0...3 p5=aav p7=7...10 r1~p3[1,0,0]
+                 p3:(((^rr | ^mc) | ^su) 6...10 )
+                 ngan
+                 p8=2...9
+                 r1~p1
+Taxon_Range:     3UTR, 3'UTRs
+Description:     Specific incorporation of selenocysteine in selenoproteins is directed 
+                 by UGA codons residing within the coding sequence of the corresponding mRNAs. 
+                 Translation of UGA, usually a termination codon, as selenocysteine requires 
+                 a conserved stem-loop structure called "SElenoCysteine Insertion Sequence" (SECIS) 
+                 lying in the 3'UTR region of selenoprotein mRNAs. The consensus structure of SECIS 
+                 element determined by comparative analysis of several selenoprotein mRNAs as well as 
+                 on both RNase and chemical probing is shown below:
+                 
+                                          N N N 
+                                        R      N
+                                       A        N
+                                         A     N
+                                            NN 
+                                            NN
+                                            NN
+                                            NN
+                                            NN
+                                            NN
+                                            NN
+                                            RY
+                                            RY
+                                            NB
+                                            AG
+                                            GA
+                                            UN
+                                           A  N
+                                          N    N 
+                                         N      N
+                                          N    N
+                                            NN  
+                                            NN
+                                            NN
+                                            NN
+                 
+                 The minimal consensus pattern is shown below (r1 represents pairing rules) where 
+                 one mismatch is allowed in Helix I and 2 mismatches and/or one insertion/deletion 
+                 in Helix II. More recent studies have shown that two forms of SECIS may exist: 
+                 type 1 with short apical loop; and type 2 with large apical loops carrying 
+                 intra-loop base pairings.
+Bibliography:    [1]
+   Authors       Walczak R., Westhof E., Carbon P. and Krol A. (1996)
+   Title         "A novel RNA structural motif in the selenocysteine insertion element of
+   Title         eukaryotic selenoprotein mRNAs"
+   Journal       RNA 2: 367-379
+Bibliography:    [2]
+   Authors       Walczak R., Carbon P. and Krol A. (1998)
+   Title         "An essential non-Watson-Crick base pair motif in 3' UTR to mediate selenoprotein
+   Title         translation"
+   Journal       RNA 4, 74-84
+Bibliography:    [3]
+   Authors       Fagegaltier D, Lescure A, Walczak R, Carbon P, Krol A. (2000)
+   Title         "Structural analysis of new local features in SECIS RNA hairpins"
+   Journal       Nucleic Acids Res. 28, 2679-89
+//
+ID:              U0004;  date: 30-07-1997
+Name:            Selenocysteine Insertion Sequence (SECIS) - type 2
+Pattern:         r1={au,ua,gc,cg,gu,ug}
+                 p1=4...19
+                 p2=2...9 a
+                 ugan
+                 p3=8...12  p3:(((^rr | ^mc) | ^su) 6...10 )
+                 p4=0...3 p5=aav p6=11...14 p6:(0...1 p7=2...7 3...6 r1~p7 0...3$)
+                 (((r1~p3[1,0,0] | r1~p3[1,1,0]) | r1~p3[1,0,1]) | r1~p3[0,1,1])
+                 ngan
+                 p10=2...9
+                 r1~p1
+Taxon_Range:     3UTR, 3'UTRs
+Description:     Specific incorporation of selenocysteine in selenoproteins is directed by 
+                 UGA codons residing within the coding sequence of the corresponding mRNAs. 
+                 Translation of UGA, usually a termination codon, as selenocysteine requires 
+                 a conserved stem-loop structure called "SElenoCysteine Insertion Sequence" (SECIS) 
+                 lying in the 3'UTR region of selenoprotein mRNAs. The consensus structure of SECIS 
+                 element determined by comparative analysis of several selenoprotein mRNAs as well as 
+                 on both RNase and chemical probing is shown below:
+                 
+                                          N N N 
+                                        R      N
+                                       A        N
+                                         A     N
+                                            NN 
+                                            NN
+                                            NN
+                                            NN
+                                            NN
+                                            NN
+                                            NN
+                                            RY
+                                            RY
+                                            NB
+                                            AG
+                                            GA
+                                            UN
+                                           A  N
+                                          N    N 
+                                         N      N
+                                          N    N
+                                            NN  
+                                            NN
+                                            NN
+                                            NN
+                 
+                 The minimal consensus pattern is shown below (r1 represents pairing rules) 
+                 where one mismatch is allowed in Helix I and 2 mismatches and/or one 
+                 insertion/deletion in Helix II. More recent studies have shown that two forms 
+                 of SECIS may exist: type 1 with short apical loop; and type 2 with large 
+                 apical loops carrying intra-loop base pairings.
+Bibliography:    [1]
+   Authors       Walczak R., Westhof E., Carbon P. and Krol A. (1996)
+   Title         "A novel RNA structural motif in the selenocysteine insertion element of
+   Title         eukaryotic selenoprotein mRNAs"
+   Journal       RNA 2: 367-379
+Bibliography:    [2]
+   Authors       Walczak R., Carbon P. and Krol A. (1998)
+   Title         "An essential non-Watson-Crick base pair motif in 3' UTR to mediate selenoprotein
+   Title         translation"
+   Journal       RNA 4, 74-84
+Bibliography:    [3]
+   Authors       Fagegaltier D, Lescure A, Walczak R, Carbon P, Krol A. (2000)
+   Title         "Structural analysis of new local features in SECIS RNA hairpins"
+   Journal       Nucleic Acids Res. 28, 2679-89
+//
+ID:              U0005;  date: 30-09-1997
+Name:            Amyloid precursor protein mRNA stability control element (APP_SCE)
+Pattern:         UCUCUUUACAUUUUGGUCUCUAUACUACA[5,1,1]
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     Increased levels of Amyloid Precursor Protein (APP) 
+                 expression are found in patients with Alzheimer's disease. 
+                 APP mRNA stability is controlled by a 29-nt element in 
+                 the 3-UTR of APP mRNA which has been found to interact 
+                 with multiple cytosolic proteins.
+                 In resting cells, where no protein binding activity
+                 is detected, the 29-nt region acts in cis to destabilise
+                 APP mRNA (t1/2=4h). 
+                 In mitogen activated peripheral blood mononuclear cells or 
+                 cycling tumour cells the binding activity dramatically
+                 increases leading to APP stabilisation (t1/2>10h). 
+                 The 29-nt element is highly conserved in mammals 
+                 (see the alignment below) both in primary sequence and 
+                 position about (200 nt from the stop codon).
+                 
+                 
+                 Human (Y00264)	  : UCUCUUUACAUUUUGGUCUCUAUACUACA
+                 Macaco(M58727)	  : ......................C......
+                 Guinea Pig(X97631: ......................C......
+                 Mouse (X59379)   : ............C.........C.U....
+                 
+                 Consensus        : UCUCUUUACAUUYUGGUCUCUAYAYUACA
+Bibliography:    [1]
+   Authors       Syed H.E. Zaidi and James S.Malter (1994)
+   Title         "Amyloid precursor protein mRNA stability is controlled by a 29-Base element
+   Title         in the 3'-Untranslated region"
+   Journal       Journal of Biological Chemstry vol.269 n.39 pp.24007-24013
+//
+ID:              U0006;  date: 30-09-1997
+Name:            Cytoplasmic polyadenylation element (CPE)
+Pattern:         uuuuuwau 1...200 aauaaa 1...100 $
+Taxon_Range:     3UTR, 3'UTRs
+Description:     Cytoplasmic polyadenylation is an evolutionarily 
+                 conserved mechanism regulating translational activation 
+                 of a set of quiescent maternal messenger RNAs (mRNAs)
+                 during early development.  Cytoplasmic poly(A) elongation
+                 occurs in a wide range of species, ranging from clam to 
+                 mouse.  The relevance of this process during late oogenesis 
+                 and early embryogenesis has been shown by studies in the 
+                 mouse, Xenopus, and Drosophila.
+                 In mouse and Xenopus, the only vertebrates so far examined,
+                 the critical regulatory sequences, referred to as 
+                 Cytoplasmic Polyadenylation Elements (CPEs), are AU-rich 
+                 and located in the 3' untranslated region (3'-UTR) near the
+                 canonical nuclear polyadenylation element (AAUAAA), which 
+                 also is required for proper poly(A) addition.
+                 The CPE has the general structure of UUUUUUAU. 
+                 However, the CPE is not identical in all mRNAs and its
+                 position varies relative to AAUAAA (generally within 100 
+                 nucleotides).  The minimal CPE capable to stimulate
+                 elongation of a poly(A) tail appears to be UUUUAU, and 
+                 recent experiments show also the existence of substantial 
+                 context and position effects on CPE function.
+Bibliography:    [1]
+   Authors       Vassalli J-D & Stutz A (1996)
+   Title         "Translational control: awakening dormant mRNAs"
+   Journal       Curr Biol 5: 476-479
+Bibliography:    [2]
+   Authors       Wickens M, Kimble J & Strickland S (1996)
+   Title         "Translational control of developmental decisions"
+   Journal       Cold Spring Harbor, Laboratory Press, pp. 411-450
+Bibliography:    [3]
+   Authors       Verrotti AC, Thompson SR, Wreden C, Strickland S & Wickens M (1996)
+   Title         "Evolutionary coservation of sequence elements controlling cytoplasmic polyadenylation"
+   Journal       Proc Natl Acad Sci 93: 9027-9032
+//
+ID:              U0007;  date: 30-09-1997
+Name:            TGE translational regulation element (TGE)
+Pattern:         suca 5...14 mm uuuc yy 4...9 uwucu
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     In the nematode C. elegans sex determining gene tra-2 is 
+                 involved in the specification of hermaphrodite rather that 
+                 female development.
+                 Negative regulation of tra-2 allow development of XX animals 
+                 as hermaphrodite rather than female.
+                 This regulation is in both germ line and soma and it is
+                 necessary for normal male development.
+                 A regulatory element in the tra-2 3'-UTR, consisting
+                 in a 28 nt direct repeat, also termed DRE (Direct Repeat 
+                 Element), has been found to be necessary for negative 
+                 regulation of tra-2 allowing the onset of spermatogenesis.
+                 Regulation is mediated at translational level, probably 
+                 by a trans-acting protein factor called DRF (direct Repeat
+                 Factor) with binding activity to DRE.
+                 DRE consists in two copies of a 28 nt sequence separated by 
+                 4 nt. It has been proposed that when no DRF is bound , 
+                 translation is not inhibited. Binding of a single repeat 
+                 cause partial regulation, and the binding to both repeats 
+                 causes full inhibition.  No stable secondary structure 
+                 was predicted for the DREs by computer analysis.
+                 Elements functionally equivalent to DREs have been found in
+                 the tra-2 gene of the nematode C. Briggsae and in the human
+                 oncogene GLI.For this reason DRE has been renamed TGE 
+                 (tra-2 and GLI elements). 
+                 Possible mechanisms are that these regulatory elements 
+                 may control the length of the poly-A tail, which in turn 
+                 may influence translation. Alternatively, the TGEs may 
+                 sequester mRNA away from the translation machinery or 
+                 they can directly inhibit the interaction of initiation factors 
+                 or of ribosomal subunits with the 5'-UTR.
+Bibliography:    [1]
+   Authors       Goodwin EB, Okkema PG, Evans TC and Kimble J (1993)
+   Title         "Translational regulation of tra-2 by its 3' untranslated region controls
+   Title         sexual identity in C. elegans"
+   Journal       Cell 75: 329-339
+//
+ID:              U0008;  date: 30-09-1997
+Name:            Nanos translation control element (NANOS_TCE)
+Pattern:         r1={au,ua,cg,gc,gu,ug}
+                 p1=4...10 p2=6...9 cuggc r1~p2 0...3
+                 p3=10...12 7...8 r1~p3[1,0,0] 0...2
+                 r1~p1 p3:(p4=uauaua)
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     The 3'UTR of drosophila nanos mRNA contains the 
+                 essential signals for generating the nanos gradient 
+                 emanating from the posterior pole of drosophila embryos.
+                 The polarized distribution of nanos is generated by the 
+                 localization dependent translation of nanos mRNA in the 
+                 pole plasm. The translation control element (TCE) consist
+                 of a 90-nt region located in the 3'UTR of nanos mRNA 
+                 which is able to fold into a bipartite secondary structure that is
+                 recognized by Smaug repressor and at least one additional factor.
+                 A stem-loop bearing the CUGGC penramer in the loop is required for 
+                 Smaug TCE unteractionn whereas both sequences and structure of 
+                 another stem-loop is critical for TCE function.The translation 
+                 activation is mediated by the interaction of localization 
+                 factors with a 540-nt sequence regions overlapping the TCE 
+                 structural motif.      
+Bibliography:    [1]
+   Authors       Crucs S.,Chatterjee S.,Gavis ER. (2000)
+   Title         "Overlapping but distinct RNA elements control repression and activation
+   Title         of nanos translation"
+   Journal       Mol Cell.5(3):457-67
+Bibliography:    [2]
+   Authors       Gavis ER.,Lunsford L.,Bergsten SE.,and Lehmann R. (1996)
+   Title         "A conserved 90 nucleotide element mediates translational repression of
+   Title         nanos RNA"
+   Journal       Development 122(9):2791-800
+Bibliography:    [3]
+   Authors       Dahanukar A & Wharton RP (1996)
+   Title         "The nanos gradient in drosophila embryos is generated by translational
+   Title         regulation"
+   Journal       Genes Dev. 10: 2610-2620
+//
+ID:              U0009;  date: 30-09-1997
+Name:            15-Lipoxygenase Differentiation Control Element (15-LOX-DICE)
+Pattern:         20 > repeat (cccyryccucy[1,1,0] p1=1...7 ang) 0...0 > 1
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     Erythroid 15-lipoxygenase (15-LOX) synthesized in 
+                 the early stages of erytropoiesis catalyses the 
+                 degradation of lipids and is an important factor
+                 responsible for the degradation of mitochondria 
+                 during reticulocyte maturation. The 3'UTR of 15-LOX 
+                 mRNA contains tandem repeat sequences, referred to as 
+                 "DICE" for "DIfferentiation Control Element" which
+                 specifically bind to regulatory proteins, formerly 
+                 called LOX-BP. This binding specifically inhibits 15-LOX 
+                 mRNA translation. In rabbit 15-LOX mRNA, there have been 
+                 found 10 tandem copies of the repeat sequence, but only 4 
+                 (3 tandem) in human. Experimentally, a functional
+                 DICE consisting of two repeat elements has been described. 
+                 The regulatory binding proteins have been identified as hnRNP 
+                 K and hnRNP E1.
+Bibliography:    [1]
+   Authors       Ostareck-Lederer A, Ostareck D.H., Standart N and Thiele BJ (1994)
+   Title         "Translation of 15-lipoxygenase mRNA is inhibited by a protein that binds
+   Title         to a repeated sequence in the 3'untranslated region"
+   Journal       EMBO J 13: 1476-1481
+Bibliography:    [2]
+   Authors       Ostareck D.H., Ostareck-Lederer A., M.Wilm, B.J., Thiele M., Mann and Hentze
+   Authors       M.W. (1997)
+   Title         "Silencing in Erythroid differentiation: hnRNP K and hnRNP E1 regulate 15-Lipoxygenase
+   Title         Translation from the 3' End"
+   Journal       Cell 89, 597-606
+Bibliography:    [3]
+   Authors       Ostareck-Lederer A, Ostareck D.H., and Hentze M.W. (1998)
+   Title         "Cytoplasmic regulatory functions of the KH-domain protein hnRNPs K and
+   Title         E1/E2"
+   Journal       Trends in Biochem. Sci 23, 409-411
+//
+ID:              U0010;  date: 30-09-1997
+Name:            AU-rich class-2 Element (ARE2)
+Pattern:         wwwwwwwwwwwwwwwwwwww[8,0,0]
+                 p1=auuu p2=0...4 p1 p3=0...4 p1 p4=0...4 p1 
+                 p1/p2/p1/p3/p1/p4/p1:(p5=auuuauuua)
+Taxon_Range:     3UTR, 3'UTRs
+Description:     AU-rich elements (AREs) present in the 3'untranslated 
+                 region of mature lymphokine and cytokine mRNAs regulate 
+                 mRNA stability and translational efficiency. Based on 
+                 their sequence features and functional properties AREs
+                 can be divided into three classes. Class II AREs direct 
+                 asynchronous cytoplasmic deadenylation (processive kinetics) 
+                 generating poly-A(-) mRNAs. Among mRNA with class II ARE in 
+                 their 3' UTR are GM-CSF, IL-2.The minimum number of AUUUA
+                 tandem motifs to activate processive degradation is 4 
+                 (of which at least 3 in tandem). 
+                 Furthermore, an AU-rich region 20-30 nt long immediately 
+                 5' to the cluster of AUUUA motifs can greatly enhance
+                 the degradation activity.
+Bibliography:    [1]
+   Authors       Chen CA and Shyu AB (1995)
+   Title         "AU-rich elements:characterization and importance in mRNA degradation"
+   Journal       Trends Biochem.Sci.20:465-470
+//
+ID:              U0011;  date: 24-07-1998
+Name:            Terminal Oligopyrimidine Tract (TOP)
+Pattern:         ^C yyyyyyyyyyyyyy[0,11,0]G
+Taxon_Range:     5UTR, 5'UTRs
+Description:     All vertebrate ribosomal protein and translation 
+                 elongation factors analyzed to date contain a 5' 
+                 terminal oligopyrimidine tract consisting of 
+                 5-15 pyrimidines  (Kato et al., 1994)  that is 
+                 required for coordinate translational repression  
+                 (Levy et al., 1991; Kaspar et al., 1992)  during 
+                 growth arrest, differentiation, development and 
+                 certain drug treatments (reviewed in  Kaspar et al., 
+                 1993; Meyuhas et al., 1996 ).  This motif begins with 
+                 a C and is followed by a G residue (consensus sequence 
+                 C(Py)nG where n=3-14 pyrimidines); otherwise, no other 
+                 requirements appear to be necessary except for consecutive 
+                 pyrimidines.  Deletion of the pyrimidine tract or 
+                 exchanging purines for pyrimidines results in unregulated 
+                 translation  (Levy et al., 1991; Kaspar et al., 1992) . 
+                 A protein of ~56 kDa was found which binds to the leaders 
+                 of ribosomal proteins L32 and L1 but not to similar mutant 
+                 RNAs lacking an intact polypyrimidine tract required for 
+                 translational repression  (Kaspar et al., 1992; Cardinali et 
+                 al., 1993) .  Recent results in a Xenopus system suggest 
+                 that the La autoantigen may bind to the polypyrimidine 
+                 motif and be involved in translational regulation  
+                 (Pellizzoni et al., 1996).
+Bibliography:    [1]
+   Authors       XU N, Chen CA and Shyu AB (1997)
+   Title         "Modulation of the fate of cytoplasmic mRNA by AU-rich elements: key sequence
+   Title         features controlling mRNA deadenylation and decay"
+   Journal       Mol. Cell. Biol. 17: 4611-4621
+Bibliography:    [2]
+   Authors       Cardinali, B., Di Cristina, M. and Pierandrei-Amaldi, P. (1993)
+   Title         "Interaction of proteins with the mRNA for ribosomal protein L1 in Xenopus:
+   Title         structural characterization of in vivo complexes and identification
+   Title         of proteins that bind in vitro to its 5'UTR"
+   Journal       Nucleic Acids Res   21: 2301-8
+Bibliography:    [3]
+   Authors       Kaspar, R.L., Kakegawa, T., Cranston, H., Morris, D.R. and White, M.W. (1992)
+   Title         "A regulatory cis element and a specific binding factor involved in the
+   Title         mitogenic control of murine ribosomal protein L32 translation"
+   Journal       J. Biol. Chem.   267: 508-514
+Bibliography:    [4]
+   Authors       Kaspar, R.L., Morris, D.R. and White, M.W. (1993)
+   Title         "Control of ribosomal protein synthesis in eukaryotic cells"
+   Journal       Translational Regulation of Gene Expression 2. New York, Plenum Press
+Bibliography:    [5]
+   Authors       Kato, S., Sekine, S., Oh, S.W., Kim, N.S., Umezawa, Y., Abe, N., Yokoyama-Kobayashi,
+   Authors       M. and Aoki, T. (1994)
+   Title         "Construction of a human full-length cDNA bank"
+   Journal       Gene   150: 243-50
+Bibliography:    [6]
+   Authors       Levy, S., Avni, D., Hariharan, N., Perry, R.P. and Meyuhas, O. (1991)
+   Title         "Oligopyrimidine Tract at the 5' End of Mammalian Ribosomal Protein mRNAs
+   Title         is Required for their Translational Control"
+   Journal       Proc. Natl. Acad. Sci. USA   88: 3319-3323
+Bibliography:    [7]
+   Authors       Meyuhas, O., Avni, D. and Shama, S. (1996)
+   Title         "Translational control of ribosomal protein mRNAs in eukaryotes"
+   Journal       Translational Control. Cold Spring Harbor, Cold Spring Harbor Laboratory
+   Journal       Press. 363-368
+Bibliography:    [8]
+   Authors       Pellizzoni, L., Cardinali, B., Lin-Marq, N., Mercanti, D. and Pierandrei-Amaldi,
+   Authors       P. (1996)
+   Title         "A Xenopus laevis homologue of the La autoantigen binds the pyrimidine tract
+   Title         of the 5' UTR of ribosomal protein mRNAs in vitro: implication of
+   Title         a protein factor in complex formation"
+   Journal       J. Mol. Biol   259: 904-15
+//
+ID:              U0012;  date: 03-03-1999
+Name:            Glusose transporter type-1 3'UTR cis-acting element(GLUT1)
+Pattern:         ccaaccactc
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     The 5' and 3' untranslated (UTR) regions of the Na+
+                 independent glucose transporter GLUT1 mRNA are highly 
+                 conserved among species being embedded of several 
+                 cis-acting regulatory elements which either stabilize 
+                 or destabilize the mRNA subsequent to the binding of
+                 specific cytosolic or polysome proteins in response to glucose
+                 deprivation or to brain derived trophic factors.
+                 A  10 nucleotide cis-acting element, located in the 
+                 GLUT1 3'-UTR region, has been shown to increase GLUT1 
+                 gene expression via specific binding to a 80 kDa protein, 
+                 expressed in human brain hemangioblastoma and in the C6
+                 rat brain glioma, which mediates mRNA stabilization.
+Bibliography:    [1]
+   Authors       Boado R.J. and Pardridge W.M. (1998)
+   Title         "Ten nucleotide cis element in the 3'-untranslated region of the GLUT1 glucose
+   Title         transporter mRNA increases gene expression via mRNA stabilization"
+   Journal       Mol. Brain Res. 59: 109-113
+//
+ID:              U0013;  date: 03-03-1999
+Name:            Tumor necrosis factor alpha 3'UTR cis-acting element(TNF)
+Pattern:         uuauguuu 0...8 ar auauuuau surayynrru ugucw
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     Tumor necrosis factor alpha (TNF-alpha) is a key cytokine 
+                 regulator of the immune process and of the tissue homeostasis.
+                 The production of TNF-alpha is mainly controlled 
+                 post-trascriptionally by cis-elements located in the
+                 3'-UTR and which regulate mRNA stability and translation 
+                 efficency.  In addition to a class II AU-rich element 
+                 (ARE2) previously found in the 3'-UTR of TNF-alpha mRNA, 
+                 another RNA binding motif has been characterized
+                 about 150 nt downstream. This element contains a consensus
+                 core of AUAUUUA, which is highly conserved in evolution, 
+                 and has been suggested to synergize with the ARE2 element 
+                 in the repression of TNF-alpha mRNA translation and in the
+                 regulation of translation.
+Bibliography:    [1]
+   Authors       Hel Z, Di Marco S and Radzioch D (1998)
+   Title         "Characterization of the RNA binding proteins forming complexes with a novel
+   Title         putative regulatory region in the 3'-UTR of TNF-alpha mRNA"
+   Journal       Nucleic Acids Res. 26: 2803-2812
+//
+ID:              U0014;  date: 16-09-1999
+Name:            Vimentin 3'UTR cis-acting element(VIM3)
+Pattern:         p1=yttrrrrraa[2,0,0] 0...4 
+                 p2=cagctttcaagtgccttt[2,0,0] 0...2
+                 p3=tscagtt[2,0,0] 6...7 
+                 p4=gagcg[2,0,0] 0...1 p5=aagatw[2,0,0]
+                 p1/p2/p3/p4/p5:(p6=yttrrrrraacagctttcaagtgccttttscagttgagcgaagatw[2,0,0])
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     Vimentin is an intermediate filement protein whose 3'UTR 
+                 sequence is highly conserved among vertebrates and has been 
+                 found to be a target for one or more RNA binding protein 
+                 which include a 46-and 35-kDa protein plus a minor band 
+                 containing a 60-kDa protein. The sequences required for       
+                 binding are contained within a region 61-114 nucleotides 
+                 downstream the stop codon which is able to fold into a Y-shaped 
+                 secondary structure confirmed by nuclease and lead cleavage.
+                 It has been suggested that this 53 nt conserved region located
+                 in the 3'UTR and associated protein(s) might be important for 
+                 vimentin mRNA function as well as for its localization in the 
+                 perinuclear region of the cytoplasm possibly at sites of
+                 intermediate filament assembly.
+Bibliography:    [1]
+   Authors       Zehner ZE, Sheperd RK, Gabryszuk J, Fu T-F, Al-Ali M and Holmes WM. (1997)
+   Title         "RNA-protein protein interactions within the 3'untranslated region of vimentin
+   Title         mRNA"
+   Journal       Nucleic Acids Res. 25: 3362-3370, 1997
+//
+ID:              U0015;  date: 08-05-2000
+Name:            Internal Ribosome Entry Site (IRES)
+Pattern:         r1={au,ua,cg,gc,gu,ug}
+                 p1=5...6 0...6 p2=5...6 p3=0...2
+                 p4=5...8 p5=3...8
+                 r1~p4[1,0,0] p6=5...8 p7=3...5
+                 r1~p6[1,0,0] p8=0...5
+                 r1~p2[1,0,0] 0...6
+                 r1~p1[1,0,0] 2...5 p9=5...6 p10=3...8
+                 r1~p9[1,0,0] 3...10 ATG 97...97 $
+Taxon_Range:     5UTR, 5'UTRs
+Description:     Internal mRNA ribosome binding is a mechanism of 
+                 translation initiation alternative to the 
+                 conventional 5'-cap dependendent ribosome scanning 
+                 mechanism.
+                 The internal initiation mechanism, first observed 
+                 in picornavirus, is also found in some cellular mRNAs, 
+                 such as human immunoglobulin heavy chain binding protein 
+                 (BiP) mRNA, Antennapedia mRNA of drosophila and FGF-2 mRNA.
+                 This mechanism may be advantageous for specific translation 
+                 of mRNAs during cell cycle when underphosphorilated eIF-4F 
+                 prevents conventional translation initiation. The internal 
+                 initiation mechanism is dependent on a cis-acting element, 
+                 defined as internal ribosome entry site (IRES), located
+                 in the 5'UTR region of the mRNA.
+                 Comparative analysis of known IRES in some cellular mRNAs 
+                 identified a common structural motif forming a Y-type stem-loop 
+                 structure followed by the AUG triplet or followed by additional 
+                 stem-loop structures and the AUG triplet.
+Bibliography:    [1]
+   Authors       Le, S.Y., and Maizel,J.V.,Jr. (1997)
+   Title         "A common RNA structural motif involved in the internal initiation of translation
+   Title         of cellular mRNAs"
+   Journal       Nucleic Acids Res.25,362-69
+//
+ID:              U0016;  date: 08-05-2000
+Name:            Male specific lethal 5'UTR cis-acting element (MSL2-5UTR)
+Pattern:         uuuuuuuuuuu 80...90 uuuuuuuuuuuuuuuu
+Taxon_Range:     5INV, 5'UTRs from invertebrate mRNAs
+Description:     Translational repression of msl-2 (male specific lethal) 
+                 mRNA, which controls dosage compensation in Drosophila, 
+                 is mediated by the female-specific RNA binding protein 
+                 Sex-lethal (SXL).
+                 SXL binding to two sites, consisting respectively of U11 
+                 and U16 located in the 5'UTR of the msl-2 mRNA, serves a 
+                 dual function in inhibiting msl-2 expression in female 
+                 flies: It enforces retention of a 5' UTR intron
+                 [splicing inhibition in the nucleus] and subsequently 
+                 blocks translation in the cytoplasm.
+                 It has been observed that the cytoplasmic translational 
+                 repression requires four additional SXL-binding sites 
+                 (U7-U9) clustered in the 3'UTR.
+                 Experiments using a cell-free translation system from 
+                 Drosophila embryos which recapitulates critical features 
+                 of mRNA translation in eukaryotes such as cap and poly-A 
+                 dependence, have shown that tight regulation of
+                 msl-2 translation requires cooperation between the 
+                 SXL-binding sites in both the 5' and 3'UTRs but is not 
+                 affected by poly-A tail as in numerous other 
+                 developmentally regulated mRNAs.
+Bibliography:    [1]
+   Authors       Gebauer, F., Corona, D.F., Preiss, T., Becker, P.B. and Hentze, M.W. (1999)
+   Title         "Translational control of dosage compensation in Drosophila by Sex- lethal:
+   Title         cooperative silencing via the 5' and 3' UTRs of msl-2 mRNA is independent
+   Title         of the poly(A) tail"
+   Journal       Embo J, 18, 6146-6154
+//
+ID:              U0017;  date: 08-05-2000
+Name:            Male specific lethal 3'UTR cis-acting element (MSL2-3UTR)
+Pattern:         uuuuuuu p1=10...20 uuuuuuu
+                 p2=10...20 uuuuuuu p3=5...15
+                 uuuuuuu length(p1+p2+p3)<40
+Taxon_Range:     3INV, 3'UTRs from invertebrate mRNAs
+Description:     Translational repression of msl-2 (male specific lethal) 
+                 mRNA, which controls dosage compensation in Drosophila, 
+                 is mediated by the female-specific RNA binding protein 
+                 Sex-lethal (SXL).
+                 SXL binding to two sites, consisting respectively of U11 
+                 and U16 (or U17 in some isolates) located
+                 in the 5'UTR of the msl-2 mRNA, serves a dual function 
+                 in inhibiting msl-2 expression in female flies: It enforces 
+                 retention of a 5' UTR intron [splicing inhibition in the 
+                 nucleus] and subsequently blocks translation in the cytoplasm.
+                 It has been observed that the cytoplasmic translational 
+                 repression requires four additional SXL-binding sites (U7-U9) 
+                 clustered in the 3'UTR.
+                 Experiments using a cell-free translation system from 
+                 Drosophila embryos which recapitulates critical features of 
+                 mRNA translation in eukaryotes such as cap and poly-A 
+                 dependence, have shown that tight regulation of msl-2
+                 translation requires cooperation between the SXL-binding
+                 sites in both the 5' and 3'UTRs but is not affected by 
+                 poly-A tail as in numerous other developmentally 
+                 regulated mRNAs.
+Bibliography:    [1]
+   Authors       Gebauer, F., Corona, D.F., Preiss, T., Becker, P.B. and Hentze, M.W. (1999)
+   Title         "Translational control of dosage compensation in Drosophila by Sex- lethal:
+   Title         cooperative silencing via the 5' and 3' UTRs of msl-2 mRNA is independent
+   Title         of the poly(A) tail"
+   Journal       Embo J, 18, 6146-6154
+//
+ID:              U0018;  date: 01-12-2000
+Name:            Ribosomal S12 mitochondrial protein 5'UTR translation control element (RPMS12_TCE)
+Pattern:         CCGCGACCTCACCTTTAGGTCCTGTG[3,0,0]
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     Expression of RPMS12 gene, coding for a mitochondrial 
+                 ribosomal S12 protein is controlled at level of transcription, 
+                 splicing and translation in response to as yet unidentified 
+                 signals mediating growth, tissue specificity and metabolic 
+                 requirements.For this mRNA three splice variants of 5'UTR 
+                 have been detected with only the shortest one found to be 
+                 regulated by growth status. A 26 nt tract was found to be 
+                 essential for post-transcriptional down-regulation, in 
+                 growth-inhibited cells. 
+Bibliography:    [1]
+   Authors       Mariottini P, Shah ZH, Toivonen JM, Bagni C, Spelbrink JN, Amaldi F, Jacobs
+   Authors       HT. (1999)
+   Title         "Expression of the gene for mitoribosomal protein S12 is controlled in human
+   Title         cells at the levels of transcription, RNA splicing, and translation"
+   Journal       J Biol Chem. 5;274(45):31853-62
+//
+ID:              U0019;  date: 01-12-2000
+Name:            Bruno 3'UTR responsive element (BRE)
+Pattern:         p1=wuurururuu[1,0,0]  p1:(p2=wnurururu) p1:(nngngng[2,0,0]) 0...3
+                 p3=wuurururuu[1,0,0]  p3:(p4=wnurururu) p3:(nngngng[2,0,0])
+Taxon_Range:     UTR, 5' and 3' UTRs
+Description:     The posterior localization of oskar protein in the posterior 
+                 pole of drosophila embryos is requested to direct the
+                 deployment of nanos, the posterior body patterning morphogen 
+                 in Drosophila. The regulation mechanism involves translation 
+                 repression of oskar mRNA prior to its localization at the 
+                 posterior pole of the oocyte. Translation repression is
+                 mediated by the ovarian protein bruno that binds specifically
+                 to a cis-acting element located in the the 3UTR of the 
+                 oskar mRNA made by a tandem repetition of a 10 nt long 
+                 consensus sequence.
+Bibliography:    [1]
+   Authors       Castagnetti S, Hentze MW, Ephrussi A, Gebauer F. (2000)
+   Title         "Control of oskar mRNA translation by Bruno in a novel cell-free system
+   Title         from Drosophila ovaries"
+   Journal       Development 127(5):1063-8
+Bibliography:    [2]
+   Authors       Kim-Ha J, Kerr K, Macdonald PM. (1995)
+   Title         "Translational regulation of oskar mRNA by bruno, an ovarian RNA-binding
+   Title         protein, is essential"
+   Journal       Cell. 5;81(3):403-412
+//
+ID:              U0020;  date: 01-12-2000
+Name:            Alcohol dehydrogenase 3'UTR downregulation control element (ADH_DRE)
+Pattern:         AAGGCTGA
+Taxon_Range:     3INV, 3'UTRs from invertebrate mRNAs
+Description:     A highly conserved eight base sequence within the 3'
+                 untranslated region of the Drosophila Alcohol dehydrogenase
+                 (Adh) mRNA, identified by phylogenetic analysis, was found
+                 to produce a two-fold downregulation of Adh gene expression.
+                 The experimental assay was carried out by in vitro deletion
+                 mutagenesis followed by P element mediated germline 
+                 transformation. Downregulation was found to be the result
+                 of a temporally and spatially generated decrease in the Adh 
+                 transcript possibly resulting by either a reduction of 
+                 transcription rate or most likely by a reduction of the mRNA 
+                 stability.
+Bibliography:    [1]
+   Authors       Parsch J., Russell JA.,Beerman I., Hartl DL., and Stephan W. (2000)
+   Title         "Deletion of a conserved regulatory element in the Drosophila Adh gene leads
+   Title         to increased alcohol dehydrogenase activity but also delays development"
+   Journal       Genetics 156:219-227
+Bibliography:    [2]
+   Authors       Parsch J.,Stephan W.and Tanda S. (1999)
+   Title         "A highly conserved sequence in the 3'-untranslated region of the drosophila
+   Title         Adh gene plays a functional role in Adh expression"
+   Journal       Genetics 151(2):667-674
+//
+ID:              U0021;  date: 30-07-2001
+Name:            Barley yellow dwarf virus translation control element (BYDV_TE)
+Pattern:         r1={au,ua,gc,cg,gu,ug}
+                 p1=7...7 3...3 p2=ggauccug[1,0,0] p2:(4...4 p3=4...4) gnrna ~p3
+                 2...2 p4=4...4 4...4 ~p4 4...4 p5=nn nnn (p6=6...6 c (u | c) a[0,1,0]
+                 guc a[0,1,0] (a | c) r1~p6 | p8=5...5 n p9=3...3 nn
+                 p10=6...6  c (u | c) a[0,1,0] guc a[0,1,0] (a | c) r1~p10 n ~p9 nn ~p8)
+                 nnn r1~p5 6...6 r1~p1[1,0,1]
+Taxon_Range:     3PLN, 3'UTRs from plant mRNAs
+                 3VRL, 3'UTRs from viral mRNAs
+Description:     Efficient translation of Barley yellow dwarf 
+                 virus (BYDV) RNA, lacking both a 5'cap and a poly(A) 
+                 tail, is mediated by a cap-independent translation
+                 element (TE) located in the 3'UTR whose minimum length 
+                 is obout 90 nt. Nuclease probing and structure directed 
+                 mutagenesis has shown that TE is able to fold into a specific 
+                 cruciform secondary structure containing four helices. 
+                 Cap-independent translation requires all secondary structure
+                 elements and most primary sequences.
+                 Recent data suggest that TE base pairs to the 5'UTR unless 
+                 the TE itself is located in the 5'UTR. Similar structures 
+                 appear to be present in soybean dwarf luteovirus (SDV), 
+                 and tobacco necrosis necrovirus (TNE). The TNV TE
+                 lacks a stem-loop present the BYDV TE.  All have conserved 
+                 loops that can base-pair to a stem-loop in the 5' UTR. 
+                 TE mediates translation initiation at the AUG closest to 
+                 the mRNA 5' end, possibly facilitating ribosome recruiting 
+                 and 3'-5' communication.
+Bibliography:    [1]
+   Authors       Gu, Allen and Allen Miller (2000)
+   Title         "Structure and function of a cap-independent translation element that functions
+   Title         in either the 3' or the 5' untranslated region"
+   Journal       RNA.  Dec;6(12):1808-20
+Bibliography:    [2]
+   Authors       Guo, Allen and Allen Miller (2001)
+   Title         "Base-Pairing between untranslated regions facilitates translation of uncapped,
+   Title         nonpolyadenylated viral RNA"
+   Journal       Mol Cell 2001 May;7:1103-1109
+//
+ID:              U0022;  date: 22-11-2002
+Name:            Proneural Box (PB)
+Pattern:         AAUGGAAGACAAU
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3INV, 3'UTRs from invertebrate mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     The 3'UTR of three proneural genes (achaete, lethal of scute, 
+                 and atonal) encoding basic Helix-Loop-Helix (bHLH) 
+                 transcriptional activators that initiate neurogenesis in 
+                 Drosophila contain a conserved 13 nt long element, AAUGGAAGACAAU, 
+                 denoted as the proneural box (PB). The central 7 nt of the PB are 
+                 exactly complementary to the GY-box (GYB) present in the 3'UTR of 
+                 many Notch pathway target genes in Drosophila.
+                 The predicted duplex interaction, generally more extended than 
+                 the 7-mer core PB:GYB, might serve to regulate neurogenesis.
+Bibliography:    [1]
+   Authors       Lai E.C. & Posakony J.W. (1998)
+   Title         "Regulation of Drosophila neurogenesis by RNA:RNA duplexes?"
+   Journal       Cell 93:1103-1104
+Bibliography:    [2]
+   Authors       Lai, E. C., R. Bodner, J. Kavaler, G. Freschi, and J. W. Posakony (2000)
+   Title         "Antagonism of Notch signaling activity by members of a novel protein family
+   Title         encoded by the Bearded and Enhancer of split gene complexes"
+   Journal       Development 127: 291-306
+//
+ID:              U0023;  date: 22-11-2002
+Name:            K-Box (KB)
+Pattern:         p1=cTGTGATa[1,0,0] p1:(p2=TGTGAT)
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3INV, 3'UTRs from invertebrate mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     Many Notch pathway target genes in Drosophila, including most 
+                 members of the basic helix-loop-helix repressor family and the
+                 Bearded family, contain a series of conserved sequence motifs in 
+                 their 3' UTRs, including the Brd box, the K box, and the GY box. 
+                 The K box (cTGTGATa) is present in one or more copies in many of 
+                 these 3'UTRs and mediates negative post-transcriptional regulation, 
+                 mainly effected by decreased transcript levels.  Regulation by the 
+                 K box is spatially and temporally ubiquitous, and likely involves 
+                 the formation of RNA-RNA duplexes with complementary sequences found 
+                 at the 5'end of many micro RNAs (miRNAs).  K box-complementary miRNAs 
+                 are found in other metazoa, suggestive of functional conservation.
+Bibliography:    [1]
+   Authors       Lai et al. (1998)
+   Title         "The K box, a conserved 3' UTR sequence motif, negatively regulates accumulation
+   Title         of enhancer of split complex transcripts"
+   Journal       Development 125:4077-88
+Bibliography:    [2]
+   Authors       Lai E.C. (2002)
+   Title         "Micro RNAs are complementary to 3' UTR sequence motifs that mediate negative
+   Title         post-transcriptional regulation"
+   Journal       Nature Genetics. 30:363-4
+//
+ID:              U0024;  date: 22-11-2002
+Name:            Brd-Box (Brd)
+Pattern:         AGCTTTA
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3INV, 3'UTRs from invertebrate mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     Many Notch pathway target genes in Drosophila, including most 
+                 members of the basic helix-loop-helix repressor family and 
+                 the Bearded family, contain a series of conserved sequence motifs 
+                 in their 3' UTRs, including the Brd box, the K box, and the GY box. 
+                 The Brd box (AGCTTTA) is present in one or more copies in many of 
+                 these 3'UTRs and mediates negative post-transcriptional regulation 
+                 by affecting transcript stability and translational efficiency. 
+                 Regulation by the Brd box is spatially and temporally ubiquitous, 
+                 and likely involves the formation of RNA-RNA duplexes with complementary 
+                 sequences found at the 5'end of certain micro RNAs (miRNAs).  
+                 Brd box-complementary miRNAs are also found in other nematodes, 
+                 suggestive of functional conservation.
+Bibliography:    [1]
+   Authors       Lai et al. (1998)
+   Title         "The K box, a conserved 3' UTR sequence motif, negatively regulates accumulation
+   Title         of enhancer of split complex transcripts"
+   Journal       Development 125:4077-88
+Bibliography:    [2]
+   Authors       Lai E.C. (2002)
+   Title         "Micro RNAs are complementary to 3' UTR sequence motifs that mediate negative
+   Title         post-transcriptional regulation"
+   Journal       Nature Genetics. 30:363-4
+//
+ID:              U0025;  date: 22-11-2002
+Name:            GY-Box (GY)
+Pattern:         GTCTTCC
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3INV, 3'UTRs from invertebrate mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     Many Notch pathway target genes in Drosophila, including most 
+                 members of the basic helix-loop-helix repressor family and the 
+                 Bearded family, contain a series of conserved sequence motifs in 
+                 their 3' UTRs, including the Brd box, the K box, and the GY box. 
+                 The GY box (GTCTTCC) is present in one or more copies in several
+                 of these 3' UTRs, but does not appear to have strong cis-regulatory 
+                 activity.  However, its function likely involves the formation of 
+                 RNA duplexes with (1) a complementary sequence found in the 3' UTRs 
+                 of proneural basic helix-loop-helix genes (the proneural box, 
+                 ATGGAAGACAAT) and (2) with complementary sequences found at the 
+                 5' ends of certain micro RNAs (miRNAs).
+Bibliography:    [1]
+   Authors       Lai, E. C., R. Bodner, J. Kavaler, G. Freschi, and J. W. Posakony (2000)
+   Title         "Antagonism of Notch signaling activity by members of a novel protein family
+   Title         encoded by the Bearded and Enhancer of split gene complexes"
+   Journal       Development 127: 291-306
+Bibliography:    [2]
+   Authors       Lai et al. (1998)
+   Title         "The K box, a conserved 3' UTR sequence motif, negatively regulates accumulation
+   Title         of enhancer of split complex transcripts"
+   Journal       Development 125:4077-88
+Bibliography:    [3]
+   Authors       Lai E.C. (2002)
+   Title         "Micro RNAs are complementary to 3' UTR sequence motifs that mediate negative
+   Title         post-transcriptional regulation"
+   Journal       Nature Genetics. 30:363-4
+//
+ID:              U0026;  date: 22-11-2002
+Name:            Androgen receptor GU-rich element (AR_CURE)
+Pattern:         p1=cuggg p2=10...40 p3=cccuccc
+                 p2:(p4=yyyyyyyyyy)
+                 p1/p2/p3:(c p5=uuuuuuuuuuuu[0,7,0] c)
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3INV, 3'UTRs from invertebrate mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     The androgen receptor mRNA contains a highly conserved UC-rich 
+                 region in the 3'-untranslated region that are the target of HuR 
+                 and CP1/CP2 RNA binding proteins imvolved in the regulation of 
+                 mRNA stability and translation initiation. Mutational analysis 
+                 has shown that HuR (also binding AU-rich motifs) binds to the U-rich 
+                 portion of the UC-rich region whereas CP1 and CP2 bind to the C-rich 
+                 portion. A model of cooperative binding of HuR and CPs is proposed 
+                 with binding disruption resulting in transcript destabilization.
+Bibliography:    [1]
+   Authors       Yeap et al. (2002)
+   Title         "Novel binding of HuR and poly(C)-binding protein to a conserved UC-rich
+   Title         motif within the 3'-untranslated region of the androgen receptor messenger
+   Title         RNA"
+   Journal       J Biol Chem. 277(30):27183-92
+//
+ID:              U0027;  date: 15-07-2003
+Name:            Elastin G3A 3'UTR stability motif (G3A)
+Pattern:         tgnn p1=rrrrrrrrrrrrrrrrrrr[1,3,0]
+                 p1:(ggga ggga 0...3 ggga 0...1 ggg)
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     Developmental regulation of elastin synthesis occurs through modulation 
+                 of the stability of its mRNA. It has been demonstrated that the binding 
+                 of cytosolic proteins to a large region of the 3'UTR of elastin mRNA, 
+                 possibly folded into a stable secondary structure, is associated to 
+                 stabilization/destabilization of elastin mRNA. Using deletion and 
+                 competition analyses the core cis-acting sequence has been mapped to 
+                 a 20 nt long purine rich sequence containing at least a 3-fold repeat 
+                 of GGGA (G3A) motif conserved from human to chicken. 
+Bibliography:    [1]
+   Authors       Hew Y, Lau C, Grzelczak Z, Keeley FW (2000)
+   Title         "Identification of a GA-rich sequence as a protein-binding site in the 3'-untranslated
+   Title         region of chicken elastin mRNA with a potential role in
+   Title         the developmental regulation of elastin mRNA stability"
+   Journal       J Biol Chem. (2000) 275(32):24857-64
+//
+ID:              U0028;  date: 23-07-2003
+Name:            Insulin 3'UTR stability element (INS_SCE)
+Pattern:         p1=3...7 p1:(p3=RCC) p2=YCCYRCCCNCC[3,0,0] p2:(p4=NNCNRNNCNNN) 0...3 ((CC|AC)|CT)
+                 0...3 TGSM 1...13 AATAAA
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     Stabilization of insulin mRNA in response to glucose is a key 
+                 modulator of insulin production. Experimental data suggest that 
+                 insulin mRNA stability  is controlled by the binding of a 55-60 kDa 
+                 protein to a pyrimidine-rich sequence (PRS) located in the 3UTR 
+                 of insulin mRNA. The binding of this protein, probably the polypirimidine 
+                 tract-binding protein (PTB), is stimulated by reducing agents (e.g. DTT) 
+                 and glucose. Mutation of the core PSR sequence, present in human and 
+                 rodent but not all mammal insulin mRNAs, prevents protein binding and 
+                 results in transcripts destabilization.
+Bibliography:    [1]
+   Authors       Tillmar L, Carlsson C, Welsh N. (2002)
+   Title         "Control of insulin mRNA stability in rat pancreatic islets. Regulatory
+   Title         role of a 3'-untranslated region pyrimidine-rich sequence"
+   Journal       J Biol Chem. (2002) 277(2):1099-106
+//
+ID:              U0029;  date: 23-07-2003
+Name:            Beta-actin 3'UTR zipcode (ACTIN_ZIP3)
+Pattern:         gcggactgtta[2,0,0] 8...14 acaccctt[1,0,0] 3...5 tga 0...2 caaaaccta[1,0,0] 3...4 tgc
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     The localization of beta-actin mRNA to the cell periphery is modulated 
+                 by an AC-rich "zipcode" element, 54 nt long, located in the mRNA 3'UTR, 
+                 proximal to the stop codon.
+                 This element is highly conserved in all vertebrate beta-actin mRNAs.
+                 The polarized distribution of beta-actin mRNA, which implies the asymmetric 
+                 distribution of its protein product, involves a complex of trans-acting 
+                 protein factors binding both to the zipcode, such as the 68 kDa ZBP-1 
+                 RNA binding protein, and to the actin network.
+Bibliography:    [1]
+   Authors       Kislauskis EH, Zhu X and Singer RH (1994)
+   Title         "Sequences responsible for intracellular localization of beta-actin messenger
+   Title         RNA also affect cell phenotype"
+   Journal       J. Cell Biol. 127: 441-451
+Bibliography:    [2]
+   Authors       Ross AF, Oleynikov Y, Kislauskis EH, Taneja KL and Singer RH (1997)
+   Title         "Characterization of a beta-actin mRNA zipcode-binding protein"
+   Journal       Mol. Cell Biol. 17: 2158-2165
+Bibliography:    [3]
+   Authors       Shestakova EA, Singer RH and Condeelis J. (2001)
+   Title         "The physiological significance of beta-actin mRNA localization in determining
+   Title         cell polarity and directional motility"
+   Journal       Proc. Natl. Acad. Sci. USA 98: 7045-7050
+//
+ID:              U0030;  date: 23-07-2003
+Name:            Gap-43 Stabilization Element (GAP-43)
+Pattern:         guccacuuuccu yyyyyy[0,6,0] muyucucucug
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     The expression of Growth Associated Protein (GAP-43) 
+                 involved in neurite outgrowth is post-trascriptionally regulated by a 
+                 highly conserved 23-29 nt long sequence in the mRNA 3'UTR. The 
+                 interaction of this element with the ELAV-like RNA binding protein 
+                 HuD results in the increased stability of gap-43 transcript.
+Bibliography:    [1]
+   Authors       Chung S, Eckrich M, Perrone-Bizzozero N, Kohn DT, and Furneaux H (1997)
+   Title         "Elav-like Proteins Bind to a Conserved Regulatory Element in the 3-Untranslated
+   Title         Region of GAP-43 mRNA"
+   Journal       J. Biol. Chem. (1997) 272: 65936598
+Bibliography:    [2]
+   Authors       Kohn DT, Tsai K-C, Canino VV, Neve RL and Perrone-Bizzozero N. (1996)
+   Title         "Role of highly conserved pyrimidine-rich sequences in the 3untranslated
+   Title         region of the GAP-43 mRNA in mRNA stability and RNA-protein interactions"
+   Journal       Mol. Brain Res. (1996) 36: 240-250
+//
+ID:              U0031;  date: 23-07-2003
+Name:            CaMKII/Ng dendritic localization element (CNDLE)
+Pattern:         yrggrnc 0...4 cs 6...10 cscagaga 0...1 tcc 0...1 ytcw 2...8 wgg
+Taxon_Range:     3HUM, 3'UTRs from human mRNAs
+                 3MAM, 3'UTRs from mammalian (not human/not rodent) mRNAs
+                 3MUS, 3'UTRs from mouse mRNAs
+                 3ROD, 3'UTRs from rodent (not mouse) mRNAs
+                 3VRT, 3'UTRs from vertebrate (not mammal) mRNAs
+Description:     Alpha subunit of calcium calmodulin dependent kinase II (CaMKII) 
+                 protein, highly enriched at synapse is important in synaptic plasticity, learning and long-term memory. The 5 part (nt 1-94) of  3UTR of CaMKII 
+                 mRNA mediates its dendritic targeting.
+                 An inhibitory element located downstream in the 3UTR prevents CaMKII 
+                 mRNA transport into dendrites. 
+                 Prolonged depolarization override transport repression thus suggesting an 
+                 anctivity-sensitive interaction between the two control elements. 
+                 A similar dendritic localization element has been found to be active in 
+                 the 3UTR of neurogranin (Ng) mRNA, coding for a neuronal specific calmodulin 
+                 binding protein. The minimal targeting signal denoted as CaMKII/Ng dendritic 
+                 localization element (CNDLE) corresponds to a highly conserved 28-nt region.
+Bibliography:    [1]
+   Authors       Mori Y, Imaizumi K, Katayama T, Yoneda T and Tohyama M. (2000)
+   Title         "Two cis-acting elements in the 3untranslated region of alpha-CaMKII regulate
+   Title         its dendritic targeting"
+   Journal       Nature Neuroscience (2000) 3: 1079-1084
+//
+ID:              U0033;  date: 01-07-2004
+Name:            Upstream Open Reading Frame (uORF)
+Pattern:         aug p1=60...9999 ((uaa | uag) | uga) length(p1) mod 3
+Taxon_Range:     5UTR, 5'UTRs
+Description:     The control of translation is a fundamental mechanism in the regulation of gene expression. 
+                 Among the cis-elements that play a role in translation regulation are upstream open reading frames (uORFs) 
+                 located in the 5UTR of mRNA. UORFs can induce the formation of translational competent ribosomes that may translate the uORF 
+                 and (i) terminate and reinitiate, (ii) terminate and leave the mRNA, generally resulting in down-regulation of the main open reading frame. 
+                 In some cases the uORF may enhance translation in specific conditions and the uORF encoded peptide may or may not play a regulatory activity.
+Bibliography:    [1]
+   Authors       Meijer, H.A. and Thomas, A.A. (2002)
+   Title         "Control of eukaryotic protein synthesis by upstream open reading frames
+   Title         in the 5'-untranslated region of an mRNA."
+   Journal       Biochem J 367 1-11.
+Bibliography:    [2]
+   Authors       Mignone, F., Gissi, C., Liuni, S. and Pesole, G. (2002)
+   Title         "Untranslated regions of mRNAs."
+   Journal       Genome Biol 3 REVIEWS0004.1-10
+//
+ID:              U0032;  date: 02-08-2003
+Name:            alpha-globin 3'UTR C-rich stability determinant (AG-CRSD)
+Pattern:         yyugcsng 0...1  ctngsc  0...1 tcysrmmrngccctyytycyctyc 0...1 ytgcac
+Taxon_Range:     HUM, UTRs from human mRNAs
+                 MAM, UTRs from mammalian (not human/not rodent) mRNAs
+                 MUS, UTRs from mouse mRNAs
+                 ROD, UTRs from rodent (not mouse) mRNAs
+                 VRT, UTRs from vertebrate (not mammal) mRNAs
+Description:     The long half-life of alpha-globin mRNA (>24h in the developing erythroid cells) is mediated by three cytosine-rich regions, possibly folded into a conserved secondary structure, located in its 3'UTR.
+                 These C-rich regions, also found in other stable mRNAs, such as alpha(I) collagen, tyrosine hydrosylase and 15-lipoxygenase mRNAs, assemble an RNA -protein complex (alpha-complex). Mutations of any of these C-rich elements block alpha-complex formation and remarkably decrease alpha-globin mRNA stability.
+                 Major components of the&#61472; alpha-complex are two proteins called&#61472;alphaCP1 and alphaCP2 (alpha-globin poly(C)-binding proteins) also known as hnRNPE or PCBP, containing three KH domains known to mediate binding to mRNA.
+                 Experimental studies suggest that the alpha complex stabilizes&#61472;alpha-globin mRNA by two mechanisms; inhibition of a deadenylation-dependent 3'exonuclease or protection from endonucleolitic cleavage pathway.
+Bibliography:    [1]
+   Authors       Waggoner SA and Liebhaber SA. (2003)
+   Title         "Regulation of alpha-globin mRNA stability."
+   Journal       Exp Biol Med 228: 387-95.
+//
+ID:              U0034;  date: 27-07-2004
+Name:            Gamma interferon activated inhibitor of Ceruloplasmin mRNA translation (GAIT element)
+Pattern:         r1={au,ua,gc,cg,gu,ug}
+                 r2={au,ua,gu,ug}
+                 p1=5...6 p2=3...4 p3=n p4=d p5=n p6=5...5 r1~p5 r2~p4 r1~p3 p7=0...2 r1~p1
+                 p1/p2/p3/p4/p5/p6/p7:(p8=uuacuuuggaatgr)
+Taxon_Range:     HUM, UTRs from human mRNAs
+                 MAM, UTRs from mammalian (not human/not rodent) mRNAs
+                 MUS, UTRs from mouse mRNAs
+                 ROD, UTRs from rodent (not mouse) mRNAs
+                 VRT, UTRs from vertebrate (not mammal) mRNAs
+Description:     Delayed translational silencing of ceruloplasmin (Cp) mRNA by gamma-interferon (IFN-gamma) is directed by a structural element in its 3' untranslated region.
+                 Translational silencing requires the binding of a cytosolic inhibitor to the Cp 3'UTR and all essential elements of mRNA circularization, i.e. eukaryotic initiation factor 4G, poly-A binding protein and poly-A tail.
+                 The 29-nt structural element, denoted as IFN-gamma-activated inhibitor of translation (GAIT), consisting of a 5-nt terminal loop, a weak 3-bp helix, an asymmetric internal bulge and a proximal 6-bp helix, has been experimentally demonstrated to be sufficient for translational silencing both in vitro and in vivo in human. A similar element can be found in sheep but not in rodents.
+Bibliography:    [1]
+   Authors       Sampath P, Mazumder B, Seshadri V, Fox PL. (2003)
+   Title         "Transcript-selective translational silencing by gamma interferon is directed
+   Title         by a novel structural element in the ceruloplasmin mRNA 3' untranslated
+   Title         region."
+   Journal       Mol Cell Biol. 2003 23(5):1509-19
+//
+ID:              U0035;  date: 27-07-2004
+Name:            Mos polyadenylation response element (Mos-PRE)
+Pattern:         vntyhwwhynddhwhrthhdkbtw
+Taxon_Range:     HUM, UTRs from human mRNAs
+                 MAM, UTRs from mammalian (not human/not rodent) mRNAs
+                 MUS, UTRs from mouse mRNAs
+                 ROD, UTRs from rodent (not mouse) mRNAs
+                 VRT, UTRs from vertebrate (not mammal) mRNAs
+Description:     During progesterone-stimulated Xenopus oocyte maturation, early cytoplasmic polyadenylation 
+                 and translational activation of the Mos mRNA is mediated by a 24 nt region located at the 3'-end of Mos 3' UTR, 
+                 termed a polyadenylation response element (PRE).  
+                 The Mos PRE partially overlaps a downstream cytoplasmic polyadenylation element (CPE).  
+                 The PRE appears to be conserved in other maternal Xenopus mRNAs, is responsive to the MAP kinase signaling pathway 
+                 and is functionally distinct from the late-acting, cdc-2 responsive, cytoplasmic polyadenylation elements (CPEs).
+Bibliography:    [1]
+   Authors       Charlesworth, A., Ridge, J., King, L.A., MacNicol, M.C. and MacNicol, A.M. (2002)
+   Title         "A novel regulatory element determines the timing of Mos mRNA translation
+   Title         during Xenopus oocyte maturation."
+   Journal       EMBO J., 21, 2798-2806.
+//
+ID:              U0036;  date: 27-07-2004
+Name:            Drosophila hairy mRNA localization element (HLE)
+Pattern:         r1={au,ua,gc,cg,gu,ug}
+                 p1=cauuuc acnn p2=cauu 0...1 cg ccrggaunn cgcn r1~p2 uugnuu 0...2 r1~p1
+Taxon_Range:     INV, UTRs from invertebrate mRNAs
+Description:     In the early embryo of drosophila several transcripts localize exclusively apically of the peripheral nuclei. 
+                 Apical transport of hairy pair-rule mRNA is mediated by a 121 nt element located in the 3 untranslated region. 
+                 This element comprises two stem-loop structures in which double-stranded stems have been observed to be essential 
+                 for localization. Base pair identities within the stem are not essential but contribute to the efficiency of localization 
+                 thus suggesting that specificity is mediated by higher-order structure.
+Bibliography:    [1]
+   Authors       Bullock SL, Zicha D and Ish-Orowicz D (2003)
+   Title         "The Drosophila hairy RNA localization signal modulates the kinetics of
+   Title         cytoplasmic mRNA transport."
+   Journal       EMBO J. 22: 2484-2494.
+//
+ID:              U0037;  date: 27-07-2004
+Name:            Myelin Basic Protein Localization Element (MBP-A2RE11)
+Pattern:         gswcacy GCCAwGGAGsC AsAsAGC
+Taxon_Range:     HUM, UTRs from human mRNAs
+                 MAM, UTRs from mammalian (not human/not rodent) mRNAs
+                 MUS, UTRs from mouse mRNAs
+                 ROD, UTRs from rodent (not mouse) mRNAs
+                 VRT, UTRs from vertebrate (not mammal) mRNAs
+Description:     Localization of myelin basic protein (MBP) mRNA to the myelin compartment in oligodendrocytes requires a short 
+                 sequence element - whose core element is 11 nt long - located in the 3'UTR and interacting with heterogeneous nuclear protein A2 (hnRNP A2).
+                 Oligodendrocyte transport occurs via mRNA packaging into granules in the nucleus followed by export to cytoplasm and then microtubule- or 
+                 microfilament-mediated transport to the final destination.
+Bibliography:    [1]
+   Authors       Ainger K, Avossa D, Diana AS, Barry C, Barbarese E, Carson JH. (1997)
+   Title         "Transport and localization elements in myelin basic protein mRNA."
+   Journal       J Cell Biol. 1997 138(5):1077-87.
+//
+ID:              U0038;  date: 27-07-2004
+Name:            Protamine P1 3'UTR Y-Box recognition site (Protamine-YRS)
+Pattern:         ca 0...4 wccaycnna 0...1 ctcctgcntga
+Taxon_Range:     HUM, UTRs from human mRNAs
+                 MAM, UTRs from mammalian (not human/not rodent) mRNAs
+                 MUS, UTRs from mouse mRNAs
+                 ROD, UTRs from rodent (not mouse) mRNAs
+                 VRT, UTRs from vertebrate (not mammal) mRNAs
+Description:     Protamine (Prm) mRNAs are translationally repressed for several days during male germ cell differentiation. Translational delay of Prm-1 mRNA 
+                 involves the binding of Y-Box proteins MSY2 and MSY4 to a conserved region in the 3most nt of the 3UTR.
+                 The consensus site, denoted Y-Box Recognition Site (YRS) has been defined by mutational analysis and tested by the yeast three-hybrid system.
+Bibliography:    [1]
+   Authors       Giorgini F, Davies HG, Braun RE. (2001)
+   Title         "MSY2 and MSY4 bind a conserved sequence in the 3' untranslated region of
+   Title         protamine 1 mRNA in vitro and in vivo."
+   Journal       Mol Cell Biol. 2001 Oct;21(20):7010-9.
+//
+ID:              U0039;  date: 27-07-2004
+Name:            Granulocyte colony-stimulating factor stem-loop destabilizing element (G-CSF_SLDE)
+Pattern:         r1={au,ua,gc,cg}
+                 ansym p1=tgtttaa tat r1~p1 smag
+Taxon_Range:     HUM, UTRs from human mRNAs
+                 MAM, UTRs from mammalian (not human/not rodent) mRNAs
+                 MUS, UTRs from mouse mRNAs
+                 ROD, UTRs from rodent (not mouse) mRNAs
+                 VRT, UTRs from vertebrate (not mammal) mRNAs
+Description:     Granulocyte colony-stimulating factor (G-CSF) is secreted in response to the inflammatory mediators IL-1 and TNF-alpha 
+                 and by activated macrophages. The synthesis of G-CSF is regulated at the post-transcriptional level through the control of mRNA stability. 
+                 In unstimulated cells G-CSF mRNA is unstable but becomes stabilized in response to IL-1 or TNF-alpha, and also in the case 
+                 of monocytes and macrophages, in response to LPS.
+                 G-CSF mRNA contains two types of cis-acting destabilizing elements. In addition to several copies of the AU-rich element (ARE) 
+                 it contains another destabilizing element whose activity resides in a stem-loop structure, whose consensus sequence has been 
+                 determined by site-directed mutagenesis. The stem is 8 nt long (or 7 nt in chicken) with a conserved YAU loop.
+                 The destabilizing activity consists in the enhancing of deadenylation rate.
+Bibliography:    [1]
+   Authors       Putland RA, Sassinis TA, Harvey JS, Diamond P, Coles LS, Brown CY, Goodall
+   Authors       GJ (2002)
+   Title         "RNA destabilization by the granulocyte colony-stimulating factor stem-loop
+   Title         destabilizing element involves a single stem-loop that promotes deadenylation."
+   Journal       Mol Cell Biol 2002;22:1664-1673.
+//
+ID:              U0040;  date: 27-07-2004
+Name:            Renin stability regulatory element (Ren_SRE)
+Pattern:         uk 0...1  p1=cuuu  rrggrm 0...3 aaa 0...4 auaaagayuncauguu
+Taxon_Range:     HUM, UTRs from human mRNAs
+                 MAM, UTRs from mammalian (not human/not rodent) mRNAs
+                 MUS, UTRs from mouse mRNAs
+                 ROD, UTRs from rodent (not mouse) mRNAs
+                 VRT, UTRs from vertebrate (not mammal) mRNAs
+Description:     Renin is a highly specific endopeptidase, whose only known function is to generate angiotensin I from angiotensinogen in the plasma, 
+                 inducing the production of angiotensin II and initiating a cascade of reactions that results in an elevation of blood pressure 
+                 and increased sodium retention by the kidney.
+                 Renin (REN) mRNA stability is modulated by a cis-acting element, about 35 nt long, located in the 3UTR. This element, that contributes 
+                 to basal REN mRNA instability, is the target of a number of mRNA binding proteins that destabilize (HADHB) 
+                 or stabilize (HuR, CP1) REN mRNA regulating rennin production.
+Bibliography:    [1]
+   Authors       Adams DJ, Beveridge DJ, Van Der Weyden L, Mangs H, Leedman PJ, MorrisBJ (2003)
+   Title         "HADHB, HuR, and CP1 Bind to the Distal 3'-Untranslated Region ofHuman Renin
+   Title         mRNA and Differentially Modulate Renin Expression."
+   Journal       J Biol Chem 2003;278:44894-44903.
+//

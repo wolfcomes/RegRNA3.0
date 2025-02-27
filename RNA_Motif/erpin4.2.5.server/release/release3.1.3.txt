@@ -1,0 +1,142 @@
+
+30/11/02 - erpin version 3.1.2
+
+les textes des 'help' des programmes du repertoire 'apps' ont ete revus
+(sept 02)
+
+------------------------------------
+
+dans 'trset.c' on introduit un controle supplementaire:
+On controle dans 'GetTrsetStruct' qu'un symbole d'helice (detecte 2 fois)
+n'apparaisse pas plus de 2 fois dans le modele du codage de la structure
+secondaire.
+
+Ceci pourra etre utile lors du codage de longs ARN (16s.epn: + de 2000 bases)
+
+------------------------------------
+
+On ajoute aux structures 'pattern' et 'mask' un champ supplementaire:
+
+double log2ncfg;
+
+auquel sera affectee la valeur en unites logarithmiques (base 2) du nombre de
+configurations posssibles en fonction du nombre de gaps dans les brins.
+'log2ncfg' indique donc le nombre de bits necessaires au codage binaire du
+nombre de configurations.
+
+Ex: si log2ncfg > 31 alors, ncfg ne pourra etre code sur un type 'int'.
+
+------------------------------------
+
+on ajoute des macros dans 'rnaII.h' pour la gestion du nb. de configs.
+
+#define CFG_MAX_BITS    24.0      /* nombre maximal de bits admis pour coder */
+                                 /* le nombre des configurations d'un masque */
+                                          /* au dela de ce nombre -> Exit    */
+#define CFG_BITS_WARN   16.0              /* au dela de ce nombre -> Warning */
+#define CFG_BITS_INFO   10.0              /* au dela de ce nombre -> Info    */
+
+  -- Il faudra sans doute ajuster les valeurs adoptees --
+
+on ajoute aussi les prototypes de 'ctrlcfgs.c'.
+
+------------------------------------
+
+dans 'libsrc' on ajoute le code de 'ctrlcfgs.c' et 'rnaII.mk' est revu
+
+------------------------------------
+
+dans 'mask.c' on supprime la ligne 270, qui etait la seule reference a 'ncfg'
+dans ce fichier (en fait inutile).
+
+------------------------------------
+
+dans 'pattern.c' (lignes 271..273 supprimees) on calcule les configs avec
+'GetPatternCfgsNb' de 'ctrlcfgs.c'.
+
+------------------------------------
+
+dans 'maskcfg.c' on calcule le nb de configs dans 'GetMaskGapList' en utilisant
+'GetMaskCfgsNb' (de ctrlcfgs.c), les lignes 253..255 sont supprimees.
+
+Les fonctions:
+ PrtMaskCfgsVol()
+ PrtPatternCfgsVol()
+ GetNbCfg()
+sont supprimees, elles seront remplacees par:
+ GetPatternCfgsNb();
+ GetMaskCfgsNb();
+ PrintMaskCfgsVol();
+dont le code est situe dans 'ctrlcfgs.c'
+
+la fonction 'MaskCfgsNb' a ete aussi creee, laquelle ne calcule pas le nombre
+de configurations en unites log2, ces variantes donnent lieu a 2 fonctions:
+'ImportPatternCfgInfos' et 'ImportPatternCfgInfos2' dans 'dmp.c' afin d'optimi-
+ser les calculs lorsque les situations avec de nombreuses configurations ont
+ete ecartees (ex: dans une operation de recherche).
+
+------------------------------------
+
+dans 'dmp.c' on remplace, dans la fonction 'ImportPatternCfgInfos', 'GetNbCfg'
+par 'MaskCfgsNb' de 'ctrlcfgs.c'
+
+------------------------------------
+
+dans 'tscores' on supprime les sorties concernant les nombres de configurations,
+afin de ne pas induire en erreur l'utilisateur:
+lignes 388..389 et 357..359
+'cfgs.c' sera revu pour fournir ces informations.
+
+------------------------------------
+
+le controle des nb de configs a ete installe dans 'erpin': OK
+
+------------------------------------
+
+la librairie a ete recompilee: OK
+'erpin' et les sources de 'apps' ont ete recompilees: OK
+'tstat' dans 'apps' a ete revu. La sortie des resultats y est plus lisible.
+'cfgs.c' dans 'apps' a ete revu.
+'Cfg.c' dans 'tools' a ete revu.
+
+------------------------------------
+09/04/03
+
+On installe dans la fonction 'ReadSeq' de 'Seqs.c' l'emission d'un warning con-
+cernant les  sequences dont la longueur depasse la limite installee dans
+'include/rnaII.h':
+#define SEQ_MAX_LEN      300000000 
+L'enregistrement des sequences (Ex: dans 'erpin') sera desormais limite a ce
+volume (precedemment la limitation ne portait que sur le traitement ulterieur).
+
+test OK
+
+------------------------------------
+30/04/03
+
+On integre dans la bibliotheque de 'erpin' les fonctions destinees au calcul de
+la 'E-value': nombre moyen de detections de scores superieurs a un cutoff donne
+sur une sequence aleatoire de volume donne.
+
+Options de 'erpin':
+===================
+Un nouvel ensemble d'arguments concernant la statistique des scores est cree:
+Le calcul de la E-value sera effectue par defaut par 'erpin' sinon '-notE'.
+la 'cdf' (cumulative distribution function) des scores sera calculee est sortie
+dans le fichier 'epn.cdf.dat', si l'argument '-cdf' est entre, sinon non.
+
+dans 'libsrc' le code 'histo.c' consacre a la creation d'un histogramme des de-
+tections depuis la liste des detections est renomme 'lhisto.c'.
+Les codes suivants sont crees dans 'libsrc':
+
+'maps.c'      conversions entiers <--> doubles
+'histools.c'  outils et histogrammes des brins et helices
+'mhisto.c'    histogramme d'un masque
+'conv.c'      produits de convolution entre histogrammes
+'cdf.c'       cumulative distribution function
+'lfit.c'      fit lineaire par la methode des moindres carres
+'bkgstat.c'   complements sur la statistique des bases dans les donnees
+
+
+
+

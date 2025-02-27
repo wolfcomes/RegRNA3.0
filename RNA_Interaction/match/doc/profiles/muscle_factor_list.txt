@@ -1,0 +1,72 @@
+Factor Accession No.	Factor Name	Factor Species
+T00505	aMEF-2	mouse, Mus musculus
+T02478	CP1C	human, Homo sapiens
+T00204	E12	human, Homo sapiens
+T01786	E12	mouse, Mus musculus
+T00207	E47	human, Homo sapiens
+T01788	E47	mouse, Mus musculus
+T02532	GATA-4	mouse, Mus musculus
+T02687	GATA-4	human, Homo sapiens
+T02716	GATA-4	rat, Rattus norvegicus
+T01005	MEF-2A	human, Homo sapiens
+T01012	MEF-2B1	human, Homo sapiens
+T01785	MEF-2B1	mouse, Mus musculus
+T02501	MEF-2B2	mouse, Mus musculus
+T02502	MEF-2B3	mouse, Mus musculus
+T02503	MEF-2B4	mouse, Mus musculus
+T01767	MEF-2C	human, Homo sapiens
+T01768	MEF-2C/delta32	human, Homo sapiens
+T01766	MEF-2C/delta8	human, Homo sapiens
+T01769	MEF-2C/delta8	mouse, Mus musculus
+T02504	MEF-2C/delta8,32	human, Homo sapiens
+T02511	MEF-2D00	human, Homo sapiens
+T02508	MEF-2D0B	human, Homo sapiens
+T02506	MEF-2DA'0	mouse, Mus musculus
+T02510	MEF-2DA'0	human, Homo sapiens
+T02507	MEF-2DA'B	human, Homo sapiens
+T02509	MEF-2DA0	human, Homo sapiens
+T01770	MEF-2DAB	human, Homo sapiens
+T02505	MEF-2DAB	mouse, Mus musculus
+T00506	MEF1	mouse, Mus musculus
+T01537	MRF4	mouse, Mus musculus
+T00519	Myf-3	human, Homo sapiens
+T00520	Myf-4	human, Homo sapiens
+T00521	Myf-5	human, Homo sapiens
+T01534	Myf-5	mouse, Mus musculus
+T00522	Myf-6	human, Homo sapiens
+T00525	MyoD	human, Homo sapiens
+T00526	MyoD	mouse, Mus musculus
+T00528	myogenin	mouse, Mus musculus
+T00150	NF-Y	human, Homo sapiens
+T00613	NF-Y	mouse, Mus musculus
+T00614	NF-Y'	mouse, Mus musculus
+T01804	NF-YA	human, Homo sapiens
+T00615	NF-YA	mouse, Mus musculus
+T00154	NF-YB	human, Homo sapiens
+T00616	NF-YB	mouse, Mus musculus
+T02477	NF-YC	mouse, Mus musculus
+T01675	Nkx2-5	mouse, Mus musculus
+T04323	Nkx2-5	human, Homo sapiens
+T00752	Sp1	mouse, Mus musculus
+T00759	Sp1	human, Homo sapiens
+T00764	SRF	human, Homo sapiens
+T03997	SRF (263 AA)	mouse, Mus musculus
+T03996	SRF (400 AA)	mouse, Mus musculus
+T03995	SRF (440 AA)	mouse, Mus musculus
+T00765	SRF (504 AA)	mouse, Mus musculus
+T00796	TBP	mouse, Mus musculus
+T00794	TBP	human, Homo sapiens
+T04347	Tbx5	mouse, Mus musculus
+T04345	TBX5 (long isoform)	human, Homo sapiens
+T04346	TBX5 (short isoform)	human, Homo sapiens
+T06282	Tbx5:Nkx2.5	human, Homo sapiens
+T06295	Tbx5:Nkx2.5	mouse, Mus musculus
+T00820	TFIID	human, Homo sapiens
+T01159	TFIID	mouse, Mus musculus
+T00877	USF-1	mouse, Mus musculus
+T00874	USF1	human, Homo sapiens
+T00878	USF2	human, Homo sapiens
+T01555	USF2	mouse, Mus musculus
+T02377	USF2b	human, Homo sapiens
+T00278	YY1	mouse, Mus musculus
+T00915	YY1	human, Homo sapiens

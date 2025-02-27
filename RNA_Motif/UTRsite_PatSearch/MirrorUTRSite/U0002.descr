@@ -1,0 +1,4 @@
+r1={au,ua,gc,cg,gu,ug}
+(p1=2...8 c p2=5...5 CAGWGH r1~p2 r1~p1 | 
+p3=2...8 nnc p4=5...5 CAGWGH r1~p4 n r1~p3 |
+p5=6...8 c p6=2...2 p7=3...3 CAGWGH r1~p7 u r1~p6 r1~p5 )

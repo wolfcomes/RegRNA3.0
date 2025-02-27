@@ -1,0 +1,3 @@
+                NewStart     Stop      RibosomeBindingSite                                OldStart 
+    GeneID      Position    Position     Pattern Position     NewStartCodon    Shift   Codon Position
+     gene1          7245        8204         ---        0          TAT             0     TAT     7245

@@ -1,0 +1,1 @@
+parms wc += gu; descr h5(minlen=2, maxlen=8) ss(minlen=1, maxlen=3, seq="C$") h5(len=5) ss(seq="^CAGWGH$") h3 ss(minlen=0, maxlen=1) h3

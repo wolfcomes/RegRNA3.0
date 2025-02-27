@@ -1,0 +1,3702 @@
+Terminals which are not used
+
+   SYM_PAIRSET
+   SYM_NEGATE
+   SYM_CALL
+   SYM_LIST
+   SYM_KW_STREF
+   SYM_IX_STREF
+   SYM_ERROR
+
+
+State 199 conflicts: 1 shift/reduce
+
+
+Grammar
+
+    0 $accept: program $end
+
+    1 program: parm_part descr_part site_part score_part
+
+    2 @1: /* empty */
+
+    3 parm_part: parm_hdr @1 pd_list
+    4          | empty
+
+    5 parm_hdr: SYM_PARMS
+    6         | empty
+
+    7 @2: /* empty */
+
+    8 descr_part: SYM_DESCR @2 se_list
+
+    9 @3: /* empty */
+
+   10 site_part: SYM_SITES @3 kw_site_list
+   11          | /* empty */
+
+   12 @4: /* empty */
+
+   13 score_part: SYM_SCORE @4 rule_list
+   14           | /* empty */
+
+   15 pd_list: pdef
+   16        | pdef pd_list
+
+   17 pdef: asgn SYM_SEMICOLON
+
+   18 se_list: strel
+   19        | strel se_list
+
+   20 strel: strhdr
+   21      | kw_stref
+
+   22 strhdr: strtype
+
+   23 strtype: SYM_SE
+   24        | SYM_CTX
+   25        | SYM_SS
+   26        | SYM_H5
+   27        | SYM_H3
+   28        | SYM_P5
+   29        | SYM_P3
+   30        | SYM_T1
+   31        | SYM_T2
+   32        | SYM_T3
+   33        | SYM_Q1
+   34        | SYM_Q2
+   35        | SYM_Q3
+   36        | SYM_Q4
+
+   37 kw_site_list: kw_site
+   38             | kw_site_list kw_site
+
+   39 kw_site: kw_pairing SYM_IN pairset
+
+   40 site: pairing SYM_IN pairset
+
+   41 rule_list: rule
+   42          | rule rule_list
+
+   43 @5: /* empty */
+
+   44 rule: pattern @5 action
+   45     | action
+
+   46 pattern: SYM_BEGIN
+   47        | SYM_END
+   48        | expr
+
+   49 action: SYM_LCURLY stmt_list SYM_RCURLY
+
+   50 stmt_list: stmt
+   51          | stmt stmt_list
+
+   52 stmt: accept_stmt
+   53     | asgn_stmt
+   54     | auto_stmt
+   55     | break_stmt
+   56     | call_stmt
+   57     | cmpd_stmt
+   58     | continue_stmt
+   59     | empty_stmt
+   60     | for_stmt
+   61     | hold_stmt
+   62     | if_stmt
+   63     | reject_stmt
+   64     | release_stmt
+   65     | while_stmt
+
+   66 accept_stmt: SYM_ACCEPT SYM_SEMICOLON
+
+   67 asgn_stmt: asgn SYM_SEMICOLON
+
+   68 auto_stmt: auto_lval SYM_SEMICOLON
+
+   69 break_stmt: SYM_BREAK loop_level SYM_SEMICOLON
+
+   70 call_stmt: fcall SYM_SEMICOLON
+
+   71 cmpd_stmt: SYM_LCURLY stmt_list SYM_RCURLY
+
+   72 continue_stmt: SYM_CONTINUE loop_level SYM_SEMICOLON
+
+   73 empty_stmt: empty SYM_SEMICOLON
+
+   74 for_stmt: for_hdr stmt
+
+   75 hold_stmt: SYM_HOLD ident SYM_SEMICOLON
+
+   76 if_stmt: if_hdr stmt
+
+   77 @6: /* empty */
+
+   78 if_stmt: if_hdr stmt SYM_ELSE @6 stmt
+
+   79 reject_stmt: SYM_REJECT SYM_SEMICOLON
+
+   80 release_stmt: SYM_RELEASE ident SYM_SEMICOLON
+
+   81 @7: /* empty */
+
+   82 while_stmt: SYM_WHILE SYM_LPAREN expr @7 SYM_RPAREN stmt
+
+   83 loop_level: SYM_INT
+   84           | /* empty */
+
+   85 @8: /* empty */
+
+   86 if_hdr: SYM_IF SYM_LPAREN expr @8 SYM_RPAREN
+
+   87 for_hdr: SYM_FOR SYM_LPAREN for_ctrl SYM_RPAREN
+
+   88 @9: /* empty */
+
+   89 @10: /* empty */
+
+   90 for_ctrl: for_init @9 SYM_SEMICOLON for_test @10 SYM_SEMICOLON for_incr
+
+   91 for_init: asgn
+   92         | auto_lval
+   93         | empty
+
+   94 for_test: asgn
+   95         | expr
+   96         | empty
+
+   97 for_incr: asgn
+   98         | auto_lval
+   99         | empty
+
+  100 asgn: lval asgn_op asgn
+  101     | lval asgn_op expr
+
+  102 asgn_op: SYM_ASSIGN
+  103        | SYM_MINUS_ASSIGN
+  104        | SYM_PLUS_ASSIGN
+  105        | SYM_PERCENT_ASSIGN
+  106        | SYM_SLASH_ASSIGN
+  107        | SYM_STAR_ASSIGN
+
+  108 expr: conj
+  109     | expr SYM_OR conj
+
+  110 conj: compare
+  111     | compare SYM_AND conj
+
+  112 compare: site
+  113        | a_expr
+  114        | a_expr comp_op a_expr
+
+  115 comp_op: SYM_DONT_MATCH
+  116        | SYM_EQUAL
+  117        | SYM_GREATER
+  118        | SYM_GREATER_EQUAL
+  119        | SYM_LESS
+  120        | SYM_LESS_EQUAL
+  121        | SYM_MATCH
+  122        | SYM_NOT_EQUAL
+
+  123 a_expr: term
+  124       | a_expr add_op term
+
+  125 add_op: SYM_PLUS
+  126       | SYM_MINUS
+
+  127 term: factor
+  128     | term mul_op factor
+
+  129 mul_op: SYM_PERCENT
+  130       | SYM_SLASH
+  131       | SYM_STAR
+
+  132 factor: primary
+  133       | SYM_MINUS primary
+  134       | SYM_NOT primary
+  135       | stref
+
+  136 pairing: stref
+  137        | stref SYM_COLON pairing
+
+  138 kw_pairing: kw_stref
+  139           | kw_stref SYM_COLON kw_pairing
+
+  140 primary: lval
+  141        | literal
+  142        | fcall
+  143        | SYM_LPAREN expr SYM_RPAREN
+
+  144 fcall: ident SYM_LPAREN e_list SYM_RPAREN
+
+  145 stref: kw_stref
+  146      | ix_stref
+
+  147 kw_stref: strhdr SYM_LPAREN a_list SYM_RPAREN
+
+  148 ix_stref: strhdr SYM_LBRACK e_list SYM_RBRACK
+
+  149 lval: ident
+  150     | auto_lval
+
+  151 auto_lval: incr_op ident
+  152          | ident incr_op
+
+  153 literal: SYM_INT
+  154        | SYM_FLOAT
+  155        | SYM_DOLLAR
+  156        | string
+  157        | pairset
+
+  158 ident: SYM_IDENT
+
+  159 incr_op: SYM_MINUS_MINUS
+  160        | SYM_PLUS_PLUS
+
+  161 e_list: expr
+  162       | expr SYM_COMMA e_list
+
+  163 a_list: asgn
+  164       | asgn SYM_COMMA a_list
+
+  165 @11: /* empty */
+
+  166 pairset: SYM_LCURLY @11 s_list SYM_RCURLY
+
+  167 s_list: string
+  168       | string SYM_COMMA s_list
+
+  169 string: SYM_STRING
+
+  170 empty: /* empty */
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256)
+SYM_PARMS (258) 5
+SYM_DESCR (259) 8
+SYM_SITES (260) 10
+SYM_SCORE (261) 13
+SYM_SE (262) 23
+SYM_CTX (263) 24
+SYM_SS (264) 25
+SYM_H5 (265) 26
+SYM_H3 (266) 27
+SYM_P5 (267) 28
+SYM_P3 (268) 29
+SYM_T1 (269) 30
+SYM_T2 (270) 31
+SYM_T3 (271) 32
+SYM_Q1 (272) 33
+SYM_Q2 (273) 34
+SYM_Q3 (274) 35
+SYM_Q4 (275) 36
+SYM_ACCEPT (276) 66
+SYM_BEGIN (277) 46
+SYM_BREAK (278) 69
+SYM_CONTINUE (279) 72
+SYM_ELSE (280) 78
+SYM_END (281) 47
+SYM_FOR (282) 87
+SYM_HOLD (283) 75
+SYM_IF (284) 86
+SYM_IN (285) 39 40
+SYM_REJECT (286) 79
+SYM_RELEASE (287) 80
+SYM_WHILE (288) 82
+SYM_IDENT (289) 158
+SYM_INT (290) 83 153
+SYM_FLOAT (291) 154
+SYM_STRING (292) 169
+SYM_PAIRSET (293)
+SYM_AND (294) 111
+SYM_ASSIGN (295) 102
+SYM_DOLLAR (296) 155
+SYM_DONT_MATCH (297) 115
+SYM_EQUAL (298) 116
+SYM_GREATER (299) 117
+SYM_GREATER_EQUAL (300) 118
+SYM_LESS (301) 119
+SYM_LESS_EQUAL (302) 120
+SYM_MATCH (303) 121
+SYM_MINUS (304) 126 133
+SYM_MINUS_ASSIGN (305) 103
+SYM_MINUS_MINUS (306) 159
+SYM_NEGATE (307)
+SYM_NOT (308) 134
+SYM_NOT_EQUAL (309) 122
+SYM_OR (310) 109
+SYM_PERCENT (311) 129
+SYM_PERCENT_ASSIGN (312) 105
+SYM_PLUS (313) 125
+SYM_PLUS_ASSIGN (314) 104
+SYM_PLUS_PLUS (315) 160
+SYM_STAR (316) 131
+SYM_STAR_ASSIGN (317) 107
+SYM_SLASH (318) 130
+SYM_SLASH_ASSIGN (319) 106
+SYM_LPAREN (320) 82 86 87 143 144 147
+SYM_RPAREN (321) 82 86 87 143 144 147
+SYM_LBRACK (322) 148
+SYM_RBRACK (323) 148
+SYM_LCURLY (324) 49 71 166
+SYM_RCURLY (325) 49 71 166
+SYM_COLON (326) 137 139
+SYM_COMMA (327) 162 164 168
+SYM_SEMICOLON (328) 17 66 67 68 69 70 72 73 75 79 80 90
+SYM_CALL (329)
+SYM_LIST (330)
+SYM_KW_STREF (331)
+SYM_IX_STREF (332)
+SYM_ERROR (333)
+
+
+Nonterminals, with rules where they appear
+
+$accept (79)
+    on left: 0
+program (80)
+    on left: 1, on right: 0
+parm_part (81)
+    on left: 3 4, on right: 1
+@1 (82)
+    on left: 2, on right: 3
+parm_hdr (83)
+    on left: 5 6, on right: 3
+descr_part (84)
+    on left: 8, on right: 1
+@2 (85)
+    on left: 7, on right: 8
+site_part (86)
+    on left: 10 11, on right: 1
+@3 (87)
+    on left: 9, on right: 10
+score_part (88)
+    on left: 13 14, on right: 1
+@4 (89)
+    on left: 12, on right: 13
+pd_list (90)
+    on left: 15 16, on right: 3 16
+pdef (91)
+    on left: 17, on right: 15 16
+se_list (92)
+    on left: 18 19, on right: 8 19
+strel (93)
+    on left: 20 21, on right: 18 19
+strhdr (94)
+    on left: 22, on right: 20 147 148
+strtype (95)
+    on left: 23 24 25 26 27 28 29 30 31 32 33 34 35 36,
+    on right: 22
+kw_site_list (96)
+    on left: 37 38, on right: 10 38
+kw_site (97)
+    on left: 39, on right: 37 38
+site (98)
+    on left: 40, on right: 112
+rule_list (99)
+    on left: 41 42, on right: 13 42
+rule (100)
+    on left: 44 45, on right: 41 42
+@5 (101)
+    on left: 43, on right: 44
+pattern (102)
+    on left: 46 47 48, on right: 44
+action (103)
+    on left: 49, on right: 44 45
+stmt_list (104)
+    on left: 50 51, on right: 49 51 71
+stmt (105)
+    on left: 52 53 54 55 56 57 58 59 60 61 62 63 64 65,
+    on right: 50 51 74 76 78 82
+accept_stmt (106)
+    on left: 66, on right: 52
+asgn_stmt (107)
+    on left: 67, on right: 53
+auto_stmt (108)
+    on left: 68, on right: 54
+break_stmt (109)
+    on left: 69, on right: 55
+call_stmt (110)
+    on left: 70, on right: 56
+cmpd_stmt (111)
+    on left: 71, on right: 57
+continue_stmt (112)
+    on left: 72, on right: 58
+empty_stmt (113)
+    on left: 73, on right: 59
+for_stmt (114)
+    on left: 74, on right: 60
+hold_stmt (115)
+    on left: 75, on right: 61
+if_stmt (116)
+    on left: 76 78, on right: 62
+@6 (117)
+    on left: 77, on right: 78
+reject_stmt (118)
+    on left: 79, on right: 63
+release_stmt (119)
+    on left: 80, on right: 64
+while_stmt (120)
+    on left: 82, on right: 65
+@7 (121)
+    on left: 81, on right: 82
+loop_level (122)
+    on left: 83 84, on right: 69 72
+if_hdr (123)
+    on left: 86, on right: 76 78
+@8 (124)
+    on left: 85, on right: 86
+for_hdr (125)
+    on left: 87, on right: 74
+for_ctrl (126)
+    on left: 90, on right: 87
+@9 (127)
+    on left: 88, on right: 90
+@10 (128)
+    on left: 89, on right: 90
+for_init (129)
+    on left: 91 92 93, on right: 90
+for_test (130)
+    on left: 94 95 96, on right: 90
+for_incr (131)
+    on left: 97 98 99, on right: 90
+asgn (132)
+    on left: 100 101, on right: 17 67 91 94 97 100 163 164
+asgn_op (133)
+    on left: 102 103 104 105 106 107, on right: 100 101
+expr (134)
+    on left: 108 109, on right: 48 82 86 95 101 109 143 161 162
+conj (135)
+    on left: 110 111, on right: 108 109 111
+compare (136)
+    on left: 112 113 114, on right: 110 111
+comp_op (137)
+    on left: 115 116 117 118 119 120 121 122, on right: 114
+a_expr (138)
+    on left: 123 124, on right: 113 114 124
+add_op (139)
+    on left: 125 126, on right: 124
+term (140)
+    on left: 127 128, on right: 123 124 128
+mul_op (141)
+    on left: 129 130 131, on right: 128
+factor (142)
+    on left: 132 133 134 135, on right: 127 128
+pairing (143)
+    on left: 136 137, on right: 40 137
+kw_pairing (144)
+    on left: 138 139, on right: 39 139
+primary (145)
+    on left: 140 141 142 143, on right: 132 133 134
+fcall (146)
+    on left: 144, on right: 70 142
+stref (147)
+    on left: 145 146, on right: 135 136 137
+kw_stref (148)
+    on left: 147, on right: 21 138 139 145
+ix_stref (149)
+    on left: 148, on right: 146
+lval (150)
+    on left: 149 150, on right: 100 101 140
+auto_lval (151)
+    on left: 151 152, on right: 68 92 98 150
+literal (152)
+    on left: 153 154 155 156 157, on right: 141
+ident (153)
+    on left: 158, on right: 75 80 144 149 151 152
+incr_op (154)
+    on left: 159 160, on right: 151 152
+e_list (155)
+    on left: 161 162, on right: 144 148 162
+a_list (156)
+    on left: 163 164, on right: 147 164
+pairset (157)
+    on left: 166, on right: 39 40 157
+@11 (158)
+    on left: 165, on right: 166
+s_list (159)
+    on left: 167 168, on right: 166 168
+string (160)
+    on left: 169, on right: 156 167 168
+empty (161)
+    on left: 170, on right: 4 6 73 93 96 99
+
+
+state 0
+
+    0 $accept: . program $end
+
+    SYM_PARMS  shift, and go to state 1
+
+    $default  reduce using rule 170 (empty)
+
+    program    go to state 2
+    parm_part  go to state 3
+    parm_hdr   go to state 4
+    empty      go to state 5
+
+
+state 1
+
+    5 parm_hdr: SYM_PARMS .
+
+    $default  reduce using rule 5 (parm_hdr)
+
+
+state 2
+
+    0 $accept: program . $end
+
+    $end  shift, and go to state 6
+
+
+state 3
+
+    1 program: parm_part . descr_part site_part score_part
+
+    SYM_DESCR  shift, and go to state 7
+
+    descr_part  go to state 8
+
+
+state 4
+
+    3 parm_part: parm_hdr . @1 pd_list
+
+    $default  reduce using rule 2 (@1)
+
+    @1  go to state 9
+
+
+state 5
+
+    4 parm_part: empty .
+    6 parm_hdr: empty .
+
+    SYM_DESCR  reduce using rule 4 (parm_part)
+    $default   reduce using rule 6 (parm_hdr)
+
+
+state 6
+
+    0 $accept: program $end .
+
+    $default  accept
+
+
+state 7
+
+    8 descr_part: SYM_DESCR . @2 se_list
+
+    $default  reduce using rule 7 (@2)
+
+    @2  go to state 10
+
+
+state 8
+
+    1 program: parm_part descr_part . site_part score_part
+
+    SYM_SITES  shift, and go to state 11
+
+    $default  reduce using rule 11 (site_part)
+
+    site_part  go to state 12
+
+
+state 9
+
+    3 parm_part: parm_hdr @1 . pd_list
+
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+
+    pd_list    go to state 16
+    pdef       go to state 17
+    asgn       go to state 18
+    lval       go to state 19
+    auto_lval  go to state 20
+    ident      go to state 21
+    incr_op    go to state 22
+
+
+state 10
+
+    8 descr_part: SYM_DESCR @2 . se_list
+
+    SYM_SE   shift, and go to state 23
+    SYM_CTX  shift, and go to state 24
+    SYM_SS   shift, and go to state 25
+    SYM_H5   shift, and go to state 26
+    SYM_H3   shift, and go to state 27
+    SYM_P5   shift, and go to state 28
+    SYM_P3   shift, and go to state 29
+    SYM_T1   shift, and go to state 30
+    SYM_T2   shift, and go to state 31
+    SYM_T3   shift, and go to state 32
+    SYM_Q1   shift, and go to state 33
+    SYM_Q2   shift, and go to state 34
+    SYM_Q3   shift, and go to state 35
+    SYM_Q4   shift, and go to state 36
+
+    se_list   go to state 37
+    strel     go to state 38
+    strhdr    go to state 39
+    strtype   go to state 40
+    kw_stref  go to state 41
+
+
+state 11
+
+   10 site_part: SYM_SITES . @3 kw_site_list
+
+    $default  reduce using rule 9 (@3)
+
+    @3  go to state 42
+
+
+state 12
+
+    1 program: parm_part descr_part site_part . score_part
+
+    SYM_SCORE  shift, and go to state 43
+
+    $default  reduce using rule 14 (score_part)
+
+    score_part  go to state 44
+
+
+state 13
+
+  158 ident: SYM_IDENT .
+
+    $default  reduce using rule 158 (ident)
+
+
+state 14
+
+  159 incr_op: SYM_MINUS_MINUS .
+
+    $default  reduce using rule 159 (incr_op)
+
+
+state 15
+
+  160 incr_op: SYM_PLUS_PLUS .
+
+    $default  reduce using rule 160 (incr_op)
+
+
+state 16
+
+    3 parm_part: parm_hdr @1 pd_list .
+
+    $default  reduce using rule 3 (parm_part)
+
+
+state 17
+
+   15 pd_list: pdef .
+   16        | pdef . pd_list
+
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+
+    $default  reduce using rule 15 (pd_list)
+
+    pd_list    go to state 45
+    pdef       go to state 17
+    asgn       go to state 18
+    lval       go to state 19
+    auto_lval  go to state 20
+    ident      go to state 21
+    incr_op    go to state 22
+
+
+state 18
+
+   17 pdef: asgn . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 46
+
+
+state 19
+
+  100 asgn: lval . asgn_op asgn
+  101     | lval . asgn_op expr
+
+    SYM_ASSIGN          shift, and go to state 47
+    SYM_MINUS_ASSIGN    shift, and go to state 48
+    SYM_PERCENT_ASSIGN  shift, and go to state 49
+    SYM_PLUS_ASSIGN     shift, and go to state 50
+    SYM_STAR_ASSIGN     shift, and go to state 51
+    SYM_SLASH_ASSIGN    shift, and go to state 52
+
+    asgn_op  go to state 53
+
+
+state 20
+
+  150 lval: auto_lval .
+
+    $default  reduce using rule 150 (lval)
+
+
+state 21
+
+  149 lval: ident .
+  152 auto_lval: ident . incr_op
+
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+
+    $default  reduce using rule 149 (lval)
+
+    incr_op  go to state 54
+
+
+state 22
+
+  151 auto_lval: incr_op . ident
+
+    SYM_IDENT  shift, and go to state 13
+
+    ident  go to state 55
+
+
+state 23
+
+   23 strtype: SYM_SE .
+
+    $default  reduce using rule 23 (strtype)
+
+
+state 24
+
+   24 strtype: SYM_CTX .
+
+    $default  reduce using rule 24 (strtype)
+
+
+state 25
+
+   25 strtype: SYM_SS .
+
+    $default  reduce using rule 25 (strtype)
+
+
+state 26
+
+   26 strtype: SYM_H5 .
+
+    $default  reduce using rule 26 (strtype)
+
+
+state 27
+
+   27 strtype: SYM_H3 .
+
+    $default  reduce using rule 27 (strtype)
+
+
+state 28
+
+   28 strtype: SYM_P5 .
+
+    $default  reduce using rule 28 (strtype)
+
+
+state 29
+
+   29 strtype: SYM_P3 .
+
+    $default  reduce using rule 29 (strtype)
+
+
+state 30
+
+   30 strtype: SYM_T1 .
+
+    $default  reduce using rule 30 (strtype)
+
+
+state 31
+
+   31 strtype: SYM_T2 .
+
+    $default  reduce using rule 31 (strtype)
+
+
+state 32
+
+   32 strtype: SYM_T3 .
+
+    $default  reduce using rule 32 (strtype)
+
+
+state 33
+
+   33 strtype: SYM_Q1 .
+
+    $default  reduce using rule 33 (strtype)
+
+
+state 34
+
+   34 strtype: SYM_Q2 .
+
+    $default  reduce using rule 34 (strtype)
+
+
+state 35
+
+   35 strtype: SYM_Q3 .
+
+    $default  reduce using rule 35 (strtype)
+
+
+state 36
+
+   36 strtype: SYM_Q4 .
+
+    $default  reduce using rule 36 (strtype)
+
+
+state 37
+
+    8 descr_part: SYM_DESCR @2 se_list .
+
+    $default  reduce using rule 8 (descr_part)
+
+
+state 38
+
+   18 se_list: strel .
+   19        | strel . se_list
+
+    SYM_SE   shift, and go to state 23
+    SYM_CTX  shift, and go to state 24
+    SYM_SS   shift, and go to state 25
+    SYM_H5   shift, and go to state 26
+    SYM_H3   shift, and go to state 27
+    SYM_P5   shift, and go to state 28
+    SYM_P3   shift, and go to state 29
+    SYM_T1   shift, and go to state 30
+    SYM_T2   shift, and go to state 31
+    SYM_T3   shift, and go to state 32
+    SYM_Q1   shift, and go to state 33
+    SYM_Q2   shift, and go to state 34
+    SYM_Q3   shift, and go to state 35
+    SYM_Q4   shift, and go to state 36
+
+    $default  reduce using rule 18 (se_list)
+
+    se_list   go to state 56
+    strel     go to state 38
+    strhdr    go to state 39
+    strtype   go to state 40
+    kw_stref  go to state 41
+
+
+state 39
+
+   20 strel: strhdr .
+  147 kw_stref: strhdr . SYM_LPAREN a_list SYM_RPAREN
+
+    SYM_LPAREN  shift, and go to state 57
+
+    $default  reduce using rule 20 (strel)
+
+
+state 40
+
+   22 strhdr: strtype .
+
+    $default  reduce using rule 22 (strhdr)
+
+
+state 41
+
+   21 strel: kw_stref .
+
+    $default  reduce using rule 21 (strel)
+
+
+state 42
+
+   10 site_part: SYM_SITES @3 . kw_site_list
+
+    SYM_SE   shift, and go to state 23
+    SYM_CTX  shift, and go to state 24
+    SYM_SS   shift, and go to state 25
+    SYM_H5   shift, and go to state 26
+    SYM_H3   shift, and go to state 27
+    SYM_P5   shift, and go to state 28
+    SYM_P3   shift, and go to state 29
+    SYM_T1   shift, and go to state 30
+    SYM_T2   shift, and go to state 31
+    SYM_T3   shift, and go to state 32
+    SYM_Q1   shift, and go to state 33
+    SYM_Q2   shift, and go to state 34
+    SYM_Q3   shift, and go to state 35
+    SYM_Q4   shift, and go to state 36
+
+    strhdr        go to state 58
+    strtype       go to state 40
+    kw_site_list  go to state 59
+    kw_site       go to state 60
+    kw_pairing    go to state 61
+    kw_stref      go to state 62
+
+
+state 43
+
+   13 score_part: SYM_SCORE . @4 rule_list
+
+    $default  reduce using rule 12 (@4)
+
+    @4  go to state 63
+
+
+state 44
+
+    1 program: parm_part descr_part site_part score_part .
+
+    $default  reduce using rule 1 (program)
+
+
+state 45
+
+   16 pd_list: pdef pd_list .
+
+    $default  reduce using rule 16 (pd_list)
+
+
+state 46
+
+   17 pdef: asgn SYM_SEMICOLON .
+
+    $default  reduce using rule 17 (pdef)
+
+
+state 47
+
+  102 asgn_op: SYM_ASSIGN .
+
+    $default  reduce using rule 102 (asgn_op)
+
+
+state 48
+
+  103 asgn_op: SYM_MINUS_ASSIGN .
+
+    $default  reduce using rule 103 (asgn_op)
+
+
+state 49
+
+  105 asgn_op: SYM_PERCENT_ASSIGN .
+
+    $default  reduce using rule 105 (asgn_op)
+
+
+state 50
+
+  104 asgn_op: SYM_PLUS_ASSIGN .
+
+    $default  reduce using rule 104 (asgn_op)
+
+
+state 51
+
+  107 asgn_op: SYM_STAR_ASSIGN .
+
+    $default  reduce using rule 107 (asgn_op)
+
+
+state 52
+
+  106 asgn_op: SYM_SLASH_ASSIGN .
+
+    $default  reduce using rule 106 (asgn_op)
+
+
+state 53
+
+  100 asgn: lval asgn_op . asgn
+  101     | lval asgn_op . expr
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    asgn       go to state 74
+    expr       go to state 75
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 87
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 54
+
+  152 auto_lval: ident incr_op .
+
+    $default  reduce using rule 152 (auto_lval)
+
+
+state 55
+
+  151 auto_lval: incr_op ident .
+
+    $default  reduce using rule 151 (auto_lval)
+
+
+state 56
+
+   19 se_list: strel se_list .
+
+    $default  reduce using rule 19 (se_list)
+
+
+state 57
+
+  147 kw_stref: strhdr SYM_LPAREN . a_list SYM_RPAREN
+
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+
+    asgn       go to state 92
+    lval       go to state 19
+    auto_lval  go to state 20
+    ident      go to state 21
+    incr_op    go to state 22
+    a_list     go to state 93
+
+
+state 58
+
+  147 kw_stref: strhdr . SYM_LPAREN a_list SYM_RPAREN
+
+    SYM_LPAREN  shift, and go to state 57
+
+
+state 59
+
+   10 site_part: SYM_SITES @3 kw_site_list .
+   38 kw_site_list: kw_site_list . kw_site
+
+    SYM_SE   shift, and go to state 23
+    SYM_CTX  shift, and go to state 24
+    SYM_SS   shift, and go to state 25
+    SYM_H5   shift, and go to state 26
+    SYM_H3   shift, and go to state 27
+    SYM_P5   shift, and go to state 28
+    SYM_P3   shift, and go to state 29
+    SYM_T1   shift, and go to state 30
+    SYM_T2   shift, and go to state 31
+    SYM_T3   shift, and go to state 32
+    SYM_Q1   shift, and go to state 33
+    SYM_Q2   shift, and go to state 34
+    SYM_Q3   shift, and go to state 35
+    SYM_Q4   shift, and go to state 36
+
+    $default  reduce using rule 10 (site_part)
+
+    strhdr      go to state 58
+    strtype     go to state 40
+    kw_site     go to state 94
+    kw_pairing  go to state 61
+    kw_stref    go to state 62
+
+
+state 60
+
+   37 kw_site_list: kw_site .
+
+    $default  reduce using rule 37 (kw_site_list)
+
+
+state 61
+
+   39 kw_site: kw_pairing . SYM_IN pairset
+
+    SYM_IN  shift, and go to state 95
+
+
+state 62
+
+  138 kw_pairing: kw_stref .
+  139           | kw_stref . SYM_COLON kw_pairing
+
+    SYM_COLON  shift, and go to state 96
+
+    $default  reduce using rule 138 (kw_pairing)
+
+
+state 63
+
+   13 score_part: SYM_SCORE @4 . rule_list
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_BEGIN        shift, and go to state 97
+    SYM_END          shift, and go to state 98
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 99
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    rule_list  go to state 100
+    rule       go to state 101
+    pattern    go to state 102
+    action     go to state 103
+    expr       go to state 104
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 64
+
+  153 literal: SYM_INT .
+
+    $default  reduce using rule 153 (literal)
+
+
+state 65
+
+  154 literal: SYM_FLOAT .
+
+    $default  reduce using rule 154 (literal)
+
+
+state 66
+
+  169 string: SYM_STRING .
+
+    $default  reduce using rule 169 (string)
+
+
+state 67
+
+  155 literal: SYM_DOLLAR .
+
+    $default  reduce using rule 155 (literal)
+
+
+state 68
+
+  133 factor: SYM_MINUS . primary
+
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    primary    go to state 106
+    fcall      go to state 83
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 69
+
+  134 factor: SYM_NOT . primary
+
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    primary    go to state 107
+    fcall      go to state 83
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 70
+
+  143 primary: SYM_LPAREN . expr SYM_RPAREN
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    expr       go to state 108
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 71
+
+  166 pairset: SYM_LCURLY . @11 s_list SYM_RCURLY
+
+    $default  reduce using rule 165 (@11)
+
+    @11  go to state 109
+
+
+state 72
+
+  147 kw_stref: strhdr . SYM_LPAREN a_list SYM_RPAREN
+  148 ix_stref: strhdr . SYM_LBRACK e_list SYM_RBRACK
+
+    SYM_LPAREN  shift, and go to state 57
+    SYM_LBRACK  shift, and go to state 110
+
+
+state 73
+
+  112 compare: site .
+
+    $default  reduce using rule 112 (compare)
+
+
+state 74
+
+  100 asgn: lval asgn_op asgn .
+
+    $default  reduce using rule 100 (asgn)
+
+
+state 75
+
+  101 asgn: lval asgn_op expr .
+  109 expr: expr . SYM_OR conj
+
+    SYM_OR  shift, and go to state 111
+
+    $default  reduce using rule 101 (asgn)
+
+
+state 76
+
+  108 expr: conj .
+
+    $default  reduce using rule 108 (expr)
+
+
+state 77
+
+  110 conj: compare .
+  111     | compare . SYM_AND conj
+
+    SYM_AND  shift, and go to state 112
+
+    $default  reduce using rule 110 (conj)
+
+
+state 78
+
+  113 compare: a_expr .
+  114        | a_expr . comp_op a_expr
+  124 a_expr: a_expr . add_op term
+
+    SYM_DONT_MATCH     shift, and go to state 113
+    SYM_EQUAL          shift, and go to state 114
+    SYM_GREATER        shift, and go to state 115
+    SYM_GREATER_EQUAL  shift, and go to state 116
+    SYM_LESS           shift, and go to state 117
+    SYM_LESS_EQUAL     shift, and go to state 118
+    SYM_MATCH          shift, and go to state 119
+    SYM_MINUS          shift, and go to state 120
+    SYM_NOT_EQUAL      shift, and go to state 121
+    SYM_PLUS           shift, and go to state 122
+
+    $default  reduce using rule 113 (compare)
+
+    comp_op  go to state 123
+    add_op   go to state 124
+
+
+state 79
+
+  123 a_expr: term .
+  128 term: term . mul_op factor
+
+    SYM_PERCENT  shift, and go to state 125
+    SYM_STAR     shift, and go to state 126
+    SYM_SLASH    shift, and go to state 127
+
+    $default  reduce using rule 123 (a_expr)
+
+    mul_op  go to state 128
+
+
+state 80
+
+  127 term: factor .
+
+    $default  reduce using rule 127 (term)
+
+
+state 81
+
+   40 site: pairing . SYM_IN pairset
+
+    SYM_IN  shift, and go to state 129
+
+
+state 82
+
+  132 factor: primary .
+
+    $default  reduce using rule 132 (factor)
+
+
+state 83
+
+  142 primary: fcall .
+
+    $default  reduce using rule 142 (primary)
+
+
+state 84
+
+  135 factor: stref .
+  136 pairing: stref .
+  137        | stref . SYM_COLON pairing
+
+    SYM_COLON  shift, and go to state 130
+
+    SYM_IN    reduce using rule 136 (pairing)
+    $default  reduce using rule 135 (factor)
+
+
+state 85
+
+  145 stref: kw_stref .
+
+    $default  reduce using rule 145 (stref)
+
+
+state 86
+
+  146 stref: ix_stref .
+
+    $default  reduce using rule 146 (stref)
+
+
+state 87
+
+  100 asgn: lval . asgn_op asgn
+  101     | lval . asgn_op expr
+  140 primary: lval .
+
+    SYM_ASSIGN          shift, and go to state 47
+    SYM_MINUS_ASSIGN    shift, and go to state 48
+    SYM_PERCENT_ASSIGN  shift, and go to state 49
+    SYM_PLUS_ASSIGN     shift, and go to state 50
+    SYM_STAR_ASSIGN     shift, and go to state 51
+    SYM_SLASH_ASSIGN    shift, and go to state 52
+
+    $default  reduce using rule 140 (primary)
+
+    asgn_op  go to state 53
+
+
+state 88
+
+  141 primary: literal .
+
+    $default  reduce using rule 141 (primary)
+
+
+state 89
+
+  144 fcall: ident . SYM_LPAREN e_list SYM_RPAREN
+  149 lval: ident .
+  152 auto_lval: ident . incr_op
+
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 131
+
+    $default  reduce using rule 149 (lval)
+
+    incr_op  go to state 54
+
+
+state 90
+
+  157 literal: pairset .
+
+    $default  reduce using rule 157 (literal)
+
+
+state 91
+
+  156 literal: string .
+
+    $default  reduce using rule 156 (literal)
+
+
+state 92
+
+  163 a_list: asgn .
+  164       | asgn . SYM_COMMA a_list
+
+    SYM_COMMA  shift, and go to state 132
+
+    $default  reduce using rule 163 (a_list)
+
+
+state 93
+
+  147 kw_stref: strhdr SYM_LPAREN a_list . SYM_RPAREN
+
+    SYM_RPAREN  shift, and go to state 133
+
+
+state 94
+
+   38 kw_site_list: kw_site_list kw_site .
+
+    $default  reduce using rule 38 (kw_site_list)
+
+
+state 95
+
+   39 kw_site: kw_pairing SYM_IN . pairset
+
+    SYM_LCURLY  shift, and go to state 71
+
+    pairset  go to state 134
+
+
+state 96
+
+  139 kw_pairing: kw_stref SYM_COLON . kw_pairing
+
+    SYM_SE   shift, and go to state 23
+    SYM_CTX  shift, and go to state 24
+    SYM_SS   shift, and go to state 25
+    SYM_H5   shift, and go to state 26
+    SYM_H3   shift, and go to state 27
+    SYM_P5   shift, and go to state 28
+    SYM_P3   shift, and go to state 29
+    SYM_T1   shift, and go to state 30
+    SYM_T2   shift, and go to state 31
+    SYM_T3   shift, and go to state 32
+    SYM_Q1   shift, and go to state 33
+    SYM_Q2   shift, and go to state 34
+    SYM_Q3   shift, and go to state 35
+    SYM_Q4   shift, and go to state 36
+
+    strhdr      go to state 58
+    strtype     go to state 40
+    kw_pairing  go to state 135
+    kw_stref    go to state 62
+
+
+state 97
+
+   46 pattern: SYM_BEGIN .
+
+    $default  reduce using rule 46 (pattern)
+
+
+state 98
+
+   47 pattern: SYM_END .
+
+    $default  reduce using rule 47 (pattern)
+
+
+state 99
+
+   49 action: SYM_LCURLY . stmt_list SYM_RCURLY
+  166 pairset: SYM_LCURLY . @11 s_list SYM_RCURLY
+
+    SYM_ACCEPT       shift, and go to state 136
+    SYM_BREAK        shift, and go to state 137
+    SYM_CONTINUE     shift, and go to state 138
+    SYM_FOR          shift, and go to state 139
+    SYM_HOLD         shift, and go to state 140
+    SYM_IF           shift, and go to state 141
+    SYM_REJECT       shift, and go to state 142
+    SYM_RELEASE      shift, and go to state 143
+    SYM_WHILE        shift, and go to state 144
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LCURLY       shift, and go to state 145
+
+    SYM_SEMICOLON  reduce using rule 170 (empty)
+    $default       reduce using rule 165 (@11)
+
+    stmt_list      go to state 146
+    stmt           go to state 147
+    accept_stmt    go to state 148
+    asgn_stmt      go to state 149
+    auto_stmt      go to state 150
+    break_stmt     go to state 151
+    call_stmt      go to state 152
+    cmpd_stmt      go to state 153
+    continue_stmt  go to state 154
+    empty_stmt     go to state 155
+    for_stmt       go to state 156
+    hold_stmt      go to state 157
+    if_stmt        go to state 158
+    reject_stmt    go to state 159
+    release_stmt   go to state 160
+    while_stmt     go to state 161
+    if_hdr         go to state 162
+    for_hdr        go to state 163
+    asgn           go to state 164
+    fcall          go to state 165
+    lval           go to state 19
+    auto_lval      go to state 166
+    ident          go to state 89
+    incr_op        go to state 22
+    @11            go to state 109
+    empty          go to state 167
+
+
+state 100
+
+   13 score_part: SYM_SCORE @4 rule_list .
+
+    $default  reduce using rule 13 (score_part)
+
+
+state 101
+
+   41 rule_list: rule .
+   42          | rule . rule_list
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_BEGIN        shift, and go to state 97
+    SYM_END          shift, and go to state 98
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 99
+
+    $default  reduce using rule 41 (rule_list)
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    rule_list  go to state 168
+    rule       go to state 101
+    pattern    go to state 102
+    action     go to state 103
+    expr       go to state 104
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 102
+
+   44 rule: pattern . @5 action
+
+    $default  reduce using rule 43 (@5)
+
+    @5  go to state 169
+
+
+state 103
+
+   45 rule: action .
+
+    $default  reduce using rule 45 (rule)
+
+
+state 104
+
+   48 pattern: expr .
+  109 expr: expr . SYM_OR conj
+
+    SYM_OR  shift, and go to state 111
+
+    $default  reduce using rule 48 (pattern)
+
+
+state 105
+
+  140 primary: lval .
+
+    $default  reduce using rule 140 (primary)
+
+
+state 106
+
+  133 factor: SYM_MINUS primary .
+
+    $default  reduce using rule 133 (factor)
+
+
+state 107
+
+  134 factor: SYM_NOT primary .
+
+    $default  reduce using rule 134 (factor)
+
+
+state 108
+
+  109 expr: expr . SYM_OR conj
+  143 primary: SYM_LPAREN expr . SYM_RPAREN
+
+    SYM_OR      shift, and go to state 111
+    SYM_RPAREN  shift, and go to state 170
+
+
+state 109
+
+  166 pairset: SYM_LCURLY @11 . s_list SYM_RCURLY
+
+    SYM_STRING  shift, and go to state 66
+
+    s_list  go to state 171
+    string  go to state 172
+
+
+state 110
+
+  148 ix_stref: strhdr SYM_LBRACK . e_list SYM_RBRACK
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    expr       go to state 173
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    e_list     go to state 174
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 111
+
+  109 expr: expr SYM_OR . conj
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    conj       go to state 175
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 112
+
+  111 conj: compare SYM_AND . conj
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    conj       go to state 176
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 113
+
+  115 comp_op: SYM_DONT_MATCH .
+
+    $default  reduce using rule 115 (comp_op)
+
+
+state 114
+
+  116 comp_op: SYM_EQUAL .
+
+    $default  reduce using rule 116 (comp_op)
+
+
+state 115
+
+  117 comp_op: SYM_GREATER .
+
+    $default  reduce using rule 117 (comp_op)
+
+
+state 116
+
+  118 comp_op: SYM_GREATER_EQUAL .
+
+    $default  reduce using rule 118 (comp_op)
+
+
+state 117
+
+  119 comp_op: SYM_LESS .
+
+    $default  reduce using rule 119 (comp_op)
+
+
+state 118
+
+  120 comp_op: SYM_LESS_EQUAL .
+
+    $default  reduce using rule 120 (comp_op)
+
+
+state 119
+
+  121 comp_op: SYM_MATCH .
+
+    $default  reduce using rule 121 (comp_op)
+
+
+state 120
+
+  126 add_op: SYM_MINUS .
+
+    $default  reduce using rule 126 (add_op)
+
+
+state 121
+
+  122 comp_op: SYM_NOT_EQUAL .
+
+    $default  reduce using rule 122 (comp_op)
+
+
+state 122
+
+  125 add_op: SYM_PLUS .
+
+    $default  reduce using rule 125 (add_op)
+
+
+state 123
+
+  114 compare: a_expr comp_op . a_expr
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    a_expr     go to state 177
+    term       go to state 79
+    factor     go to state 80
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 178
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 124
+
+  124 a_expr: a_expr add_op . term
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    term       go to state 179
+    factor     go to state 80
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 178
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 125
+
+  129 mul_op: SYM_PERCENT .
+
+    $default  reduce using rule 129 (mul_op)
+
+
+state 126
+
+  131 mul_op: SYM_STAR .
+
+    $default  reduce using rule 131 (mul_op)
+
+
+state 127
+
+  130 mul_op: SYM_SLASH .
+
+    $default  reduce using rule 130 (mul_op)
+
+
+state 128
+
+  128 term: term mul_op . factor
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    factor     go to state 180
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 178
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 129
+
+   40 site: pairing SYM_IN . pairset
+
+    SYM_LCURLY  shift, and go to state 71
+
+    pairset  go to state 181
+
+
+state 130
+
+  137 pairing: stref SYM_COLON . pairing
+
+    SYM_SE   shift, and go to state 23
+    SYM_CTX  shift, and go to state 24
+    SYM_SS   shift, and go to state 25
+    SYM_H5   shift, and go to state 26
+    SYM_H3   shift, and go to state 27
+    SYM_P5   shift, and go to state 28
+    SYM_P3   shift, and go to state 29
+    SYM_T1   shift, and go to state 30
+    SYM_T2   shift, and go to state 31
+    SYM_T3   shift, and go to state 32
+    SYM_Q1   shift, and go to state 33
+    SYM_Q2   shift, and go to state 34
+    SYM_Q3   shift, and go to state 35
+    SYM_Q4   shift, and go to state 36
+
+    strhdr    go to state 72
+    strtype   go to state 40
+    pairing   go to state 182
+    stref     go to state 183
+    kw_stref  go to state 85
+    ix_stref  go to state 86
+
+
+state 131
+
+  144 fcall: ident SYM_LPAREN . e_list SYM_RPAREN
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    expr       go to state 173
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    e_list     go to state 184
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 132
+
+  164 a_list: asgn SYM_COMMA . a_list
+
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+
+    asgn       go to state 92
+    lval       go to state 19
+    auto_lval  go to state 20
+    ident      go to state 21
+    incr_op    go to state 22
+    a_list     go to state 185
+
+
+state 133
+
+  147 kw_stref: strhdr SYM_LPAREN a_list SYM_RPAREN .
+
+    $default  reduce using rule 147 (kw_stref)
+
+
+state 134
+
+   39 kw_site: kw_pairing SYM_IN pairset .
+
+    $default  reduce using rule 39 (kw_site)
+
+
+state 135
+
+  139 kw_pairing: kw_stref SYM_COLON kw_pairing .
+
+    $default  reduce using rule 139 (kw_pairing)
+
+
+state 136
+
+   66 accept_stmt: SYM_ACCEPT . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 186
+
+
+state 137
+
+   69 break_stmt: SYM_BREAK . loop_level SYM_SEMICOLON
+
+    SYM_INT  shift, and go to state 187
+
+    $default  reduce using rule 84 (loop_level)
+
+    loop_level  go to state 188
+
+
+state 138
+
+   72 continue_stmt: SYM_CONTINUE . loop_level SYM_SEMICOLON
+
+    SYM_INT  shift, and go to state 187
+
+    $default  reduce using rule 84 (loop_level)
+
+    loop_level  go to state 189
+
+
+state 139
+
+   87 for_hdr: SYM_FOR . SYM_LPAREN for_ctrl SYM_RPAREN
+
+    SYM_LPAREN  shift, and go to state 190
+
+
+state 140
+
+   75 hold_stmt: SYM_HOLD . ident SYM_SEMICOLON
+
+    SYM_IDENT  shift, and go to state 13
+
+    ident  go to state 191
+
+
+state 141
+
+   86 if_hdr: SYM_IF . SYM_LPAREN expr @8 SYM_RPAREN
+
+    SYM_LPAREN  shift, and go to state 192
+
+
+state 142
+
+   79 reject_stmt: SYM_REJECT . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 193
+
+
+state 143
+
+   80 release_stmt: SYM_RELEASE . ident SYM_SEMICOLON
+
+    SYM_IDENT  shift, and go to state 13
+
+    ident  go to state 194
+
+
+state 144
+
+   82 while_stmt: SYM_WHILE . SYM_LPAREN expr @7 SYM_RPAREN stmt
+
+    SYM_LPAREN  shift, and go to state 195
+
+
+state 145
+
+   71 cmpd_stmt: SYM_LCURLY . stmt_list SYM_RCURLY
+
+    SYM_ACCEPT       shift, and go to state 136
+    SYM_BREAK        shift, and go to state 137
+    SYM_CONTINUE     shift, and go to state 138
+    SYM_FOR          shift, and go to state 139
+    SYM_HOLD         shift, and go to state 140
+    SYM_IF           shift, and go to state 141
+    SYM_REJECT       shift, and go to state 142
+    SYM_RELEASE      shift, and go to state 143
+    SYM_WHILE        shift, and go to state 144
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LCURLY       shift, and go to state 145
+
+    $default  reduce using rule 170 (empty)
+
+    stmt_list      go to state 196
+    stmt           go to state 147
+    accept_stmt    go to state 148
+    asgn_stmt      go to state 149
+    auto_stmt      go to state 150
+    break_stmt     go to state 151
+    call_stmt      go to state 152
+    cmpd_stmt      go to state 153
+    continue_stmt  go to state 154
+    empty_stmt     go to state 155
+    for_stmt       go to state 156
+    hold_stmt      go to state 157
+    if_stmt        go to state 158
+    reject_stmt    go to state 159
+    release_stmt   go to state 160
+    while_stmt     go to state 161
+    if_hdr         go to state 162
+    for_hdr        go to state 163
+    asgn           go to state 164
+    fcall          go to state 165
+    lval           go to state 19
+    auto_lval      go to state 166
+    ident          go to state 89
+    incr_op        go to state 22
+    empty          go to state 167
+
+
+state 146
+
+   49 action: SYM_LCURLY stmt_list . SYM_RCURLY
+
+    SYM_RCURLY  shift, and go to state 197
+
+
+state 147
+
+   50 stmt_list: stmt .
+   51          | stmt . stmt_list
+
+    SYM_ACCEPT       shift, and go to state 136
+    SYM_BREAK        shift, and go to state 137
+    SYM_CONTINUE     shift, and go to state 138
+    SYM_FOR          shift, and go to state 139
+    SYM_HOLD         shift, and go to state 140
+    SYM_IF           shift, and go to state 141
+    SYM_REJECT       shift, and go to state 142
+    SYM_RELEASE      shift, and go to state 143
+    SYM_WHILE        shift, and go to state 144
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LCURLY       shift, and go to state 145
+
+    SYM_SEMICOLON  reduce using rule 170 (empty)
+    $default       reduce using rule 50 (stmt_list)
+
+    stmt_list      go to state 198
+    stmt           go to state 147
+    accept_stmt    go to state 148
+    asgn_stmt      go to state 149
+    auto_stmt      go to state 150
+    break_stmt     go to state 151
+    call_stmt      go to state 152
+    cmpd_stmt      go to state 153
+    continue_stmt  go to state 154
+    empty_stmt     go to state 155
+    for_stmt       go to state 156
+    hold_stmt      go to state 157
+    if_stmt        go to state 158
+    reject_stmt    go to state 159
+    release_stmt   go to state 160
+    while_stmt     go to state 161
+    if_hdr         go to state 162
+    for_hdr        go to state 163
+    asgn           go to state 164
+    fcall          go to state 165
+    lval           go to state 19
+    auto_lval      go to state 166
+    ident          go to state 89
+    incr_op        go to state 22
+    empty          go to state 167
+
+
+state 148
+
+   52 stmt: accept_stmt .
+
+    $default  reduce using rule 52 (stmt)
+
+
+state 149
+
+   53 stmt: asgn_stmt .
+
+    $default  reduce using rule 53 (stmt)
+
+
+state 150
+
+   54 stmt: auto_stmt .
+
+    $default  reduce using rule 54 (stmt)
+
+
+state 151
+
+   55 stmt: break_stmt .
+
+    $default  reduce using rule 55 (stmt)
+
+
+state 152
+
+   56 stmt: call_stmt .
+
+    $default  reduce using rule 56 (stmt)
+
+
+state 153
+
+   57 stmt: cmpd_stmt .
+
+    $default  reduce using rule 57 (stmt)
+
+
+state 154
+
+   58 stmt: continue_stmt .
+
+    $default  reduce using rule 58 (stmt)
+
+
+state 155
+
+   59 stmt: empty_stmt .
+
+    $default  reduce using rule 59 (stmt)
+
+
+state 156
+
+   60 stmt: for_stmt .
+
+    $default  reduce using rule 60 (stmt)
+
+
+state 157
+
+   61 stmt: hold_stmt .
+
+    $default  reduce using rule 61 (stmt)
+
+
+state 158
+
+   62 stmt: if_stmt .
+
+    $default  reduce using rule 62 (stmt)
+
+
+state 159
+
+   63 stmt: reject_stmt .
+
+    $default  reduce using rule 63 (stmt)
+
+
+state 160
+
+   64 stmt: release_stmt .
+
+    $default  reduce using rule 64 (stmt)
+
+
+state 161
+
+   65 stmt: while_stmt .
+
+    $default  reduce using rule 65 (stmt)
+
+
+state 162
+
+   76 if_stmt: if_hdr . stmt
+   78        | if_hdr . stmt SYM_ELSE @6 stmt
+
+    SYM_ACCEPT       shift, and go to state 136
+    SYM_BREAK        shift, and go to state 137
+    SYM_CONTINUE     shift, and go to state 138
+    SYM_FOR          shift, and go to state 139
+    SYM_HOLD         shift, and go to state 140
+    SYM_IF           shift, and go to state 141
+    SYM_REJECT       shift, and go to state 142
+    SYM_RELEASE      shift, and go to state 143
+    SYM_WHILE        shift, and go to state 144
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LCURLY       shift, and go to state 145
+
+    $default  reduce using rule 170 (empty)
+
+    stmt           go to state 199
+    accept_stmt    go to state 148
+    asgn_stmt      go to state 149
+    auto_stmt      go to state 150
+    break_stmt     go to state 151
+    call_stmt      go to state 152
+    cmpd_stmt      go to state 153
+    continue_stmt  go to state 154
+    empty_stmt     go to state 155
+    for_stmt       go to state 156
+    hold_stmt      go to state 157
+    if_stmt        go to state 158
+    reject_stmt    go to state 159
+    release_stmt   go to state 160
+    while_stmt     go to state 161
+    if_hdr         go to state 162
+    for_hdr        go to state 163
+    asgn           go to state 164
+    fcall          go to state 165
+    lval           go to state 19
+    auto_lval      go to state 166
+    ident          go to state 89
+    incr_op        go to state 22
+    empty          go to state 167
+
+
+state 163
+
+   74 for_stmt: for_hdr . stmt
+
+    SYM_ACCEPT       shift, and go to state 136
+    SYM_BREAK        shift, and go to state 137
+    SYM_CONTINUE     shift, and go to state 138
+    SYM_FOR          shift, and go to state 139
+    SYM_HOLD         shift, and go to state 140
+    SYM_IF           shift, and go to state 141
+    SYM_REJECT       shift, and go to state 142
+    SYM_RELEASE      shift, and go to state 143
+    SYM_WHILE        shift, and go to state 144
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LCURLY       shift, and go to state 145
+
+    $default  reduce using rule 170 (empty)
+
+    stmt           go to state 200
+    accept_stmt    go to state 148
+    asgn_stmt      go to state 149
+    auto_stmt      go to state 150
+    break_stmt     go to state 151
+    call_stmt      go to state 152
+    cmpd_stmt      go to state 153
+    continue_stmt  go to state 154
+    empty_stmt     go to state 155
+    for_stmt       go to state 156
+    hold_stmt      go to state 157
+    if_stmt        go to state 158
+    reject_stmt    go to state 159
+    release_stmt   go to state 160
+    while_stmt     go to state 161
+    if_hdr         go to state 162
+    for_hdr        go to state 163
+    asgn           go to state 164
+    fcall          go to state 165
+    lval           go to state 19
+    auto_lval      go to state 166
+    ident          go to state 89
+    incr_op        go to state 22
+    empty          go to state 167
+
+
+state 164
+
+   67 asgn_stmt: asgn . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 201
+
+
+state 165
+
+   70 call_stmt: fcall . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 202
+
+
+state 166
+
+   68 auto_stmt: auto_lval . SYM_SEMICOLON
+  150 lval: auto_lval .
+
+    SYM_SEMICOLON  shift, and go to state 203
+
+    $default  reduce using rule 150 (lval)
+
+
+state 167
+
+   73 empty_stmt: empty . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 204
+
+
+state 168
+
+   42 rule_list: rule rule_list .
+
+    $default  reduce using rule 42 (rule_list)
+
+
+state 169
+
+   44 rule: pattern @5 . action
+
+    SYM_LCURLY  shift, and go to state 205
+
+    action  go to state 206
+
+
+state 170
+
+  143 primary: SYM_LPAREN expr SYM_RPAREN .
+
+    $default  reduce using rule 143 (primary)
+
+
+state 171
+
+  166 pairset: SYM_LCURLY @11 s_list . SYM_RCURLY
+
+    SYM_RCURLY  shift, and go to state 207
+
+
+state 172
+
+  167 s_list: string .
+  168       | string . SYM_COMMA s_list
+
+    SYM_COMMA  shift, and go to state 208
+
+    $default  reduce using rule 167 (s_list)
+
+
+state 173
+
+  109 expr: expr . SYM_OR conj
+  161 e_list: expr .
+  162       | expr . SYM_COMMA e_list
+
+    SYM_OR     shift, and go to state 111
+    SYM_COMMA  shift, and go to state 209
+
+    $default  reduce using rule 161 (e_list)
+
+
+state 174
+
+  148 ix_stref: strhdr SYM_LBRACK e_list . SYM_RBRACK
+
+    SYM_RBRACK  shift, and go to state 210
+
+
+state 175
+
+  109 expr: expr SYM_OR conj .
+
+    $default  reduce using rule 109 (expr)
+
+
+state 176
+
+  111 conj: compare SYM_AND conj .
+
+    $default  reduce using rule 111 (conj)
+
+
+state 177
+
+  114 compare: a_expr comp_op a_expr .
+  124 a_expr: a_expr . add_op term
+
+    SYM_MINUS  shift, and go to state 120
+    SYM_PLUS   shift, and go to state 122
+
+    $default  reduce using rule 114 (compare)
+
+    add_op  go to state 124
+
+
+state 178
+
+  135 factor: stref .
+
+    $default  reduce using rule 135 (factor)
+
+
+state 179
+
+  124 a_expr: a_expr add_op term .
+  128 term: term . mul_op factor
+
+    SYM_PERCENT  shift, and go to state 125
+    SYM_STAR     shift, and go to state 126
+    SYM_SLASH    shift, and go to state 127
+
+    $default  reduce using rule 124 (a_expr)
+
+    mul_op  go to state 128
+
+
+state 180
+
+  128 term: term mul_op factor .
+
+    $default  reduce using rule 128 (term)
+
+
+state 181
+
+   40 site: pairing SYM_IN pairset .
+
+    $default  reduce using rule 40 (site)
+
+
+state 182
+
+  137 pairing: stref SYM_COLON pairing .
+
+    $default  reduce using rule 137 (pairing)
+
+
+state 183
+
+  136 pairing: stref .
+  137        | stref . SYM_COLON pairing
+
+    SYM_COLON  shift, and go to state 130
+
+    $default  reduce using rule 136 (pairing)
+
+
+state 184
+
+  144 fcall: ident SYM_LPAREN e_list . SYM_RPAREN
+
+    SYM_RPAREN  shift, and go to state 211
+
+
+state 185
+
+  164 a_list: asgn SYM_COMMA a_list .
+
+    $default  reduce using rule 164 (a_list)
+
+
+state 186
+
+   66 accept_stmt: SYM_ACCEPT SYM_SEMICOLON .
+
+    $default  reduce using rule 66 (accept_stmt)
+
+
+state 187
+
+   83 loop_level: SYM_INT .
+
+    $default  reduce using rule 83 (loop_level)
+
+
+state 188
+
+   69 break_stmt: SYM_BREAK loop_level . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 212
+
+
+state 189
+
+   72 continue_stmt: SYM_CONTINUE loop_level . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 213
+
+
+state 190
+
+   87 for_hdr: SYM_FOR SYM_LPAREN . for_ctrl SYM_RPAREN
+
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+
+    $default  reduce using rule 170 (empty)
+
+    for_ctrl   go to state 214
+    for_init   go to state 215
+    asgn       go to state 216
+    lval       go to state 19
+    auto_lval  go to state 217
+    ident      go to state 21
+    incr_op    go to state 22
+    empty      go to state 218
+
+
+state 191
+
+   75 hold_stmt: SYM_HOLD ident . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 219
+
+
+state 192
+
+   86 if_hdr: SYM_IF SYM_LPAREN . expr @8 SYM_RPAREN
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    expr       go to state 220
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 193
+
+   79 reject_stmt: SYM_REJECT SYM_SEMICOLON .
+
+    $default  reduce using rule 79 (reject_stmt)
+
+
+state 194
+
+   80 release_stmt: SYM_RELEASE ident . SYM_SEMICOLON
+
+    SYM_SEMICOLON  shift, and go to state 221
+
+
+state 195
+
+   82 while_stmt: SYM_WHILE SYM_LPAREN . expr @7 SYM_RPAREN stmt
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    expr       go to state 222
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 196
+
+   71 cmpd_stmt: SYM_LCURLY stmt_list . SYM_RCURLY
+
+    SYM_RCURLY  shift, and go to state 223
+
+
+state 197
+
+   49 action: SYM_LCURLY stmt_list SYM_RCURLY .
+
+    $default  reduce using rule 49 (action)
+
+
+state 198
+
+   51 stmt_list: stmt stmt_list .
+
+    $default  reduce using rule 51 (stmt_list)
+
+
+state 199
+
+   76 if_stmt: if_hdr stmt .
+   78        | if_hdr stmt . SYM_ELSE @6 stmt
+
+    SYM_ELSE  shift, and go to state 224
+
+    SYM_ELSE  [reduce using rule 76 (if_stmt)]
+    $default  reduce using rule 76 (if_stmt)
+
+
+state 200
+
+   74 for_stmt: for_hdr stmt .
+
+    $default  reduce using rule 74 (for_stmt)
+
+
+state 201
+
+   67 asgn_stmt: asgn SYM_SEMICOLON .
+
+    $default  reduce using rule 67 (asgn_stmt)
+
+
+state 202
+
+   70 call_stmt: fcall SYM_SEMICOLON .
+
+    $default  reduce using rule 70 (call_stmt)
+
+
+state 203
+
+   68 auto_stmt: auto_lval SYM_SEMICOLON .
+
+    $default  reduce using rule 68 (auto_stmt)
+
+
+state 204
+
+   73 empty_stmt: empty SYM_SEMICOLON .
+
+    $default  reduce using rule 73 (empty_stmt)
+
+
+state 205
+
+   49 action: SYM_LCURLY . stmt_list SYM_RCURLY
+
+    SYM_ACCEPT       shift, and go to state 136
+    SYM_BREAK        shift, and go to state 137
+    SYM_CONTINUE     shift, and go to state 138
+    SYM_FOR          shift, and go to state 139
+    SYM_HOLD         shift, and go to state 140
+    SYM_IF           shift, and go to state 141
+    SYM_REJECT       shift, and go to state 142
+    SYM_RELEASE      shift, and go to state 143
+    SYM_WHILE        shift, and go to state 144
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LCURLY       shift, and go to state 145
+
+    $default  reduce using rule 170 (empty)
+
+    stmt_list      go to state 146
+    stmt           go to state 147
+    accept_stmt    go to state 148
+    asgn_stmt      go to state 149
+    auto_stmt      go to state 150
+    break_stmt     go to state 151
+    call_stmt      go to state 152
+    cmpd_stmt      go to state 153
+    continue_stmt  go to state 154
+    empty_stmt     go to state 155
+    for_stmt       go to state 156
+    hold_stmt      go to state 157
+    if_stmt        go to state 158
+    reject_stmt    go to state 159
+    release_stmt   go to state 160
+    while_stmt     go to state 161
+    if_hdr         go to state 162
+    for_hdr        go to state 163
+    asgn           go to state 164
+    fcall          go to state 165
+    lval           go to state 19
+    auto_lval      go to state 166
+    ident          go to state 89
+    incr_op        go to state 22
+    empty          go to state 167
+
+
+state 206
+
+   44 rule: pattern @5 action .
+
+    $default  reduce using rule 44 (rule)
+
+
+state 207
+
+  166 pairset: SYM_LCURLY @11 s_list SYM_RCURLY .
+
+    $default  reduce using rule 166 (pairset)
+
+
+state 208
+
+  168 s_list: string SYM_COMMA . s_list
+
+    SYM_STRING  shift, and go to state 66
+
+    s_list  go to state 225
+    string  go to state 172
+
+
+state 209
+
+  162 e_list: expr SYM_COMMA . e_list
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    expr       go to state 173
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 105
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    e_list     go to state 226
+    pairset    go to state 90
+    string     go to state 91
+
+
+state 210
+
+  148 ix_stref: strhdr SYM_LBRACK e_list SYM_RBRACK .
+
+    $default  reduce using rule 148 (ix_stref)
+
+
+state 211
+
+  144 fcall: ident SYM_LPAREN e_list SYM_RPAREN .
+
+    $default  reduce using rule 144 (fcall)
+
+
+state 212
+
+   69 break_stmt: SYM_BREAK loop_level SYM_SEMICOLON .
+
+    $default  reduce using rule 69 (break_stmt)
+
+
+state 213
+
+   72 continue_stmt: SYM_CONTINUE loop_level SYM_SEMICOLON .
+
+    $default  reduce using rule 72 (continue_stmt)
+
+
+state 214
+
+   87 for_hdr: SYM_FOR SYM_LPAREN for_ctrl . SYM_RPAREN
+
+    SYM_RPAREN  shift, and go to state 227
+
+
+state 215
+
+   90 for_ctrl: for_init . @9 SYM_SEMICOLON for_test @10 SYM_SEMICOLON for_incr
+
+    $default  reduce using rule 88 (@9)
+
+    @9  go to state 228
+
+
+state 216
+
+   91 for_init: asgn .
+
+    $default  reduce using rule 91 (for_init)
+
+
+state 217
+
+   92 for_init: auto_lval .
+  150 lval: auto_lval .
+
+    SYM_SEMICOLON  reduce using rule 92 (for_init)
+    $default       reduce using rule 150 (lval)
+
+
+state 218
+
+   93 for_init: empty .
+
+    $default  reduce using rule 93 (for_init)
+
+
+state 219
+
+   75 hold_stmt: SYM_HOLD ident SYM_SEMICOLON .
+
+    $default  reduce using rule 75 (hold_stmt)
+
+
+state 220
+
+   86 if_hdr: SYM_IF SYM_LPAREN expr . @8 SYM_RPAREN
+  109 expr: expr . SYM_OR conj
+
+    SYM_OR  shift, and go to state 111
+
+    $default  reduce using rule 85 (@8)
+
+    @8  go to state 229
+
+
+state 221
+
+   80 release_stmt: SYM_RELEASE ident SYM_SEMICOLON .
+
+    $default  reduce using rule 80 (release_stmt)
+
+
+state 222
+
+   82 while_stmt: SYM_WHILE SYM_LPAREN expr . @7 SYM_RPAREN stmt
+  109 expr: expr . SYM_OR conj
+
+    SYM_OR  shift, and go to state 111
+
+    $default  reduce using rule 81 (@7)
+
+    @7  go to state 230
+
+
+state 223
+
+   71 cmpd_stmt: SYM_LCURLY stmt_list SYM_RCURLY .
+
+    $default  reduce using rule 71 (cmpd_stmt)
+
+
+state 224
+
+   78 if_stmt: if_hdr stmt SYM_ELSE . @6 stmt
+
+    $default  reduce using rule 77 (@6)
+
+    @6  go to state 231
+
+
+state 225
+
+  168 s_list: string SYM_COMMA s_list .
+
+    $default  reduce using rule 168 (s_list)
+
+
+state 226
+
+  162 e_list: expr SYM_COMMA e_list .
+
+    $default  reduce using rule 162 (e_list)
+
+
+state 227
+
+   87 for_hdr: SYM_FOR SYM_LPAREN for_ctrl SYM_RPAREN .
+
+    $default  reduce using rule 87 (for_hdr)
+
+
+state 228
+
+   90 for_ctrl: for_init @9 . SYM_SEMICOLON for_test @10 SYM_SEMICOLON for_incr
+
+    SYM_SEMICOLON  shift, and go to state 232
+
+
+state 229
+
+   86 if_hdr: SYM_IF SYM_LPAREN expr @8 . SYM_RPAREN
+
+    SYM_RPAREN  shift, and go to state 233
+
+
+state 230
+
+   82 while_stmt: SYM_WHILE SYM_LPAREN expr @7 . SYM_RPAREN stmt
+
+    SYM_RPAREN  shift, and go to state 234
+
+
+state 231
+
+   78 if_stmt: if_hdr stmt SYM_ELSE @6 . stmt
+
+    SYM_ACCEPT       shift, and go to state 136
+    SYM_BREAK        shift, and go to state 137
+    SYM_CONTINUE     shift, and go to state 138
+    SYM_FOR          shift, and go to state 139
+    SYM_HOLD         shift, and go to state 140
+    SYM_IF           shift, and go to state 141
+    SYM_REJECT       shift, and go to state 142
+    SYM_RELEASE      shift, and go to state 143
+    SYM_WHILE        shift, and go to state 144
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LCURLY       shift, and go to state 145
+
+    $default  reduce using rule 170 (empty)
+
+    stmt           go to state 235
+    accept_stmt    go to state 148
+    asgn_stmt      go to state 149
+    auto_stmt      go to state 150
+    break_stmt     go to state 151
+    call_stmt      go to state 152
+    cmpd_stmt      go to state 153
+    continue_stmt  go to state 154
+    empty_stmt     go to state 155
+    for_stmt       go to state 156
+    hold_stmt      go to state 157
+    if_stmt        go to state 158
+    reject_stmt    go to state 159
+    release_stmt   go to state 160
+    while_stmt     go to state 161
+    if_hdr         go to state 162
+    for_hdr        go to state 163
+    asgn           go to state 164
+    fcall          go to state 165
+    lval           go to state 19
+    auto_lval      go to state 166
+    ident          go to state 89
+    incr_op        go to state 22
+    empty          go to state 167
+
+
+state 232
+
+   90 for_ctrl: for_init @9 SYM_SEMICOLON . for_test @10 SYM_SEMICOLON for_incr
+
+    SYM_SE           shift, and go to state 23
+    SYM_CTX          shift, and go to state 24
+    SYM_SS           shift, and go to state 25
+    SYM_H5           shift, and go to state 26
+    SYM_H3           shift, and go to state 27
+    SYM_P5           shift, and go to state 28
+    SYM_P3           shift, and go to state 29
+    SYM_T1           shift, and go to state 30
+    SYM_T2           shift, and go to state 31
+    SYM_T3           shift, and go to state 32
+    SYM_Q1           shift, and go to state 33
+    SYM_Q2           shift, and go to state 34
+    SYM_Q3           shift, and go to state 35
+    SYM_Q4           shift, and go to state 36
+    SYM_IDENT        shift, and go to state 13
+    SYM_INT          shift, and go to state 64
+    SYM_FLOAT        shift, and go to state 65
+    SYM_STRING       shift, and go to state 66
+    SYM_DOLLAR       shift, and go to state 67
+    SYM_MINUS        shift, and go to state 68
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_NOT          shift, and go to state 69
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LPAREN       shift, and go to state 70
+    SYM_LCURLY       shift, and go to state 71
+
+    $default  reduce using rule 170 (empty)
+
+    strhdr     go to state 72
+    strtype    go to state 40
+    site       go to state 73
+    for_test   go to state 236
+    asgn       go to state 237
+    expr       go to state 238
+    conj       go to state 76
+    compare    go to state 77
+    a_expr     go to state 78
+    term       go to state 79
+    factor     go to state 80
+    pairing    go to state 81
+    primary    go to state 82
+    fcall      go to state 83
+    stref      go to state 84
+    kw_stref   go to state 85
+    ix_stref   go to state 86
+    lval       go to state 87
+    auto_lval  go to state 20
+    literal    go to state 88
+    ident      go to state 89
+    incr_op    go to state 22
+    pairset    go to state 90
+    string     go to state 91
+    empty      go to state 239
+
+
+state 233
+
+   86 if_hdr: SYM_IF SYM_LPAREN expr @8 SYM_RPAREN .
+
+    $default  reduce using rule 86 (if_hdr)
+
+
+state 234
+
+   82 while_stmt: SYM_WHILE SYM_LPAREN expr @7 SYM_RPAREN . stmt
+
+    SYM_ACCEPT       shift, and go to state 136
+    SYM_BREAK        shift, and go to state 137
+    SYM_CONTINUE     shift, and go to state 138
+    SYM_FOR          shift, and go to state 139
+    SYM_HOLD         shift, and go to state 140
+    SYM_IF           shift, and go to state 141
+    SYM_REJECT       shift, and go to state 142
+    SYM_RELEASE      shift, and go to state 143
+    SYM_WHILE        shift, and go to state 144
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+    SYM_LCURLY       shift, and go to state 145
+
+    $default  reduce using rule 170 (empty)
+
+    stmt           go to state 240
+    accept_stmt    go to state 148
+    asgn_stmt      go to state 149
+    auto_stmt      go to state 150
+    break_stmt     go to state 151
+    call_stmt      go to state 152
+    cmpd_stmt      go to state 153
+    continue_stmt  go to state 154
+    empty_stmt     go to state 155
+    for_stmt       go to state 156
+    hold_stmt      go to state 157
+    if_stmt        go to state 158
+    reject_stmt    go to state 159
+    release_stmt   go to state 160
+    while_stmt     go to state 161
+    if_hdr         go to state 162
+    for_hdr        go to state 163
+    asgn           go to state 164
+    fcall          go to state 165
+    lval           go to state 19
+    auto_lval      go to state 166
+    ident          go to state 89
+    incr_op        go to state 22
+    empty          go to state 167
+
+
+state 235
+
+   78 if_stmt: if_hdr stmt SYM_ELSE @6 stmt .
+
+    $default  reduce using rule 78 (if_stmt)
+
+
+state 236
+
+   90 for_ctrl: for_init @9 SYM_SEMICOLON for_test . @10 SYM_SEMICOLON for_incr
+
+    $default  reduce using rule 89 (@10)
+
+    @10  go to state 241
+
+
+state 237
+
+   94 for_test: asgn .
+
+    $default  reduce using rule 94 (for_test)
+
+
+state 238
+
+   95 for_test: expr .
+  109 expr: expr . SYM_OR conj
+
+    SYM_OR  shift, and go to state 111
+
+    $default  reduce using rule 95 (for_test)
+
+
+state 239
+
+   96 for_test: empty .
+
+    $default  reduce using rule 96 (for_test)
+
+
+state 240
+
+   82 while_stmt: SYM_WHILE SYM_LPAREN expr @7 SYM_RPAREN stmt .
+
+    $default  reduce using rule 82 (while_stmt)
+
+
+state 241
+
+   90 for_ctrl: for_init @9 SYM_SEMICOLON for_test @10 . SYM_SEMICOLON for_incr
+
+    SYM_SEMICOLON  shift, and go to state 242
+
+
+state 242
+
+   90 for_ctrl: for_init @9 SYM_SEMICOLON for_test @10 SYM_SEMICOLON . for_incr
+
+    SYM_IDENT        shift, and go to state 13
+    SYM_MINUS_MINUS  shift, and go to state 14
+    SYM_PLUS_PLUS    shift, and go to state 15
+
+    $default  reduce using rule 170 (empty)
+
+    for_incr   go to state 243
+    asgn       go to state 244
+    lval       go to state 19
+    auto_lval  go to state 245
+    ident      go to state 21
+    incr_op    go to state 22
+    empty      go to state 246
+
+
+state 243
+
+   90 for_ctrl: for_init @9 SYM_SEMICOLON for_test @10 SYM_SEMICOLON for_incr .
+
+    $default  reduce using rule 90 (for_ctrl)
+
+
+state 244
+
+   97 for_incr: asgn .
+
+    $default  reduce using rule 97 (for_incr)
+
+
+state 245
+
+   98 for_incr: auto_lval .
+  150 lval: auto_lval .
+
+    SYM_RPAREN  reduce using rule 98 (for_incr)
+    $default    reduce using rule 150 (lval)
+
+
+state 246
+
+   99 for_incr: empty .
+
+    $default  reduce using rule 99 (for_incr)

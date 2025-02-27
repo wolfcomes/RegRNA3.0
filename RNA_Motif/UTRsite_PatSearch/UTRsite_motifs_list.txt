@@ -1,0 +1,48 @@
+U0001|Histone 3'UTR stem-loop structure (HSL3)|3' Eukaryota
+U0002|Iron Responsive Element (IRE)|All Metazoa
+U0003|Selenocysteine Insertion Sequence - type 1 (SECIS1)|3' Metazoa
+U0004|Selenocysteine Insertion Sequence - type 2 (SECIS2)|3' Metazoa
+U0005|Amyloid precursor protein mRNA stability control element (APP_SCE)|All Vertebrata
+U0006|Cytoplasmic polyadenylation element (CPE)|3' Metazoa
+U0007|TGE translational regulation element (TGE)|3' Metazoa
+U0008|Nanos translation control element (NANOS_TCE)|3' Metazoa
+U0009|15-Lipoxygenase Differentiation Control Element (15-LOX-DICE)|3' Vertebrata
+U0010|AU-rich class-2 Element (ARE2)|3' Metazoa
+U0011|Terminal Oligopyrimidine Tract (TOP)|5' Eukaryota
+U0012|Glusose transporter type-1 3'UTR cis-acting element (GLUT1)|3' Vertebrata
+U0013|Tumor necrosis factor alpha 3'UTR cis-acting element (TNF)|3' Vertebrata
+U0014|Vimentin 3'UTR cis-acting element (VIM3)|3' Vertebrata
+U0015|Internal Ribosome Entry Site (IRES)|5' Eukaryota
+U0016|SXL binding site|All Arthropoda
+U0017|UNR binding site|All Metazoa
+U0018|Ribosomal S12 mitochondrial protein 5'UTR translation control element (RPMS12_TCE)|5' Vertebrata
+U0019|Bruno 3'UTR responsive element (BRE)|3' Arthropoda
+U0020|Alcohol dehydrogenase 3'UTR downregulation control element (ADH_DRE)|3' Arthropoda
+U0021|Barley yellow dwarf virus translation control element (BYDV_TE)|3' Viridiplantae
+U0022|Proneural Box (PB)|3' Metazoa
+U0023|K-Box (KB)|3' Metazoa
+U0024|Brd-Box (Brd)|3' Metazoa
+U0025|GY-Box (GY)|3' Metazoa
+U0026|Androgen receptor CU-rich element (AR_CURE)|3' Metazoa
+U0027|Elastin G3A 3'UTR stability motif (G3A)|3' Vertebrata
+U0028|Insulin 3'UTR stability element (INS_SCE)|3' Metazoa
+U0029|Beta-actin 3'UTR zipcode (ACTIN_ZIP3)|3' Metazoa
+U0030|Gap-43 Stabilization Element (GAP-43)|3' Metazoa
+U0031|CaMKII/Ng dendritic localization element (CNDLE)|3' Metazoa
+U0032|alpha-globin 3'UTR C-rich stability determinant (AG-CRSD)|3' Metazoa
+U0033|Upstream Open Reading Frame (uORF)|5' Eukaryota
+U0034|Gamma interferon activated inhibitor of translation (GAIT element)|3' Metazoa
+U0035|Musashi binding element (MBE)|3' Metazoa
+U0036|Drosophila hairy mRNA localization element (HLE)|3' Insecta
+U0037|Myelin Basic Protein Localization Element (MBP-A2RE11)|3' Vertebrata
+U0038|Protamine P1 3'UTR Y-Box recognition site (Protamine-YRS)|3' Metazoa
+U0039|Granulocyte colony-stimulating factor stem-loop destabilizing element (G-CSF_SLDE)|3' Metazoa
+U0040|Renin stability regulatory element (Ren_SRE)|3' Vertebrata
+U0041|PTH 3'UTR proximal cis-acting instability element (PTH1)|3' Vertebrata
+U0042|PTH 3'UTR distal cis-acting instability element (PTH2)|3' Vertebrata
+U0043|Polyadenylation Signal (PAS)|3' Eukaryota
+U0044|PABP mRNA autoregulatoy repression sequence|5' Vertebrata
+U0045|ApoB 5'UTR cis-acting regulatory element|5' Vertebrata
+U0046|Thiamin pyrophosphate riboswitch (TPP_riboswitch)|3' Viridiplantae
+U0047|GU-rich destabilization element|3' Eukaryota
+U0048|G-quadruplex structure|5'

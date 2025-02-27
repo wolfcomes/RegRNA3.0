@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>UTRSite :: Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="ROBOTS" content="ALL" />
+<!-- #GIORGIO -->
+	<meta name="author" content="Giorgio Grillo">
+	<meta name="description" content="UTRSite collection of functional sequence patterns located in 5' or 3' UTR sequences">
+	<meta name="keywords" content="utrdb bioinformatic database"> 
+<!-- -->
+    <meta name="Copyright" content="Copyright (c) 2005 Seagull Framework, Demian Turner, and the respective authors" />
+    <meta name="Rating" content="General" />
+    <meta name="Generator" content="Seagull Framework v0.4.1" />
+    <link rel="help" href="http://seagull.phpkitchen.com/docs/" title="Seagull Documentation." />
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/style.php" />
+
+    
+<script type="text/javascript"> <!--
+        var SGL_JS_WEBROOT="http://www2.ba.itb.cnr.it/UTRSite";
+        var SGL_JS_WINHEIGHT=500;
+        var SGL_JS_WINWIDTH=600;
+        var SGL_JS_SESSID="";
+        var SGL_JS_CURRURL="/UTRSite/index.php/user/login/";
+    
+//--> </script>
+
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/mainPublic.js"></script>
+
+    
+    
+<!-- #GIORGIO -->
+	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<!-- -->
+
+<!-- /////////////////////////////////////  START NAVIGATION STYLESHEET  //////////////////////////////-->
+
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/SglDefault_TwoLevel.css" />
+
+<!-- /////////////////////////////////////  END NAVIGATION STYLESHEET   //////////////////////////////-->
+</head>
+
+<body onload="document.getElementById(&quot;login&quot;).frmUsername.focus()" style="">
+<!-- Logo and header -->
+<div id="sgl-header">
+        <div id="sgl-header-left">
+        <img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/UTRSite.png" alt="UTRSite Logo" />
+    </div>
+    
+    <div id="sgl-header-right">
+     
+        <div id="headerUserInfo">
+        user: <span class="guest">guest</span>
+        </div>
+        <div id="headerLogAction">
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/logout.gif" alt="login" /></a>
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login">login</a>
+        </div>
+      <!-- -->
+    </div>
+</div>
+
+<!-- tab navigation -->
+<div id="sgl-nav">
+    
+<ul><li><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/default/">Home</a></li>
+<li><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/">Signal Manager</a></li>
+</ul>
+</div>
+<!-- Main layout -->
+<div id="sgl-main">
+<!-- left column -->
+<div id="sgl-blocks-left">
+
+
+
+</div>
+   
+<!-- middle column -->
+<!-- #GIORGIO -->
+<div id="sgl-blocks-middle" style="margin-left:0;margin-right:0;">
+<!-- -->
+<script type="text/javascript">
+    setTimeout ("changePage()", 100);
+    function changePage() {
+        if (self.parent.frames.length != 0)
+            self.parent.location = document.location;
+    }
+</script>
+<form name="login" method="post" action="" id="login">
+    <p> <input type="hidden" name="action" value="login" /></p>
+		<input type="hidden" name="redir" value="" />
+
+    <h1 class="pageTitle">Login</h1>
+    
+    <div style="width:300px; margin: 0 auto;">
+        <div class="sgl-blocks-middle-title">
+            Authorisation Required        </div>    
+        <div class="sgl-blocks-middle-body">
+            <div style="padding: 10px;">
+<!-- #GIORGIO -->
+                                <span class="error">*</span>Username                <input type="text" name="frmUsername" value="" size="25" maxlength="36" />
+<!-- -->
+            </div>
+    
+            <div>
+<!-- #GIORGIO -->
+                                <span class="error">*</span>Password    
+                <input type="password" name="frmPassword" size="25" maxlength="24" />
+<!-- -->
+            </div>
+    
+<!-- #GIORGIO -->
+<!--
+            <p><input style="width: 150px" type="submit" class="formsubmit" name="submitted" value="{translate(#Login#)}" /></p>
+            <p><a href="{makeUrl(##,#register#,#user#)}">{translate(#Not Registered#)}</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="{makeUrl(##,#password#,#user#)}">{translate(#Forgot Password#)}</a></p>
+-->
+            <p><input class="wideButton" type="submit" name="submitted" value="Login" /> <!-- onclick="javascript:lockButtons(this.form)"--></p>
+            <p><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/password/">Forgot Your Password</a></p>
+<!-- -->
+            
+        </div>
+<!-- #GIORGIO -->
+		&nbsp;
+        <div class="mandatory">
+	        <span class="error">*</span><span>denotes required field</span>
+        </div>
+<!-- -->
+    </div>
+</form>
+</div>
+
+<!-- right column -->
+<div id="sgl-blocks-right">
+
+
+</div>
+
+</div> <!-- close sgl-main -->
+
+<!-- #GIORGIO -->
+<hr width="50%">
+<!-- -->
+
+<div id="sgl-footer">
+    Powered by <a href="http://seagull.phpkitchen.com" title="Seagull framework homepage">Seagull Framework</a> v 0.4.1<br />
+    
+    </div>
+
+</body>
+</html>

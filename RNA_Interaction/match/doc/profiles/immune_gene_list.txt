@@ -1,0 +1,84 @@
+Gene Accession No.	Gene Identifier	Gene Name	Gene Species
+G002708	HS$BACH2	Bach2	human, Homo sapiens
+G002723	MOUSE$BACH2	Bach2	mouse, Mus musculus
+G002501	HS$BTK	Btk	human, Homo sapiens
+G000218	HS$CFOS	c-fos	human, Homo sapiens
+G000486	MOUSE$CFOS	c-fos	mouse, Mus musculus
+G000219	HS$CJUN	c-jun	human, Homo sapiens
+G000487	MOUSE$CJUN	c-jun	mouse, Mus musculus
+G001104	HS$CD11B	CD11b	human, Homo sapiens
+G001048	HS$CD11C	CD11c	human, Homo sapiens
+G002408	HS$CD20	CD20	human, Homo sapiens
+G000491	MOUSE$CD3D	CD3-delta	mouse, Mus musculus
+G000225	HS$CD3E	CD3-epsilon	human, Homo sapiens
+G001140	HS$CD34	CD34	human, Homo sapiens
+G000492	MOUSE$CD4	CD4	mouse, Mus musculus
+G001437	HS$CD4	CD4	human, Homo sapiens
+G002503	HS$CD40	CD40	human, Homo sapiens
+G001421	HS$CD40L	CD40L	human, Homo sapiens
+G001422	MOUSE$CD40L	CD40L	mouse, Mus musculus
+G001131	HS$CD43	CD43	human, Homo sapiens
+G005078	HS$CD79A	CD79A	human, Homo sapiens
+G001348	MOUSE$CD8A	CD8a	mouse, Mus musculus
+G001435	HS$CD8A	CD8A	human, Homo sapiens
+G001349	MOUSE$CD8B	CD8b	mouse, Mus musculus
+G001436	HS$CD8B1	CD8B1	human, Homo sapiens
+G005468	MOUSE$CR2	Cr2	mouse, Mus musculus
+G001083	HS$MCSFR	CSF1R	human, Homo sapiens
+G005077	HS$EBF	EBF	human, Homo sapiens
+G000509	MOUSE$FOSB	FOSB	mouse, Mus musculus
+G000272	HS$GMCSF	GM-CSF	human, Homo sapiens
+G000517	MOUSE$GMCSF	GM-CSF	mouse, Mus musculus
+G002343	HS$GMCSFRA	GM-CSF Ralpha	human, Homo sapiens
+G000167	HIV1$HIV1	HIV-1	HIV-1, human immunodeficiency virus type 1
+G000168	HIV2$HIV2	HIV-2	HIV-2, human immunodeficiency virus type 2
+G000344	HS$M2DRA	HLA-DRA	human, Homo sapiens
+G000341	HS$M2DRB	HLA-DRB	human, Homo sapiens
+G000431	HT1$HTLV1	HTLV-I	HTLV-I, human T-cell lymphotropic virus type I
+G001174	HS$IFNG	IFN-gamma	human, Homo sapiens
+G002346	MOUSE$IGCA	Ig Calpha	mouse, Mus musculus
+G002342	MOUSE$IGGLE	Ig gl-epsilon	mouse, Mus musculus
+G000538	MOUSE$IGKL	Ig-kappa	mouse, Mus musculus
+G000319	HS$IGKL	Ig-kappa	human, Homo sapiens
+G000541	MOUSE$IGLL	Ig-lambda	mouse, Mus musculus
+G000537	MOUSE$IGH	IgH	mouse, Mus musculus
+G000318	HS$IGH	IgH locus	human, Homo sapiens
+G000539	MOUSE$IGKLE	IGKL	mouse, Mus hortulanus
+G000540	MOUSE$IGL24E	IGL	mouse, Mus hortulanus
+G002344	HS$IL12P40	IL-12 p40	human, Homo sapiens
+G002345	MOUSE$IL12P40	IL-12 p40	mouse, Mus musculus
+G001420	HS$IL13	IL-13	human, Homo sapiens
+G000311	HS$IL1B	IL-1beta	human, Homo sapiens
+G000312	HS$IL2	IL-2	human, Homo sapiens
+G000533	MOUSE$IL2	IL-2	mouse, Mus musculus
+G000313	HS$IL2RA	IL-2Ralpha	human, Homo sapiens
+G002711	MOUSE$IL2RA	IL-2Ralpha	mouse, Mus musculus
+G000314	HS$IL3	IL-3	human, Homo sapiens
+G001222	MOUSE$IL3	IL-3	mouse, Mus musculus
+G000534	MOUSE$IL4	IL-4	mouse, Mus musculus
+G001214	HS$IL4	IL-4	human, Homo sapiens
+G000315	HS$IL5	IL-5	human, Homo sapiens
+G000535	MOUSE$IL5	IL-5	mouse, Mus musculus
+G000316	HS$IL6	IL-6	human, Homo sapiens
+G000536	MOUSE$IL7R	IL-7R	mouse, Mus musculus
+G000317	HS$IL8	IL8	human, Homo sapiens
+G002553	MOUSE$JUNB	junB	mouse, Mus musculus
+G000545	MOUSE$JUND	junD	mouse, Mus musculus
+G000546	MOUSE$IGK3E	kE3'	mouse, Mus hortulanus
+G000327	HS$LCK	lck	human, Homo sapiens
+G002409	MOUSE$MSL	macrosialin	mouse, Mus musculus
+G000554	MOUSE$MB1	mb-1	mouse, Mus musculus
+G002341	HS$MHC2TA	MHC2TA	human, Homo sapiens
+G001238	MOUSE$MIP1A	MIP-1alpha	mouse, Mus musculus
+G000574	MOUSE$IGH141	MOPC 141	mouse, Mus hortulanus
+G002499	MOUSE$MR	MR	mouse, Mus musculus
+G001237	HS$PES2	PES2	human, Homo sapiens
+G001239	HS$RANTES	RANTES	human, Homo sapiens
+G000387	HS$SR	SR	human, Homo sapiens
+G000610	MOUSE$TCRA	TCR-alpha	mouse, Mus musculus
+G000390	HS$TCRA	TCR-alpha	human, Homo sapiens
+G000393	HS$TCRBL	TCR-beta	human, Homo sapiens
+G000395	HS$TRDL	TCR-delta	human, Homo sapiens
+G000611	MOUSE$TCRVB83	TCR-Vbeta 8.3	mouse, Mus hortulanus
+G000612	MOUSE$TCRBL	TCRbeta	mouse, Mus musculus
+G002518	HS$TLR4	Tlr4	human, Homo sapiens

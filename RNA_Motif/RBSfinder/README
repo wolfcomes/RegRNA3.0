@@ -1,0 +1,103 @@
+Copyright (c) 2000 The Institute for Genomic Research.  All rights reserved.  
+
+The program "rbs_finder.pl" implements an algorithm to find ribosome binding 
+sites(RBS) in the upstream regions of the genes annotated by Glimmer2, 
+GeneMark, or other prokaryotic gene finders.
+If there is no RBS-like patterns in this region, program searches for a
+start codon having a RBS-like pattern ,in the same reading frame upstream
+or downstream and relocates start codon accordingly. 
+
+USAGE:
+------
+	rbs_finder.pl <Seq_file> <Whole_Coord_File> <Output_file> <RBS_window_size> [<Consensus_seq>] [-p <Partial_Coord_File>]
+	
+	where:
+	
+	<Seq_file>: Whole genome sequence in FASTA format.
+	
+
+	<Whole_Coord_file>: *All* the coordinates found by Glimmer2. This file should be in following format:
+
+    <Gene id> <Start Codon Coord> <Stop Codon Coord>	
+    1     	1030     		1140         
+    2     	1214     		3010  	     
+  		:
+		:
+		:
+
+	There may be more than three columns , but the program will discard the other columns.
+
+	<Output_file>: The name of the output file (see Output Format)
+
+	<RBS_window_size>: This parameter determines how far the program should look for 
+RBS-like pattern  in the upstream region of each of the genes. The best results obtained 
+using a window size of 50bps.
+	
+	<Consensus_seq>:(optional): The default consensus sequence is ("aggag"). However a 
+computed sequence can be used to get better results. The method to compute the consensus 
+sequence is as follows:
+		-Take the complement of last 30bps of 16S rRNA
+		-Find the most abundantly found 5bps subsequence of this complement in the 
+30bps upstream regions of the start codons annotated by Glimmer2.
+		-Use this sequence as consensus sequence.  	 
+
+	<Partial_Coord_File>:(optional) The coordinates that user wants to relocate or check for RBS site, which can be 
+a subset of coordinates annotated by Glimmer2.This file should be in following format:
+    
+    <Gene id> <Start Codon Coord> <Stop Codon Coord>	
+    1     	1030     		1140         
+    2     	1214     		3010  	   
+  		:
+		:
+		:
+	
+	There may be more than three columns , but the program will  discard the other columns.	
+
+
+OUTPUT FORMAT:
+--------------
+	The program outputs a summary to standart output like:
+	
+	Summary:
+	# of orfs that have RBS before original start codon loc= 880 -> 95.55%
+	# of orfs that have RBS before new start codon loc= 23 -> 2.50%
+	# of orfs that have no RBS= 18 ->  1.95%
+	Total # of orfs: 921
+		
+
+	Program also outputs to the file given as argument in the following format:
+
+		 NewStart     Stop	 	RBS			                  OldStart
+  GeneID         Position     Position    Pattern Position     NewStartCodon    Shift   Codon Position
+  ORF00001        133646      133756       GAGGA   133632          ATG             0     ATG   133646
+  ORF00004        133046      130665       GAGGA   133054          ATG             0     ATG   133046
+  ORF00005        130658      129873       CAGGA   130673          ATG             0     ATG   130658
+  ORF00006        129873      129217         ---        0          ATG             0     ATG   129873
+  ORF00007        128756      129205       TAGGA   128743          ATG             0     ATG   128756
+
+	The GeneID's are same as the original gene id's in the input. 
+	RBS pattern is the RBS-like pattern found upstream of the start codon and RBS 
+position if the start coordinate of this pattern.
+	Shift is the amount of relocation done in order to find a start codon with a 
+RBS-like pattern. Shift can be :
+	- 0 if the original start codon has a RBS-like pattern in the window preceding it 
+	- Negative if the original start coordinate moved upstream in the same reading frame
+	- Positive if the original start coordinate moved downstream in the same reading frame	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

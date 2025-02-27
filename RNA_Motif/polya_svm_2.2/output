@@ -1,0 +1,41 @@
+>lcl|p.79958.2
+#+/-	HPR_Fr	HPR_To	Site	PolyA_SVM Score
++ 	330	361	346		1.466
+
+>lcl|p.79858.3
+#+/-	HPR_Fr	HPR_To	Site	PolyA_SVM Score
++ 	287	318	303		1.204
+
+>p.60:fly
+#+/-	HPR_Fr	HPR_To	Site	PolyA_SVM Score
++ 	190	221	206		0.411
++ 	268	299	284		3.871
+
+>p.61:fly
+#+/-	HPR_Fr	HPR_To	Site	PolyA_SVM Score
++ 	106	137	122		2.288
++ 	171	202	187		0.313
+
+>testSeq
+#+/-	HPR_Fr	HPR_To	Site	PolyA_SVM Score
+Seq too short, need to be greater than 120 nts
+
+>testSeq
+#+/-	HPR_Fr	HPR_To	Site	PolyA_SVM Score
+-
+
+>chainA
+#+/-	HPR_Fr	HPR_To	Site	PolyA_SVM Score
+Seq too short, need to be greater than 120 nts
+
+>chr1:149783661-149783992(-)
+#+/-	HPR_Fr	HPR_To	Site	PolyA_SVM Score
+-
+
+#########
+#Summary#
+#########
+#Number of input sequences: 8.
+#Number of positive sequences: 4.
+#Number of positive hits: 6
+

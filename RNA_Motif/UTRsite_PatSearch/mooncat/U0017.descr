@@ -1,0 +1,3 @@
+uuuuuuu p1=10...20 uuuuuuu 
+                 p2=10...20 uuuuuuu p3=5...15
+                 uuuuuuu length(p1+p2+p3)<40

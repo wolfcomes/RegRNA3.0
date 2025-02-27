@@ -1,0 +1,1370 @@
+1|cftr, exon 9|Exon enhancer|Homo sapiens, human||GAUGAC
+2|cftr, exon 9|Exon silencer|Homo sapiens, human|SFRS1 (SF2/ASF), SFRS6 (SRp55), SFRS4 (SRp75)|UUAAUUUCAAGA
+3|cftr, exon 13|Exon enhancer|Homo sapiens, human|SFRS1 (ASF/SF2), TRA2A (hTra2alpha)|GAAAGAAGAAA
+4|fibronectin eda exon|Exon silencer|Homo sapiens, human||CAAGG
+5|fn eda|Exon silencer|Gallus gallus, chicken||CAUGG
+6|fibronectin eda exon|Exon enhancer|Homo sapiens, human||GAAGAAGA
+7|fn eda|Exon enhancer|Homo sapiens, human||ACCUACUCUAGCCCUGA
+8|eiiia exon|Exon enhancer|Gallus gallus, chicken||GAAGAAGAC
+9|fibronectin eda exon|Exon enhancer|Homo sapiens, human||AGGGUGACC
+10|fibronectin intron downstream of exon eiiib|Intron enhancer|Rattus sp., rat||UGCAUG
+11|igm exon m2|Exon enhancer|Mus musculus, mouse|U2 snRNA|GAAGGACAGCAGAGACCAAGAGA
+12|cd45, exon 5|Exon silencer|Homo sapiens, human||ACUCGCA
+13|igm exon m2|Exon silencer|Mus musculus, mouse||CUAGUAAACUUAUUCUUACGUCUUUCCUGUGUUGCCCUCCAGCUUUUAUCUCUGAGAUGGUCUUCUUUCUAGA
+14|fn eda|Exon silencer|Homo sapiens, human||UGUCGAUUCCA
+15|ctnt intron 4|Intron enhancer|Gallus gallus, chicken||GCGCUUCUUCCCUUCCCUCCUCCCUGGCUCAG
+16|fn eda|Exon silencer|Homo sapiens, human||UUGGGAAAGCC
+17|fn eda|Exon silencer|Homo sapiens, human||AAGUUUCC
+18|ewg intron 6, au 4-6|Intron enhancer|Drosophila melanogaster, fruit fly|ELAV|AUUUUUUGCUUGUCCUCAUUUUA
+19|gh-1 intron 3|Intron enhancer|Homo sapiens, human||GGAAAAGGG|GGAAACGGG|GGAAAGGGG|GGAAAUGGG|GGAACAGGG|GGAACCGGG|GGAACGGGG|GGAACUGGG|GGAAGAGGG|GGAAGCGGG|GGAAGGGGG|GGAAGUGGG|GGAAUAGGG|GGAAUCGGG|GGAAUGGGG|GGAAUUGGG|GGACAAGGG|GGACACGGG|GGACAGGGG|GGACAUGGG|GGACCAGGG|GGACCCGGG|GGACCGGGG|GGACCUGGG|GGACGAGGG|GGACGCGGG|GGACGGGGG|GGACGUGGG|GGACUAGGG|GGACUCGGG|GGACUGGGG|GGACUUGGG|GGAGAAGGG|GGAGACGGG|GGAGAGGGG|GGAGAUGGG|GGAGCAGGG|GGAGCCGGG|GGAGCGGGG|GGAGCUGGG|GGAGGAGGG|GGAGGCGGG|GGAGGGGGG|GGAGGUGGG|GGAGUAGGG|GGAGUCGGG|GGAGUGGGG|GGAUUUGGG|GGAUAAGGG|GGAUACGGG|GGAUAGGGG|GGAUAUGGG|GGAUCAGGG|GGAUCCGGG|GGAUCGGGG|GGAUCUGGG|GGAUGAGGG|GGAUGCGGG|GGAUGGGGG|GGAUGUGGG|GGAUUAGGG|GGAUUCGGG|GGAUUGGGG|GGAUUUGGG|GGCAAAGGG|GGCAACGGG|GGCAAGGGG|GGCAAUGGG|GGCACAGGG|GGCACCGGG|GGCACGGGG|GGCACUGGG|GGCAGAGGG|GGCAGCGGG|GGCAGGGGG|GGCAGUGGG|GGCAUAGGG|GGCAUCGGG|GGCAUGGGG|GGCAUUGGG|GGCCAAGGG|GGCCACGGG|GGCCAGGGG|GGCCAUGGG|GGCCCAGGG|GGCCCCGGG|GGCCCGGGG|GGCCCUGGG|GGCCGAGGG|GGCCGCGGG|GGCCGGGGG|GGCCGUGGG|GGCCUAGGG|GGCCUCGGG|GGCCUGGGG|GGCCUUGGG|GGCGAAGGG|GGCGACGGG|GGCGAGGGG|GGCGAUGGG|GGCGCAGGG|GGCGCCGGG|GGCGCGGGG|GGCGCUGGG|GGCGGAGGG|GGCGGCGGG|GGCGGGGGG|GGCGGUGGG|GGCGUAGGG|GGCGUCGGG|GGCGUGGGG|GGCUUUGGG|GGCUAAGGG|GGCUACGGG|GGCUAGGGG|GGCUAUGGG|GGCUCAGGG|GGCUCCGGG|GGCUCGGGG|GGCUCUGGG|GGCUGAGGG|GGCUGCGGG|GGCUGGGGG|GGCUGUGGG|GGCUUAGGG|GGCUUCGGG|GGCUUGGGG|GGCUUUGGG|GGGAAAGGG|GGGAACGGG|GGGAAGGGG|GGGAAUGGG|GGGACAGGG|GGGACCGGG|GGGACGGGG|GGGACUGGG|GGGAGAGGG|GGGAGCGGG|GGGAGGGGG|GGGAGUGGG|GGGAUAGGG|GGGAUCGGG|GGGAUGGGG|GGGAUUGGG|GGGCAAGGG|GGGCACGGG|GGGCAGGGG|GGGCAUGGG|GGGCCAGGG|GGGCCCGGG|GGGCCGGGG|GGGCCUGGG|GGGCGAGGG|GGGCGCGGG|GGGCGGGGG|GGGCGUGGG|GGGCUAGGG|GGGCUCGGG|GGGCUGGGG|GGGCUUGGG|GGGGAAGGG|GGGGACGGG|GGGGAGGGG|GGGGAUGGG|GGGGCAGGG|GGGGCCGGG|GGGGCGGGG|GGGGCUGGG|GGGGGAGGG|GGGGGCGGG|GGGGGGGGG|GGGGGUGGG|GGGGUAGGG|GGGGUCGGG|GGGGUGGGG|GGGUUUGGG|GGGUAAGGG|GGGUACGGG|GGGUAGGGG|GGGUAUGGG|GGGUCAGGG|GGGUCCGGG|GGGUCGGGG|GGGUCUGGG|GGGUGAGGG|GGGUGCGGG|GGGUGGGGG|GGGUGUGGG|GGGUUAGGG|GGGUUCGGG|GGGUUGGGG|GGGUUUGGG|GGUAAAGGG|GGUAACGGG|GGUAAGGGG|GGUAAUGGG|GGUACAGGG|GGUACCGGG|GGUACGGGG|GGUACUGGG|GGUAGAGGG|GGUAGCGGG|GGUAGGGGG|GGUAGUGGG|GGUAUAGGG|GGUAUCGGG|GGUAUGGGG|GGUAUUGGG|GGUCAAGGG|GGUCACGGG|GGUCAGGGG|GGUCAUGGG|GGUCCAGGG|GGUCCCGGG|GGUCCGGGG|GGUCCUGGG|GGUCGAGGG|GGUCGCGGG|GGUCGGGGG|GGUCGUGGG|GGUCUAGGG|GGUCUCGGG|GGUCUGGGG|GGUCUUGGG|GGUGAAGGG|GGUGACGGG|GGUGAGGGG|GGUGAUGGG|GGUGCAGGG|GGUGCCGGG|GGUGCGGGG|GGUGCUGGG|GGUGGAGGG|GGUGGCGGG|GGUGGGGGG|GGUGGUGGG|GGUGUAGGG|GGUGUCGGG|GGUGUGGGG|GGUUUUGGG|GGUUAAGGG|GGUUACGGG|GGUUAGGGG|GGUUAUGGG|GGUUCAGGG|GGUUCCGGG|GGUUCGGGG|GGUUCUGGG|GGUUGAGGG|GGUUGCGGG|GGUUGGGGG|GGUUGUGGG|GGUUUAGGG|GGUUUCGGG|GGUUUGGGG|GGUUUUGGG
+20|ewg intron 6, au 4-6|Intron enhancer|Drosophila melanogaster, fruit fly|ELAV|AUAUUUUGCUAUUAUACAUUUUA
+21|gh exon 5|Exon enhancer|Bos taurus, bovine|ASF/SF2|GGAAG
+22|dystrophin exon27|Exon enhancer|Homo sapiens, human||UAAAGAAGAGGCCCAACAAAAAGAAGCGAAAG
+23|dystrophin gene exon 27|Exon enhancer|Homo sapiens, human||AAGAAGAGG
+24|dystrophin gene exon 27|Exon enhancer|Homo sapiens, human||AAGAAGCGAA
+25|calcitonin (ct) exon 4|Exon enhancer|Homo sapiens, human||CACCUGGAAAGAAAAGGGAUAUGUCCAGCG
+26|calcitonin (ct) exon 4|Exon enhancer|Homo sapiens, human||GAGACUUCAACAAGUUUCACACG
+27|dsx exon 4|Exon enhancer|Drosophila melanogaster, fruit fly|SR proteins, Tra, Tra2|CUUCAAUCAACAU
+28|dsx exon 4|Exon enhancer|Drosophila melanogaster, fruit fly|SR proteins, Tra, Tra2|CAACAAUCAACAU
+29|dsx exon 4|Exon enhancer|Drosophila melanogaster, fruit fly|Tra/Tra2|UCUUCAAUCAACA|UCUUCGAUCAACA|UCUACAAUCAACA|UCUACGAUCAACA|UCAUCAAUCAACA|UCAUCGAUCAACA|UCAACAAUCAACA|UCAACGAUCAACA
+30|cd45, exon 6|Exon silencer|Homo sapiens, human||ACCUGCACGCA
+31|dsx exon 4|Exon enhancer|Drosophila melanogaster, fruit fly|Tra/Tra2|AAAGGACAAAGGACAAAA
+32|c-src  intron b downstream of exon n1|Intron enhancer|Mus musculus, mouse|KSRP, p53/hnRNP F|AGGCUGGGGGCUGCUCUCUGCAUGUGCUUCCU
+33|thyroid hormone receptor , exon 9|Intron enhancer|Rattus sp., rat|SF2/ASF, hnRNP H|GGAGAGAAGGGA
+34|c-src n1 exon|Exon enhancer|Mus musculus, mouse|ASF/SF2,hnRNP A1,H,F|GAGGAAGGUG
+35|a-tropomyosin gene exon 5/sk|Exon silencer|Homo sapiens, human||UAAGUGUUCUGAGCUGGAGGAGGAGCUGAAGAAUGUCACCAACAACCUCAAGUCUCUUGAGGCUCAGGCGGAGAAG
+36|cd44 exon v5|Exon enhancer|Mus musculus, mouse||GCUACAAGCA
+37|hiv-1 tat exon 2|Exon enhancer|Unknown|ASF/SF2|GAAGAAGCGGAGACAGCGACG
+38|hiv-1 tat exon 3|Exon enhancer|Unknown|ASF/SF2|GAAGAAGAA
+39|hiv-1 tat exon 2|Exon silencer|Unknown|hnRNP A1|CUAGACUAGA
+40|hiv-1 tat exon 2|Exon silencer|Unknown|hnRNP H|UUGGGU
+41|hiv-1 tat-rev exon 3|Exon silencer|Unknown||AGAUCCAUUCGAUUAGUGAA
+42|hiv-1 exon 6d|Exon silencer|Unknown|ASF/SF2,  SC35|GAAAGGAGA
+43|thyroid hormone receptor , exon 9|Intron enhancer|Rattus sp., rat|SF2/ASF, hnRNP H|GAGGGAG
+44|mvm ns2|Exon enhancer|Unknown||ACACC
+45|hiv-1 tat-rev exon 3|Exon enhancer|Unknown||GAAGAAGAAGGUGGAGAGAGAGACAGAG
+46|tat-rev exon 3|Exon silencer|Unknown|hnRNPA1, SC35|UUAG
+47|cgrp  intron 3|Intron enhancer|Mus musculus, mouse|PTB, U1 snRNA|CAGGUAAGAC
+48|ftdp-17 tau exon 10|Exon enhancer|Homo sapiens, human|Tra2beta|UCUUAGCAACGUCCAG
+49|beta-tm exon 5, 6|Exon enhancer|Rattus sp., rat|ASF/SF2|GAAGAAGAA|GAAGAAGAG|GAAGAGGAA|GAAGAGGAG|GAGGAAGAA|GAGGAAGAG|GAGGAGGAA|GAGGAGGAG
+50|ftdp-17 tau exon 10|Exon silencer|Homo sapiens, human|Tra2beta|UCAAAGGAUAAUAUCAAA
+51|beta-tm exon 8|Exon enhancer|Rattus sp., rat||AAAGAGGAC
+52|beta-tm exon 7|Exon silencer|Rattus sp., rat|hnRNP H|UGUGGG
+53|beta-tm exon 8-2|Exon enhancer|Rattus sp., rat|ASF/SF2|GAAGAAGAG
+54|caldesmon exon 5|Exon enhancer|Homo sapiens, human||GAGGAAGAGAAAAGGGCAGCAGAGGAGAGGCA
+55|beta tropomyosin intron  ivs ab|Intron silencer|Gallus gallus, chicken||CCCUCUCUCUAUCGCUGUCUCUUGAGCCACGCC
+56|beta tropomyosin intron 6|Intron enhancer|Homo sapiens, human||WGGG
+57|fgfr-2 k-sam(iiib)|Exon silencer|Homo sapiens, human||UAGGGCAGGC
+58|mvm ns-specific exon|Exon enhancer|Unknown||AGAGAUCGAGGAGGAUUUGAGAG
+59|fgfr-1 alpha exon|Exon enhancer|Homo sapiens, human|SRp55|GUGACCUGCUGCAG
+60|fgfr-1 alpha exon|Exon enhancer|Homo sapiens, human|SRp55|GACGGGGUGCAGCUGGCGGAAAGCAACCGCACCCGCAUCACAGGGGAGGAGGUGGAGGUGCAGGACUCCGUG
+61|fibroblast growth factor receptor-2, exon bek|Exon silencer|Homo sapiens, human|PTB|UCUUUAGGUUCCCUUUCAAUUCU
+62|clathrin light chain b exon en|Exon enhancer|Rattus sp., rat||ACAAAGCGUUCUACCAGCAGCCAGAUGCUG
+63|insulin receptor  exon 11 upstream intron|Intron enhancer|Homo sapiens, human||GUAGUGGGACCCAGAGACGGCAGAAGGGUGGGUGGAGUCUGAAUGGAG
+64|insulin receptor  exon 11 upstream intron|Intron silencer|Homo sapiens, human||UUACUCGGACACAUGUGGCCUCCAAGUGUCAGAGCCCAGUGGU
+65|cd44 exon v4|Exon enhancer|Homo sapiens, human|YB-1|CAACCACAA
+66|cd44 exon v5|Exon silencer|Mus musculus, mouse|hnRNP A1|AGACAGAAUCAGCACCAGUGCUCAUGGAGAAAAUUGGACCCCGGAACCACAGCCUCCUUUCAAUAACCAU
+67|cd44 exon v5|Exon enhancer|Mus musculus, mouse||AUGAAGAGGA
+68|cd44 exon v9|Exon enhancer|Homo sapiens, human|9G8, ASF/SF2, SRp20|GGAAGAAGAUAAAGAC
+69|cd45 exon 4|Exon silencer|Homo sapiens, human||GUGACCCCUUACCUACUCACACCACUGCAUUCUCACCCGCAAGCACCUUUG
+70|ct/cgrp intron downstream from exon 4|Intron enhancer|Homo sapiens, human|PTB|CUCCGCUCCUCUUC
+71||NA|NA|NA|NA
+72||NA|NA|NA|NA
+73||NA|NA|NA|NA
+74|ewg intron 6, au 4-6|Intron enhancer|Drosophila melanogaster, fruit fly|ELAV|AUUUUUAUUUUUAAUUAUUGUU
+75|cd45 tyrosine phosphatase|Exon enhancer|Homo sapiens, human||AACACCU
+76|tau intron 10||Homo sapiens, human||CGUCCCA
+77|tau intron 10||Homo sapiens, human||GCCGUGC
+78|cd45, exon 4|Exon silencer|Homo sapiens, human||ACAAGCACGCA|ACAAGCAAGCA|ACAGGCACGCA|ACAGGCAAGCA|ACGAGCACGCA|ACGAGCAAGCA|ACGGGCACGCA|ACGGGCAAGCA
+79|ct/cgrp intron downstream from exon 4|Exon enhancer|Homo sapiens, human|PTB|UUUUUCCC
+80|c/cgrp exon 3|Exon enhancer|Rattus sp., rat|SRp40, 37-kDa protein|GAAGAAGAAG
+81|c/cgrp exon 4|Exon enhancer|Rattus sp., rat|SRp55|GGAGCACCUGGC
+82|c/cgrp exon 4|Exon enhancer|Rattus sp., rat|hTra2 beta|AGACCUCAACAAGUUUCACACC
+83|gag|Exon silencer|Rous Sarcoma virus|HnRNP H|CGAAUCGACAAAGGGGAGGAAGUGGGAGAAA
+84|gag|Exon silencer|Rous Sarcoma virus|SF2/ASF|AGAAACCAGCAACGGAGCGGCGAAU
+85|e1a exon 2|Exon enhancer|Adenovirus family|9G8|GACGACGAG
+86|thpo, intron 5||Homo sapiens, human||CCCCUAG
+87|e1a exon 2|Exon enhancer|Adenovirus family|ASF/SF2|GAUGAAGAG
+88|avian sarcoma virus env|Exon enhancer|Rous Sarcoma virus||AAGAAGAAG
+89|gaba-a, gamma-aminobutyric acid (gaba-a) receptor, intron 9|Intron enhancer|Mus musculus, mouse|Nova-1|UCAUUUUCAGAUUCAUCAUCUCAU
+90|eiav tat/rev exon 3|Exon enhancer|Adenovirus family|ASF/SF2|AAGAAGAAAAAAGAAGAAA
+91|ftdp-17 tau exon 10|Exon enhancer|Homo sapiens, human|Tra2beta|AAGAAGAAG
+92|g-alpha-s exon 3|Exon enhancer|Homo sapiens, human|ASF/SF2|AAGAGGA
+93|beta-globin exon 1|Exon enhancer|Homo sapiens, human|SC35|UGCCGUU
+94|beta-globin exon 2|Exon enhancer|Homo sapiens, human|ASF/SF2|GGACAA
+95|beta-globin exon 2|Exon enhancer|Homo sapiens, human||UGGACCCAGAGGU
+96|beta-globin exon 2|Exon enhancer|Homo sapiens, human|SC35|UGCUGUU
+97|grh exon 4|Exon enhancer|Rattus sp., rat|Tra2-alpha|GAAGAGGAAG
+98|gnrh exon 3|Exon enhancer|Homo sapiens, human||AAGAGAUGGGCAAGGAGGUGGA
+99|igf i, exon 5|Exon enhancer|Homo sapiens, human|ASF/SF2|AUCCAGGAGGGGAACAGA
+100|f1 gamma, exon10|Exon enhancer|Mus musculus, mouse||AAAGAAGGAAA
+101|f1 gamma, exon 9|Exon silencer|Homo sapiens, human||AGUUCCA
+102|mvm ns-specific exon|Exon enhancer|Unknown||GAAGAAAGA
+103|mvm ns2|Exon enhancer|Unknown||CACCA
+104|calca: calcitonin/calcitonin-related polypeptide, alpha, exon 4|Exon enhancer|Rattus sp., rat|hTra2  ,  SRp55|GACCUCAACAAGU
+105|ncam exon 17|Exon enhancer|Mus musculus, mouse|SR protein|GGGGGGAAGCACACAGAGCCCAACGAGACCAC
+106|smn1 exon 7|Exon enhancer|Mus musculus, mouse|SF2/ASF|CAGACAA
+107|smn1 exon 7|Exon enhancer|Homo sapiens, human|Htra2;�1, hnRNP;G, SRp30c|AAGAAGGAAGG
+108|calca: calcitonin/calcitonin-related polypeptide, alpha, exon 4|Exon enhancer|Rattus sp., rat|hTra2  ,  SRp55|AAGAAAAGGGA
+109|smn2 exon 7|Exon silencer|Homo sapiens, human|hnRNP A1|UAGACA
+110|sr protein 9g8 exon 3|Exon enhancer|Homo sapiens, human|9G8, SC35, ASF/SF2|GAAGAAGAA
+111|sr protein 9g8 exon 4|Exon enhancer|Homo sapiens, human|9G8, SC35|AGAGGAAGGCGA
+112|sr protein 9g8 exon 4|Exon enhancer|Homo sapiens, human|9G8, SC35|AGGAGCAGGGGACGAAG
+113|xi collagen, exon 6b|Exon enhancer|Mus musculus, mouse||GAAGAAGA
+114|xi collagen exon 6b|Exon enhancer|Mus musculus, mouse||CAAGCAUCAGCAAAAGCCAAAC
+115|mypt1, exon3|Exon enhancer|Gallus gallus, chicken||UGAAUGAAGGUCCUACAUCCU
+116|mypt1,exon3|Exon silencer|Gallus gallus, chicken||AACACAAGUU
+117|4.1r exon 16|Exon silencer|Unknown|hnRNP A/B|AUAGCA
+118|bdv polymerase exon|Exon silencer|Unknown||CUAGAUAUGGAUCCCGACUUCAACGAUAUUGUUAG
+119|agrin y, exon 28|Intron enhancer|Mus musculus, mouse||ACUCACC
+120|dna ligase iii, beta exon|Exon silencer|Homo sapiens, human|37 Kd protein|CCAAGUCAAAAUUUAC
+121|hiv exon 3|Exon silencer|Unknown|hnRNP A/B|UUAGGACGUAUAGUUAGUCCUAGG
+122|tev exon 6d|Exon enhancer|Unknown|hnRNP H|GGGA
+123|tropomyosin, exon sk|Exon enhancer|Unknown|Tra2beta/hnRNPG|AAGUGUU
+124|cardiac troponin t exon 17|Intron enhancer|Gallus gallus, chicken||GUAAGUACAGGCUGCAUGCCUCCCACCACACCUGUGCUGCAUGGACACCUGGGGCUGACCUUGCAACAGAAGUGGGGCUGAGGGAAGGACUGUCCUGGGGACUGGUGUCAGAGCGGGGUUGGUGACUCUCAGGAUGCCCAAAACACCCA
+125|cardiac troponin t|Exon enhancer|Homo sapiens, human|SRp30a, SRp40,SRp55, SRp70|GAGGAAGAA
+126|b3, artificial|Exon enhancer|artificial, (e.g., transgenic mouse)|SRp40|UCGACAUUGGGAGCAGUCGGCUCGUGC
+127|thyroid hormone receptor , exon 9|Intron enhancer|Rattus sp., rat|SF2/ASF, hnRNP H|GGUGGGGAGGAG
+128|tra2 beta1,|Exon enhancer|Homo sapiens, human|TRA2 BETA1|GAAAGAAU
+129|tra2 beta1,|Exon enhancer|Homo sapiens, human|tra2 beta1|GAAAGAAG
+130|dmd, pseudo exon from intron|Exon enhancer|Homo sapiens, human|hnRNP G, Tra2�|AAGUAACAA
+131|cftr, exon 9||Homo sapiens, human|HNRPH1 (hnRNPH)|GGCGG
+132|fn1: fibronectin 1||Homo sapiens, human||UUGCCUAACAG
+133||NA|NA|NA|NA
+134|tra2 beta1,|Exon enhancer|Homo sapiens, human|TRA2 BETA1|GAAGAAUGAAGAAA
+135|caspase-2,  exon 9|Intron silencer|Mus musculus, mouse|PTB|UCUUCCUUCUCU
+136|caspase-2,  exon 9|Intron silencer|Mus musculus, mouse|PTB|UUUCUCU
+137|brca1 exon 5||Homo sapiens, human|U1snRNA|AUGUAAGAAU
+138|brca1 exon 5|Exon enhancer|Homo sapiens, human|SRp55|UUUUGCAUGCUGAAACUUCUCAACCAGAAGAAAGGGCCUUCACAGUGUCCUUUAUGUAAGAAUGAUAUAACCAAAAG
+139|brca1 exon 14||Homo sapiens, human|U1snRNA|AGUGGAAAG
+140|brca1 exon 23||Homo sapiens, human|U1snRNA|CUUCCAUG
+141|brca1 exon 23||Homo sapiens, human|SRp55|GUGUCCACCCAAUUGUGGUUGUGCAGCCAGAUGCCUGGACAGAGGACAAUGGCUUCCAUGGUAAGGUGCCU
+142|gh1: growth hormone 1, exon3|Exon enhancer|Homo sapiens, human||AAGAAGC
+143|gh1:growth hormone 1, intron3|Intron enhancer|Homo sapiens, human||GGGGAU
+144|gh1:growth hormone 1, intron3|Intron enhancer|Homo sapiens, human||GAUGGGGGAGACCUGUA
+145|c-src, exon n1|Intron silencer|Mus musculus, mouse|PTB/nPTB, KSRP, FBP,hnRNP H, hnRNP F|UGCAUG
+146|cftr, exon 9||Homo sapiens, human|SFRS1 (SF2/ASF)|AAGAUAGAAAGAGGACAGUUG
+147|cftr:cystic fibrosis transmembrane receptor, intron 9|Intron silencer|Homo sapiens, human|SF2/ASF, SC35, SRp75|AAUGUAUGGGUGUAGUGUCUUGUAUAAUAGAAAUUGUUCCACUGAUAAUUUACUCUAGUUUUUUAUUUCCUCAUAUUAUUUUCAGUGGCUUUUUCUUCCACAUCUUUAUAUUUUGCACCACAUUCAACACUGUAUCUUGCACAUGGCG
+148|4.1r exon 16|Intron enhancer|Homo sapiens, human||AUUUAUUUUUAAAUAUUUUUUGGUUUGCCAAUUUUCAGUUUUUUCCCG
+149|4.1r exon 16|Intron enhancer|Homo sapiens, human||UGUAUGAACUUGAAGCUUAUUUCAGUUGGUUGCCUGGAACCUUCUGCAUUCUUUGCUGAUCCCCUUUUCUUCAUUCUGUGCUGCAUUUGGUUUUGCAUGCAAUUGCAUGAAGGGACUUUAGGUUUAAAAUGCUUUUGCAUGUU
+150|alpha-actinin, nm/sm exons|Intron enhancer|Rattus sp., rat|ETR-3*, Brul*|GUCUGUGUGUCUAACUGU
+151|agrin y, exon 28|Intron enhancer|Mus musculus, mouse||AUCUUUUGU
+152|agrin y, exon 28|Intron enhancer|Mus musculus, mouse||UUACC
+153|amp deaminase 1 exon 2|Intron enhancer|Homo sapiens, human||GCCCAGGCUGGAGUGCAGUA
+154|amp deaminase 1 exon 2|Intron enhancer|Homo sapiens, human||CCAUCGAAUGCAUUUACUU
+155|amyloid precursor protein, exon 8|Intron enhancer|Homo sapiens, human||AUGUUU
+156|amyloid precursor protein, exon 8|Intron enhancer|Homo sapiens, human||UUU
+157|calcitonin/ cgrp exon 4|Intron enhancer|Rattus sp., rat||CCAAGGGAAAGCAUGGGUUAACCUA
+158|calcitonin/ cgrp, exon 4|Intron enhancer|Rattus sp., rat||CAGCCCUGGUGCAUGGCACUGCCUC
+159|cardiac troponin t, intron 2|Intron silencer|Gallus gallus, chicken|PTB*, U2AF65|CCUCUGCGCUUCUUCCCUUCCCUCCUCCCUGGCUCA
+160|calcitonin/ cgrp, exon 4|Intron enhancer|Homo sapiens, human|PTB*, ASF/SF2*,|CUCCGCUCCUCUUCCAGGUAAGAC
+161|cardiac troponin t, exon 5|Intron enhancer|Gallus gallus, chicken|PTB, ETR-3|UUUCUUUGUUCCA
+162|cardiac troponin t, exon 5|Intron silencer|Gallus gallus, chicken|PTB, ETR-3|ACUGCACCUUUCUUUGUUCCAUCUCUCCACCUCUGCUGUG
+163|cardiac troponin t, exon 5|Intron enhancer|Gallus gallus, chicken|ETR-3*, PurH*|UGUGUCCUGUG
+164|tra2 beta1,|Exon enhancer|Homo sapiens, human|TRA2 BETA1|GAAGAAGGAAA
+165|cardiac troponin t, exon 5|Intron silencer|Gallus gallus, chicken|PTB*|UUUCCUUUCAUUCUUUCACUUCU
+166|caspase-2,  exon 9|Intron silencer|Mus musculus, mouse|U2 snRNP|GCUUAUUAACUGCAAUGUACUUUUUAUUGUUUUUCAUUCCAGUUAAGG
+167|caspase-2,  exon 9|Intron silencer|Mus musculus, mouse|PTB|UCUUCC
+168|chloride channel clc-1, intron 2|Intron enhancer|Homo sapiens, human|CUG-BP*|GUUUGUUUGUUUGUUUGUUGUUUGUUUGUUUG
+169|clathrin light chain b exon en|Intron silencer|Rattus sp., rat|PTB, CUG-BP|CUGUCUUGCUGUCU
+170|c-src,  exon n1|Intron silencer|Mus musculus, mouse|PTB/nPTB|CUCUCU
+171|c-src, exon n1|Intron silencer|Mus musculus, mouse|PTB/nPTB, KSRP, FBP,hnRNP H, hnRNP F|GGGGGCUG
+172|c-src, exon n1|Intron silencer|Mus musculus, mouse|PTB/nPTB, KSRP, FBP,hnRNP H, hnRNP F|CUCUC
+173|dmpk ,exon 16|Intron enhancer|Homo sapiens, human||CUGN
+174|fibroblast growth factor receptor 1,  exon alpha|Intron silencer|Homo sapiens, human|PTB|AAUGCUGCUACAGCUGCUUCCUAACUUUGCCUCUUUCUUC
+175|fibroblast growth factor receptor 1, exon alpha|Intron silencer|Homo sapiens, human||AUCUGCCCCCACUCUGCUUCAGAAACUGCUGCCCACUAACAUUGCUCCCUGCCUGCCGCGUG
+176|fibroblast growth factor receptor 2 , exons bek/k-sam (iiib/iiic) exons|Intron enhancer|Homo sapiens, human||CUUUCAUUUUUGUCUUUUUUU
+177|fibroblast growth factor receptor 2 , exons bek/k-sam (iiib/iiic) exons|Intron enhancer|Homo sapiens, human||CCAUGGAAAAAUGCCCACAAC
+178|fibroblast growth factor receptor 2 , exons bek/k-sam (iiib/iiic)|Intron enhancer|Homo sapiens, human||UGUGGGUUGAUUUUUUCCAUGCGUUUGAUUGCGUGCAUGUGUAGGAGGUGAAGCCGGUGU
+179|fibroblast growth factor receptor 2 , exons iiib/iiic|Intron enhancer|Rattus sp., rat||GGGCUGAUUUUUCCAUGU
+180|fibroblast growth factor receptor 2 , exons iiib/iiic|Intron silencer|Rattus sp., rat||GGGCUGAUUUUUCCAUGU
+181|fibroblast growth factor receptor 2 , exons iiib/iiic|Intron silencer|Rattus sp., rat|PTB|CUCCUCCCUC
+182|fibroblast growth factor receptor 2 , exons iiib/iiic|Intron silencer|Rattus sp., rat||UGGUGGGACCAUAGGCAGCAC
+183|fibronectin, exon eiiib|Intron enhancer|Rattus sp., rat||UGCAUG
+184|gaba(a) receptor subunit gamma2|Intron silencer|Rattus sp., rat||UGUUUCUCUUUCUCUCCUUU
+185|gaba(a) receptor subunit gamma2|Intron silencer|Rattus sp., rat|PTB|CCUUUUCCUUCUUCUUAUU
+186|gaba(a) receptor subunit gamma2|Intron silencer|Rattus sp., rat|PTB|GCAAUUCUCUUUUCUGUCU
+187|gaba(a) receptor subunit gamma2|Intron enhancer|Rattus sp., rat||ACAAAUCCA
+188|gag gene|Intron silencer|Rous Sarcoma virus|hnRNP H, SF2/ASF|CCGGAGUGCUCGAGAAACCAGCAACGGAGCGGCGAAUCGACAAAGGGGAGGAAGUGGGAGAAACAACUGUGCAGCGAGAUGCGAAGAUGGCGCCGGAGGAAACGGCCACACCUAAAACCGUUGGCACAUCCUGCUAUCAUUGCGGAACAGCUAUUGGCUGUAAUUGCGCCACAGCCUCGGCUCCCUCCUCCUCCUUAUGUGGGGAGUGGUUUGUAUCCUUCCCU
+189|glycine receptor alpha2, exon 3a|Intron enhancer|Homo sapiens, human|Nova-1|UCAUCAUCAUUUUCAU
+190|hnrnp a1, exon 7b|Intron enhancer|Mus musculus, mouse|hnRNP A1|UAGAGU
+191|hnrnp a1, exon 7b|Intron enhancer|Mus musculus, mouse|hnRNP A1|AGCUAGAUUAGACUUCUAGAGUUU
+192|hnrnp a1, exon 7b|Intron silencer|Mus musculus, mouse||CCUGCUCUGCUGUGCUACCUCCUCCUGGCUUUAAGCUGGGGCCGCCUCCCCAAAAUAAGUAGGUGAAUGAGUGGUUA
+193|hnrnp a1, exon 7b|Intron silencer|Mus musculus, mouse||CUGGAUUAUUAA
+194|bpv-1 late rna|Exon enhancer|Unknown|YB-1|CACCACCACC
+195|major late region 1 (l1) 52,55k/iiia|Intron silencer|Adenovirus family|SR proteins|GCGUGGAGGAAUAUGACGAGGACGAUGAGUACGAGCCAGAGGACGGCGA
+196|bpv-1 late rna|Exon silencer|Unknown|U2AF, PTB|UCUUCUU
+197|major late region 1 (l1) 52,55k/iiia|Intron enhancer|Adenovirus family||AGUACUAAGCGGUGAUGUUUCUGAUCAG
+198|bpv-1 late rna|Exon silencer|Unknown|SRp55, SRp30s|GGCUCCCCC
+199|mvm, ns2-specific exon, small intron|Intron enhancer|Unknown||GGAUGGUUGGUUGGUGGGG
+200|bpv-1 late rna|Exon silencer|Unknown|ASF/SF2|AGAGCAGG
+201|myosin heavy chain, exon 11e|Intron silencer|Drosophila melanogaster, fruit fly||AUGUACCAUGUACC
+202|bpv-1 late rna|Exon silencer|Unknown||UGGU
+203|myosin heavy chain, exon 11e|Intron enhancer|Drosophila melanogaster, fruit fly||AGUGCUGUGU
+204|myosin heavy chain, exon 11e|Intron enhancer|Drosophila melanogaster, fruit fly||AUCCAUCCCUCUAUCUAUCCCAGUUCAACCUGUCCAAAAGUGUUUUUGAAGAACCGCUUAAGCAUAAGCAAAAAAA
+205|bpv-1 late exon 2|Exon enhancer|Unknown|SRp75, SRp55, SRp30a|GAAGGA
+206|bpv-1 late exon 2|Exon enhancer|Unknown|SRp75, SRp55, SRp30a|GAAGAA
+207|ncam, msdb exon|Intron silencer|Mus musculus, mouse||GACCUCACUGACCCAGCUGGGCCUUUGUCACAUUGGGGGAGCCUGGUUCUUUCCUCUCAUUCUCUUAACUGUCUAUACUUUAGUUCUUUGAAUCUGGAGGAGUGGAACAGGUCCACUCUUUGGAAACUUGAACCUGGCUUUCUAGU
+208|nmda, exon 5|Intron silencer|Rattus sp., rat|PTB, CUG-BP|GCUUUAGCGCCGUCAUUUUCAACCGUUUAUAAUCUUCUUCUGUGUCUGCAUAUUUUCUCUGUGCACAUUAUUCAUCAG
+209|nonmuscle myosin ii heavy chain b, exon n30|Intron enhancer|Homo sapiens, human||UGCAUGUCGUACUGCAUGU
+210|nova-1, exon h|Intron enhancer|Mus musculus, mouse|Nova-1|UCAUCCUCUCAUCUACACCAU
+211|sex lethal,  exon 3|Intron silencer|Drosophila melanogaster, fruit fly|Sxl|UUUUUUUU
+212|slo k+ channel, strex exon|Intron silencer|Mus musculus, mouse||CUCUUCCUC
+213|tat, intron 2|Intron silencer|Unknown|hnRNP A1|UAGUGAAUAGAGUUAGGCAGGGA
+214|tau, exon 10|Intron silencer|Homo sapiens, human||UCACACGU
+215|tau, exon 10|Intron enhancer|Homo sapiens, human||CCCAUGCG
+216|thyroid hormone receptor , exon 9|Intron enhancer|Rattus sp., rat|SF2/ASF, hnRNP H|GGGUG
+217|transformer, exon 2|Intron silencer|Drosophila melanogaster, fruit fly|Sxl, U2 snRNP|UUUUUUUU
+218|alpha-tropomyosin, intron2|Intron silencer|Rattus sp., rat||AUCACGCUGCCUGCUGCA
+219|alpha-tropomyosin, intron 3|Intron silencer|Rattus sp., rat|PTB|UCUUCUU
+220|beta-tropomyosin, exon 6a/6b|Intron enhancer|Gallus gallus, chicken|ASF/SF2, SC35, PTB, hnRNP K|CCCCUCUCUCUAUCGCUGUCUCUUGAGCCACGC
+221|beta-tropomyosin, exon 6a/6b|Intron enhancer|Gallus gallus, chicken|TLS|GCUGGGGCUGGGCAGAGCGCGCAGGGUUGAGGGGAGCAGGGUCCUUCACUGGGGUGAA
+222|beta-tropomyosin, exon 6/7|Intron silencer|Rattus sp., rat|PTB, Sam68, FBP|AACCCCACCCCCUCACCCCGUGCUCGCGCCACCCCACUGUCUCACCUCACUGUGCCCUCACGCUCCAUCCUGCCACACGCCCCUGCAG
+223|pcca: propionyl coenzyme a carboxylase, alpha polypeptide(intron2)|Exon silencer|Homo sapiens, human||AAUGUG
+224|pcca: propionyl coenzyme a carboxylase, alpha polypeptide(intron3)|Exon silencer|Homo sapiens, human||UAUUUAUU
+225|pccb: propionyl coenzyme a carboxylase, beta polypeptide (intron11)||Homo sapiens, human||UCUAGGC
+226|pccb: propionyl coenzyme a carboxylase, beta polypeptide (exon6)||Homo sapiens, human||UAAAGGU
+227|pccb: propionyl coenzyme a carboxylase, beta polypeptide (intron14)||Homo sapiens, human||CCAGGGU
+228|opa1: optic atrophy 1 (autosomal dominant), exon9|Exon silencer|Homo sapiens, human||UUAAGGU
+229|opa1: optic atrophy 1 (autosomal dominant), exon11|Exon silencer|Homo sapiens, human||UGAGACC
+230|serca2b||Homo sapiens, human||GUAAAGAGUGUGUGCAGCCUGCC
+231|mypt1 , intron 5|Intron enhancer|Gallus gallus, chicken||UCUUGUCUU
+232|NA|NA|NA|NA|NA
+233|mypt1 , intron 5|Intron enhancer|Homo sapiens, human||AAAGUAAUACCUCCUAUUUAUUUCCCUGGAAACUACAGCAGUUACAAAGAGCACAAUAACACUAUUU
+234|mypt1 , exon 5|Exon enhancer|Gallus gallus, chicken||UCCUACAUCCU
+235|mypt1 , exon 5|Exon silencer|Gallus gallus, chicken||UUAAACACAAGUU
+236|mypt1 , intron 5|Intron silencer|Gallus gallus, chicken||CAGUUGUACAUGGUUCCUAUCUCACAGGAUUAUUUUGGAAGAGAUGAUAUCCAGCAAUUAUAUACAUAAUUAACUUUACUCCACUAUGUAGAAUUUAAGUGAAAUUCAUUUAUAUUAAUGGAGUGAACAAUCCAUAUCUAAAGGAAAAGAUCAAAGAGAAGAAUCUGACAUUUGGGUAGCUAAGUUAUGUACUUCUAUGUGCUGGUGAUGUAAGUGGUGACAGGUGCUUAACUUCUUUUUUUCAGCUGUGCCAUUGAUGUUUUUAGUGGCAUGCGAUCAGUCUAUUUCAUAUAGCAUAAUACAUCUUCUGUUUUUGUUAACCUCUUAUCUUAAAACAAAAGCGAAGUUUUCUUAACUUCACAUUUAGGAAAAUUGUUGCACAGAUUUCAUGUUCUGAAUGGGAAACAACGGUUAGGUUAAUGAAAACAGUCCUUGCAUGUUAGUCUUUUUCAGUGUUAAUGUUCCAGACUUCAAAUGCAACGUAUUCAUCAUGUUUAUAUGAUAUGUAGUGCUUCCACUGUAUAUU
+237|smn2: survival of motor neuron 2, centromeric,exon7|Exon enhancer|Homo sapiens, human|SR protein|CAGACAA
+238|brca1, exon18|Exon enhancer|Homo sapiens, human|SFRS1 (SF2/ASF)|CUGAGUU
+239|cftr, exon12|Exon enhancer|Homo sapiens, human|SFRS1 (SF2/ASF)|AAGAUGC
+240|gaba-a, gamma-aminobutyric acid (gaba-a) receptor, intron 9|Intron enhancer|Mus musculus, mouse|Nova-1|CCAUCGUAAGAUCACGAUGUCAU
+241|gdap1: ganglioside-induced differentiation-associated protein 1|Exon enhancer|Homo sapiens, human||AUCAGGC
+242|ultrabithorax||Drosophila melanogaster, fruit fly||CUACCAGACUGGCUAG
+243|tra 2|Intron enhancer|Drosophila melanogaster, fruit fly||CAACCAACC
+244|abca1, atp-binding cassette, sub-family a (abc1), member 1, exon 2||Homo sapiens, human||GUAAGCUUGG
+245||NA|NA|NA|NA
+246||NA|NA|NA|NA
+247||NA|NA|NA|NA
+248||NA|NA|NA|NA
+249||NA|NA|NA|NA
+250||NA|NA|NA|NA
+251||NA|NA|NA|NA
+252||NA|NA|NA|NA
+253||NA|NA|NA|NA
+254||NA|NA|NA|NA
+255||NA|NA|NA|NA
+256||NA|NA|NA|NA
+257||NA|NA|NA|NA
+258||NA|NA|NA|NA
+259||NA|NA|NA|NA
+260||NA|NA|NA|NA
+261|hnrnpg binding motif|Exon enhancer|Homo sapiens, human|hnRNPG|AAGU
+262||NA|NA|NA|NA
+263||NA|NA|NA|NA
+264||NA|NA|NA|NA
+265||NA|NA|NA|NA
+266||NA|NA|NA|NA
+267||NA|NA|NA|NA
+268||NA|NA|NA|NA
+269||NA|NA|NA|NA
+270||NA|NA|NA|NA
+271||NA|NA|NA|NA
+272||NA|NA|NA|NA
+273||NA|NA|NA|NA
+274||NA|NA|NA|NA
+275||NA|NA|NA|NA
+276||NA|NA|NA|NA
+277||NA|NA|NA|NA
+278||NA|NA|NA|NA
+279||NA|NA|NA|NA
+280||NA|NA|NA|NA
+281|beta-tm exon 6-1|Exon enhancer|Rattus sp., rat|ASF/SF2|GAGGAGGAG
+282|gnrh exon 4|Exon enhancer|Unknown||GGAAAGUCUGAUUGAAGAGGAAGCCAGGCAGAAGAAGA
+283|gnrh exon 4|Exon enhancer|Unknown|Tra2 alpha|GGAAAGUCUGAUUGAAGAGGAAGCCAGGCAGAAGAAGA
+284|f1 gamma, exon9|Exon enhancer|Mus musculus, mouse||AAUGAAAA
+285|g-alpha-s exon 3|Exon enhancer|Homo sapiens, human|ASF/SF2, SC35|CGCAGGC
+286|g-alpha-s exon 3|Exon enhancer|Homo sapiens, human|SC35|GGACCCGCAGGCUGCAA
+287|g-alpha-s exon 3|Exon enhancer|Homo sapiens, human|SRp40|CAACAGCG
+288|aslv, exon3|Exon enhancer|Unknown||CUCCAAGAAGAAGCCGCCAGCAACAAGCAAGAAGGA
+289|hprt, exon3|Exon silencer|Homo sapiens, human||GAGAUGUGAUGAAGGAGAUGGGAGG
+290|ctnt, exon5|Exon silencer|Gallus gallus, chicken||AAGAGGAAGAAUGGCUUGAGGAAGACGACG
+291|bgh, exon5|Exon enhancer|Bos taurus, bovine||UCUCCUGCUUCCGGAAGGAC
+292|tev exon 6d|Exon enhancer|Unknown||GAGAAAGGAGAGA
+293|hiv, exon3|Exon silencer|Unknown|hnRNP A/B|AGAUCCUAGACUAGAGCCCU
+294|cftr, exon 9||Homo sapiens, human|SFRS1 (ASF/SF2)|ACAGUUGU
+295||NA|NA|NA|NA
+296||NA|NA|NA|NA
+297||NA|NA|NA|NA
+298||NA|NA|NA|NA
+299||NA|NA|NA|NA
+300||NA|NA|NA|NA
+301|cftr, intron 9|Intron enhancer|Homo sapiens, human|PTBP1, TIA1|UUCUUUU
+302|cftr, intron 9|Intron enhancer|Homo sapiens, human|PTBP1, TIA1|UUCUUC
+303|cftr, intron 9|Intron enhancer|Homo sapiens, human|PTBP1, TIA1|UCUCUUUUUUUUUCUA
+304||NA|NA|NA|NA
+305||NA|NA|NA|NA
+306||NA|NA|NA|NA
+307||NA|NA|NA|NA
+308||NA|NA|NA|NA
+309||NA|NA|NA|NA
+310||NA|NA|NA|NA
+311||NA|NA|NA|NA
+312||NA|NA|NA|NA
+313||NA|NA|NA|NA
+314||NA|NA|NA|NA
+315||NA|NA|NA|NA
+316||NA|NA|NA|NA
+317||NA|NA|NA|NA
+318||NA|NA|NA|NA
+319||NA|NA|NA|NA
+320||NA|NA|NA|NA
+321|purine-rich ese|Exon enhancer|Homo sapiens, human|SF2/ASF, SC35|UGAUGGAGA
+322|ighg2 cgamma2 (immunoglobulin heavy chain subclass g2 - cgamma2 gene) - intron 1|Intron enhancer|Homo sapiens, human||GUGAG
+323|cctra, exon 1|Exon enhancer|Unknown|tra/tra2|UCUACAAUCAACA
+324|cctra, exon 2|Exon enhancer|Unknown|tra/tra2|ACUACAAUCAACA
+325|cctra, exon 2|Exon enhancer|Unknown|tra/tra2|ACAACAAUCAACU
+326|cctra, intron 2|Intron enhancer|Unknown|tra/tra2|GUUUCAAUCAUAA
+327|cctra, exon 2|Exon enhancer|Unknown|tra/tra2|CAUUCAAUAAACU
+328|cctra, intron 1|Intron enhancer|Unknown|tra/tra2|CCUUCAAUUGUCG
+329|wasp||Homo sapiens, human||GAAGGUG
+330|&|NA|NA|NA|NA
+331|&|NA|NA|NA|NA
+332|&|NA|NA|NA|NA
+333|&|NA|NA|NA|NA
+334|&|NA|NA|NA|NA
+335|fn eda exon|Exon silencer|Unknown||CAAGGCC
+336|&|NA|NA|NA|NA
+337|fn eda|Exon enhancer|Unknown||UGUCGAUUCCA
+338|bpv-1 late exon 2|Exon enhancer|Unknown|YB-1|ACCACCACC
+339||NA|NA|NA|NA
+340|beta-tm, exon7|Exon enhancer|Rattus sp., rat||GAGGAGGAG
+341|alpha-tm, exon2|Exon enhancer|Rattus sp., rat||AAGAGAAG
+342|mas gamma-subunit, exon 10|Exon enhancer|Mus musculus, mouse||AAGAAGGAA
+343|gh-1, exon 3|Exon enhancer|Homo sapiens, human||GAAGAA
+344|cd44, exon 10 (v6)|Exon enhancer|Homo sapiens, human||CCAGAAGGAAC
+345|fgfr1, alpha exon|Exon enhancer|Homo sapiens, human|SRP55|GUGACCUGCUGCAG
+346|fgfr1, alpha exon|Exon silencer|Homo sapiens, human|SRP55|CUUCGCUGUCGGC
+347|fgfr1, alpha exon|Exon enhancer|Homo sapiens, human|SRP55|UGCGGGACGAUGUGCAGA
+348|ctnt, exon 5|Intron enhancer|Homo sapiens, human|GST-MBNL1|AGCUUA|AGCUUG|AGCUGA|AGCUGG|GGCUUA|GGCUUG|GGCUGA|GGCUGG
+349||NA|NA|NA|NA
+350||NA|NA|NA|NA
+351||NA|NA|NA|NA
+352||NA|NA|NA|NA
+353||NA|NA|NA|NA
+354||NA|NA|NA|NA
+355||NA|NA|NA|NA
+356||NA|NA|NA|NA
+357||NA|NA|NA|NA
+358||NA|NA|NA|NA
+359||NA|NA|NA|NA
+360||NA|NA|NA|NA
+361||NA|NA|NA|NA
+362|troponin t, intron 7||Unknown||CGGCUCCUC
+363|presenilin 2, exon 5|Exon enhancer|Homo sapiens, human|SR protein|GGUGGGCCAGCGCCUCC
+364||NA|NA|NA|NA
+365||NA|NA|NA|NA
+366||NA|NA|NA|NA
+367||NA|NA|NA|NA
+368||NA|NA|NA|NA
+369||NA|NA|NA|NA
+370|cftr, intron 8|Intron silencer|Homo sapiens, human||UUUUGAUGUGUGUGUGUGUGUGUGUGUGUUUUUUUUUAACAG
+371|cftr, intron 8|Intron silencer|Homo sapiens, human||UUUUGAUGUGUGUGUGUGUGUGUGUGUUUUUUUUUAACAG
+372|cftr, intron 8|Intron silencer|Homo sapiens, human||UUUUGAUGUGUGUGUGUGUGUGUGUUUUUUUUUAACAG
+373|cftr, intron 8|Intron silencer|Homo sapiens, human||UUUUGAUGUGUGUGUGUGUGUGUGUGUGUGUUUUUUUAACAG
+374|cftr, intron 8|Intron silencer|Homo sapiens, human||UUUUGAUGUGUGUGUGUGUGUGUGUGUGUUUUUUUAACAG
+375|cftr, intron 8|Intron silencer|Homo sapiens, human||UUUUGAUGUGUGUGUGUGUGUGUGUGUUUUUUUAACAG
+376|cftr, intron 8|Intron enhancer|Homo sapiens, human||UUUUGAUGUGUGUGUGUGUGUGUGUGUGUGUGUUUUUAACAG
+377|cftr, intron 8|Intron silencer|Homo sapiens, human||UUUUGAUGUGUGUGUGUGUGUGUGUGUGUGUUUUUAACAG
+378|cftr, intron 8|Intron silencer|Homo sapiens, human||UUUUGAUGUGUGUGUGUGUGUGUGUGUGUUUUUAACAG
+379|coagulation factor ii (thrombin),intron 13||Homo sapiens, human||CAGAG
+380|nova k-homology domain,kh1/2|Intron silencer|Homo sapiens, human|Nova antigens|UCAGUCAC
+381|nova k-homology domain,kh3|Intron silencer|Homo sapiens, human|Nova antigens|UCAC
+382|arsb, n-acetylgalactosamine-4-sulfatase , arylsulfatase b, c.1336+2t > g||Unknown||AGGUAGA
+383||NA|NA|NA|NA
+384||NA|NA|NA|NA
+385||NA|NA|NA|NA
+386||NA|NA|NA|NA
+387||NA|NA|NA|NA
+388||NA|NA|NA|NA
+389||NA|NA|NA|NA
+390|coagulation factor ii (thrombin),exon14||Homo sapiens, human||CUCAGCGAGCCUC
+391|grin1, ci cassette exon|Exon silencer|Homo sapiens, human|hnRNP A1|UAGG
+392|grin1, ci intron|Intron silencer|Homo sapiens, human|hnRNP H family|GGGG
+393||NA|NA|NA|NA
+394||NA|NA|NA|NA
+395||NA|NA|NA|NA
+396||NA|NA|NA|NA
+397||NA|NA|NA|NA
+398||NA|NA|NA|NA
+399||NA|NA|NA|NA
+400||NA|NA|NA|NA
+401||NA|NA|NA|NA
+402||NA|NA|NA|NA
+403||NA|NA|NA|NA
+404||NA|NA|NA|NA
+405||NA|NA|NA|NA
+406||NA|NA|NA|NA
+407||NA|NA|NA|NA
+408||NA|NA|NA|NA
+409||NA|NA|NA|NA
+410|fgfr-1 alpha exon|Exon silencer|Homo sapiens, human|SRp55|CUUCGCUGUCGG
+411|fgfr-1 alpha exon|Exon enhancer|Homo sapiens, human|SRp55|CUGCGGGACGAUGUGCAGA
+412||NA|NA|NA|NA
+413||NA|NA|NA|NA
+414||NA|NA|NA|NA
+415||NA|NA|NA|NA
+416||NA|NA|NA|NA
+417||NA|NA|NA|NA
+418||NA|NA|NA|NA
+419||NA|NA|NA|NA
+420||NA|NA|NA|NA
+421||NA|NA|NA|NA
+422||NA|NA|NA|NA
+423||NA|NA|NA|NA
+424||NA|NA|NA|NA
+425||NA|NA|NA|NA
+426||NA|NA|NA|NA
+427||NA|NA|NA|NA
+428||NA|NA|NA|NA
+429||NA|NA|NA|NA
+430||NA|NA|NA|NA
+431||NA|NA|NA|NA
+432|pre, intron between exons 2 and 3|Intron enhancer|Drosophila melanogaster, fruit fly||AGAAACGAGACAGAGAGAGAGAGAGAGAGAGAGAGAGACGGGGAGAAAAG
+433||NA|NA|NA|NA
+434|asf/ sf2-exonic splicing enhancer|Exon enhancer|Unknown|ASF/SF2|CACACGA|CACAGGA|CAGACGA|CAGAGGA|CGCACGA|CGCAGGA|CGGACGA|CGGAGGA|GACACGA|GACAGGA|GAGACGA|GAGAGGA|GGCACGA|GGCAGGA|GGGACGA|GGGAGGA
+435|srp40-exonic splicing enhancer|Exon enhancer|Unknown|SRp40|ACAGC|ACAGG|ACUGC|ACUGG|ACGGC|ACGGG
+436|srp55-exonic splicing enhancer|Exon enhancer|Unknown|SRp55|UCCGUC|UCCGUA|UCCGGC|UCCGGA|UGCGUC|UGCGUA|UGCGGC|UGCGGA
+437|rsf1-exonic splicing enhancer|Exon enhancer|Unknown|RSF1|CAACGACGA
+438|rsf1-exonic splicing enhancer|Exon enhancer|Unknown|RSF1|AAACGCGCG
+439|sc35 - exonic splicing enhancer|Exon enhancer|Homo sapiens, human|SC35|GACCCCC|GACCCCC|GACCCCU|GACCCCU|GACCCGC|GACCCGC|GACCCGU|GACCCGU|GACUCCC|GACUCCC|GACUCCU|GACUCCU|GACUCGC|GACUCGC|GACUCGU|GACUCGU|GAUCCCC|GAUCCCC|GAUCCCU|GAUCCCU|GAUCCGC|GAUCCGC|GAUCCGU|GAUCCGU|GAUUCCC|GAUUCCC|GAUUCCU|GAUUCCU|GAUUCGC|GAUUCGC|GAUUCGU|GAUUCGU|GGCCCCC|GGCCCCC|GGCCCCU|GGCCCCU|GGCCCGC|GGCCCGC|GGCCCGU|GGCCCGU|GGCUCCC|GGCUCCC|GGCUCCU|GGCUCCU|GGCUCGC|GGCUCGC|GGCUCGU|GGCUCGU|GGUCCCC|GGUCCCC|GGUCCCU|GGUCCCU|GGUCCGC|GGUCCGC|GGUCCGU|GGUCCGU|GGUUCCC|GGUUCCC|GGUUCCU|GGUUCCU|GGUUCGC|GGUUCGC|GGUUCGU|GGUUCGU
+440|srp40 - exonic splicing enhancer|Exon enhancer|Unknown|SRp40|CACAUC|CACAUA|CACAGC|CACAGA|CACGUC|CACGUA|CACGGC|CACGGA|CGCAUC|CGCAUA|CGCAGC|CGCAGA|CGCGUC|CGCGUA|CGCGGC|CGCGGA|UACAUC|UACAUA|UACAGC|UACAGA|UACGUC|UACGUA|UACGGC|UACGGA|UGCAUC|UGCAUA|UGCAGC|UGCAGA|UGCGUC|UGCGUA|UGCGGC|UGCGGA
+441|sc35 - exonic splicing enhancer|Exon enhancer|Unknown|SC35|GACCCCCA|GACCCCCG|GACCCCUA|GACCCCUG|GACCACCA|GACCACCG|GACCACUA|GACCACUG|GACUCCCA|GACUCCCG|GACUCCUA|GACUCCUG|GACUACCA|GACUACCG|GACUACUA|GACUACUG|GAUCCCCA|GAUCCCCG|GAUCCCUA|GAUCCCUG|GAUCACCA|GAUCACCG|GAUCACUA|GAUCACUG|GAUUCCCA|GAUUCCCG|GAUUCCUA|GAUUCCUG|GAUUACCA|GAUUACCG|GAUUACUA|GAUUACUG|GGCCCCCA|GGCCCCCG|GGCCCCUA|GGCCCCUG|GGCCACCA|GGCCACCG|GGCCACUA|GGCCACUG|GGCUCCCA|GGCUCCCG|GGCUCCUA|GGCUCCUG|GGCUACCA|GGCUACCG|GGCUACUA|GGCUACUG|GGUCCCCA|GGUCCCCG|GGUCCCUA|GGUCCCUG|GGUCACCA|GGUCACCG|GGUCACUA|GGUCACUG|GGUUCCCA|GGUUCCCG|GGUUCCUA|GGUUCCUG|GGUUACCA|GGUUACCG|GGUUACUA|GGUUACUG
+442|srp55 - exonic splicing enhancer|Exon enhancer|Unknown|SRp55|CCUCUCG|CCUCUGG|CCUCACG|CCUCAGG|CCACUCG|CCACUGG|CCACACG|CCACAGG|CUUCUCG|CUUCUGG|CUUCACG|CUUCAGG|CUACUCG|CUACUGG|CUACACG|CUACAGG|UCUCUCG|UCUCUGG|UCUCACG|UCUCAGG|UCACUCG|UCACUGG|UCACACG|UCACAGG|UUUCUCG|UUUCUGG|UUUCACG|UUUCAGG|UUACUCG|UUACUGG|UUACACG|UUACAGG
+443|asf/sf2 - exonic splicing enhancer|Exon enhancer|Unknown|ASF/SF2|CACCCGU|CACCCGA|CACCGGU|CACCGGA|CACACGU|CACACGA|CACAGGU|CACAGGA|CAGCCGU|CAGCCGA|CAGCGGU|CAGCGGA|CAGACGU|CAGACGA|CAGAGGU|CAGAGGA|CGCCCGU|CGCCCGA|CGCCGGU|CGCCGGA|CGCACGU|CGCACGA|CGCAGGU|CGCAGGA|CGGCCGU|CGGCCGA|CGGCGGU|CGGCGGA|CGGACGU|CGGACGA|CGGAGGU|CGGAGGA
+444||NA|NA|NA|NA
+445||NA|NA|NA|NA
+446||NA|NA|NA|NA
+447||NA|NA|NA|NA
+448||NA|NA|NA|NA
+449||NA|NA|NA|NA
+450||NA|NA|NA|NA
+451||NA|NA|NA|NA
+452||NA|NA|NA|NA
+453||NA|NA|NA|NA
+454||NA|NA|NA|NA
+455||NA|NA|NA|NA
+456||NA|NA|NA|NA
+457||NA|NA|NA|NA
+458||NA|NA|NA|NA
+459||NA|NA|NA|NA
+460||NA|NA|NA|NA
+461||NA|NA|NA|NA
+462||NA|NA|NA|NA
+463||NA|NA|NA|NA
+464||NA|NA|NA|NA
+465||NA|NA|NA|NA
+466||NA|NA|NA|NA
+467||NA|NA|NA|NA
+468||NA|NA|NA|NA
+469||NA|NA|NA|NA
+470||NA|NA|NA|NA
+471||NA|NA|NA|NA
+472|CD44|unknown unknown|Homo sapiens, human|9G8|GGAAGAAGAUAAAGAC
+473|HBB|unknown unknown|Homo sapiens, human|9G8|UGGACAA
+474|HIPK3|unknown unknown|Homo sapiens, human|9G8|GGGAGGAAGAAAUAGAAGAUGCAGAAGAGG
+475|SFRS7|unknown unknown|Homo sapiens, human|9G8|CUAGCUCACGCAGCAUAUCUCACGCAUCAUG
+476|SFRS7|unknown unknown|Homo sapiens, human|9G8|AGAGGAAGGCGA
+477|SFRS7|unknown unknown|Homo sapiens, human|9G8|AGGAGCAGGGGACGAAG
+478|SFRS7|unknown unknown|Homo sapiens, human|9G8|GAAGAAGAA
+479|Hist1h2ab|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+480|Hist1h2ac|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+481|Hist1h2ad|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+482|Hist1h2ae|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+483|Hist1h2af|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+484|Hist1h2ag|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+485|Hist1h2ah|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+486|Hist1h2ai|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+487|Hist1h2an|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+488|Hist1h2ao|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+489|Hist1h2ap|unknown unknown|Mus musculus, mouse|9G8|ACAACAAGAAGACGCGCAUCAU
+490|CFTR|unknown unknown|Homo sapiens, human|CUG-BP1|UGUGUGUGUGUGUGUGUGUGUGUGUUUUU
+491|CFTR|unknown unknown|Homo sapiens, human|CUG-BP1|UGUGUGUGUGUGUGUGUGUGUGUGUGUUUUU
+492|CFTR|unknown unknown|Homo sapiens, human|CUG-BP1|UGUGUGUGUGUGUGUGUGUGUGUUUUU
+493|JUN|unknown unknown|Homo sapiens, human|CUG-BP1|UUUCUUGUUUGUUUGUUUGGGU
+494|JUNB|unknown unknown|Homo sapiens, human|CUG-BP1|GUGUUUGUGUUUGUGUGUGUUUGUU
+495|TNFRSF1B|unknown unknown|Homo sapiens, human|CUG-BP1|GUUUGUUUGUUUGUUUGUUUGUUU
+496|Actn1|unknown unknown|Rattus sp., rat|CUG-BP1|CUGUCUG
+497|BRCA1|unknown unknown|Homo sapiens, human|DAZAP1|UGCAGAUGCUUAGUUUGUGU
+498|BRCA1|unknown unknown|Homo sapiens, human|DAZAP1|UGCAGAUGGUUAGUUUGUGU
+499|CFTR|unknown unknown|Homo sapiens, human|DAZAP1|UUAGACUCUCCUUUUGCAUACCUAGAUGUUUUAACA
+500|CFTR|unknown unknown|Homo sapiens, human|DAZAP1|UUAGACUCUCCUUUUGGAUUCCUAGAUGUUUUAACA
+501|CFTR|unknown unknown|Homo sapiens, human|DAZAP1|UUAGACUCCCCUUUUGGAUACCUAGAUGUUUUAACA
+502|CFTR|unknown unknown|Homo sapiens, human|DAZAP1|UUAGACUCUCCUUUUGGGUACCUAGAUGUUUUAACA
+503|CFTR|unknown unknown|Homo sapiens, human|DAZAP1|UUAGACUCUCCUUUUGGAUAUCUAGAUGUUUUAACA
+504|CFTR|unknown unknown|Homo sapiens, human|DAZAP1|UUAGACUCUCCUUUUGGAUACCUAGAUGUUUUAACA
+505|NF1|unknown unknown|Homo sapiens, human|DAZAP1|AGAAC
+506|Fgfr2|unknown unknown|Rattus sp., rat|ESRP1|GUGUGGUGAUGGGCCUGCAGAGGUGAGCUGGCCGGUGUCUCUC
+507|Fgfr2|unknown unknown|Rattus sp., rat|ESRP2|GUGUGGUGAUGGGCCUGCAGAGGUGAGCUGGCCGGUGUCUCUC
+508|TNNT2|unknown unknown|Gallus gallus, chicken|ETR-3|UGUGU
+509|TNNT2|unknown unknown|Gallus gallus, chicken|ETR-3|UUGUU
+510|CFTR|unknown unknown|Homo sapiens, human|ETR-3|UGUGUGUGUGUGUGUGUGUGUGUGUUUUU
+511|CFTR|unknown unknown|Homo sapiens, human|ETR-3|UGUGUGUGUGUGUGUGUGUGUGUGUGUUUUU
+512|CFTR|unknown unknown|Homo sapiens, human|ETR-3|UGUGUGUGUGUGUGUGUGUGUGUUUUU
+513|FMR1|unknown unknown|Homo sapiens, human|FMRP|AAGAGAGGGAGAGCUUCCUGCGCAGAGGAGACGGACGGCGGCGUGGAGGGGGAGGAAGAGGACAAGGAGGAAGAGGACGUGGAGGAGGCUUCAAAGGAAAC
+514|FMR1|unknown unknown|Homo sapiens, human|FMRP|GAAGAGGACAAGGAGGAAGAGGACGUGGAGGAGGC
+515|FMR1|unknown unknown|Homo sapiens, human|FMRP|GGAGGAAGAGGACAAGGAGGAAGAGGACGUGGAGGAGGCUUCAAA
+516|Bc1|unknown unknown|Mus musculus, mouse|FMRP|GGGGUUGGGGAUUUAGCUCAGUGGUAGAGCGCUUGCCUAGCAAGCGCAAGGCCCUGGGUUCGGUCCUCAGCUCUGG
+517|CALCA|unknown unknown|Homo sapiens, human|Fox-1|UGACUG
+518|CALCA|unknown unknown|Homo sapiens, human|Fox-1|UGCAUG
+519|CALCA|unknown unknown|Homo sapiens, human|Fox-1|UGCAUG
+520|CALCA|unknown unknown|Homo sapiens, human|Fox-1|UGCAUG
+521|CALCA|unknown unknown|Homo sapiens, human|Fox-1|UGCAUG
+522|EPB41|unknown unknown|Homo sapiens, human|Fox-1|UGCAUG
+523|EPB41|unknown unknown|Homo sapiens, human|Fox-1|UGCAUG
+524|EPB41|unknown unknown|Homo sapiens, human|Fox-1|UGCAUG
+525|SCN8A|unknown unknown|Homo sapiens, human|Fox-1|UGCAUG
+526|SCN8A|unknown unknown|Homo sapiens, human|Fox-1|AGCAUG
+527|CALCA|unknown unknown|Homo sapiens, human|Fox-2|UGACUG
+528|CALCA|unknown unknown|Homo sapiens, human|Fox-2|UGCAUG
+529|CALCA|unknown unknown|Homo sapiens, human|Fox-2|UGCAUG
+530|CALCA|unknown unknown|Homo sapiens, human|Fox-2|UGCAUG
+531|CALCA|unknown unknown|Homo sapiens, human|Fox-2|UGCAUG
+532|EPB41|unknown unknown|Homo sapiens, human|Fox-2|UGCAUG
+533|EPB41|unknown unknown|Homo sapiens, human|Fox-2|UGCAUG
+534|EPB41|unknown unknown|Homo sapiens, human|Fox-2|UGCAUG
+535|Scn8a|unknown unknown|Mus musculus, mouse|Fox-2|UGCAUG
+536|Cacna1c|unknown unknown|Rattus sp., rat|Fox-2|UGCAUG
+537|Cacna1c|unknown unknown|Rattus sp., rat|Fox-2|UGCAUG
+538|Cacna1c|unknown unknown|Rattus sp., rat|Fox-2|UGCAUG
+539|Cacna1c|unknown unknown|Rattus sp., rat|Fox-2|UGCAUG
+540|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP A1|AGGGUUGAGGGGAGCAGGGU
+541|BIRC2|unknown unknown|Homo sapiens, human|hnRNP A1|AUAUAGCAAUCUUAAUCUGUUUAUUUACAAGGGAAGAUUUAUGUUUGGUGAACUAUAUUA
+542|BIRC2|unknown unknown|Homo sapiens, human|hnRNP A1|AUAUAUUUAAUCUUAAUCUGUUUAGCACAAGGGAAGAUUUAUGUUUGGUGAACUAUAUUA
+543|BIRC2|unknown unknown|Homo sapiens, human|hnRNP A1|AUAUAUUUAAUCUUAAUCUGUUUAUUUACAAGGGAAGAUUUAUGUUUGGUGAACUAUAUUA
+544|BRCA1|unknown unknown|Homo sapiens, human|hnRNP A1|UGCAGAUGCUUAGUUUGUGU
+545|BRCA1|unknown unknown|Homo sapiens, human|hnRNP A1|UGCAGAUGGUUAGUUUGUGU
+546|BRCA1|unknown unknown|Homo sapiens, human|hnRNP A1|CUUAG
+547|BRCA1|unknown unknown|Homo sapiens, human|hnRNP A1|CUGAG
+548|BRCA1|unknown unknown|Homo sapiens, human|hnRNP A1|UAGGA
+549|BRCA1|unknown unknown|Homo sapiens, human|hnRNP A1|UAGUUAG
+550|CFTR|unknown unknown|Homo sapiens, human|hnRNP A1|UUAGACUCUCCUUUUGCAUACCUAGAUGUUUUAACA
+551|CFTR|unknown unknown|Homo sapiens, human|hnRNP A1|UUAGACUCUCCUUUUGGAUUCCUAGAUGUUUUAACA
+552|CFTR|unknown unknown|Homo sapiens, human|hnRNP A1|UUAGACUCCCCUUUUGGAUACCUAGAUGUUUUAACA
+553|CFTR|unknown unknown|Homo sapiens, human|hnRNP A1|UUAGACUCUCCUUUUGGGUACCUAGAUGUUUUAACA
+554|CFTR|unknown unknown|Homo sapiens, human|hnRNP A1|UUAGACUCUCCUUUUGGAUAUCUAGAUGUUUUAACA
+555|CFTR|unknown unknown|Homo sapiens, human|hnRNP A1|UUAGACUCUCCUUUUGGAUACCUAGAUGUUUUAACA
+556|CFTR|unknown unknown|Homo sapiens, human|hnRNP A1|CUGAUUUGUAUUUAUUAGACUC
+557|CFTR|unknown unknown|Homo sapiens, human|hnRNP A1|AACAGAAAAAGAAAUAUUU
+558|COL3A1|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUA
+559|COL3A1|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUAUUU
+560|CSF2|unknown unknown|Homo sapiens, human|hnRNP A1|AAGAAUGGGAAUAUUUUAUACUGACAGAAAUCAGUAAUAUUUAUAUAUUUAUAUUUUUAAAAUAUUUAUUUAUUUAUUUAUUUAAGUUCAUAUUCCAUAUUUAUUCAAGAUGUUUUACCGUAAUAAUUAUUAUUAAAAAUAUGCUUCUAAA
+561|CYP2A6|unknown unknown|Homo sapiens, human|hnRNP A1|AGCUAAGACUGGGGGCAGGAUGGCGGAAAGGAAGGGGCGUGGUGGCUAGAGGGAAGAGAAGAAACAGAAGCGGCUCAGUUCACCUUGAUAAGGUGCUUCCGA
+562|E2F3|unknown unknown|Homo sapiens, human|hnRNP A1|AGACCUUUAGGGUUAGGGACAUCC
+563|E2F3|unknown unknown|Homo sapiens, human|hnRNP A1|AGACCUCUAGGGAGAAAGACAUCC
+564|EPB41|unknown unknown|Homo sapiens, human|hnRNP A1|GCCCUUGGGUUUGACUGCCACUGACUGAGAGACGUUUAG
+565|EPB41|unknown unknown|Homo sapiens, human|hnRNP A1|GCCCUUGGGUUUGCAUGCCACUGCAUGAGAGACGUUUAG
+566|EPB41|unknown unknown|Homo sapiens, human|hnRNP A1|GCCCUUGGGUUUGCAUGCCACUGCAUGAGAGACGUUUAG
+567|FGFR2|unknown unknown|Homo sapiens, human|hnRNP A1|UCGGGC
+568|FGFR2|unknown unknown|Homo sapiens, human|hnRNP A1|UACGGC
+569|FGFR2|unknown unknown|Homo sapiens, human|hnRNP A1|UAGGGC
+570|FGFR2|unknown unknown|Homo sapiens, human|hnRNP A1|UAGGGCAGGC
+571|GRIN1|unknown unknown|Homo sapiens, human|hnRNP A1|CGUAGGUC
+572|HBB|unknown unknown|Homo sapiens, human|hnRNP A1|UUGGUAUCAAGGUUACAAGACAGGUUUAAGGAGACCAAUAGAAACUGGGCAUGUGGAGACAGAGAAGACUCUUGGGUUUCUGAUAGGCACUGACUCUCUCUGCCUAUUGGUCUAUUUUCCCACCCUUAG
+573|HIPK3|unknown unknown|Homo sapiens, human|hnRNP A1|GGGAGGAAGAAAUAGAAGAUGCAGAAGAGG
+574|MIR18A|unknown unknown|Homo sapiens, human|hnRNP A1|UGAAGUAGAUUAGCAUCUACUGCCCUAAGUGCUCCUUCUGGCA
+575|MTRR|unknown unknown|Homo sapiens, human|hnRNP A1|GAAUGGCCGGAGGAGAUUCAGCCUGA
+576|MTRR|unknown unknown|Homo sapiens, human|hnRNP A1|GAAUGGCUGGAGGAGAUUCAGCCUGA
+577|NF1|unknown unknown|Homo sapiens, human|hnRNP A1|AGAAC
+578|PKM2|unknown unknown|Homo sapiens, human|hnRNP A1|AGGUAGGGCCCUAAGGGCA
+579|PKM2|unknown unknown|Homo sapiens, human|hnRNP A1|AGGUAGGGCCCUAAGGGCA
+580|PLP1|unknown unknown|Homo sapiens, human|hnRNP A1|CAGAAGGGGAGGGGUUCCA
+581|PLP1|unknown unknown|Homo sapiens, human|hnRNP A1|AACAAGGGGUGGGGGAAAA
+582|SCN8A|unknown unknown|Homo sapiens, human|hnRNP A1|UUUAGUCAGCCUUAUAGCUAA
+583|SMN1|unknown unknown|Homo sapiens, human|hnRNP A1|GGUUUCAGACAAAAUCA
+584|SMN1|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUUCCUUACAGGGUUUCAGACAAAAUCAAAAAG
+585|SMN2|unknown unknown|Homo sapiens, human|hnRNP A1|CCGCAUUAUGAAAG
+586|SMN2|unknown unknown|Homo sapiens, human|hnRNP A1|CAGCAUUAUGAACG
+587|SMN2|unknown unknown|Homo sapiens, human|hnRNP A1|CCGCAUUAUGAACG
+588|SMN2|unknown unknown|Homo sapiens, human|hnRNP A1|CAAAAAGAACGAAGGUGCUCACAU
+589|SMN2|unknown unknown|Homo sapiens, human|hnRNP A1|UAGACA
+590|SMN2|unknown unknown|Homo sapiens, human|hnRNP A1|GGUUUUAGACAAAAUCA
+591|SMN2|unknown unknown|Homo sapiens, human|hnRNP A1|CAGCAUUAUGAAAG
+592|SMN2|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUUCCUUACAGGGUUUUAGACAAAAUCAAAAAG
+593|SMN2|unknown unknown|Homo sapiens, human|hnRNP A1|CAAAAAGAAGGAAGGUGCUCACAU
+594|SRC|unknown unknown|Homo sapiens, human|hnRNP A1|GGAGGA
+595|SRC|unknown unknown|Homo sapiens, human|hnRNP A1|AAGGUG
+596|TPM2|unknown unknown|Homo sapiens, human|hnRNP A1|UAAACUACGCGACCUAGAGGAGGAGCUGAAAAUUGUUA
+597|TPM2|unknown unknown|Homo sapiens, human|hnRNP A1|UAAAUGUGGGGACCUAGAGGAGGAGCUGAAAAUUGUUA
+598|XIAP|unknown unknown|Homo sapiens, human|hnRNP A1|UAUAAUGUUCUCUUUUUAGAAAAGGU
+599|XIAP|unknown unknown|Homo sapiens, human|hnRNP A1|GGACAAGUCCUAUUUUCAAGAGAAG
+600|CSF2|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUA
+601|CSF2|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUA
+602|CSF2|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUA
+603|CSF2|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUA
+604|CSF2|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUA
+605|CSF2|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUA
+606|CSF2|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUA
+607|CSF2|unknown unknown|Homo sapiens, human|hnRNP A1|AUUUA
+608|Cftr|unknown unknown|Mus musculus, mouse|hnRNP A1|CUGAUUUGUACCUAUUAGAUUC
+609|Cftr|unknown unknown|Mus musculus, mouse|hnRNP A1|UACUGAAGAACAAGUAUUU
+610|Epb4.1|unknown unknown|Mus musculus, mouse|hnRNP A1|AUAGCA
+611|Epb4.1|unknown unknown|Mus musculus, mouse|hnRNP A1|UUUAUA
+612|Epb4.1|unknown unknown|Mus musculus, mouse|hnRNP A1|AUUUAA
+613|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|UAGGGU
+614|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|GAAGUAGAAACUAAACUUA
+615|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|CUUCUAGAAACUAAACUUA
+616|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|CUAGUACUAACUAAACUUA
+617|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|CUAGUAGAUUCUAAACUUA
+618|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|CUAGUAGAAACUAUUCUUA
+619|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|GAUCUAGAAACUAAACUUA
+620|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|UAGAGU
+621|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|UAGAGU
+622|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|AGCUAGAUUAGACUUC
+623|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|UAGAGU
+624|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|CUAGUAGAAACUAAACUUA
+625|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A1|UAGAGU
+626|RSV NRS (negative regulator of splicing)|unknown unknown|Rous Sarcoma virus|hnRNP A1|GUAUCCUUCCCUGGCCGUGAUAGUAGAGCAGCAGGGCCAGGGGGGUGACACACC
+627|FAS|unknown unknown|Homo sapiens, human|hnRNP A1|GAGGAAG
+628|BRCA1|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UGCAGAUGCUUAGUUUGUGU
+629|BRCA1|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UGCAGAUGGUUAGUUUGUGU
+630|CFTR|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UUAGACUCUCCUUUUGCAUACCUAGAUGUUUUAACA
+631|CFTR|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UUAGACUCUCCUUUUGGAUUCCUAGAUGUUUUAACA
+632|CFTR|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UUAGACUCCCCUUUUGGAUACCUAGAUGUUUUAACA
+633|CFTR|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UUAGACUCUCCUUUUGGGUACCUAGAUGUUUUAACA
+634|CFTR|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UUAGACUCUCCUUUUGGAUAUCUAGAUGUUUUAACA
+635|CFTR|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UUAGACUCUCCUUUUGGAUACCUAGAUGUUUUAACA
+636|NF1|unknown unknown|Homo sapiens, human|hnRNP A2/B1|AGAAC
+637|SCN8A|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UUUAGUCAGCCUUAUAGCUAA
+638|SMN2|unknown unknown|Homo sapiens, human|hnRNP A2/B1|CCGCAUUAUGAAAG
+639|SMN2|unknown unknown|Homo sapiens, human|hnRNP A2/B1|CAGCAUUAUGAACG
+640|SMN2|unknown unknown|Homo sapiens, human|hnRNP A2/B1|CCGCAUUAUGAACG
+641|SMN2|unknown unknown|Homo sapiens, human|hnRNP A2/B1|UAGACA
+642|SMN2|unknown unknown|Homo sapiens, human|hnRNP A2/B1|CAGCAUUAUGAAAG
+643|SMN2|unknown unknown|Homo sapiens, human|hnRNP A2/B1|AUUUUCCUUACAGGGUUUUAGACAAAAUCAAAAAG
+644|Epb4.1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|AUAGCA
+645|Epb4.1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|UUUAUA
+646|Epb4.1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|AUUUAA
+647|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|GAAGUAGAAACUAAACUUA
+648|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|CUUCUAGAAACUAAACUUA
+649|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|CUAGUACUAACUAAACUUA
+650|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|CUAGUAGAUUCUAAACUUA
+651|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|CUAGUAGAAACUAUUCUUA
+652|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|GAUCUAGAAACUAAACUUA
+653|Hnrnpa1|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|CUAGUAGAAACUAAACUUA
+654|Mbp|unknown unknown|Mus musculus, mouse|hnRNP A2/B1|CCAAGGAGCCAGAGAGCAUGG
+655|Mbp|unknown unknown|Rattus sp., rat|hnRNP A2/B1|GCCAAGGAGCCAGAGAGCAUG
+656|RSV NRS (negative regulator of splicing)|unknown unknown|Rous Sarcoma virus|hnRNP A2/B1|GUAUCCUUCCCUGGCCGUGAUAGUAGAGCAGCAGGGCCAGGGGGGUGACACACC
+657|SMN2|unknown unknown|Homo sapiens, human|hnRNP A3|AUUUUCCUUACAGGGUUUUAGACAAAAUCAAAAAG
+658|Mbp|unknown unknown|Mus musculus, mouse|hnRNP A3|CCAAGGAGCCAGAGAGCAUGG
+659|MYC|unknown unknown|Homo sapiens, human|hnRNP C|UGGAUUUUUUUCGGGUA
+660|RNU2-1|unknown unknown|Homo sapiens, human|hnRNP C|AUCGCUUCUCGGCCUUUUAAGAUUCUAGA
+661|RNU2-1|unknown unknown|Homo sapiens, human|hnRNP C|AUCGCUUCUCGGCCAAAAGGCUAAGAUCA
+662|RNU2-1|unknown unknown|Homo sapiens, human|hnRNP C|AUCGCUUCUCGGCCUUUUGGCUAAGAUCA
+663|CSF2|unknown unknown|Homo sapiens, human|hnRNP C|AUUUA
+664|CSF2|unknown unknown|Homo sapiens, human|hnRNP C|AUUUA
+665|CSF2|unknown unknown|Homo sapiens, human|hnRNP C|AUUUA
+666|CSF2|unknown unknown|Homo sapiens, human|hnRNP C|AUUUA
+667|CSF2|unknown unknown|Homo sapiens, human|hnRNP C|AUUUA
+668|CSF2|unknown unknown|Homo sapiens, human|hnRNP C|AUUUA
+669|CSF2|unknown unknown|Homo sapiens, human|hnRNP C|AUUUA
+670|CSF2|unknown unknown|Homo sapiens, human|hnRNP C|AUUUA
+671|TYMS|unknown unknown|Homo sapiens, human|hnRNP C1|UGAACUUUAUAGUUGUUUUAUAUGUU
+672|TYMS|unknown unknown|Homo sapiens, human|hnRNP C1|UGAACUUUAAAGUUAUAGUUGUUUUAUAUGUU
+673|CFTR|unknown unknown|Homo sapiens, human|hnRNP C2|GCAUAC
+674|CFTR|unknown unknown|Homo sapiens, human|hnRNP C2|GGAUUC
+675|CFTR|unknown unknown|Homo sapiens, human|hnRNP C2|GGGUAC
+676|CFTR|unknown unknown|Homo sapiens, human|hnRNP C2|GGAUAU
+677|CFTR|unknown unknown|Homo sapiens, human|hnRNP C2|GGAUAC
+678|TYMS|unknown unknown|Homo sapiens, human|hnRNP C2|UGAACUUUAUAGUUGUUUUAUAUGUU
+679|TYMS|unknown unknown|Homo sapiens, human|hnRNP C2|UGAACUUUAAAGUUAUAGUUGUUUUAUAUGUU
+680|BCL2|unknown unknown|Homo sapiens, human|hnRNP D|UCAGCUAUUUACUGCCAAAGGGAAAUAUCAUUUAUUUUUUACAUUAUUAAGAAAAAAAGAUUUAUUUAUUUAAGACAGUCCCAUCAAAACUCCUGUCUUUGGAAAUC
+681|CDKN2A|unknown unknown|Homo sapiens, human|hnRNP D|CCAUUUAUAUCAUAAAAUAUAUAUU
+682|CDKN2A|unknown unknown|Homo sapiens, human|hnRNP D|CCAUUUAUAUCAUUUUUAAAAAAUU
+683|CDKN2A|unknown unknown|Homo sapiens, human|hnRNP D|CCAUUUAUAUCAUAAAAAUAUUAUU
+684|CDKN2A|unknown unknown|Homo sapiens, human|hnRNP D|CCAUUUAUAUCAUUUUUUAUAUAUU
+685|DNMT1|unknown unknown|Homo sapiens, human|hnRNP D|AGACUUUAUGUAGUUUUUAUAUGUUGUAAUAUUUCUUCAAAUAAAUCUCUCCUAUAA
+686|FOS|unknown unknown|Homo sapiens, human|hnRNP D|UUUAUUGUGUUUUUAAUUUAUUUAUUAAGAUGGAUUCUCAGAUAUUUAUAUUUUUAUUUUAUUUUUUU
+687|FOS|unknown unknown|Homo sapiens, human|hnRNP D|UUUUAUUGUGUUUUUAAUUUAUUUAUUAAGAUGGAUUCUCAGAUAUUUAUAUUUUUAUUUUAUUUUUUU
+688|IL8|unknown unknown|Homo sapiens, human|hnRNP D|CAUAAAUUAUUUUCAAGUGUAACUUAUUAACCUAUUUAUUAUUUAUGUAUUUAUUUAAGC
+689|MYC|unknown unknown|Homo sapiens, human|hnRNP D|AUAAAAGAACUUUUUUAUGCUUACCAUCUUUUUUUUUUCUUUAACAGAUUUGUAUUUAAGAAUUGUUUUUAAAAAAUUUUAAGAUUUACACAAUGUUUCUCUGUAAAUA
+690|PTPRC|unknown unknown|Homo sapiens, human|hnRNP D|CACUGCAUUCUCACCCGCAAGCA
+691|PTPRC|unknown unknown|Homo sapiens, human|hnRNP D|CACUGCAUUCUCACCCGCAAGCA
+692|TNF|unknown unknown|Homo sapiens, human|hnRNP D|GUGAUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUUAG
+693|TNF|unknown unknown|Homo sapiens, human|hnRNP D|GUGAUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUUAC
+694|TYMS|unknown unknown|Homo sapiens, human|hnRNP D|UGAACUUUAUAGUUGUUUUAUAUGUU
+695|TYMS|unknown unknown|Homo sapiens, human|hnRNP D|UGAACUUUAAAGUUAUAGUUGUUUUAUAUGUU
+696|YES1|unknown unknown|Homo sapiens, human|hnRNP D|UUUUUUAAAGUUUCUUGCAUUUAUUAUUCUCAAAAGUUUUUUCUAAGUUAAACAGUCAGUAUGCAAUCUUAAUAUAUGCUUUCUUUU
+697|YES1|unknown unknown|Homo sapiens, human|hnRNP D|UUUUUAUGUAAAACAUUUUUAGAACUCCAGUUUUCAAAUCAUGUUUGAAUCUACAUUCACUUUUUUUUGUUUUCUUUUUU
+698|SCN8A|unknown unknown|Homo sapiens, human|hnRNP DL|UUUAGUCAGCCUUAUAGCUAA
+699|AR|unknown unknown|Homo sapiens, human|hnRNP E1|CCCUCCC
+700|COL1A1|unknown unknown|Homo sapiens, human|hnRNP E1|CCCAACCUGGCUCCCUCCCACCCAACCAACUUUCCCCCCAACCC
+701|COL1A2|unknown unknown|Homo sapiens, human|hnRNP E1|CUCCUUCCCCCGCUCCCCCAA
+702|FTH1|unknown unknown|Homo sapiens, human|hnRNP E1|GCCGCUCCAGCGCCGCGCAGCCACCGCCGCCGC
+703|GAST|unknown unknown|Homo sapiens, human|hnRNP E1|AGCCACCUCCCACCCCACUCCA
+704|GAST|unknown unknown|Homo sapiens, human|hnRNP E1|CCCAGCCCUGUCCCCUGAAAAACUGA
+705|HBA2|unknown unknown|Homo sapiens, human|hnRNP E1|CCCAGCCGGCCCUCCUCCCC
+706|HBA2|unknown unknown|Homo sapiens, human|hnRNP E1|CCCCACGGGCCCUCCUCCCC
+707|HBA2|unknown unknown|Homo sapiens, human|hnRNP E1|CCCAACGGGCCCUCCUCCCC
+708|PTPRC|unknown unknown|Homo sapiens, human|hnRNP E1|UCCACUUUCAAGUGACCCCUUACCUACUCACACCACUGGAUUCUCACCCGGAAGUACCUU
+709|PTPRC|unknown unknown|Homo sapiens, human|hnRNP E1|UCCACUUUCAAGUGACCCCUUACCUACUCACACCACUGCAUUCUCACCCGCAAGCACCUU
+710|REN|unknown unknown|Homo sapiens, human|hnRNP E1|CCCUCUGCCACCCAGGCAGGCCCUGCCUUCAGCCCUGGCCCAGAGCUGGAACACUCUCUGAGAUGCCCCUCUGCCUGGGCUUAUGCCCUCAGAUGGAGACAUUGGAUGUGGAGCUCCUGCUGGAUGCGUGCCCUGACCCCUGCACCAGCCCUUCCCUGCUUUGAG
+711|AR|unknown unknown|Homo sapiens, human|hnRNP E2|CCCUCCC
+712|CEBPA|unknown unknown|Homo sapiens, human|hnRNP E2|CUCGCCAUGCCGGGAGAACUCUAACUCCCCCAUGGAG
+713|FTH1|unknown unknown|Homo sapiens, human|hnRNP E2|GCCGCUCCAGCGCCGCGCAGCCACCGCCGCCGC
+714|HBA2|unknown unknown|Homo sapiens, human|hnRNP E2|CCCAGCCGGCCCUCCUCCCC
+715|HBA2|unknown unknown|Homo sapiens, human|hnRNP E2|CCCCACGGGCCCUCCUCCCC
+716|HBA2|unknown unknown|Homo sapiens, human|hnRNP E2|CCCAACGGGCCCUCCUCCCC
+717|MIR328|unknown unknown|Homo sapiens, human|hnRNP E2|CUCUGCCCUUCCGU
+718|PTPRC|unknown unknown|Homo sapiens, human|hnRNP E2|UCCACUUUCAAGUGACCCCUUACCUACUCACACCACUGGAUUCUCACCCGGAAGUACCUU
+719|PTPRC|unknown unknown|Homo sapiens, human|hnRNP E2|UCCACUUUCAAGUGACCCCUUACCUACUCACACCACUGCAUUCUCACCCGCAAGCACCUU
+720|PTPRC|unknown unknown|Homo sapiens, human|hnRNP E2|CACUGCAUUCUCACCCGCAAGCA
+721|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP F|CGGGUUGACGGGAGCACGGU
+722|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP F|AGUGUUGAGUGGAGCAGUGGU
+723|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP F|AGGGUUGAGGGGAGCAGGGU
+724|BCL2L1|unknown unknown|Homo sapiens, human|hnRNP F|CGGGAUGGGGUA
+725|BCL2L1|unknown unknown|Homo sapiens, human|hnRNP F|CUGGGGU
+726|BRCA1|unknown unknown|Homo sapiens, human|hnRNP F|AGGGA
+727|BRCA1|unknown unknown|Homo sapiens, human|hnRNP F|CGGGA
+728|CBS|unknown unknown|Homo sapiens, human|hnRNP F|AGGGG
+729|CBS|unknown unknown|Homo sapiens, human|hnRNP F|UGGGGU
+730|CBS|unknown unknown|Homo sapiens, human|hnRNP F|GGGGU
+731|CBS|unknown unknown|Homo sapiens, human|hnRNP F|UGGGG
+732|CBS|unknown unknown|Homo sapiens, human|hnRNP F|GGGGC
+733|FGFR2|unknown unknown|Homo sapiens, human|hnRNP F|GGGGAAUAUACGUGCUUGGCGGGUAAUUCUAUUGGGA
+734|GRIN1|unknown unknown|Homo sapiens, human|hnRNP F|AAGGGGAA
+735|GRIN1|unknown unknown|Homo sapiens, human|hnRNP F|AAGGCGAA
+736|HBB|unknown unknown|Homo sapiens, human|hnRNP F|GGGAAUGUGGG
+737|PLP1|unknown unknown|Homo sapiens, human|hnRNP F|CAGAAGGGGAGGGGUUCCA
+738|PLP1|unknown unknown|Homo sapiens, human|hnRNP F|AACAAGGGGUGGGGGAAAA
+739|SRC|unknown unknown|Homo sapiens, human|hnRNP F|GGAGGA
+740|SRC|unknown unknown|Homo sapiens, human|hnRNP F|AAGGUG
+741|THRA|unknown unknown|Homo sapiens, human|hnRNP F|GGCGGCCAGAGGGUGUGCGGAGCUGGUGGGGAGGAGCCUGGAGAGAAGGGGCAGAGCUGGGGGCUGAGGGAGACCCCCCC
+742|TPM2|unknown unknown|Homo sapiens, human|hnRNP F|GGGGA
+743|Src|unknown unknown|Mus musculus, mouse|hnRNP F|GGGGGCUG
+744|Src|unknown unknown|Mus musculus, mouse|hnRNP F|GGGGG
+745|BCL2L1|unknown unknown|Homo sapiens, human|hnRNP F|GGGAUGGGGUAAACUGGGG
+746|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP H1|CGGGUUGACGGGAGCACGGU
+747|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP H1|AGUGUUGAGUGGAGCAGUGGU
+748|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP H1|AGGGUUGAGGGGAGCAGGGU
+749|AGER|unknown unknown|Homo sapiens, human|hnRNP H1|CGGGC
+750|AGER|unknown unknown|Homo sapiens, human|hnRNP H1|UGGGG
+751|AGER|unknown unknown|Homo sapiens, human|hnRNP H1|GGGGA
+752|AGER|unknown unknown|Homo sapiens, human|hnRNP H1|AGGGA
+753|APOA2|unknown unknown|Homo sapiens, human|hnRNP H1|AUACCUUUUUGGGGAGGGGGCAGAGAGC
+754|BRCA1|unknown unknown|Homo sapiens, human|hnRNP H1|AGGGA
+755|BRCA1|unknown unknown|Homo sapiens, human|hnRNP H1|CGGGA
+756|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|AGGGG
+757|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|UGGGGU
+758|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|GGGGU
+759|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|UGGGG
+760|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|GGGGC
+761|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|GAUCACUGGGGUGGAUCAUCCAGGUGGGGCUUUU
+762|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|GAUCACUGGGGUGGAUCAUCCAGGUGGGGCUUUU
+763|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|GAUCACUGGGGUGGAUCAU
+764|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|GAUCACUGUGGUGGAUCAUCCAGGUGUGGCUUUU
+765|CBS|unknown unknown|Homo sapiens, human|hnRNP H1|GAUCACUGUGGUGGAUCAUCCAGGUGGGGCUUUU
+766|CFTR|unknown unknown|Homo sapiens, human|hnRNP H1|UGGGG
+767|CFTR|unknown unknown|Homo sapiens, human|hnRNP H1|GGGGG
+768|CFTR|unknown unknown|Homo sapiens, human|hnRNP H1|GGGGU
+769|CFTR|unknown unknown|Homo sapiens, human|hnRNP H1|UGGGA
+770|CHRNA1|unknown unknown|Homo sapiens, human|hnRNP H1|UGGGU
+771|FGFR2|unknown unknown|Homo sapiens, human|hnRNP H1|GGGGAAUAUACGUGCUUGGCGGGUAAUUCUAUUGGGA
+772|GRIN1|unknown unknown|Homo sapiens, human|hnRNP H1|AAGGGGAA
+773|GRIN1|unknown unknown|Homo sapiens, human|hnRNP H1|AAGGCGAA
+774|HBB|unknown unknown|Homo sapiens, human|hnRNP H1|GGGAAUGUGGG
+775|HIPK3|unknown unknown|Homo sapiens, human|hnRNP H1|GGGAGGAAGAAAUAGAAGAUGCAGAAGAGG
+776|NOP2|unknown unknown|Homo sapiens, human|hnRNP H1|GGUUGUGAGAGUGAUUUC
+777|NOP2|unknown unknown|Homo sapiens, human|hnRNP H1|GGUUGGGAGAGGGAUUUC
+778|PLP1|unknown unknown|Homo sapiens, human|hnRNP H1|CAGAAGGGGAGGGGUUCCA
+779|PLP1|unknown unknown|Homo sapiens, human|hnRNP H1|AACAAGGGGUGGGGGAAAA
+780|RPL3|unknown unknown|Homo sapiens, human|hnRNP H1|UGGGA
+781|RPL3|unknown unknown|Homo sapiens, human|hnRNP H1|UGGGU
+782|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H1|AUAUCCUGCCCAAGAUGUGAGAGGCGUGAGGUGUUAGGGAUGGGCGAGAUGGGGUGCUGU
+783|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H1|AUAUCCUGCCCAAGAUGGGAGAGGCGGGAGGGGUUAGUGAUGUGCGAGAUGGUGUGCUGU
+784|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H1|AUAUCCUGCCCAAGAUGUGAGAGGCGUGAGGUGUUAGUGAUGUGCGAGAUGGUGUGCUGU
+785|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H1|AUAUCCUGCCCAAGAUGGGAGAGGCGGGAGGGGUUAGGGAUGGGCGAGAUGGGGUGCUGU
+786|SRC|unknown unknown|Homo sapiens, human|hnRNP H1|GGAGGA
+787|SRC|unknown unknown|Homo sapiens, human|hnRNP H1|AAGGUG
+788|THRA|unknown unknown|Homo sapiens, human|hnRNP H1|GGCGGCCAGAGGGUGUGCGGAGCUGGUGGGGAGGAGCCUGGAGAGAAGGGGCAGAGCUGGGGGCUGAGGGAGACCCCCCC
+789|TPM2|unknown unknown|Homo sapiens, human|hnRNP H1|GGGGA
+790|Src|unknown unknown|Mus musculus, mouse|hnRNP H1|CUGAGGCUGGGGGCUGGAAUUCCCAUGUGCUUCCU
+791|Src|unknown unknown|Mus musculus, mouse|hnRNP H1|GGGGGCUG
+792|Src|unknown unknown|Mus musculus, mouse|hnRNP H1|CUGAGGCUGGGGGCUGCUCUCUGCAUGUGCUUCCU
+793|Src|unknown unknown|Mus musculus, mouse|hnRNP H1|CUGGGGGCUG
+794|Src|unknown unknown|Mus musculus, mouse|hnRNP H1|GGGGC
+795|Src|unknown unknown|Mus musculus, mouse|hnRNP H1|GGGGG
+796|Tpm2|unknown unknown|Rattus sp., rat|hnRNP H1|UGUGGG
+797|gag|unknown unknown|Rous Sarcoma virus|hnRNP H1|CGAAUCGACAAAGGGGAGGAAGUGGGAGAAA
+798|RSV NRS (negative regulator of splicing)|unknown unknown|Rous Sarcoma virus|hnRNP H1|GUAUCCUUCCCUGGCGGGGGUGGGAGAGCAGCAGGGCCAGGGGGGUGACACACC
+799|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP H2|CGGGUUGACGGGAGCACGGU
+800|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP H2|AGUGUUGAGUGGAGCAGUGGU
+801|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP H2|AGGGUUGAGGGGAGCAGGGU
+802|AGER|unknown unknown|Homo sapiens, human|hnRNP H2|CGGGC
+803|AGER|unknown unknown|Homo sapiens, human|hnRNP H2|UGGGG
+804|AGER|unknown unknown|Homo sapiens, human|hnRNP H2|GGGGA
+805|AGER|unknown unknown|Homo sapiens, human|hnRNP H2|AGGGA
+806|BRCA1|unknown unknown|Homo sapiens, human|hnRNP H2|AGGGA
+807|BRCA1|unknown unknown|Homo sapiens, human|hnRNP H2|CGGGA
+808|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|AGGGG
+809|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|UGGGGU
+810|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|GGGGU
+811|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|UGGGG
+812|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|GGGGC
+813|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|GAUCACUGGGGUGGAUCAUCCAGGUGGGGCUUUU
+814|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|GAUCACUGGGGUGGAUCAUCCAGGUGGGGCUUUU
+815|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|GAUCACUGGGGUGGAUCAU
+816|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|GAUCACUGUGGUGGAUCAUCCAGGUGUGGCUUUU
+817|CBS|unknown unknown|Homo sapiens, human|hnRNP H2|GAUCACUGUGGUGGAUCAUCCAGGUGGGGCUUUU
+818|CFTR|unknown unknown|Homo sapiens, human|hnRNP H2|UGGGG
+819|CFTR|unknown unknown|Homo sapiens, human|hnRNP H2|GGGGG
+820|CFTR|unknown unknown|Homo sapiens, human|hnRNP H2|GGGGU
+821|CFTR|unknown unknown|Homo sapiens, human|hnRNP H2|UGGGA
+822|CHRNA1|unknown unknown|Homo sapiens, human|hnRNP H2|UGGGU
+823|GRIN1|unknown unknown|Homo sapiens, human|hnRNP H2|AAGGGGAA
+824|GRIN1|unknown unknown|Homo sapiens, human|hnRNP H2|AAGGCGAA
+825|HBB|unknown unknown|Homo sapiens, human|hnRNP H2|GGGAAUGUGGG
+826|HIPK3|unknown unknown|Homo sapiens, human|hnRNP H2|GGGAGGAAGAAAUAGAAGAUGCAGAAGAGG
+827|NOP2|unknown unknown|Homo sapiens, human|hnRNP H2|GGUUGUGAGAGUGAUUUC
+828|NOP2|unknown unknown|Homo sapiens, human|hnRNP H2|GGUUGGGAGAGGGAUUUC
+829|PLP1|unknown unknown|Homo sapiens, human|hnRNP H2|CAGAAGGGGAGGGGUUCCA
+830|PLP1|unknown unknown|Homo sapiens, human|hnRNP H2|AACAAGGGGUGGGGGAAAA
+831|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H2|AUAUCCUGCCCAAGAUGUGAGAGGCGUGAGGUGUUAGGGAUGGGCGAGAUGGGGUGCUGU
+832|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H2|AUAUCCUGCCCAAGAUGGGAGAGGCGGGAGGGGUUAGUGAUGUGCGAGAUGGUGUGCUGU
+833|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H2|AUAUCCUGCCCAAGAUGUGAGAGGCGUGAGGUGUUAGUGAUGUGCGAGAUGGUGUGCUGU
+834|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H2|AUAUCCUGCCCAAGAUGGGAGAGGCGGGAGGGGUUAGGGAUGGGCGAGAUGGGGUGCUGU
+835|SRC|unknown unknown|Homo sapiens, human|hnRNP H2|GGAGGA
+836|SRC|unknown unknown|Homo sapiens, human|hnRNP H2|AAGGUG
+837|THRA|unknown unknown|Homo sapiens, human|hnRNP H2|GGCGGCCAGAGGGUGUGCGGAGCUGGUGGGGAGGAGCCUGGAGAGAAGGGGCAGAGCUGGGGGCUGAGGGAGACCCCCCC
+838|TPM2|unknown unknown|Homo sapiens, human|hnRNP H2|GGGGA
+839|Src|unknown unknown|Mus musculus, mouse|hnRNP H2|CUGAGGCUGGGGGCUGGAAUUCCCAUGUGCUUCCU
+840|Src|unknown unknown|Mus musculus, mouse|hnRNP H2|GGGGGCUG
+841|Src|unknown unknown|Mus musculus, mouse|hnRNP H2|CUGAGGCUGGGGGCUGCUCUCUGCAUGUGCUUCCU
+842|Src|unknown unknown|Mus musculus, mouse|hnRNP H2|CUGGGGGCUG
+843|Src|unknown unknown|Mus musculus, mouse|hnRNP H2|GGGGC
+844|Src|unknown unknown|Mus musculus, mouse|hnRNP H2|GGGGG
+845|Tpm2|unknown unknown|Rattus sp., rat|hnRNP H2|UGUGGG
+846|gag|unknown unknown|Rous Sarcoma virus|hnRNP H2|CGAAUCGACAAAGGGGAGGAAGUGGGAGAAA
+847|RSV NRS (negative regulator of splicing)|unknown unknown|Rous Sarcoma virus|hnRNP H2|GUAUCCUUCCCUGGCGGGGGUGGGAGAGCAGCAGGGCCAGGGGGGUGACACACC
+848|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP H3|CGGGUUGACGGGAGCACGGU
+849|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP H3|AGUGUUGAGUGGAGCAGUGGU
+850|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP H3|AGGGUUGAGGGGAGCAGGGU
+851|AGER|unknown unknown|Homo sapiens, human|hnRNP H3|CGGGC
+852|AGER|unknown unknown|Homo sapiens, human|hnRNP H3|UGGGG
+853|AGER|unknown unknown|Homo sapiens, human|hnRNP H3|GGGGA
+854|AGER|unknown unknown|Homo sapiens, human|hnRNP H3|AGGGA
+855|BRCA1|unknown unknown|Homo sapiens, human|hnRNP H3|AGGGA
+856|BRCA1|unknown unknown|Homo sapiens, human|hnRNP H3|CGGGA
+857|CBS|unknown unknown|Homo sapiens, human|hnRNP H3|GAUCACUGGGGUGGAUCAUCCAGGUGGGGCUUUU
+858|CBS|unknown unknown|Homo sapiens, human|hnRNP H3|GAUCACUGGGGUGGAUCAUCCAGGUGGGGCUUUU
+859|CBS|unknown unknown|Homo sapiens, human|hnRNP H3|GAUCACUGGGGUGGAUCAU
+860|CBS|unknown unknown|Homo sapiens, human|hnRNP H3|GAUCACUGUGGUGGAUCAUCCAGGUGUGGCUUUU
+861|CBS|unknown unknown|Homo sapiens, human|hnRNP H3|GAUCACUGUGGUGGAUCAUCCAGGUGGGGCUUUU
+862|CFTR|unknown unknown|Homo sapiens, human|hnRNP H3|UGGGG
+863|CFTR|unknown unknown|Homo sapiens, human|hnRNP H3|GGGGG
+864|CFTR|unknown unknown|Homo sapiens, human|hnRNP H3|GGGGU
+865|CFTR|unknown unknown|Homo sapiens, human|hnRNP H3|UGGGA
+866|CHRNA1|unknown unknown|Homo sapiens, human|hnRNP H3|UGGGU
+867|HBB|unknown unknown|Homo sapiens, human|hnRNP H3|GGGAAUGUGGG
+868|HIPK3|unknown unknown|Homo sapiens, human|hnRNP H3|GGGAGGAAGAAAUAGAAGAUGCAGAAGAGG
+869|NOP2|unknown unknown|Homo sapiens, human|hnRNP H3|GGUUGUGAGAGUGAUUUC
+870|NOP2|unknown unknown|Homo sapiens, human|hnRNP H3|GGUUGGGAGAGGGAUUUC
+871|PLP1|unknown unknown|Homo sapiens, human|hnRNP H3|CAGAAGGGGAGGGGUUCCA
+872|PLP1|unknown unknown|Homo sapiens, human|hnRNP H3|AACAAGGGGUGGGGGAAAA
+873|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H3|AUAUCCUGCCCAAGAUGUGAGAGGCGUGAGGUGUUAGGGAUGGGCGAGAUGGGGUGCUGU
+874|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H3|AUAUCCUGCCCAAGAUGGGAGAGGCGGGAGGGGUUAGUGAUGUGCGAGAUGGUGUGCUGU
+875|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H3|AUAUCCUGCCCAAGAUGUGAGAGGCGUGAGGUGUUAGUGAUGUGCGAGAUGGUGUGCUGU
+876|SCN4A|unknown unknown|Homo sapiens, human|hnRNP H3|AUAUCCUGCCCAAGAUGGGAGAGGCGGGAGGGGUUAGGGAUGGGCGAGAUGGGGUGCUGU
+877|SRC|unknown unknown|Homo sapiens, human|hnRNP H3|GGAGGA
+878|SRC|unknown unknown|Homo sapiens, human|hnRNP H3|AAGGUG
+879|THRA|unknown unknown|Homo sapiens, human|hnRNP H3|GGCGGCCAGAGGGUGUGCGGAGCUGGUGGGGAGGAGCCUGGAGAGAAGGGGCAGAGCUGGGGGCUGAGGGAGACCCCCCC
+880|TPM2|unknown unknown|Homo sapiens, human|hnRNP H3|GGGGA
+881|Src|unknown unknown|Mus musculus, mouse|hnRNP H3|GGGGGCUG
+882|Tpm2|unknown unknown|Rattus sp., rat|hnRNP H3|UGUGGG
+883|RSV NRS (negative regulator of splicing)|unknown unknown|Rous Sarcoma virus|hnRNP H3|GUAUCCUUCCCUGGCGGGGGUGGGAGAGCAGCAGGGCCAGGGGGGUGACACACC
+884|Ad2 Major Late transcript|unknown unknown|Adenovirus family|hnRNP I (PTB)|UCCCUUUUUUUUCCACAG
+885|TNNT2|unknown unknown|Gallus gallus, chicken|hnRNP I (PTB)|CCUCUGCGCUUCUUCCCUUCCCUCCUCCCUGGCUCAG
+886|TNNT2|unknown unknown|Gallus gallus, chicken|hnRNP I (PTB)|CUUUCCUUUCAUUCUUUCACUUCUCU
+887|TNNT2|unknown unknown|Gallus gallus, chicken|hnRNP I (PTB)|UUUCUUU
+888|TNNT2|unknown unknown|Gallus gallus, chicken|hnRNP I (PTB)|UCUCUC
+889|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP I (PTB)|CCCCCUCUCUCUAUCGCUGUCUCUUGAGCCACGC
+890|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP I (PTB)|CAGCCACCUCUCCCCUCUCCGCACUGCUGCCA
+891|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP I (PTB)|UACCACCACCCCUUCCCCAUUCCCUUGCCCUGCU
+892|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP I (PTB)|GAGUUUUCUCCUCUCUCAACUUGUUCUCUCUCCUUCUUU
+893|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP I (PTB)|CCUCCUUCCCUGUGCUCCUUCCGCUCCCACCUUCUUCCCUU
+894|ATP5B|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UAUUCUUUCUGAACAGUAUUUAAGGUUUCCAAUAAAAUGUACACCCCUCAG
+895|CALCA|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|CUCCGCUCCUCUUC
+896|CALCA|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UUAUUUUUCCCC
+897|CD40LG|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|GUCUCUCUCUCUCAACCUCUUUCUUCCAAUCUCUCUUUCUCAAUCUCUCUGUUUCCCUUUGUC
+898|CHRNA1|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UCUUUCUCCUUUUCU
+899|FAS|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UUUGUCUUCUUCUUUU
+900|FAS|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UUUGUCUUCUUCUUUU
+901|HBB|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|CACUAAGCUCGCUUUCUUGCUGUCC
+902|HNRNPA1|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|CCUUUCCC
+903|IRF2|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UCUCCUUGUUUUGCUUUCGAUCUGGACUGUUCUCAGGCAAGCCGGGGAGUAACUUUUAGUUUUGCUCCUGCGAUUAUUCAACUGACGGGCUUUCAUUUCCAUUUCACAUACCCUAGCAACACUUAUACCUUGCGGAAUUGUAUUGGUAGCGUGAAAAAAGCACACUGAGAGG
+904|NF1|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UUCUUU
+905|NF1|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UUCUUC
+906|NF1|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|GUCUUU
+907|NOS2|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UAACACCCAGUCUGUUCCCCAUGG
+908|PKM2|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UCCUCCUCCUUCCCUCUUCCUUGCCCCCUCUUCCCCUAAACCUUACAG
+909|PTGS2|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UUGUUUGAUUUCUUAAAGU
+910|PTPRC|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UCCACUUUCAAGUGACCCCUUACCUACUCACACCACUGGAUUCUCACCCGGAAGUACCUU
+911|PTPRC|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UCCACUUUCAAGUGACCCCUUACCUACUCACACCACUGCAUUCUCACCCGCAAGCACCUU
+912|PTPRC|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|CACUGCAUUCUCACCCGCAAGCA
+913|PTPRC|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|CCACGCACGCAGACUCGCAGACGCCCUCUGCUGGAACUGACACGCAGACAUUCAGCGGCU
+914|PTPRC|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|CCACGCACGCAGACUCGCAG
+915|PTPRC|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|CACGCAGACAUUCAGCGGCU
+916|SCN8A|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|UUUAGUCAGCCUUAUAGCUAA
+917|TPM1|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|CUCUUU
+918|TPM1|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|GUCUUU
+919|TPM1|unknown unknown|Homo sapiens, human|hnRNP I (PTB)|CCUUCCUU
+920|Gabrg2|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|GCAAUUCUCUUUUCUGUCUACAAAUCCAAAG
+921|Ptbp1|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CCUCUUU
+922|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CUCUCU
+923|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CUCUCU
+924|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CUCUCU
+925|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CUCUCU
+926|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CUCUCU
+927|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CUGAGGCUGGGGGCUGCUCUCUGCAUGUGCUUCCU
+928|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CUUCUCUCU
+929|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CUUCUCUCU
+930|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|CCUCUCCUUCUCUCUGCUUCUCUCUCGCUGGCCCUUAGGAGGAAGGUGGAUGUCAGGUGUGUACCGAGG
+931|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|UCCUUCUCUCUGCUUCUCUCUCGCUGGCCCUUAGGAGG
+932|Src|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|GGAUGCUUCGCUGAGGCUGGGGGCUGCUCUCUGCAUGUGCUUCCUCCACCGCCCCUGUGUGUUUCCAGCUCUCUCCCCGUCCCUUUAGCUUACCCUGCAUCCCACCUGUAUGAGCCGACCC
+933|Actn1|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|GGCGAGAAAUAACUCAUUUCUCCUUUUUUUCUUCUCUCUUCUAUCUAAAUUCUCCCUGUCUCCCUUCCUGUGGGCCAUGGGGCUCA
+934|Actn1|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|UCUUCUCUCUU
+935|Actn1|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|GGCGAGAAAUAACUCAUUUCUCCUUUUUUUCUUCUCUCUUCUGUCUGAAUUCUCCCUGUCUCCCUUCCUGUGGGCCAUGGGGCUCA
+936|Actn1|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|GGCUAUCUUUCCUGGGAACCUGCUUGGGUAUCCGCCUCCUCUCCCUCGUCACAUCUCACCUGUGGACUGGUCUUCUGCAUUUCUUUGCUCUG
+937|Actn1|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|GGGCCCUUCCUCUUUCUGCUGUCCUCCUGGCCUCUGCCUGGGCCCUCCUCCUCCCACCUGUCUGUCCCUCCUGUGUCUUGGCACCACUGCCCACAG
+938|Gabrg2|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|CCUUUUCCUUCUUCUUAUU
+939|Gabrg2|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|UGUUUCUCUUUCUCUCCUUU
+940|Gabrg2|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|GCAAUUCUCUUUUCUGUCU
+941|Gabrg2|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|UUUCUCUUUCUCUCCUUUCCUUUUCCUUCUUCUU
+942|Gabrg2|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|UUCUCUUUUCU
+943|Gabrg2|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|UUUCUCUUUCUCUCCUUUCCUUUUCCUUCUUCUU
+944|Gabrg2|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|UUCUCUUUUCU
+945|Tpm1|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|GGCUAACUUUCUCUUUCUCUCUCCCUCCCUGUCUUUCCCUCUCUCUCUCUUUCCCGC
+946|Tpm1|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|UCUUCUU
+947|Tpm1|unknown unknown|Rattus sp., rat|hnRNP I (PTB)|CUUUCUCUUUCUCUCUCCCUCCCUGUCUUUCCCU
+948|Tmx3|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|GCCCAAGGAGGUGAUAGCAUUUUUCAGAGAUUGAAAAGAAUAGUAUUUGAUGCCAAAUCUACAAUUGUG
+949|Scrib|unknown unknown|Mus musculus, mouse|hnRNP I (PTB)|GUGAGGGCUCUUUCUUCGUGGGACCGUAGAUAGGUAGCUGCUGCUGGUCUCACACUGUUCUCCCUACAG
+950|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP K|CCCCCUCUCUCUAUCGCUGUCUCUUGAGCCACGC
+951|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP K|CAGCCACCUCUCCCCUCUCCGCACUGCUGCCA
+952|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP K|UACCACCACCCCUUCCCCAUUCCCUUGCCCUGCU
+953|COL1A1|unknown unknown|Homo sapiens, human|hnRNP K|UCCCAA
+954|COL1A1|unknown unknown|Homo sapiens, human|hnRNP K|UCCCCCCAA
+955|COL1A2|unknown unknown|Homo sapiens, human|hnRNP K|UCCCCCAA
+956|COL3A1|unknown unknown|Homo sapiens, human|hnRNP K|UCCCAA
+957|GAST|unknown unknown|Homo sapiens, human|hnRNP K|AGCCACCUCCCACCCCACUCCA
+958|GAST|unknown unknown|Homo sapiens, human|hnRNP K|CCCAGCCCUGUCCCCUGAAAAACUGA
+959|GAST|unknown unknown|Homo sapiens, human|hnRNP K|CCCAGAAAUGUCCCCUGAAAAACUGA
+960|GAST|unknown unknown|Homo sapiens, human|hnRNP K|AAAAGCCCUGUCAAAUGAAAAACUGA
+961|PTPRC|unknown unknown|Homo sapiens, human|hnRNP K|CACUGCAUUCUCACCCGCAAGCA
+962|PTPRC|unknown unknown|Homo sapiens, human|hnRNP K|CACUGCAUUCUCACCCGCAAGCA
+963|REN|unknown unknown|Homo sapiens, human|hnRNP K|CCCUCUGCCACCCAGGCAGGCCCUGCCUUCAGCCCUGGCCCAGAGCUGGAACACUCUCUGAGAUGCCCCUCUGCCUGGGCUUAUGCCCUCAGAUGGAGACAUUGGAUGUGGAGCUCCUGCUGGAUGCGUGCCCUGACCCCUGCACCAGCCCUUCCCUGCUUUGAG
+964|Tpm1|unknown unknown|Rattus sp., rat|hnRNP K|CUUUCUCUUUCUCUCUCCCUCCCUGUCUUUCCCU
+965|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP L|CCCCCUCUCUCUAUCGCUGUCUCUUGAGCCACGC
+966|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP L|CAGCCACCUCUCCCCUCUCCGCACUGCUGCCA
+967|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP L|UACCACCACCCCUUCCCCAUUCCCUUGCCCUGCU
+968|BCL2|unknown unknown|Homo sapiens, human|hnRNP L|CACACACACAGACAGACACACACACACACA
+969|GSTZ1|unknown unknown|Homo sapiens, human|hnRNP L|ACAA
+970|GSTZ1|unknown unknown|Homo sapiens, human|hnRNP L|ACAA
+971|GSTZ1|unknown unknown|Homo sapiens, human|hnRNP L|ACAA
+972|GSTZ1|unknown unknown|Homo sapiens, human|hnRNP L|ACAA
+973|GSTZ1|unknown unknown|Homo sapiens, human|hnRNP L|ACAA
+974|GSTZ1|unknown unknown|Homo sapiens, human|hnRNP L|CACC
+975|NOS3|unknown unknown|Homo sapiens, human|hnRNP L|CACACACACACACACACACACACACACACACACACACA
+976|NOS3|unknown unknown|Homo sapiens, human|hnRNP L|CACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACA
+977|NOS3|unknown unknown|Homo sapiens, human|hnRNP L|CACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACA
+978|PLP1|unknown unknown|Homo sapiens, human|hnRNP L|CAGAAGGGGAGGGGUUCCA
+979|PLP1|unknown unknown|Homo sapiens, human|hnRNP L|AACAAGGGGUGGGGGAAAA
+980|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|UCCACUUUCAAGUGACCCCUUACCUACUCACACCACUGGAUUCUCACCCGGAAGUACCUU
+981|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACUGGAUUCUCACCCGGAAGUA
+982|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACUGGAUUCUCACCCGGAAGUA
+983|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACUGCAGUGUCACCCGCAAGCA
+984|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACUGCUUUCUCACCCGCUAGCG
+985|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|UAGAGCCAGCAGCUUUCCUAGA
+986|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CAGCUCCAAGACGACCAUCAGAGCGAAGACC
+987|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|UCCACUUUCAAGUGACCCCUUACCUACUCACACCACUGCAUUCUCACCCGCAAGCACCUU
+988|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACUGCAUUCUCACCCGCAAGCA
+989|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACUGCAUUCUCACCCGCAAGCA
+990|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACUGCAUUCUCACCCGCAAGCA
+991|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CCACGCACGCAGACUCGCAGACGCCCUCUGCUGGAACUGACACGCAGACAUUCAGCGGCU
+992|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CCACGCACGCAGACUCGCAG
+993|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACGCAGACAUUCAGCGGCU
+994|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACACCACUGCAUUCUCACCCGCAAGCACC
+995|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|UACAGCCAGCACCUUUCCUACA
+996|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACACCACA
+997|PTPRC|unknown unknown|Homo sapiens, human|hnRNP L|CACCUCCAACACCACCAUCACAGCGAACACC
+998|SLC2A2|unknown unknown|Homo sapiens, human|hnRNP L|CACACACACACACACACACACACACACACACACACACA
+999|SLC2A2|unknown unknown|Homo sapiens, human|hnRNP L|CACACACACACACACACACACACACACACACACACACA
+1000|TJP1|unknown unknown|Homo sapiens, human|hnRNP L|ACACUAUAUUUAAAAUAUUUUAAACACUUCACAG
+1001|TPM2|unknown unknown|Homo sapiens, human|hnRNP L|UAAACUACGCGACCUAGAGGAGGAGCUGAAAAUUGUUA
+1002|TPM2|unknown unknown|Homo sapiens, human|hnRNP L|UAAAUGUGGGGACCUAGAGGAGGAGCUGAAAAUUGUUA
+1003|VEGFA|unknown unknown|Homo sapiens, human|hnRNP L|CACCCACCCACAUACAUACAU
+1004|Tpm1|unknown unknown|Rattus sp., rat|hnRNP L|CUUUCUCUUUCUCUCUCCCUCCCUGUCUUUCCCU
+1005|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CACUGGAUUCUCACCCGGAAGUA
+1006|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CACUGCAGUGUCACCCGCAAGCA
+1007|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|UAGAGCCAGCAGCUUUCCUAGA
+1008|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CAGACGACA
+1009|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CAGCUCCAAGACGACCAUCAGAGCGAAGACC
+1010|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CACUGCAUUCUCACCCGCAAGCA
+1011|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CACUGCAUUCUCACCCGCAAGCA
+1012|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CCACGCACGCAGACUCGCAGACGCCCUCUGCUGGAACUGACACGCAGACAUUCAGCGGCU
+1013|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CACACCACUGCAUUCUCACCCGCAAGCACC
+1014|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|UACAGCCAGCACCUUUCCUACA
+1015|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CACACCACA
+1016|PTPRC|unknown unknown|Homo sapiens, human|hnRNP LL|CACCUCCAACACCACCAUCACAGCGAACACC
+1017|SMN2|unknown unknown|Homo sapiens, human|hnRNP M|GAAGGAA
+1018|SMN1|unknown unknown|Homo sapiens, human|hnRNP M|GAAGGAA
+1019|TPM2|unknown unknown|Gallus gallus, chicken|hnRNP P (TLS)|GGCGAAUUCGCUGGGGCUGGGCAGAGCGCGCAGGGUUGAGGGGAGCAGGGUCCUUCACUGGGGUGAA
+1020|BCYRN1|unknown unknown|Homo sapiens, human|hnRNP Q|AAAAAGGAAAAAAAAAAACAAAAGACAAAAAAAAAAUAAGC
+1021|SMN1|unknown unknown|Homo sapiens, human|hnRNP Q|AUUUUCCUUACAGGGUUUCAGACAAAAUCAAAAAG
+1022|SMN2|unknown unknown|Homo sapiens, human|hnRNP Q|AUUUUCCUUACAGGGCUUUUUGAUUUUGUCUAAAA
+1023|SMN2|unknown unknown|Homo sapiens, human|hnRNP Q|AUUUUCCUUACAGGGUUUUAGACAAAAUCAAAAAG
+1024|CFTR|unknown unknown|Homo sapiens, human|hnRNP U|UUAGACUCUCCUUUUGCAUACCUAGAUGUUUUAACA
+1025|CFTR|unknown unknown|Homo sapiens, human|hnRNP U|UUAGACUCUCCUUUUGGAUUCCUAGAUGUUUUAACA
+1026|CFTR|unknown unknown|Homo sapiens, human|hnRNP U|UUAGACUCCCCUUUUGGAUACCUAGAUGUUUUAACA
+1027|CFTR|unknown unknown|Homo sapiens, human|hnRNP U|UUAGACUCUCCUUUUGGGUACCUAGAUGUUUUAACA
+1028|CFTR|unknown unknown|Homo sapiens, human|hnRNP U|UUAGACUCUCCUUUUGGAUAUCUAGAUGUUUUAACA
+1029|CFTR|unknown unknown|Homo sapiens, human|hnRNP U|UUAGACUCUCCUUUUGGAUACCUAGAUGUUUUAACA
+1030|CFTR|unknown unknown|Homo sapiens, human|hnRNP U|CUGAUUUGUAUUUAUUAGACUC
+1031|CFTR|unknown unknown|Homo sapiens, human|hnRNP U|AACAGAAAAAGAAAUAUUU
+1032|Cftr|unknown unknown|Mus musculus, mouse|hnRNP U|CUGAUUUGUACCUAUUAGAUUC
+1033|Cftr|unknown unknown|Mus musculus, mouse|hnRNP U|UACUGAAGAACAAGUAUUU
+1034|Gnrh1|unknown unknown|Mus musculus, mouse|HTra2alpha|GAAGAGGAAG
+1035|Gnrh1|unknown unknown|Mus musculus, mouse|HTra2alpha|GAAAGUCUGAUUGAAGAGGAAGCCAGGCAGAAGAAGA
+1036|HIPK3|unknown unknown|Homo sapiens, human|HTra2beta1|GGGAGGAAGAAAUAGAAGAUGCAGAAGAGG
+1037|MAPT|unknown unknown|Homo sapiens, human|HTra2beta1|AAGAAGAAG
+1038|MAPT|unknown unknown|Homo sapiens, human|HTra2beta1|AAUAAGAAG
+1039|MAPT|unknown unknown|Homo sapiens, human|HTra2beta1|AAGAAG
+1040|SMN1|unknown unknown|Homo sapiens, human|HTra2beta1|AGAAGGAAGG
+1041|SMN2|unknown unknown|Homo sapiens, human|HTra2beta1|CAAAAAGAACGAAGGUGCUCACAU
+1042|SMN2|unknown unknown|Homo sapiens, human|HTra2beta1|AGAAGGAAGG
+1043|SMN2|unknown unknown|Homo sapiens, human|HTra2beta1|CAAAAAGAAGGAAGGUGCUCACAU
+1044|TRA2B|unknown unknown|Homo sapiens, human|HTra2beta1|GAAGAAGGAAA
+1045|TRA2B|unknown unknown|Homo sapiens, human|HTra2beta1|GAAAGAAU
+1046|TRA2B|unknown unknown|Homo sapiens, human|HTra2beta1|GAAAGAAG
+1047|TRA2B|unknown unknown|Homo sapiens, human|HTra2beta1|GAAGAAUGAAGAAA
+1048|SMN2|unknown unknown|Homo sapiens, human|HTra2beta1|GAAGGA
+1049|SMN1|unknown unknown|Homo sapiens, human|HTra2beta1|GAAGGA
+1050|SMN2|unknown unknown|Homo sapiens, human|HTra2beta1|GAAUUA
+1051|SMN1|unknown unknown|Homo sapiens, human|HTra2beta1|GAAUUA
+1052|CALCA|unknown unknown|Homo sapiens, human|HuB|UUUUUUAUUUU
+1053|CALCA|unknown unknown|Homo sapiens, human|HuD|UUUUUUAUUUU
+1054|CDKN1A|unknown unknown|Homo sapiens, human|HuD|UCUUAAUUAUUAUUUGUGUUUUAAUUUAAACACCUCCUCAUG
+1055|FOS|unknown unknown|Homo sapiens, human|HuD|AUACGUAUAUUUUUAUUUUAUUUUUUU
+1056|FOS|unknown unknown|Homo sapiens, human|HuD|AUAUUUAUAUCGCUAUUUUAUUUUUUU
+1057|FOS|unknown unknown|Homo sapiens, human|HuD|AUAUUUAUAUUUUUAUGCUAUUUUUUU
+1058|FOS|unknown unknown|Homo sapiens, human|HuD|AUAUUUAUAUUUUUAUUUUAUUUUUUU
+1059|FOS|unknown unknown|Homo sapiens, human|HuD|AUAUUUAUAUUUUUAUUUUAUUUUUUU
+1060|GAP43|unknown unknown|Homo sapiens, human|HuD|UCCACUUUCCUCUCUAUUUCUCUCUG
+1061|Marcks|unknown unknown|Mus musculus, mouse|HuD|CUUUCUUUCUUUCUUUCUUUCUUUCUUUCUUUCUUUCUUUCUUUUUUUUUUU
+1062|ACTB|unknown unknown|Homo sapiens, human|HuR|UUUUGUUUUGGUUUUUUUUUUUUUUUUGGC
+1063|AR|unknown unknown|Homo sapiens, human|HuR|CUUUCUCUCCUUUCUUUUUCUUCUUC
+1064|ATP5B|unknown unknown|Homo sapiens, human|HuR|UAUUCUUUCUGAACAGUAUUUAAGGUUUCCAAUAAAAUGUACACCCCUCAG
+1065|ATP5B|unknown unknown|Homo sapiens, human|HuR|UAUUCUUUCUGAACAGUAUUUAAGGUUUCCAAUAAAAUGUACACCCCUCAG
+1066|BRCA1|unknown unknown|Homo sapiens, human|HuR|GAAGCUGAUUCAUUAUUUAUCAGCCCUAUUCUUUC
+1067|BRCA1|unknown unknown|Homo sapiens, human|HuR|GAUGCUGAGUCAUUAUUUAUCAGCCCUAUUCUUUC
+1068|BRCA1|unknown unknown|Homo sapiens, human|HuR|GAUGCUGAUUCAUUAUUUAUCAGCCCUAUUCUUUC
+1069|CDKN1B|unknown unknown|Homo sapiens, human|HuR|UGUUUUUUUGAGAGU
+1070|CDKN2A|unknown unknown|Homo sapiens, human|HuR|CCAUUUAUAUCAUAAAAUAUAUAUU
+1071|CDKN2A|unknown unknown|Homo sapiens, human|HuR|CCAUUUAUAUCAUUUUUAAAAAAUU
+1072|CDKN2A|unknown unknown|Homo sapiens, human|HuR|CCAUUUAUAUCAUAAAAAUAUUAUU
+1073|CDKN2A|unknown unknown|Homo sapiens, human|HuR|CCAUUUAUAUCAUUUUUUAUAUAUU
+1074|CSF1R|unknown unknown|Homo sapiens, human|HuR|CUAGUAGAACCUUCUUUCCUAAUCCCCUUAUCUUCAUGGAAAUGGACUGACUUUAUGCCUAUGAAGUCC
+1075|CSF2|unknown unknown|Homo sapiens, human|HuR|AUUUAUUUAUUUAUUUAUUUA
+1076|ELAVL1|unknown unknown|Homo sapiens, human|HuR|CUGUAUUUAUCUGUUUAUUUAUACCUAUUUAUGUAUUUAUUUAUUGAAGUGUGAAAUU
+1077|ERBB2|unknown unknown|Homo sapiens, human|HuR|CUUUUCUGUUUAGUUUUUACUUUUUUUGUUUUGUUUUUUUA
+1078|FAS|unknown unknown|Homo sapiens, human|HuR|UUUGUCUUCUUCUUUU
+1079|FOS|unknown unknown|Homo sapiens, human|HuR|AUACGUAUAUUUUUAUUUUAUUUUUUU
+1080|FOS|unknown unknown|Homo sapiens, human|HuR|AUAUUUAUAUCGCUAUUUUAUUUUUUU
+1081|FOS|unknown unknown|Homo sapiens, human|HuR|AUAUUUAUAUUUUUAUGCUAUUUUUUU
+1082|FOS|unknown unknown|Homo sapiens, human|HuR|AUAUUUAUAUUUUUAUUUUAUUUUUUU
+1083|FOS|unknown unknown|Homo sapiens, human|HuR|UAUUUAUAUUUUUAUUUUAUUU
+1084|FOS|unknown unknown|Homo sapiens, human|HuR|UUUUAUUGUGUUUUUAAUUUAUUUAUUAAGAUGGAUUCUCAGAUAUUUAUAUUUUUAUUUUAUUUUUUU
+1085|IL1B|unknown unknown|Homo sapiens, human|HuR|UAUUUAUUUAUUUAUUUGUUUGUUUGUUUUAUU
+1086|IL2|unknown unknown|Homo sapiens, human|HuR|UAUUUAUUUAAAUAUUUAAAUUUUAUAUUUAUU
+1087|IL3|unknown unknown|Homo sapiens, human|HuR|UAUUUAUUUAUGUAUGUAUGUAUUUAUUUAUUUAU
+1088|IL4|unknown unknown|Homo sapiens, human|HuR|AUAUUUUAAUUUAUGAGUUUUUGAUAGCUUUAUUUUUUAAGUAUUUAUAUAUUUAUAA
+1089|IL8|unknown unknown|Homo sapiens, human|HuR|UAUUUAUUAUUUAUGUAUUUAUUUAA
+1090|IL8|unknown unknown|Homo sapiens, human|HuR|CAUAAAUUAUUUUCAAGUGUAACUUAUUAACCUAUUUAUUAUUUAUGUAUUUAUUUAAGC
+1091|JUN|unknown unknown|Homo sapiens, human|HuR|UAUUUCUUGUUUGUUUGUUUGGGUAU
+1092|MYC|unknown unknown|Homo sapiens, human|HuR|UUACCAUCUUUUUUUUUUCUUUA
+1093|PTGS2|unknown unknown|Homo sapiens, human|HuR|UCUAUUAAUUUAAUUAUUUAAUAAUAUUUAUAUUAAACUCCUUAU
+1094|PTGS2|unknown unknown|Homo sapiens, human|HuR|CUUAAAUUCAUUUCACACAUUAAUUUUAUCUCA
+1095|PTGS2|unknown unknown|Homo sapiens, human|HuR|UGCAUGCUGUUCCUUUUCUUUUCUUCUUUUAGCCAUUUUGC
+1096|PTGS2|unknown unknown|Homo sapiens, human|HuR|UAUUAAUUUAAUUAUUUAAUAAUAUUUAUAUUAAA
+1097|PTGS2|unknown unknown|Homo sapiens, human|HuR|GCAUGCUGUUCCUUUUCUUUUCU
+1098|SERPINB2|unknown unknown|Homo sapiens, human|HuR|UUAUUUAUU
+1099|TNF|unknown unknown|Homo sapiens, human|HuR|UGUGAUGAUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUUACAGA
+1100|TNF|unknown unknown|Homo sapiens, human|HuR|AUUAUUUAUUAUUUAUUUAUUAAAUAUUUAUUUA
+1101|TNF|unknown unknown|Homo sapiens, human|HuR|GUGAUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUUAG
+1102|TNF|unknown unknown|Homo sapiens, human|HuR|UAUUUAUUAUUUAUUUAUUAUUUAUUUAUUUA
+1103|TNF|unknown unknown|Homo sapiens, human|HuR|AUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUUA
+1104|TNF|unknown unknown|Homo sapiens, human|HuR|UGUGAUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUUACAGA
+1105|TNF|unknown unknown|Homo sapiens, human|HuR|UAUUUAUGUUUGCACUUGUGAUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUUACAGAUGAAUGUAUUUAUUU
+1106|TYMS|unknown unknown|Homo sapiens, human|HuR|UGAACUUUAUAGUUGUUUUAUAUGUU
+1107|TYMS|unknown unknown|Homo sapiens, human|HuR|UGAACUUUAAAGUUAUAGUUGUUUUAUAUGUU
+1108|YES1|unknown unknown|Homo sapiens, human|HuR|UUAUUUAUAAAUCAUUUCCUUUCUUUUUUUCCCCAAAGUCAGAAUUGCUCAAAGAAAAUUAUUUAUUGUU
+1109|YES1|unknown unknown|Homo sapiens, human|HuR|UUUUUUAAAGUUUCUUGCAUUUAUUAUUCUCAAAAGUUUUUUCUAAGUUAAACAGUCAGUAUGCAAUCUUAAUAUAUGCUUUCUUUU
+1110|YES1|unknown unknown|Homo sapiens, human|HuR|UUUUUAUGUAAAACAUUUUUAGAACUCCAGUUUUCAAAUCAUGUUUGAAUCUACAUUCACUUUUUUUUGUUUUCUUUUUU
+1111|Marcks|unknown unknown|Mus musculus, mouse|HuR|CUUUCUUUCUUUCUUUCUUUCUUUCUUUCUUUCUUUCUUUCUUUUUUUUUUU
+1112|FOS|unknown unknown|Homo sapiens, human|KSRP|UUUUAUUGUGUUUUUAAUUUAUUUAUUAAGAUGGAUUCUCAGAUAUUUAUAUUUUUAUUUUAUUUUUUU
+1113|IL8|unknown unknown|Homo sapiens, human|KSRP|CUAUUUAUUAUUUAUGUAUGUAUUUAAGC
+1114|IL8|unknown unknown|Homo sapiens, human|KSRP|CAUAAAUUAUUUUCAAGUGUAACUUAUUAACCUAUUUAUUAUUUAUGUAUUUAUUUAAGC
+1115|IL8|unknown unknown|Homo sapiens, human|KSRP|CUAUUUAUUAUUUAUGUAUUUAUUUAAGC
+1116|MIR21|unknown unknown|Homo sapiens, human|KSRP|CUGUUGAAUCUCAUCC
+1117|MIR21|unknown unknown|Homo sapiens, human|KSRP|CUGUUGAAUCUCAUGG
+1118|MIRLET7A1|unknown unknown|Homo sapiens, human|KSRP|UUAGGGUCACACCCACCACUCCCAGAU
+1119|MIRLET7A1|unknown unknown|Homo sapiens, human|KSRP|UUAGGGUCACACCCACCACUGGGAGAU
+1120|NOS2|unknown unknown|Homo sapiens, human|KSRP|AUUUUA
+1121|TNF|unknown unknown|Homo sapiens, human|KSRP|UAUUUAUUAUUUAUUUAUUAUUUAU
+1122|TNF|unknown unknown|Homo sapiens, human|KSRP|UAUUUAUUAUUU
+1123|TNF|unknown unknown|Homo sapiens, human|KSRP|UAUUUA
+1124|TNF|unknown unknown|Homo sapiens, human|KSRP|UAUUAU
+1125|Src|unknown unknown|Mus musculus, mouse|KSRP|UGCAUG
+1126|Pth|unknown unknown|Rattus sp., rat|KSRP|GUCUCUUCCAAUGAUUCCAUUUCAAUAUAUUCUUCUUUUUAAAGUAUUACACAUUUCCACUU
+1127|TNNT2|unknown unknown|Gallus gallus, chicken|MBNL1|CGCUUU
+1128|TNNT2|unknown unknown|Gallus gallus, chicken|MBNL1|UGCUGCUUUU
+1129|ATP2A1|unknown unknown|Homo sapiens, human|MBNL1|UGCCACUGCUGCUGCUUGCUGCUGCUGCGCUCGCUUCCAGUCAGGGUGGGCCGC
+1130|FMR1|unknown unknown|Homo sapiens, human|MBNL1|CGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGG
+1131|GRIN1|unknown unknown|Homo sapiens, human|MBNL1|GCCGAGGAGGUGGUGUGAUUGCUUGCUUUAGCGCCGUCAUUUUC
+1132|INSR|unknown unknown|Homo sapiens, human|MBNL1|GCGGCGGGCAGCUGUGCUUGCUGGAGAGCAGAUGCUUGCUUCACCAAU
+1133|INSR|unknown unknown|Homo sapiens, human|MBNL1|GGCUUU
+1134|MBNL1|unknown unknown|Homo sapiens, human|MBNL1|CCUCUGCUUGCUUGCUUGCUGUUUAUGUUAAUGCGCUCGCUUGAACCCCACUGGCCC
+1135|MBNL1|unknown unknown|Homo sapiens, human|MBNL1|CCUUUAUUGUGCAUGCUUGCUUAGUCUUGUUAUUCGUUGUAUAU
+1136|MBNL2|unknown unknown|Homo sapiens, human|MBNL1|GCACCUCUGCUUGCUUGCUUGCUGUUUACCUGUAUGUUAAUUCGCUCGCUUG
+1137|TNNT2|unknown unknown|Homo sapiens, human|MBNL1|UUUCUCCCUUUUCCCCUCCCCUUCGGC
+1138|TNNT2|unknown unknown|Homo sapiens, human|MBNL1|UGUCUCUCUUUUCCCCUCCGCGGCGGC
+1139|TNNT2|unknown unknown|Homo sapiens, human|MBNL1|UGUCUGCUGUUUUCCCCUCCCUGCUGGC
+1140|TNNT2|unknown unknown|Homo sapiens, human|MBNL1|CGCUGCGGC
+1141|TNNT2|unknown unknown|Homo sapiens, human|MBNL1|UGUCUCGCU
+1142|TNNT2|unknown unknown|Homo sapiens, human|MBNL1|UGUCUCGCUUUUCCCCUCCGCUGCGGC
+1143|TNNT2|unknown unknown|Homo sapiens, human|MBNL1|UGUCUCGCUUUUCCCCUCCGCUGCGGC
+1144|Tnnt3|unknown unknown|Mus musculus, mouse|MBNL1|GCGCUUGUGC
+1145|Tnnt3|unknown unknown|Mus musculus, mouse|MBNL1|AUAUAUAUAUGUGCGCUUGUGCCCACAUAUAUAUA
+1146|SCN8A|unknown unknown|Homo sapiens, human|nPTB|UUUAGUCAGCCUUAUAGCUAA
+1147|Src|unknown unknown|Mus musculus, mouse|nPTB|CUGAGGCUGCCCGCUGCUCUCUGCAUGUGCUUCCU
+1148|Src|unknown unknown|Mus musculus, mouse|nPTB|CUCUCU
+1149|FOS|unknown unknown|Homo sapiens, human|PSF|GUUUUUAAUUUAUUUAUUAAGAUGGAUUCU
+1150|PTGS2|unknown unknown|Homo sapiens, human|PSF|UUGUUUGAUUUCUUAAAGU
+1151|PTGS2|unknown unknown|Homo sapiens, human|PSF|CUAAUGAUCAUAUUUAUUUAUUUAUAUGAACCAUG
+1152|PTPRC|unknown unknown|Homo sapiens, human|PSF|CACUGGAUUCUCACCCGGAAGUA
+1153|PTPRC|unknown unknown|Homo sapiens, human|PSF|CACUGCAUUCUCACCCGCAAGCA
+1154|PTPRC|unknown unknown|Homo sapiens, human|PSF|CACUGCAUUCUCACCCGCAAGCA
+1155|PTPRC|unknown unknown|Homo sapiens, human|PSF|CCACGCACGCAGACUCGCAGACGCCCUCUGCUGGAACUGACACGCAGACAUUCAGCGGCU
+1156|Csf2|unknown unknown|Mus musculus, mouse|PSF|UUUUUAAAUAUUUAUUUAUUUAUUUAUUUAUUUUU
+1157|Ifng|unknown unknown|Mus musculus, mouse|PSF|AAACCUAUUUAUUAAUAUUUAAAACUAUUUAUAUG
+1158|Tnf|unknown unknown|Mus musculus, mouse|PSF|UUAUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUU
+1159|SMN2|unknown unknown|Homo sapiens, human|PSF|GAAGGA
+1160|SMN1|unknown unknown|Homo sapiens, human|PSF|GAAGGA
+1161|Mag|unknown unknown|Mus musculus, mouse|QKI|CGGGGGCCUCAGUGUGCCAGCCUCCGGGCCCUAGCUGGGCUUCGGGGUUGGUG
+1162|NUMB|unknown unknown|Homo sapiens, human|QKI|AUUAAC
+1163|NUMB|unknown unknown|Homo sapiens, human|QKI|CUAAU
+1164|NUMB|unknown unknown|Homo sapiens, human|QKI|CGAGU
+1165|Ad2 Major Late transcript|unknown unknown|Adenovirus family|QKI|ACUUAU
+1166|Ad2 Major Late transcript|unknown unknown|Adenovirus family|QKI|ACUAAU
+1167|BCL2L1|unknown unknown|Homo sapiens, human|RBM25|CGGGCA
+1168|MAPT|unknown unknown|Homo sapiens, human|RBM4|UCCUUCUUG
+1169|TPM1|unknown unknown|Homo sapiens, human|RBM4|CCUUCCUU
+1170|Ptbp1|unknown unknown|Mus musculus, mouse|RBM4|CCUCUUU
+1171|Casp2|unknown unknown|Mus musculus, mouse|RBM5|CUCUUCUCU
+1172|ACTB|unknown unknown|Homo sapiens, human|Sam68|UUUUUU
+1173|FMR1|unknown unknown|Homo sapiens, human|Sam68|CGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGG
+1174|HNRNPA2B1|unknown unknown|Homo sapiens, human|Sam68|UUAAAA
+1175|SMN2|unknown unknown|Homo sapiens, human|Sam68|UUUUA
+1176|BCL2L1|unknown unknown|Homo sapiens, human|SAP155|GAGGGAGGCAGGCGACGAG
+1177|TPM2|unknown unknown|Gallus gallus, chicken|SC35|GAUCCCUUUCUCUUUCUCUCUCCCUCCCUGUCUUUCCCU
+1178|TPM2|unknown unknown|Gallus gallus, chicken|SC35|CCCCUCUCUCUAUCGCUGUCUCUUGAGCCACGC
+1179|TPM2|unknown unknown|Gallus gallus, chicken|SC35|AGGGUUGAGGGGAGCAGGGU
+1180|F3|unknown unknown|Homo sapiens, human|SC35|GAUUGAUG
+1181|F3|unknown unknown|Homo sapiens, human|SC35|GAUUCCCU
+1182|FN1|unknown unknown|Homo sapiens, human|SC35|GAAGAAGA
+1183|HBB|unknown unknown|Homo sapiens, human|SC35|AGCUGUU
+1184|HBB|unknown unknown|Homo sapiens, human|SC35|UGCUGUU
+1185|PDHA1|unknown unknown|Homo sapiens, human|SC35|GGUGGGGCCGGAGCCAAGG
+1186|PDHA1|unknown unknown|Homo sapiens, human|SC35|GGUGGGGCCGGGGCCAAGG
+1187|SCN8A|unknown unknown|Homo sapiens, human|SC35|GGGACCUGCAGAGACUGUAA
+1188|SFRS7|unknown unknown|Homo sapiens, human|SC35|AGAGGAAGGCGA
+1189|SFRS7|unknown unknown|Homo sapiens, human|SC35|AGGAGCAGGGGACGAAG
+1190|SFRS7|unknown unknown|Homo sapiens, human|SC35|GAAGAAGAA
+1191|SRC|unknown unknown|Homo sapiens, human|SC35|GGAGGA
+1192|Tpm1|unknown unknown|Rattus sp., rat|SC35|AAAAGAGAAG
+1193|Tpm1|unknown unknown|Rattus sp., rat|SC35|GAGGAGGA
+1194|Tpm1|unknown unknown|Rattus sp., rat|SC35|GGAGGAC
+1195|Tpm1|unknown unknown|Rattus sp., rat|SC35|GGAGGAG
+1196|E1A|unknown unknown|Adenovirus family|SF1|UGCUGAC
+1197|E1A|unknown unknown|Adenovirus family|SF1|UGCUGCC
+1198|HLA-DQB1|unknown unknown|Homo sapiens, human|SF1|UACUAAC
+1199|HLA-DQB1|unknown unknown|Homo sapiens, human|SF1|CACUGAC
+1200|HLA-DQB1|unknown unknown|Homo sapiens, human|SF1|CGCUGAC
+1201|HLA-DQB1|unknown unknown|Homo sapiens, human|SF1|CACCGAC
+1202|HLA-DQB1|unknown unknown|Homo sapiens, human|SF1|CACAGAC
+1203|NUMB|unknown unknown|Homo sapiens, human|SF1|AUUAAC
+1204|Ad2 Major Late transcript|unknown unknown|Adenovirus family|SF1|ACUUAU
+1205|Ad2 Major Late transcript|unknown unknown|Adenovirus family|SF1|ACUAAU
+1206|E1A|unknown unknown|Adenovirus family|SF2/ASF|GAUGAAGAG
+1207|TNNT2|unknown unknown|Gallus gallus, chicken|SF2/ASF|GAGGAAGAA
+1208|TPM2|unknown unknown|Gallus gallus, chicken|SF2/ASF|GAUCCCUUUCUCUUUCUCUCUCCCUCCCUGUCUUUCCCU
+1209|TPM2|unknown unknown|Gallus gallus, chicken|SF2/ASF|AGGGAAAGACAGGGAGGGAGAGAGAAAGAGAAAGGGACU
+1210|TPM2|unknown unknown|Gallus gallus, chicken|SF2/ASF|CCCCUCUCUCUAUCGCUGUCUCUUGAGCCACGC
+1211|TPM2|unknown unknown|Gallus gallus, chicken|SF2/ASF|AGGGUUGAGGGGAGCAGGGU
+1212|APC|unknown unknown|Homo sapiens, human|SF2/ASF|UAUUACGGAAU
+1213|BRCA1|unknown unknown|Homo sapiens, human|SF2/ASF|UGCAGAUGCUUAGUUUGUGU
+1214|BRCA1|unknown unknown|Homo sapiens, human|SF2/ASF|UGCAGAUGCUGAGUUUGUGU
+1215|CD247|unknown unknown|Homo sapiens, human|SF2/ASF|UGCUUUGGUUAUAUUUAGCUCCAAA
+1216|CD44|unknown unknown|Homo sapiens, human|SF2/ASF|GGAAGAAGAUAAAGAC
+1217|CFTR|unknown unknown|Homo sapiens, human|SF2/ASF|GCAUAC
+1218|CFTR|unknown unknown|Homo sapiens, human|SF2/ASF|GGAUUC
+1219|CFTR|unknown unknown|Homo sapiens, human|SF2/ASF|GGGUAC
+1220|CFTR|unknown unknown|Homo sapiens, human|SF2/ASF|GGAUAU
+1221|CFTR|unknown unknown|Homo sapiens, human|SF2/ASF|UUACAUGAGCAUUAGGAGA
+1222|CFTR|unknown unknown|Homo sapiens, human|SF2/ASF|GGAUAC
+1223|CFTR|unknown unknown|Homo sapiens, human|SF2/ASF|CUGAUUUGUAUUUAUUAGACUC
+1224|CFTR|unknown unknown|Homo sapiens, human|SF2/ASF|AACAGAAAAAGAAAUAUUU
+1225|F3|unknown unknown|Homo sapiens, human|SF2/ASF|CGGAAGA
+1226|F3|unknown unknown|Homo sapiens, human|SF2/ASF|CAGACAG
+1227|FGB|unknown unknown|Homo sapiens, human|SF2/ASF|UAUGGAGGAUUCACUGUACAGAAUGAAGCCAACAAA
+1228|FN1|unknown unknown|Homo sapiens, human|SF2/ASF|GAAGAAGA
+1229|FN1|unknown unknown|Homo sapiens, human|SF2/ASF|GCACCUGAUGGUGAAGAAGACACUGCAGAGC
+1230|HIPK3|unknown unknown|Homo sapiens, human|SF2/ASF|GGGAGGAAGAAAUAGAAGAUGCAGAAGAGG
+1231|IGF1|unknown unknown|Homo sapiens, human|SF2/ASF|AUCCAGGAGGGGAACAGA
+1232|MTRR|unknown unknown|Homo sapiens, human|SF2/ASF|GAAUGGCCGGAGGAGAUUCAGCCUGA
+1233|PDHA1|unknown unknown|Homo sapiens, human|SF2/ASF|GGUGGGGCCGGAGCCAAGG
+1234|PDHA1|unknown unknown|Homo sapiens, human|SF2/ASF|GGUGGGGCCGGGGCCAAGG
+1235|PTPRC|unknown unknown|Homo sapiens, human|SF2/ASF|ACGCCCUCUGCUGGAACUGA
+1236|RAC1|unknown unknown|Homo sapiens, human|SF2/ASF|GUUGGACAAAUGUACGGUAAGGAUAUAACCUCCCGGGGCAAAGACAAGCCGAUUGCC
+1237|RAC1|unknown unknown|Homo sapiens, human|SF2/ASF|GUUGGAGAAACGUACGGCAAGGAUAUAACCUCCCGGGGCAAAGACAAGCCGAUUGCC
+1238|RAC1|unknown unknown|Homo sapiens, human|SF2/ASF|GUUGGAGAAACGUACGGUAAGGAUAUAACCUCCCGGGGCAAAGACAAGCCGAUUGCC
+1239|SCN8A|unknown unknown|Homo sapiens, human|SF2/ASF|GGGACCUGCAGAGACUGUAA
+1240|SFRS7|unknown unknown|Homo sapiens, human|SF2/ASF|AGAGGAAGGCGA
+1241|SFRS7|unknown unknown|Homo sapiens, human|SF2/ASF|AGGAGCAGGGGACGAAG
+1242|SFRS7|unknown unknown|Homo sapiens, human|SF2/ASF|GAAGAAGAA
+1243|SMN1|unknown unknown|Homo sapiens, human|SF2/ASF|CAGACAA
+1244|SMN1|unknown unknown|Homo sapiens, human|SF2/ASF|GGUUUCAGACAAAAUCA
+1245|SMN1|unknown unknown|Homo sapiens, human|SF2/ASF|AUUUUCCUUACAGGGUUUCAGACAAAAUCAAAAAG
+1246|SMN2|unknown unknown|Homo sapiens, human|SF2/ASF|CAAAAAGAACGAAGGUGCUCACAU
+1247|SMN2|unknown unknown|Homo sapiens, human|SF2/ASF|AUUUUCCUUACAGGGUUUUAGACAAAAUCAAAAAG
+1248|SMN2|unknown unknown|Homo sapiens, human|SF2/ASF|CAAAAAGAAGGAAGGUGCUCACAU
+1249|SRC|unknown unknown|Homo sapiens, human|SF2/ASF|AAGGUG
+1250|THRA|unknown unknown|Homo sapiens, human|SF2/ASF|GGCGGCCAGAGGGUGUGCGGAGCUGGUGGGGAGGAGCCUGGAGAGAAGGGGCAGAGCUGGGGGCUGAGGGAGACCCCCCC
+1251|Cftr|unknown unknown|Mus musculus, mouse|SF2/ASF|CUGAUUUGUACCUAUUAGAUUC
+1252|Cftr|unknown unknown|Mus musculus, mouse|SF2/ASF|UACUGAAGAACAAGUAUUU
+1253|Hist1h2ab|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1254|Hist1h2ac|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1255|Hist1h2ad|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1256|Hist1h2ae|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1257|Hist1h2af|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1258|Hist1h2ag|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1259|Hist1h2ah|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1260|Hist1h2ai|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1261|Hist1h2an|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1262|Hist1h2ao|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1263|Hist1h2ap|unknown unknown|Mus musculus, mouse|SF2/ASF|ACAACAACUAGCCACGGAUCAU
+1264|Tpm1|unknown unknown|Rattus sp., rat|SF2/ASF|AAAAGAGAAG
+1265|Tpm1|unknown unknown|Rattus sp., rat|SF2/ASF|GAGGAGGA
+1266|Tpm1|unknown unknown|Rattus sp., rat|SF2/ASF|GGAGGAC
+1267|Tpm1|unknown unknown|Rattus sp., rat|SF2/ASF|GGAGGAG
+1268|CALCA|unknown unknown|Homo sapiens, human|SRp20|CUCCGCUCCUCUUC
+1269|CD44|unknown unknown|Homo sapiens, human|SRp20|GGAAGAAGAUAAAGAC
+1270|RAC1|unknown unknown|Homo sapiens, human|SRp20|GUUGGACAAAUGUACGGUAAGGAUAUAACCUCCCGGGGCAAAGACAAGCCGAUUGCC
+1271|RAC1|unknown unknown|Homo sapiens, human|SRp20|GUUGGAGAAACGUACGGCAAGGAUAUAACCUCCCGGGGCAAAGACAAGCCGAUUGCC
+1272|RAC1|unknown unknown|Homo sapiens, human|SRp20|GUUGGAGAAACGUACGGUAAGGAUAUAACCUCCCGGGGCAAAGACAAGCCGAUUGCC
+1273|Hist1h2ab|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1274|Hist1h2ac|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1275|Hist1h2ad|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1276|Hist1h2ae|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1277|Hist1h2af|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1278|Hist1h2ag|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1279|Hist1h2ah|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1280|Hist1h2ai|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1281|Hist1h2an|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1282|Hist1h2ao|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1283|Hist1h2ap|unknown unknown|Mus musculus, mouse|SRp20|ACAACAAGAAGACGCGCAUCAU
+1284|CASP2|unknown unknown|Homo sapiens, human|SRp20|UUCUUCAUCC
+1285|BCL2L1|unknown unknown|Homo sapiens, human|SRp30c|UGAGUCGGAUCGCAGCUUGGAUGGCCAC
+1286|BCL2L1|unknown unknown|Homo sapiens, human|SRp30c|AGGAG
+1287|HNRNPA1|unknown unknown|Homo sapiens, human|SRp30c|CUGGAUU
+1288|Gnrh1|unknown unknown|Mus musculus, mouse|SRp30c|AGAUGGGCAAGGAGGUGGA
+1289|Gnrh1|unknown unknown|Mus musculus, mouse|SRp30c|GAAAGUCUGAUUGAAGAGGAAGCCAGGCAGAAGAAGA
+1290|Gria2|unknown unknown|Mus musculus, mouse|SRp38|AGACAA
+1291|Gria2|unknown unknown|Mus musculus, mouse|SRp38|GACAAA
+1292|Gria2|unknown unknown|Mus musculus, mouse|SRp38|GACAAA
+1293|TNNT2|unknown unknown|Gallus gallus, chicken|SRp40|GAGGAAGAA
+1294|APOA2|unknown unknown|Homo sapiens, human|SRp40|GGAGAGAAAGAAGGGAAGAUGAGAGG
+1295|CD44|unknown unknown|Homo sapiens, human|SRp40|GGAAGAAGAUAAAGAC
+1296|CFTR|unknown unknown|Homo sapiens, human|SRp40|GGUAUUUUUGGAGAAAUUC
+1297|CFTR|unknown unknown|Homo sapiens, human|SRp40|UGUAUAAUAGAAAUUGUUC
+1298|F3|unknown unknown|Homo sapiens, human|SRp40|AUAAAGG
+1299|FN1|unknown unknown|Homo sapiens, human|SRp40|GAAGAAGA
+1300|HIPK3|unknown unknown|Homo sapiens, human|SRp40|GGGAGGAAGAAAUAGAAGAUGCAGAAGAGG
+1301|Cftr|unknown unknown|Mus musculus, mouse|SRp40|CUGAUUUGUACCUAUUAGAUUC
+1302|Cftr|unknown unknown|Mus musculus, mouse|SRp40|UACUGAAGAACAAGUAUUU
+1303|MAPT|unknown unknown|Homo sapiens, human|SRp54|AAGAAG
+1304|TNNT2|unknown unknown|Gallus gallus, chicken|SRp55|AAGGGAGGGAAUGGCUUGAGGAAGACGACG
+1305|TNNT2|unknown unknown|Gallus gallus, chicken|SRp55|AAGAGGAAGAAGAAGAAGAGGAAGACGACG
+1306|TNNT2|unknown unknown|Gallus gallus, chicken|SRp55|GAGGAAGAA
+1307|TNNT2|unknown unknown|Gallus gallus, chicken|SRp55|AAGAGGAAGAAUGGCUUGAGGAAGACGACG
+1308|APOA2|unknown unknown|Homo sapiens, human|SRp55|GGAGAGAAAGAAGGGAAGAUGAGAGG
+1309|CFTR|unknown unknown|Homo sapiens, human|SRp55|UUAGACUCUCCUUUUGCAUACCUAGAUGUUUUAACA
+1310|CFTR|unknown unknown|Homo sapiens, human|SRp55|UUAGACUCUCCUUUUGGAUUCCUAGAUGUUUUAACA
+1311|CFTR|unknown unknown|Homo sapiens, human|SRp55|UUAGACUCCCCUUUUGGAUACCUAGAUGUUUUAACA
+1312|CFTR|unknown unknown|Homo sapiens, human|SRp55|UUAGACUCUCCUUUUGGGUACCUAGAUGUUUUAACA
+1313|CFTR|unknown unknown|Homo sapiens, human|SRp55|UUAGACUCUCCUUUUGGAUAUCUAGAUGUUUUAACA
+1314|CFTR|unknown unknown|Homo sapiens, human|SRp55|UUAGACUCUCCUUUUGGAUACCUAGAUGUUUUAACA
+1315|CFTR|unknown unknown|Homo sapiens, human|SRp55|CUGAUUUGUAUUUAUUAGACUC
+1316|CFTR|unknown unknown|Homo sapiens, human|SRp55|AACAGAAAAAGAAAUAUUU
+1317|F3|unknown unknown|Homo sapiens, human|SRp55|UGCGGA
+1318|F3|unknown unknown|Homo sapiens, human|SRp55|UGUGGA
+1319|FN1|unknown unknown|Homo sapiens, human|SRp55|GAAGAAGA
+1320|Cftr|unknown unknown|Mus musculus, mouse|SRp55|CUGAUUUGUACCUAUUAGAUUC
+1321|Cftr|unknown unknown|Mus musculus, mouse|SRp55|UACUGAAGAACAAGUAUUU
+1322|Calca|unknown unknown|Rattus sp., rat|SRp55|GCAGCACCUGGC
+1323|Calca|unknown unknown|Rattus sp., rat|SRp55|GCUCAUCCUGGC
+1324|TNNT2|unknown unknown|Gallus gallus, chicken|SRp75|GAGGAAGAA
+1325|FN1|unknown unknown|Homo sapiens, human|SRp75|GAAGAAGA
+1326|Cftr|unknown unknown|Mus musculus, mouse|SRp75|CUGAUUUGUACCUAUUAGAUUC
+1327|Cftr|unknown unknown|Mus musculus, mouse|SRp75|UACUGAAGAACAAGUAUUU
+1328|APOA2|unknown unknown|Homo sapiens, human|TDP43|GUGUGUGUGUGUGUGUGUGUGUGUGUGUGUGUGUGUGU
+1329|CFTR|unknown unknown|Homo sapiens, human|TDP43|UGUGUGUGUGUGUGUGUGUGUGUGUGUUU
+1330|CFTR|unknown unknown|Homo sapiens, human|TDP43|UGUGUGUGUGUGUGUGUGUGUGUGUUUUU
+1331|CFTR|unknown unknown|Homo sapiens, human|TDP43|UGUGUGUGUGUGUGUGUGUGUGUGUGUUUUU
+1332|CFTR|unknown unknown|Homo sapiens, human|TDP43|UGUGUGUGUGUGUGUGUGUGUG
+1333|CFTR|unknown unknown|Homo sapiens, human|TDP43|UGUGUGUGUGUGUGUGUGUGUGUUUUU
+1334|MIRLET7A1|unknown unknown|Homo sapiens, human|TDP43|UGAGGUAGUAGGUUGUGUAGUU
+1335|MIRLET7A2|unknown unknown|Homo sapiens, human|TDP43|UGAGGUAGUAGGUUGUGUAGUU
+1336|MIRLET7A3|unknown unknown|Homo sapiens, human|TDP43|UGAGGUAGUAGGUUGUGUAGUU
+1337|MIRLET7B|unknown unknown|Homo sapiens, human|TDP43|UGAGGUAGUAGGUUGUGUGGUU
+1338|NEFL|unknown unknown|Homo sapiens, human|TDP43|GUUUUGC
+1339|NEFL|unknown unknown|Homo sapiens, human|TDP43|GUUGUUC
+1340|NEFL|unknown unknown|Homo sapiens, human|TDP43|GUUGUGC
+1341|ATP5B|unknown unknown|Homo sapiens, human|TIA-1|UAUUCUUUCUGAACAGUAUUUAAGGUUUCCAAUAAAAUGUACACCCCUCAG
+1342|ATP5B|unknown unknown|Homo sapiens, human|TIA-1|UAUUCUUUCUGAACAGUAUUUAAGGUUUCCAAUAAAAUGUACACCCCUCAG
+1343|CALCA|unknown unknown|Homo sapiens, human|TIA-1|UUUUUUAUUUU
+1344|COL2A1|unknown unknown|Homo sapiens, human|TIA-1|GUAAUUUAUUUAUUUCCUGUUCAACAUAAAUAAAUUAC
+1345|FAS|unknown unknown|Homo sapiens, human|TIA-1|UUAUUUUUUUACGGUUAUAUUCUCCUUUCCC
+1346|FAS|unknown unknown|Homo sapiens, human|TIA-1|UCUUGCUUUGUUCAAAC
+1347|FAS|unknown unknown|Homo sapiens, human|TIA-1|GCCAAUUCCACUAAUUGUUUGGGGUAAGUUCUUGCUUUGUUCAAACUGCAGAUUGAAA
+1348|FOS|unknown unknown|Homo sapiens, human|TIA-1|GUUUUUAAUUUAUUUAUUAAGAUGGAUUCU
+1349|PTGS2|unknown unknown|Homo sapiens, human|TIA-1|CUAAUGAUCAUAUUUAUUUAUUUAUAUGAACCAUG
+1350|Csf2|unknown unknown|Mus musculus, mouse|TIA-1|UUUUUAAAUAUUUAUUUAUUUAUUUAUUUAUUUUU
+1351|Ifng|unknown unknown|Mus musculus, mouse|TIA-1|AAACCUAUUUAUUAAUAUUUAAAACUAUUUAUAUG
+1352|Tnf|unknown unknown|Mus musculus, mouse|TIA-1|UUAUUAUUUAUUAUUUAUUUAUUAUUUAUUUAUUU
+1353|FAS|unknown unknown|Homo sapiens, human|TIA-1|GUUAUAUUCUCCUUUC
+1354|FAS|unknown unknown|Homo sapiens, human|TIA-1|UUCUCCUUUC
+1355|ATP5B|unknown unknown|Homo sapiens, human|TIAL1|UAUUCUUUCUGAACAGUAUUUAAGGUUUCCAAUAAAAUGUACACCCCUCAG
+1356|ATP5B|unknown unknown|Homo sapiens, human|TIAL1|UAUUCUUUCUGAACAGUAUUUAAGGUUUCCAAUAAAAUGUACACCCCUCAG
+1357|CALCA|unknown unknown|Homo sapiens, human|TIAL1|UUUUUUAUUUU
+1358|VEGFA|unknown unknown|Homo sapiens, human|TIAL1|AAAAUGCUUUUUUUUUUUUA
+1359|CD44|unknown unknown|Homo sapiens, human|YB-1|CAACCACACCAC
+1360|CD44|unknown unknown|Homo sapiens, human|YB-1|ACCACACAAAACA
+1361|CD44|unknown unknown|Homo sapiens, human|YB-1|CAACCACAA
+1362|GPX1|unknown unknown|Homo sapiens, human|YB-1|UCUCGGGGGGGUUUUCAUCUAUGAGGGUGUUUCCUCUAAACCUACGAGGGAGGAACACCUGAUCUUACAGAAAAUACCACCUCGAGA
+1363|NF1|unknown unknown|Homo sapiens, human|YB-1|AGAAC
+1364|NF1|unknown unknown|Homo sapiens, human|YB-1|ACAAC
+1365|NOS3|unknown unknown|Homo sapiens, human|YB-1|CACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACACA
+1366|REN|unknown unknown|Homo sapiens, human|YB-1|CCCUCUGCCACCCAGGCAGGCCCUGCCUUCAGCCCUGGCCCAGAGCUGGAACACUCUCUGAGAUGCCCCUCUGCCUGGGCUUAUGCCCUCAGAUGGAGACAUUGGAUGUGGAGCUCCUGCUGGAUGCGUGCCCUGACCCCUGCACCAGCCCUUCCCUGCUUUGAG
+1367|TGFB1|unknown unknown|Homo sapiens, human|YB-1|GCAGCCAGACAGCGAGGGCC
+1368|TGFB1|unknown unknown|Homo sapiens, human|YB-1|GGGCACCCCCCCGGCUCUG
+1369|CD44|unknown unknown|Homo sapiens, human|YB-1|CAUC
+1370|CD44|unknown unknown|Homo sapiens, human|YB-1|CAUCAUC

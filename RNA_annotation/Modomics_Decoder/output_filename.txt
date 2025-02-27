@@ -1,0 +1,66 @@
+
+FASTA Sequence: GAGAGAGCAAAA7GCGCGCCTTATACAAAATGTTTGTTCCCDCCASSSSSRRRRR
+position: 12 | symbol: 7 | short names: ['m7G', 'pm7G']
+position: 41 | symbol: D | short names: ['pD', 'D']
+position: 50 | symbol: R | short names: ['m2,2G', 'pm2,2G']
+position: 45 | symbol: S | short names: ['mnm5s2U', 'pmnm5s2U']
+position: 20 | symbol: T | short names: ['m5U', 'pm5U']
+
+Displaying all positions:
+
+(0, 'G')
+(1, 'A')
+(2, 'G')
+(3, 'A')
+(4, 'G')
+(5, 'A')
+(6, 'G')
+(7, 'C')
+(8, 'A')
+(9, 'A')
+(10, 'A')
+(11, 'A')
+(12, '7') * mod
+(13, 'G')
+(14, 'C')
+(15, 'G')
+(16, 'C')
+(17, 'G')
+(18, 'C')
+(19, 'C')
+(20, 'T') * mod
+(21, 'T') * mod
+(22, 'A')
+(23, 'T') * mod
+(24, 'A')
+(25, 'C')
+(26, 'A')
+(27, 'A')
+(28, 'A')
+(29, 'A')
+(30, 'T') * mod
+(31, 'G')
+(32, 'T') * mod
+(33, 'T') * mod
+(34, 'T') * mod
+(35, 'G')
+(36, 'T') * mod
+(37, 'T') * mod
+(38, 'C')
+(39, 'C')
+(40, 'C')
+(41, 'D') * mod
+(42, 'C')
+(43, 'C')
+(44, 'A')
+(45, 'S') * mod
+(46, 'S') * mod
+(47, 'S') * mod
+(48, 'S') * mod
+(49, 'S') * mod
+(50, 'R') * mod
+(51, 'R') * mod
+(52, 'R') * mod
+(53, 'R') * mod
+(54, 'R') * mod
+

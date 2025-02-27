@@ -1,0 +1,36 @@
+#use absolute paths whenever possible, relative paths are not recommended
+#blanks = default values. input/output path = present working directories
+#
+#location of input files
+input path=
+
+#location to store files
+output path=
+
+#location of model files
+model path=
+
+#location of svm predict path
+svm predict path=./
+
+#specify output file name
+out=junk.out
+
+#specify input file name
+in=
+
+#specify mode
+mode=
+
+#specify PolyA SVM cutoff
+cutoff=
+
+#specify location
+location=
+
+#specify model file
+model=human.scaled.model
+
+#specify range file
+range=
+

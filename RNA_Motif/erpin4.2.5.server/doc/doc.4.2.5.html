@@ -1,0 +1,699 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+  <title>Erpin Web Server Tutorial</title>
+  <DEFANGED_style type="text/css" media="screen" 
+
+
+BODY {font: 100% Helvetica,Arial,sans-serif} 
+
+H1 {
+ text-align: left;
+ font: bold 110% Helvetica, Arial, sans-serif;
+ color: darkblue;
+}
+
+H2 {
+ text-align: left;
+ margin-left: +0cm;
+ font: bold italic 100% Helvetica, Arial, sans-serif;
+ color: darkblue;
+}
+
+H3 {
+ text-align: left;
+ margin-left: +0cm;
+ font: bold italic 90% Helvetica, Arial, sans-serif;
+ color: #666666;
+}
+
+P {
+ margin-top:2px;
+ color: #000080;
+ font: 90% Helvetica, Arial, sans-serif;
+}
+
+UL {
+ margin-top:0px;
+ color: #000080;
+ font: 80% Helvetica, Arial, sans-serif;
+
+}
+
+OL {
+ margin-top:0px;
+ color: #000080;
+ font: 80% Helvetica, Arial, sans-serif;
+
+}
+
+TT {
+ color: black;
+ font: courier;
+ font: 100%;
+}
+
+.small {
+ font-size: smaller;
+ text-align: left;
+}
+
+.indent {
+ margin-top:-4px;
+ margin-left: +1cm;
+}
+
+.left {
+ margin-left: 0cm;
+}
+
+.specialnote {
+ text-align : right;
+ color: #804000;
+}
+
+.red {
+ color: red;
+}
+
+.exposant {
+  vertical-align: super;
+  font-size: smaller; 
+}
+
+.boldgrey {
+ font: bold italic 110% times;;
+ color: #008080;
+}
+
+.tt {
+  color: black;
+  font: courier;
+  font-style: normal;
+}
+
+.footer {
+ font-size: 8pt;
+ color: #666666;
+ text-decoration: none;
+}
+
+  ></DEFANGED_style>
+</head>
+<body bgcolor="white">
+<p><DEFANGED_div style="text-align: center;"></p><DEFANGED_div>
+<p><DEFANGED_div style="text-align: center;">
+<table cellpadding="5" cellspacing="5" border=0
+ DEFANGED_style="text-align: left; width: 650px;">
+  <tbody>
+    <tr>
+      <td DEFANGED_style="vertical-align: top;">
+      <p><DEFANGED_div style="text-align: center;"></p><DEFANGED_div>
+      <h1 DEFANGED_style="text-align: center;">ERPIN DOCUMENTATION<br>
+      </h1>
+      <h2 DEFANGED_style="text-align: center;">Easy RNA Profile IndentificatioN<br>
+      </h2>
+      <p><DEFANGED_div style="text-align: center;"></p><DEFANGED_div>
+      <p DEFANGED_style="text-align: center;"> Version 4.2.5 (C)2001, 2002,
+2003, 2004, 2005<br>
+      <br>
+      </p>
+      <p><DEFANGED_div style="text-align: center;"></p><DEFANGED_div>
+      <p DEFANGED_style="text-align: center;">Daniel Gautheret:
+gautheret@esil.univ-mrs.fr</p>
+      <p><DEFANGED_div style="text-align: center;"></p><DEFANGED_div>
+      <p DEFANGED_style="text-align: center;"> </p>
+      <p><DEFANGED_div style="text-align: center;"></p><DEFANGED_div>
+      <p DEFANGED_style="text-align: center;"> Andre Lambert:
+lambert@cpt.univ-mrs.fr</p>
+      <br>
+      <p><DEFANGED_span style="font-weight: bold;">Please cite</DEFANGED_span>: Gautheret
+D. &amp; Lambert A. (2001). Direct RNA
+definition and identification from multiple sequence alignments using
+secondary structure profiles. J. Mol. Biol. 313:1003-1</p>
+      <p><br>
+      </p>
+      <h2>1. FILE FORMATS</h2>
+      <h4>Database file</h4>
+      <p>The sequence database file is in the FASTA format. The file
+can hold up to 10 million sequences, each less than 300Mb long.<br>
+      </p>
+      <h4>Training set: the .epn file</h4>
+      <p>Training sets are FASTA-like files starting with a secondary
+structure descriptor that encodes each structure
+element with a user-defined number. Numbers that are
+repeated at two different places stand for helical
+elements, other numbers stand for single
+strands. Two or 3 numbering lines can be used where 10 or more numbers
+are required. No structure element should be encoded by 0. <br>
+      </p>
+      <p>Sequences should be aligned with gaps, so that all entries
+have the same length as the secondary structure descriptor.<br>
+      </p>
+      <p>- No gaps are tolerated within helical regions.</p>
+      <p>- Both T and U are accepted.<br>
+      </p>
+      <p>- Both uppercase and lowercase are accepted.<br>
+      </p>
+      <p>Training set example (tRNA): </p>
+      <pre><small DEFANGED_style="color: rgb(0, 0, 0);">&gt;structure<br>00000000000000000000000000000000000000000000000000002222211111112222200000001111<br>12222222334444555555555554444677777888888877777999990000011111110000022222222222<br>&gt;DA0260<br>-GGGCGAAUAGUGUCAGC-GGG--AGCACACCAGACUUGCAAUCUGGUAG-GGAGGGUUCGAGUCCCUCUUUGUCCACCA<br>&gt;DA0340<br>-GGGCUCGUAGCUCAGC--GGG--AGAGCGCCGCCUUUGCGAGGCGGAGGCCGCGGGUUCAAAUCCCGCCGAGUCCA---<br>&gt;DA0380<br>-GGGCCCAUAGCUCAGU--GGU--AGAGUGCCUCCUUUGCAAGGAGGAUGCCCUGGGUUCGAAUCCCAGUGGGUCCA---<br>&gt;DA0420<br>-GGGCCCAUAGCUCAGU--GGU--AGAGUGCCUCCUUUGCAAGGAGGAUGCCCUGGGUUGGAAUCCCAGUGGGUCCA---</small><br><DEFANGED_span
+ style="font-family: verdana,arial,helvetica,sans-serif;"><br></DEFANGED_span></pre>
+      <p><DEFANGED_span style="font-family: verdana,arial,helvetica,sans-serif;">I</DEFANGED_span>n
+this training set file, elements 02, 04, 07 and 20 describe the four
+tRNA
+helices, other numbers describe single strands.</p>
+      <p>A Perl script (parent2epn.pl) is provided to convert a
+parenthesized (Fasta-like) alignment into .epn format. This script will
+also check (and optionnally correct) gaps in helices and gap-only
+columns.</p>
+      <p>Limitations: Training sets should not exceed 12,000
+sequences. Helices should not exceed 64bp.<br>
+      <br>
+      </p>
+      <h2>2. THE ERPIN COMMAND LINE<br>
+      </h2>
+      <h4>General syntax<br>
+      </h4>
+      <pre>erpin [-h]                                                              help<br>erpin &lt;training-set&gt;                                  training set file name<br>      &lt;input-file&gt;                                database file name (fasta)<br>      &lt;region&gt;                                            region of interest<br>      -nomask|((-mask|-umask|-add) &lt;elt1&gt; ...)      level1,<br>      [-nomask|((-mask|-umask|-add) &lt;elt1&gt; ...)]    level2,    default: void<br>      [...]                                         level..             idem<br>      [-cutoff &lt;cutoff1&gt; &lt;cutoff2&gt; ..]                         default: 100%<br>      [-dmp|-smp]                                              default: -dmp<br>      [-fwd|-rev|-fwd+rev]                                 default: -fwd+rev<br>      [-long|-short|-mute]                                    default: -long<br>      [-warnings]                                               default: OFF<br>      [-globstat|-locstat|-unifstat]                      default: -globstat<br>      [-Eon|-Eoff]                                             default: -Eon<br>      [-hist]                                                   default: OFF<br>      [-seq1 &lt;seqnb1&gt;][-nseq &lt;nseq&gt;]            default: 1, SEQ_MAX_NB (all)<br>      [-bgn &lt;seqbgn&gt;][-len &lt;range&gt;]                  default: 1, SEQ_MAX_LEN<br>      [-logzero &lt;logzero&gt;]                                      default: -20<br>      [-tablen &lt;tablen&gt;]                                       default: 1024<br>      [-chrono]                                                 default: OFF<br>      [-sumf &lt;fname&gt;]           substitution matrix file name, default: none<br>      [-pcw &lt;pcw&gt;]                        pseudo-counts weight, default: 0.1<br>      [-hpcw &lt;hpcw&gt;]                               pseudo-counts for helices<br>      [-spcw &lt;spcw&gt;]                               pseudo-counts for strands<br><br></pre>
+      <h4>Regions and Masks (-mask)<br>
+      </h4>
+      <p>Compulsory argument &lt;region&gt; contains two
+comma-separated numbers &lt;r1&gt;,&lt;r2&gt; defining the boundaries
+of the region of the alignment that will be used for searches. These
+numbers refer to the structure header of the training set file. When a
+boundary is a helix, use "plus" or "minus" signs to specify 5' or 3'
+strand, respectively. The "plus" sign is optional. Output sequence
+alignments show the defined region only. When a region contains only
+one strand of a helix, this strand is treated like a single-stranded
+element during search. <br>
+      </p>
+      <p>Another compulsory argument is the Mask. When -nomask is used,
+the whole region is searched.&nbsp; Other types of masks are exposed
+later.</p>
+      <p>Examples (using the tRNA training set above):<br>
+      </p>
+      <pre><DEFANGED_span style="color: rgb(0, 0, 0);">      erpin trna.epn coli.fasta -4,4 -nomask </DEFANGED_span><DEFANGED_span
+ style="font-family: verdana,arial,helvetica,sans-serif;"><br></DEFANGED_span></pre>
+      <p>-&gt; Search region includes helix 4 and strand 5</p>
+      <pre><DEFANGED_span style="color: rgb(0, 0, 0);">      erpin trna.epn coli.fasta -4,11 -nomask</DEFANGED_span><br></pre>
+      <p> -&gt; Search region includes helix 4 and 7, strands 5, 8 and
+9, and the 5' part of stem 20</p>
+      <pre> <DEFANGED_span style="color: rgb(0, 0, 0);">     erpin trna.epn coli.fasta -2,2 -nomask</DEFANGED_span><br></pre>
+      <p>-&gt; Search region includes the whole alignment except for
+strands 1 and 12</p>
+      <p>Masks are used to restrict searches to certain elements in a
+region. A mask is followed by numbers indicating which elements are
+included or excluded. Masks do not use plus or minus signs for helices.
+When a helix is refered to, both strands are used.</p>
+      <p>Types of masks:</p>
+      <pre><DEFANGED_span style="color: rgb(0, 0, 0);">-mask i j .. n           : elements i,j,n are excluded from the region</DEFANGED_span><br
+ DEFANGED_style="color: rgb(0, 0, 0);"><DEFANGED_span style="color: rgb(0, 0, 0);">-umask i j .. n          : only elements i,j,n are considered in the region</DEFANGED_span><br
+ DEFANGED_style="color: rgb(0, 0, 0);"><DEFANGED_span style="color: rgb(0, 0, 0);">-add i j .. n            : elements i,j,n are considered in the region, as well</DEFANGED_span><br
+ DEFANGED_style="color: rgb(0, 0, 0);"><DEFANGED_span style="color: rgb(0, 0, 0);">                           as the elements already considered at the previous stage</DEFANGED_span><br
+ DEFANGED_style="color: rgb(0, 0, 0);"><DEFANGED_span style="color: rgb(0, 0, 0);">-nomask                  : all elements of the region are considered</DEFANGED_span><br></pre>
+      <p>CAUTION with -nomask: When a region is large or contains
+several gapped strands, this may result in huge memory and CPU usages.
+Use multi-level searches in this case (see below).<br>
+      <br>
+Examples using the tRNA training set above:</p>
+      <pre><DEFANGED_span style="color: rgb(0, 0, 0);">      erpin trna.epn coli.fasta -2,+2 -mask 8</DEFANGED_span><br></pre>
+      <p> -&gt; Searches region -2 to +2 ignoring strand 8</p>
+      <pre>     <DEFANGED_span style="color: rgb(0, 0, 0);"> erpin trna.epn coli.fasta -2,+2 -umask 2 4 7</DEFANGED_span><br></pre>
+      <p> -&gt; Searches only elements 2, 4 and 7 in region -2 to +2<br>
+      <br>
+      </p>
+      <h4>Score cutoff (-cutoff)<br>
+      </h4>
+      <p>The cutoff argument is used to set the score below which
+solutions will be discarded. In the absence of mask (-nomask), the
+score cutoff is that of the whole "Region". When masks are used, a
+cutoff is provided for each mask.</p>
+      <p>Erpin uses two types of scoring: absolute and relative.
+Absolute scores are the sum of scores obtained for each secondary
+structure element, based on the lod-score profiles. An integer or real
+number following the -cutoff tag is interpreted as an absolute score,
+unless followed by a "%" sign. To get help in establishing absolute
+score cutoffs, visualize absolute scores for the training set sequences
+using the tstat program (see additional Tools).</p>
+      <p>Relative scores are expressed as a percentage of training set
+sequences captured. Theses scores are followed with a "%" sign. A score
+of 100% for a given region or mask is the lowest score in the training
+set for this region or mask. So that when 100% is used as a cutoff, all
+sequences in the training set are captured. A score of 50% is a score
+capturing 50% of sequences in the training set (hence higher score than
+100%). If scores lower than the 100% score are required, use absolute
+scores instead.</p>
+      <p>The default score for any region or mask is 100%.</p>
+      <p>(see also sections "log-zero" and "expected frequencies")<br>
+      <br>
+Examples:</p>
+      <pre><DEFANGED_span style="color: rgb(0, 0, 0);">      erpin trna.epn coli.fasta -2,+2 -nomask -cutoff 20</DEFANGED_span><br></pre>
+      <p> -&gt; Select hits with a score higher than 20</p>
+      <pre><DEFANGED_span style="color: rgb(0, 0, 0);">      erpin trna.epn coli.fasta -2,+2 -nomask -cutoff 90%</DEFANGED_span><br></pre>
+      <p> -&gt; Select hits with a score higher than that of 90% of
+training set sequences</p>
+      <h4>E-value (-Eon, -Eoff)</h4>
+      <p>Since Version 3.9, ERPIN computes Expect-values (E-values).
+For any hit of score S obtained in a given database, The E-value is the
+number of hits of same or higher score that can be expected by chance
+in the same database. It thus provides user with a statistical
+significance of
+hits. Typically an E-value of 10e-2 or less is significant. However,
+many non-biological hits might arise with "good" E-values, due to other
+factors such as the presence of a low complexity region in the motif. <br>
+      </p>
+      <p>E-value calculation is turned on by default. It can be turned
+off using the -Eoff
+parameter (this was useful mostly with the first implementation of
+E-value - ERPIN 3.9 through 4.1 - which took a toll on CPU time, but
+hopefully no one should need this now). <br>
+      </p>
+      <p DEFANGED_style="font-family: helvetica,arial,sans-serif;"><small><small><small><small><small><small><DEFANGED_span
+ lang="EN-US" style="font-size: 12pt;"> </DEFANGED_span></small></small></small></small></small></small></p>
+      <h4>Multi-level search strategies</h4>
+      <p>This is done by applying several masks consecutively. When the
+command line contains several masks, Erpin will conduct a first search
+using the first mask, and continue with the next mask only if a
+solution bove cutoff has been found with the previous mask. Since the
+search at level n is performed only around solutions found at level n-1
+(within distance intervals specified in the input alignment), the
+search speed is increased. For instance, the following command:</p>
+      <pre><DEFANGED_span style="color: rgb(0, 0, 0);">    erpin trna.epn coli.fasta -2,+2 -umask 20 11 -nomask</DEFANGED_span><br></pre>
+      <p>will run much faster than:</p>
+      <pre>  <DEFANGED_span style="color: rgb(0, 0, 0);">  erpin trna.epn coli.fasta -2,+2 -nomask</DEFANGED_span><br></pre>
+      <p>.. and yet produce similar result. This permits to implement
+multi-level search strategies, where the most significant signatures
+are searched first and the motif is gradually expanded thereafter, thus
+speeding up database searches. Any number of consecutive masks are
+allowed. By default, the score cutoff for each mask is 100%. This can
+be changed using the cutoff argument, as follows:<br>
+      </p>
+      <pre> <DEFANGED_span style="color: rgb(0, 0, 0);">   erpin trna.epn coli.fasta -2,+2 -umask 20 11 -nomask -cutoff 10 20</DEFANGED_span><br></pre>
+      <p> -&gt; in this example, a cutoff of 10 is used at the first
+level and a cutoff of 20 at the second level.</p>
+      <p>Use "-nomask" as the last step if you want to display the
+complete alignment. Bear in mind however that "-nomask" on a long,
+gapped region may cause memory/CPU overflow!</p>
+      <p>Another important thing to understand about multi-level
+searches: In the following command:</p>
+      <pre> <DEFANGED_span style="color: rgb(0, 0, 0);">   erpin &lt;tr-set&gt; &lt;databank&gt; 1,10 -umask 1 2 -umask 3 4 -umask 5 6</DEFANGED_span><br
+ DEFANGED_style="color: rgb(0, 0, 0);"></pre>
+      <p>the last step of the search only seeks elements 5 and 6.
+Although
+elements 1, 2, 3 and 4 have been detected at previous steps, they are
+not considered anymore at this stage and will not be included in the
+finaloutput. Generally, users will prefer constructing masks
+incrementally, so that the whole region is matched in the end, such as:
+      <br>
+      </p>
+      <pre><pre><DEFANGED_span style="color: rgb(0, 0, 0);">    erpin &lt;tr-set&gt; &lt;databank&gt; 1,10 -umask 1 2 -umask 1 2 3 4 -umask 1 2 3 4 5 6</DEFANGED_span></pre></pre>
+      <p>To simplify such a command line, one may use the -add
+parameter. "-add X" just updates the previous mask by unmasking element
+X from it. Therefore, the previous command can be written:<br>
+      </p>
+      <pre><DEFANGED_span style="color: rgb(0, 0, 0);">    erpin &lt;tr-set&gt; &lt;databank&gt; 1,10 -umask 1 2 -add 3 4 -add 5 6</DEFANGED_span><br></pre>
+      <p>If the higher search level still contains masked elements
+(like elements 7 to 10 above), the sequences within these elements will
+appear UNALIGNED in the final output (left-justified in a space of same
+size as in training set). Unaligned sequences are shown in lowercase.</p>
+      <p>A good general strategy could use 3 levels:</p>
+      <p>- first level to speed up search by selecting a short motif</p>
+      <p>- second level for specificity: extend to a larger motif
+eliminating false positives</p>
+      <p>- third level with the complete region unmasked for output.<br>
+      </p>
+      <p>However, you won't handle a 16S RNA with just 3 levels!<br>
+      <br>
+Beware: a 2-level search using a first mask at cutoff X and then the
+entire region (nomask) at cutoff X is not equivalent to a single level
+search for the entire region at cutoff X. Indeed, a solution of score X
+may have a lower score in any of its part. Then, this part would be
+missed at the first level using a cutoff of X. ALWAYS use a lower
+cutoff for the first stage.<br>
+      </p>
+      <h4>Dynamic/Static Mask Processing (-dmp / -smp)</h4>
+      <p>By default, multiple-level searches imply that each level
+starts with
+the partial configurations found at the previous level. In the last
+example above, the search for elements 2 &amp; 3 at step 2 will be
+performed for each configuration of elements 1 and 2 identified at step
+1. This is called "Dynamic Mask Processing", and corresponds to the
+-dmp option. <br>
+      <br>
+With the -smp option (Static Mask Processing), each search step is
+performed independently. In most cases, this results in higher CPU
+times, since all elements in the current mask must be identified at the
+same time. A possible use of -smp is to recover some "lost" solutions
+by lowering score cutoffs in late stages.&nbsp; <br>
+      <br>
+      </p>
+      <h4>Expected/background nucleotide frequencies (-locstat,
+-globstat,
+-unifstat)</h4>
+      <pre></pre>
+      <p>Single strand and helix profiles are computed based on
+observed and expected frequencies for each base and base pair. By
+default, expected
+frequencies are those in the search database, averaged over all
+sequences
+("-globstat" option). If the database is very heterogeneous (e.g. a
+mixture of sequences from different organisms), expected frequencies
+should be computed independently for each sequence, using the
+"-locstat"
+option. Beware however, that short sequences may have highly biased
+compositions, possibly resulting in spurious high-scoring solutions.
+The "-unifstat"
+(uniform) option sets A/T/G/C frequencies to 0.25 each.</p>
+      <h4>Pseudocounts (-pcw, -hpcw, -spcw, -sumf)</h4>
+      <p> </p>
+      <p><DEFANGED_div v:shape="_x0000_s3074" class="O" style="">
+      <p><DEFANGED_div style="text-align: justify;">
+      <p>Training sets with few sequences
+(i.e.20 or less) result in hollow weight matrices that strongly
+penalize any
+variation from training set sequences and thus affects the sensitivity
+of detection (see also "log zero"). To solve this problem, ERPIN uses
+pseudocounts (from version 4.2). Pseudocounts introduce some
+articifical base or base-pair
+counts in the weigth matrix, that simulate what could have been
+observed in a larger sequence alignment.&nbsp; Pseudocounts require
+some prior knowledge of "typical" mutation frequencies in RNA
+molecules. Let's pretend that G often mutates to A in typical RNAs.
+Then if a column of the initial alignment mostly contains Gs, we can
+expect that some As should occur too. This is the way pseudocounts
+work. "Typical" mutation rates for single-strands and base-pairs were
+evaluated from a 16S/18S ribosomal RNA alignement, and the detailed
+counting procedure resembles that of Henikoff and Henikoff
+(CABIOS 1996, 12:135). <br>
+      </p>
+      <p>Users can set the level of
+pseudocount to be injected in ERPIN profiles, or pseudocount
+weight. A high pseudocount weight is necessary when training sets are
+really poor, but this will affect search specificity. In the extreme
+situation where profiles are made of 100% pseudocounts, ERPIN searches
+would just produce noise. Internally, pseudocount weights are comprised
+between 0 and 1 with a default value of 2x10e-3. At weight=0 no
+pseudocount is used and at weight=1,
+profiles are 100% pseudocounts. <br>
+      </p>
+      <p>Use the -pcw parameter to set the
+pseudocount weight. For convenience and backward compatibility, the
+default value of -pcw is 0.1 (corresponding to an internal pseudocount
+weight of 2x10e-3).&nbsp; For training sets with fewer than 10
+sequences, pcw should be
+raised to 0.2-0.5. Higher weigths are risky! </p>
+      <p>Expert users may want to separately set pseudocount weights
+for helices and single strands. Parameters -hpcw (helices) and -spcw
+(single strands) will do just this. <br>
+      </p>
+      <p>The SUM.dat file in the ERPIN distribution contains the
+default substitution matrices used for pseudocount calculation. There
+is one 16x16 matrix for base-pairs and one 4x4 matrix for single
+strands. Users can provide an alternate subsitution matrix file using
+the
+-sumf parameter. Base order is A,T,G,C in the 4x4 matrix and
+A:A,A:T,A:G,A:C,T:A,T:T,etc. in the 16x16 matrix. Example:<br>
+      </p>
+      <pre><pre><DEFANGED_span style="color: rgb(0, 0, 0);">erpin &lt;tr-set&gt; &lt;databank&gt; 1,10 -nomask -sumf MYSUM.dat<br></DEFANGED_span><DEFANGED_span
+ style="font-family: verdana,arial,helvetica,sans-serif;"></DEFANGED_span></pre></pre>
+      <p>The mksum program provided in the distribution constructs new
+subsitution matrices from any alignment (see Tools section). </p>
+      <pre><pre></pre></pre>
+      <p> </p>
+      </p><DEFANGED_div>
+      <p><DEFANGED_div style=""><DEFANGED_span style="display: none;"> </DEFANGED_span></p><DEFANGED_div>
+      </p><DEFANGED_div>
+      <h4>Log zero (-logzero)</h4>
+      <pre></pre>
+      <p>In the absence of pseudocounts, the lod-scores of bases or
+basepairs that are never observed at a given position are set at the
+default arbitrary value of -20. The "-logzero" parameter can
+change this. A higher logzero (e.g. -5) will result in a greater
+tolerance to deviations from the training set sequences. <br>
+      </p>
+      <p>The logzero parameter is irrelevant when pseudocounts are used
+(default behavior)<br>
+      </p>
+      <h4>Length of pre-aligned region (-tablen)</h4>
+      <p>Erpin precalculates alignments of single stranded elements
+over a sliding window of 1024 nt. This can be changed using the -tablen
+argument. Raising this number could produce some CPU gains when motifs
+longer than 100 nt are searched.</p>
+      <h4>Reverse complement searches (-fwd, -rev)</h4>
+      <p>Searches are performed on both strands by default. Use -fwd or
+-rev to limit search on plus or minus strand, respectively.<br>
+      <br>
+      </p>
+      <h4>Output format (-long, -short, -mute)</h4>
+      <p>Output format can be set as long, short or mute.</p>
+      <p>-long: for every hit, prints scores at each search level,
+coordinates and complete sequence.</p>
+      <p>-short: for every hit, prints coordinates and final score.</p>
+      <p>-mute: only prints final number of hits.<br>
+      <br>
+      </p>
+      <h4>Selection of database sequences (-seq1, -nseq, -bgn, -len)</h4>
+      <p>Database searches can be restricted to subsets of sequence
+files, specified as follows:<br>
+      <br>
+- seq1 n: search begins at sequence number n in the database</p>
+      <p>- nseq n: n sequences in the database are searched</p>
+      <p>- bgn n : search starts at position n in each sequence</p>
+      <p>- len n : n nucleotides are searched after start point<br>
+      <br>
+      </p>
+      <h4>Histogram (-hist)</h4>
+      <p>Creates histogram of scores obtained in the current search.
+Generates a file called epnhist.dat, the first line of which contains:</p>
+      <p>- lowest score in current search (minus epsilon)<br>
+- highest score in current search&nbsp; (plus epsilon)<br>
+- number of score intervals in histogram<br>
+- total number of solutions<br>
+      </p>
+      <p>This is followed by histogram values (one integer per
+interval). <br>
+      </p>
+      <p>The -hist option is best used in conjunction with the epnstat
+program (see Extra Tools), to evaluate score distributions in random
+sequences. <br>
+      <br>
+      </p>
+      <h4>Elapsed CPU time (-chrono)</h4>
+      <p>The -chrono argument displays the elapsed CPU time after a
+Erpin run is completed.<br>
+      </p>
+      <p><br>
+      <DEFANGED_span style="font-family: monospace;"></DEFANGED_span></p>
+      <h2>3. EXTRA TOOLS</h2>
+      <h4>parent2epn.pl</h4>
+      <p>This Perl script reads a parenthesized alignment (fasta-like
+format) and translates it into .epn (ERPIN2) format. The program also
+checks that helices have no gap (otherwise change positions to
+single-stranded) and deletes columns with gaps only.<br>
+      <br>
+Syntax:</p>
+      <pre><DEFANGED_span style="color: rgb(51, 0, 51);">./parent2epn.pl &lt;parenthesized alignment&gt;</DEFANGED_span><br><br></pre>
+      <p>Typical input (parenthesized) alignment:</p>
+      <pre><DEFANGED_span style="color: rgb(51, 0, 51);">&gt;secondary structure  ( [ are pseudoknots )</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">(((((-----((((((((-[[-(((((((--------))))--)))--))))))-))-(((((((----)))))))-]])))))</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">&gt;e. coli</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">GGUGACGAUAGCGAGAAGGUCACACCCGUUCCCGAACACGGAAGUGAGCUUCUCAGCGCCGACGGUAGAGAGUAGGACGUUGCC</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">&gt;b. subtillis</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">CGGCGGCCAUAGCGGCAGGGAAACGCCCGGUCCCGAACCCGGAAGCUAGCCUGCCAGCGCCGAUGGUGGAGAGUAGGUCACCGC</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">&gt;h. sapiens</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">GGUGGCGAUAGCAGAGAGGUCACACCCGUUCCCGAACACGGAAGUUAGUUCUCUAGCGCCGAUGGUAGAGAGUAGGACGUUGCC</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">&gt;s. cerevisiae</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">GUGGUUAA-AGAAAAGAGGAAACACCUGUUAUCGAACACAGAAGUUAGCUCUUAUUCGCUGAUGGUAGAGAGUAGG-UUAUUGC</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">&gt;t. pallidum</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span style="color: rgb(51, 0, 51);">GUUGCCAU-GGUGGAGAGGUCAUACCCGUUCCCGAACACGGAAGUCAGCUCUCCUACGCCGAUGAUAGAAAGUAGG-UAGUAGC</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><br></pre>
+      <h4>readerpin.pl<br>
+      </h4>
+      <p>This Perl script reads, filters and prints out Erpin outputs.
+It removes all solutions with 3 undefined nucleotides or more, or with
+a score lower than a specified threshold.</p>
+      <p>Syntax:</p>
+      <pre><DEFANGED_span style="color: rgb(51, 0, 51);">./readerpin.pl &lt;erpin output file&gt; [-fasta] [-c &lt;cutoff&gt;]</DEFANGED_span> <DEFANGED_span
+ style="color: rgb(51, 0, 51);">[-e &lt;cutoff&gt;]<br><br
+ DEFANGED_style="color: rgb(51, 0, 51);"></DEFANGED_span><DEFANGED_span
+ style="color: rgb(51, 0, 51);">-fasta      : prints sequences in fasta format</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><br DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span
+ style="color: rgb(51, 0, 51);">-c &lt;cutoff&gt; : prints only sequences with score higher than &lt;cutoff&gt;.</DEFANGED_span><br><br><DEFANGED_span
+ style="color: rgb(51, 0, 51);">-e &lt;cutoff&gt; : prints only sequences with E-value lower than &lt;cutoff&gt;.</DEFANGED_span><br><br></pre>
+      <h4>tview</h4>
+      <p>This programs pretty prints training set files (.epn),
+displaying all sequences and the list of structural elements.</p>
+      <p>Syntax:</p>
+      <pre> tview &lt;trset&gt; [&lt;region&gt;]<br><br></pre>
+      <p>Region: optionally restricts display to a specified region.</p>
+      <p> Region is expressed as in erpin (e.g. -2,2).</p>
+      <h4>tstat<br>
+      </h4>
+      <p>This programs evaluates the score of any region or mask in the
+training set sequences (.epn file).</p>
+      <p>For each region or mask in the command line, tstat prints the
+best/worst/mean score in the alignment, as well as the score cutoffs
+that should be used to retain 100%, 90%, etc. of the training set
+sequences. These values can then be used in conjunction with the
+-cutoff argument in Erpin.</p>
+      <p>Tstat also computes the number of configurations and memory
+requirement for a given region (useful when dealing with large motifs).</p>
+      <p>Syntax:</p>
+      <pre><DEFANGED_span style="color: rgb(51, 0, 51);"> tstat &lt;trset&gt; &lt;region&gt; [(-mask | -umask) &lt;arg1&gt; &lt;arg2&gt; ..][..]</DEFANGED_span><br></pre>
+      <p>"Mask" and "region" arguments are the same as for Erpin. For
+example:</p>
+      <pre> <DEFANGED_span style="color: rgb(51, 0, 51);">tstat trna.epn  -7,7  -umask 7 -umask 8</DEFANGED_span><br
+ DEFANGED_style="color: rgb(51, 0, 51);"><br DEFANGED_style="color: rgb(51, 0, 51);"><DEFANGED_span
+ style="color: rgb(51, 0, 51);"> tstat trna.epn  -7,7  -mask 8</DEFANGED_span><br><br><br></pre>
+      <h2>4. VERSION HISTORY</h2>
+      <table DEFANGED_style="width: 100%; background-color: rgb(204, 255, 255);">
+        <tbody>
+          <tr>
+            <td DEFANGED_style="vertical-align: top;">4.2.5<br>
+            </td>
+            <td
+ DEFANGED_style="vertical-align: top; background-color: rgb(204, 255, 255);">A
+significance performance improvement is achieved through optimization
+of element score assignment. Overall program speed is doubled!<br>
+A error in pseudocount&nbsp; calculation is corrected. Does not affect
+results significantly, but default pcw values should now be around
+2x10e-4 instead of 10e-1. A corrective factor is applied for backward
+compatibility. default pcw value is still 10e-1.<br>
+            </td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin4.2.2.tar.gz">4.2.2</a></td>
+            <td>Improved
+E-value (convolution product), Henikoff-like pseudo-counts (-pcw
+parameter), discontinued Markov representation of gapless single-strands</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.4.0.tar">4.0</a></td>
+            <td>stable version w/ E-value</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.3.9.9.last.tar.z">3.9.9.last</a></td>
+            <td>fixed bugs</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.3.9.8.bis.tar.z">3.9.8.bis</a></td>
+            <td>fixed bugs</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.3.9.5.tar.z">3.9.5</a></td>
+            <td>fixed bugs</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.3.9.4.tar.z">3.9.4</a></td>
+            <td>fixed bugs</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.3.9.3.tar.z">3.9.3</a></td>
+            <td>fixed bugs</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.3.9.2.tar.z">3.9.2</a></td>
+            <td>E-value computing</td>
+          </tr>
+          <tr class="list2">
+            <td>3.2</td>
+            <td>Multiple alerts added for excessive CPU and memory usage</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.3.1.2.tar">3.1.2</a></td>
+            <td>secured dynamic mask handler</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.3.1.tar">3.1</a></td>
+            <td>code cleaned</td>
+          </tr>
+          <tr class="list2">
+            <td>3.0.3</td>
+            <td>fixed bug with very large alignments (16S)</td>
+          </tr>
+          <tr class="list2">
+            <td>3.0.2</td>
+            <td>fixed bug</td>
+          </tr>
+          <tr class="list2">
+            <td>3.0.1</td>
+            <td>Revised output and parameter formats as in Erpin 2.7</td>
+          </tr>
+          <tr class="list2">
+            <td>3.0</td>
+            <td>Introduction of dynamic mask handling. -add parameter
+introduced</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.2.9.tar">2.9</a></td>
+            <td>code cleaned. fixed bug with very large alignments
+(16S). aug 2002</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.2.7.tar">2.7</a></td>
+            <td>Masking must be specified: does not anymore default to
+-nomask Lowercase replace Asterisks when displaying masked regions. jun
+2002</td>
+          </tr>
+          <tr class="list2">
+            <td>2.5</td>
+            <td>Fixed bug in precomputed alignment tables (affected
+multi-level searches)</td>
+          </tr>
+          <tr class="list2">
+            <td>2.3</td>
+            <td>Fixed bug in boundary transmission during multi-level
+search</td>
+          </tr>
+          <tr class="list2">
+            <td>2.1.1</td>
+            <td>Fixed bug in search boundaries</td>
+          </tr>
+          <tr class="list2">
+            <td>2.1</td>
+            <td>Fixed bug in ungapped single strand scores</td>
+          </tr>
+          <tr class="list2">
+            <td>2.0</td>
+            <td>Handling of complex patterns and large alignments
+Changes in command line and training set format First documented version</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.1.2.tar">1.2</a></td>
+            <td>nov 5 2001. a few bugs fixed</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.1.1.tar">1.1</a></td>
+            <td>Introduction of "Helix" element</td>
+          </tr>
+          <tr class="list2">
+            <td><a
+ href="http://tagc.univ-mrs.fr/erpin/archive/erpin.1.0.tar">1.0</a></td>
+            <td>JMB paper version</td>
+          </tr>
+        </tbody>
+      </table>
+      <pre><br></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p DEFANGED_style="text-align: left;"><br>
+</p>
+</p><DEFANGED_div>
+</body>
+</html>

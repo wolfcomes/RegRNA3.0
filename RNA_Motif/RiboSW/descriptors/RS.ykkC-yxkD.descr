@@ -1,0 +1,43 @@
+# type;
+# swL, swU, sw, sp,     stemLower, stemUpper, loop Lower, loop Upper, bulge, push num,  [wts_m, _M, wte_m, _M]'
+# report section:
+#   loop, helix, outer
+# sequence information section:
+#   loop, helix, outer
+# 1;65,80,2,3,5,9,38,59,2,1'l+3,l-2'l-au$|ac$|gc$|uc$,l+^uaa|^uau|^uac%
+# 2;12,24,1,0,4,7,6,10,2,1,0,1'o+0,l=0%
+# 2;16,35,1,0,5,7,6,11,2,0,8,10,0,1'o+0,l=0,o-0%
+# ---purine
+#
+# TPP, slide window 79~249 (using 75~240, 249 from plus 5' and 3')
+#   stem 1 2~5, loop 59~222
+#1;75,240,2,3,2,5,55,225,3,1',',%
+#       ^-- result 367/496?
+#1;75,240,2,3,2,5,55,225,3,1',',%
+#       ^-- traditional
+#1;75,240,2,4,2,5,55,225,3,1',',%
+#   stem 2 0~4 (using 1~4), sw 26~189 (using 25~190), bulge 1, wts 0~3
+#3;25,190,1,0,1,4,18,188,1,2,0,3'h+3',%
+#   stem 3 1~6 (using 2~6), sw 8~161 (using 6~165), wts 2~4, wte 4~74
+#2;6,165,1,0,2,6,2,161,2,0,2,4,4,74'o+0,h+2,o-5'o-^ugaga%
+#   stem 4 2~4, sw 19~28 (using 18~31), wts 2~8, wte 2~5
+#3;18,31,1,0,2,4,10,27,1,1,2,8,2,5'o+0,o-0,h=0'h+ccu,h-gga,o-.a%
+#   stem 5 1~5 (using 3~5), sw 7~15 (using 12~16), wts 1~4, wte 2~4, loop 4~8
+#2;12,16,1,0,3,5,4,8,1,0,1,4,2,4'o+0,l=0,o-0'l+u(g|a|c)(a|g).,o-^cg%
+# slide window come to 2
+#
+#
+# swL, swU, sw, sp,     stemLower, stemUpper, loop Lower, loop Upper, bulge, push num,  [wts_m, _M, wte_m, _M]'
+#  TYPE 4 swL, swU, sw, sp,     
+# ykkC-yxkD, slide window 97~124 (-8 for front and back) (using 88~120), take loop minus 28 nuc
+#4;88,120,2,3,0,0,0,0,0,1','l-aaaa(u|g)cc(c|u)%
+4;88,120,1,3,0,0,0,0,0,1','l-aaaa(u|g)cc(c|u)%
+#4;88,120,2,3,0,0,0,0,0,1',',%
+# stem 1 5~7, sw 44~56 (using 42~ 58), loop 30~42 (using 28~44), push num 2
+#3;42,58,1,0,5,7,28,44,2,2,0,0','h+c(c|u)$,h-g(g|a)%
+3;42,58,1,0,5,7,28,44,2,2,0,0',',%
+# stem 1a 2~6, sw 9~21 (using 9~23), loop 4~9, wts 9~10, wte 11~14 (using 10~ 15)
+#2;9,23,1,0,2,6,4,9,2,0,9,10,10,15','o+.*aggguucc,o-cc(a|g)ag%
+2;9,23,1,0,2,6,4,9,2,0,9,10,10,15'o+0,o-0'o+^.?aggguucc.?$,o-cc(a|g)ag%
+# stem 2 4~9, sw 12~40, loop 3~24, bulge 2, wts 0~2, wte 26~30
+2;12,40,1,0,4,9,3,24,2,0,0,2,20,30'o-0'o-aaaa(u|g)cc(c|u)%

@@ -1,0 +1,148 @@
+Factor Accession No.	Factor Name	Factor Species
+T01140	AP-1	chick, Gallus gallus
+T00027	AP-1	clawed frog, Xenopus
+T01156	AP-1	gibbon ape, Hylobates lar
+T01115	AP-1	hamster, Cricetulus sp.
+T00029	AP-1	human, Homo sapiens
+T00030	AP-1	monkey, Cercopithecus aethiops
+T00032	AP-1	mouse, Mus musculus
+T00031	AP-1	rat, Rattus norvegicus
+T01385	CREB	cattle, Bos taurus
+T01127	CREB	domestic pig, Sus scrofa
+T01307	CREB	hamster, Cricetulus sp.
+T00163	CREB	human, Homo sapiens
+T01380	CREB	mink, Mustela vison
+T06576	CREB	monkey, Cercopithecus aethiops
+T00989	CREB	mouse, Mus musculus
+T00164	CREB	rat, Rattus norvegicus
+T08562	CREB1	human, Homo sapiens
+T09440	CREB1	mouse, Mus musculus
+T08452	CREB1	rat, Rattus norvegicus
+T11030	Del-701	human, Homo sapiens
+T08472	Delta113p53	zebra fish, Brachydanio rerio
+T08426	Delta133p53	human, Homo sapiens
+T08427	Delta133p53beta	human, Homo sapiens
+T08428	Delta133p53gamma	human, Homo sapiens
+T08404	Delta40p53	human, Homo sapiens
+T08424	Delta40p53beta	human, Homo sapiens
+T08425	Delta40p53gamma	human, Homo sapiens
+T09462	Egr-1	human, Homo sapiens
+T00241	Egr-1	human, Homo sapiens
+T02340	Egr-1	monkey, Cercopithecus aethiops
+T00244	Egr-1	mouse, Mus musculus
+T00455	Egr-1	mouse, Mus musculus
+T10013	Egr-1	mouse, Mus musculus
+T05807	Egr-1	rabbit, Oryctolagus cuniculus
+T10132	Egr-1	rat, Rattus norvegicus
+T01200	Egr-1	rat, Rattus norvegicus
+T05377	HIF-1	cattle, Bos taurus
+T01609	HIF-1	human, Homo sapiens
+T04667	HIF-1	mouse, Mus musculus
+T05404	HIF-1	rat, Rattus norvegicus
+T11325	HSF1	chick, Gallus gallus
+T01044	HSF1	chick, Gallus gallus
+T10036	HSF1	human, Homo sapiens
+T00384	HSF1	mouse, Mus musculus
+T05814	HSF1	rat, Rattus norvegicus
+T01042	HSF1-L	human, Homo sapiens
+T02104	HSF1-S	human, Homo sapiens
+T10747	MTF-1	human, Homo sapiens
+T02354	MTF-1	human, Homo sapiens
+T10644	MTF-1	mouse, Mus musculus
+T00515	MTF-1	mouse, Mus musculus
+T06609	NF-kappaB	cattle, Bos taurus
+T00590	NF-kappaB	human, Homo sapiens
+T00588	NF-kappaB	mouse, Mus musculus
+T05148	NF-kappaB	rabbit, Oryctolagus cuniculus
+T00587	NF-kappaB	rat, Rattus norvegicus
+T10871	Nrf2	chick, Gallus gallus
+T01598	Nrf2	chick, Gallus gallus
+T01443	Nrf2	human, Homo sapiens
+T10925	Nrf2	Japanese quail, Coturnix coturnix japonica
+T08469	Nrf2	mouse, Mus musculus
+T04938	Nrf2	mouse, Mus musculus
+T05668	Nrf2	rat, Rattus norvegicus
+T09645	Nrf2-isoform1	human, Homo sapiens
+T10935	Nrf2-isoform1	rat, Rattus norvegicus
+T10936	Nrf2-isoform2	human, Homo sapiens
+T09244	Nrf2-isoform2	rat, Rattus norvegicus
+T11037	p53	Beechey ground squirrel, Spermophilus beecheyi
+T06307	p53	cat, Felis silvestris catus
+T06296	p53	cattle, Bos taurus
+T06304	p53	chick, Gallus gallus
+T08254	p53	Chinese hamster (Gray hamster), Cricetulus griseus
+T06299	p53	Chinese hamster (Gray hamster), Cricetulus griseus
+T10686	p53	clawed frog, Xenopus laevis
+T06305	p53	clawed frog, Xenopus laevis
+T06306	p53	dog, Canis familiaris (Canis canis)
+T11032	p53	donkey, Equus asinus
+T11033	p53	European flounder, Platichthys flesus
+T06300	p53	golden (Syrian) hamster, Mesocricetus auratus
+T11034	p53	horse, Equus caballus
+T00671	p53	human, Homo sapiens
+T06310	p53	macaque, Macaca fascicularis
+T11035	p53	medaka, Oryzias latipes
+T10269	p53	monkey, Cercopithecus aethiops
+T06298	p53	monkey, Cercopithecus aethiops
+T08323	p53	mouse, Mus musculus
+T01806	p53	mouse, Mus musculus
+T06301	p53	pig, Sus scrofa
+T06302	p53	rabbit, Oryctolagus cuniculus
+T11036	p53	rainbow trout, Oncorhynchus mykiss
+T08884	p53	rat, Rattus norvegicus
+T04997	p53	rat, Rattus norvegicus
+T06297	p53	sheep, Ovis aries
+T08468	p53	zebra fish, Brachydanio rerio
+T06303	p53	zebra fish, Brachydanio rerio
+T08321	p53-isoform1	human, Homo sapiens
+T08422	p53beta	human, Homo sapiens
+T08423	p53gamma	human, Homo sapiens
+T08316	POU5F1	human, Homo sapiens
+T10884	POU5F1	monkey, Cercopithecus aethiops
+T00651	POU5F1	mouse, Mus musculus
+T09363	POU5F1	mouse, Mus musculus
+T10890	POU5F1	taxonomic class Mammalia
+T00653	POU5F1 (Oct-5)	mouse, Mus musculus
+T08917	PPARgamma	Chinese hamster (Gray hamster), Cricetulus griseus
+T10749	PPARgamma	Chinese hamster (Gray hamster), Cricetulus griseus
+T08639	PPARgamma	clawed frog, Xenopus laevis
+T01354	PPARgamma	clawed frog, Xenopus laevis
+T05351	PPARgamma	human, Homo sapiens
+T08883	PPARgamma	monkey, Cercopithecus aethiops
+T05347	PPARgamma	mouse, Mus musculus
+T06405	PPARgamma	rabbit, Oryctolagus cuniculus
+T05329	PPARgamma	rat, Rattus norvegicus
+T05332	PPARgamma2	mouse, Mus musculus
+T10962	Sp1	cattle, Bos taurus
+T05998	Sp1	cattle, Bos taurus
+T10284	Sp1	chick, Gallus gallus
+T00755	Sp1	chick, Gallus gallus
+T00758	Sp1	clawed frog, Xenopus
+T10533	Sp1	dog, Canis familiaris (Canis canis)
+T00753	Sp1	domestic pig, Sus scrofa
+T01228	Sp1	hamster, Cricetulus sp.
+T08484	Sp1	human, Homo sapiens
+T00759	Sp1	human, Homo sapiens
+T10324	Sp1	mink, Mustela vison
+T00757	Sp1	monkey, Cercopithecus aethiops
+T00752	Sp1	mouse, Mus musculus
+T05704	Sp1	rabbit, Oryctolagus cuniculus
+T09431	Sp1	rat, Rattus norvegicus
+T00754	Sp1	rat, Rattus norvegicus
+T09118	Sp1 isoform 1	mouse, Mus musculus
+T11028	STAT1	cattle, Bos taurus
+T04759	STAT1	human, Homo sapiens
+T05696	STAT1	monkey, Cercopithecus aethiops
+T08951	STAT1	mouse, Mus musculus
+T05665	STAT1	rat, Rattus norvegicus
+T11029	STAT1 beta	rat, Rattus norvegicus
+T01492	STAT1alpha	human, Homo sapiens
+T01575	STAT1alpha	mouse, Mus musculus
+T01573	STAT1beta	human, Homo sapiens
+T11031	STAT3	cattle, Bos taurus
+T08580	STAT3	human, Homo sapiens
+T01493	STAT3	human, Homo sapiens
+T05697	STAT3	monkey, Cercopithecus aethiops
+T01574	STAT3	mouse, Mus musculus
+T08479	STAT3	rat, Rattus norvegicus
+T06605	STAT3	rat, Rattus norvegicus

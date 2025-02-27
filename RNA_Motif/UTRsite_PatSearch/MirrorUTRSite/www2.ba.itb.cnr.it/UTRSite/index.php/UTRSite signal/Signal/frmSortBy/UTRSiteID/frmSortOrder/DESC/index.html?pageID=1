@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>UTRSite :: Signal Manager :: Browse</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="ROBOTS" content="ALL" />
+<!-- #GIORGIO -->
+	<meta name="author" content="Giorgio Grillo">
+	<meta name="description" content="UTRSite collection of functional sequence patterns located in 5' or 3' UTR sequences">
+	<meta name="keywords" content="utrdb bioinformatic database"> 
+<!-- -->
+    <meta name="Copyright" content="Copyright (c) 2005 Seagull Framework, Demian Turner, and the respective authors" />
+    <meta name="Rating" content="General" />
+    <meta name="Generator" content="Seagull Framework v0.4.1" />
+    <link rel="help" href="http://seagull.phpkitchen.com/docs/" title="Seagull Documentation." />
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/style.php" />
+
+    
+<script type="text/javascript"> <!--
+        var SGL_JS_WEBROOT="http://www2.ba.itb.cnr.it/UTRSite";
+        var SGL_JS_WINHEIGHT=500;
+        var SGL_JS_WINWIDTH=600;
+        var SGL_JS_SESSID="";
+        var SGL_JS_CURRURL="/UTRSite/index.php/UTRSite%20signal/Signal/frmSortBy/UTRSiteID/frmSortOrder/DESC/?pageID=1";
+    
+//--> </script>
+
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/mainPublic.js"></script>
+
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/UTRSite/UTRSite.js"></script>
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/overLIB/overlib.js"></script>
+    
+    
+<!-- #GIORGIO -->
+	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<!-- -->
+
+<!-- /////////////////////////////////////  START NAVIGATION STYLESHEET  //////////////////////////////-->
+
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/SglDefault_TwoLevel.css" />
+
+<!-- /////////////////////////////////////  END NAVIGATION STYLESHEET   //////////////////////////////-->
+</head>
+
+<body onload="" style="">
+<!-- Logo and header -->
+<div id="sgl-header">
+        <div id="sgl-header-left">
+        <img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/UTRSite.png" alt="UTRSite Logo" />
+    </div>
+    
+    <div id="sgl-header-right">
+     
+        <div id="headerUserInfo">
+        user: <span class="guest">guest</span>
+        </div>
+        <div id="headerLogAction">
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/logout.gif" alt="login" /></a>
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login">login</a>
+        </div>
+      <!-- -->
+    </div>
+</div>
+
+<!-- tab navigation -->
+<div id="sgl-nav">
+    
+<ul><li><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/default/SGLSESSID/98c33a39c51c44d793757cedfc3dcfb2/">Home</a></li>
+<li><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/SGLSESSID/98c33a39c51c44d793757cedfc3dcfb2/">Signal Manager</a></li>
+</ul>
+</div>
+<!-- Main layout -->
+<div id="sgl-main">
+<!-- left column -->
+<div id="sgl-blocks-left">
+
+
+
+</div>
+   
+<!-- middle column -->
+<!-- #GIORGIO -->
+<div id="sgl-blocks-middle" style="margin-left:0;margin-right:0;">
+<!-- -->
+<form action="" name="frmSignal" method="post" id="frmSignal">
+    <input name="action" type="hidden" value="delete" />
+
+    <h1 class="pageTitle">Signal Manager :: Browse</h1>
+     
+    <div class="pager">
+<table>
+    <tr>
+        <td>
+            <b><u>1</u></b>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/UTRSite/index.php/UTRSite%20signal/Signal/frmSortBy/UTRSiteID/frmSortOrder/DESC/?pageID=2" title="page 2">2</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/UTRSite/index.php/UTRSite%20signal/Signal/frmSortBy/UTRSiteID/frmSortOrder/DESC/?pageID=3" title="page 3">3</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/UTRSite/index.php/UTRSite%20signal/Signal/frmSortBy/UTRSiteID/frmSortOrder/DESC/?pageID=4" title="page 4">4</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/UTRSite/index.php/UTRSite%20signal/Signal/frmSortBy/UTRSiteID/frmSortOrder/DESC/?pageID=5" title="page 5">5</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/UTRSite/index.php/UTRSite%20signal/Signal/frmSortBy/UTRSiteID/frmSortOrder/DESC/?pageID=6" title="page 6">6</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/UTRSite/index.php/UTRSite%20signal/Signal/frmSortBy/UTRSiteID/frmSortOrder/DESC/?pageID=2" title="next page">&raquo;</a>&nbsp;&nbsp;&nbsp;&nbsp;        </td>
+    </tr>
+</table>
+</div>
+
+    <table cellspacing="1" cellpadding="5">
+        <tr>
+            <td colspan="10">
+		                        <input class="searchButton" type="button" value="search signal" onclick="javascript:document.location.href='http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/editSearch/'" />
+            </td>
+        </tr>
+        <tr>
+	                    <th class="List"><a class="header" href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/frmSortBy/UTRSiteID/frmSortOrder/ASC/">ID</a></th>
+            <th class="List"><a class="header" href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/frmSortBy/StandardName/frmSortOrder/ASC/">Standard Name</a></th>
+	                    <th class="List">View</th>
+        	        </tr>
+
+        <tr class="sgl-row-dark">
+	                    <td align="center">U0001</td>
+            <td>Histone 3'UTR stem-loop structure (HSL3)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0001/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr><tr class="sgl-row-light">
+	                    <td align="center">U0002</td>
+            <td>Iron Responsive Element (IRE)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0002/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr><tr class="sgl-row-dark">
+	                    <td align="center">U0003</td>
+            <td>Selenocysteine Insertion Sequence - type 1 (SECIS1)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0003/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr><tr class="sgl-row-light">
+	                    <td align="center">U0004</td>
+            <td>Selenocysteine Insertion Sequence - type 2 (SECIS2)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0004/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr><tr class="sgl-row-dark">
+	                    <td align="center">U0005</td>
+            <td>Amyloid precursor protein mRNA stability control element (APP_SCE)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0005/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr><tr class="sgl-row-light">
+	                    <td align="center">U0006</td>
+            <td>Cytoplasmic polyadenylation element (CPE)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0006/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr><tr class="sgl-row-dark">
+	                    <td align="center">U0007</td>
+            <td>TGE translational regulation element (TGE)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0007/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr><tr class="sgl-row-light">
+	                    <td align="center">U0008</td>
+            <td>Nanos translation control element (NANOS_TCE)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0008/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr><tr class="sgl-row-dark">
+	                    <td align="center">U0009</td>
+            <td>15-Lipoxygenase Differentiation Control Element (15-LOX-DICE)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0009/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr><tr class="sgl-row-light">
+	                    <td align="center">U0010</td>
+            <td>AU-rich class-2 Element (ARE2)</td>
+        	            <td align="center"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0010/pageID/1/"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/view.gif" border="0" /></a></td>
+        	        </tr>            </table>
+
+    <table cellspacing="5" cellpadding="0">
+	<tr></tr>
+	<tr>
+		<td class="results">Total: 58&nbsp;&nbsp;(1-10)</td>
+	</tr>
+	</table>
+</form>
+</div>
+
+<!-- right column -->
+<div id="sgl-blocks-right">
+
+
+</div>
+
+</div> <!-- close sgl-main -->
+
+<!-- #GIORGIO -->
+<hr width="50%">
+<!-- -->
+
+<div id="sgl-footer">
+    Powered by <a href="http://seagull.phpkitchen.com" title="Seagull framework homepage">Seagull Framework</a> v 0.4.1<br />
+    
+    </div>
+
+</body>
+</html>

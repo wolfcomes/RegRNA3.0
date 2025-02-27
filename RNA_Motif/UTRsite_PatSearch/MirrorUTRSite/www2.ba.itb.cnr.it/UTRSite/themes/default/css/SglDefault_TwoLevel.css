@@ -1,0 +1,97 @@
+#sgl-nav {
+    height: 44px;
+
+    background-image: url(bg_curmenu.png);
+    background-position: 0 24px;
+    border-bottom:1px outset;
+}
+#sgl-nav ul {
+    position: absolute;
+    width: 100%;	
+    padding: 0;
+    margin: 0;
+    background-color:#000080;
+}
+#sgl-nav ul li {
+    float: left;
+    display: inline;
+    margin: 0;
+    padding-left:2px;
+}
+#sgl-nav ul li a {
+    display: block;
+    position: relative;
+    padding:2px 15px;
+    background-color: #BBCCDD;
+    background-image: url(bg_menu.png);
+    background-repeat: repeat-x;
+    background-position: top;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    white-space:nowrap;
+    border:1px outset;
+}
+#sgl-nav ul li a:hover, #sgl-nav ul li#child_current a:hover {
+    color: #0206AE;
+}
+#sgl-nav ul li#current a, #sgl-nav ul li#child_current a {
+    background-color: #EFF3F8;
+    background-image: url(bg_curmenu.png);
+    background-repeat: repeat-x;
+    background-position: top;
+    border-bottom:1px solid #EFF3F8;
+}
+#sgl-nav ul li#current a {
+    color: #0206AE;
+}
+#sgl-nav ul li#child_current a {
+    color: black;
+}
+/* hide the sublevels */
+#sgl-nav ul ul {
+    display: none;
+}
+#sgl-nav ul li#current ul, #sgl-nav ul li#child_current ul {
+    position: absolute;
+    left: 0;
+    display: block;
+    /* use max-width emulation hack from
+     * http://www.svendtofte.com/code/max_width_in_ie/, using the IE5.0+ dynamic
+     * properties syntax, see
+     * http://msdn.microsoft.com/workshop/author/dhtml/overview/recalc.asp */
+    _width: expression(document.body.clientWidth);
+    padding: 0;
+    background-color: #EFF3F8;
+    background-image: url(bg_curmenu.png);
+    background-repeat: repeat-x;
+    background-position: top;
+
+    border-top:1px outset;
+    border-bottom:1px outset;
+}
+#sgl-nav ul li#current li, #sgl-nav ul li#child_current li {
+    padding:1px 0;
+}
+#sgl-nav ul li#current li a, #sgl-nav ul li#child_current li a {
+    /* hide first pipe */
+    left: -3px;
+    padding:1px 15px;
+    font-weight:bold;
+    font-size:9px;
+    border:none;
+    border-left: 1px solid #404040;
+    color: black;
+}
+#sgl-nav ul li li#current a {
+    color: #0206AE;
+}
+#sgl-nav ul li#current li a:hover {
+    color: #0206AE;
+}
+/* hide 3rd or more levels */
+#sgl-nav ul ul ul li {
+    display: none;
+}

@@ -1,0 +1,690 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>UTRSite :: Signal Manager :: View</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="ROBOTS" content="ALL" />
+<!-- #GIORGIO -->
+	<meta name="author" content="Giorgio Grillo">
+	<meta name="description" content="UTRSite collection of functional sequence patterns located in 5' or 3' UTR sequences">
+	<meta name="keywords" content="utrdb bioinformatic database"> 
+<!-- -->
+    <meta name="Copyright" content="Copyright (c) 2005 Seagull Framework, Demian Turner, and the respective authors" />
+    <meta name="Rating" content="General" />
+    <meta name="Generator" content="Seagull Framework v0.4.1" />
+    <link rel="help" href="http://seagull.phpkitchen.com/docs/" title="Seagull Documentation." />
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/style.php" />
+
+    
+<script type="text/javascript"> <!--
+        var SGL_JS_WEBROOT="http://www2.ba.itb.cnr.it/UTRSite";
+        var SGL_JS_WINHEIGHT=500;
+        var SGL_JS_WINWIDTH=600;
+        var SGL_JS_SESSID="";
+        var SGL_JS_CURRURL="/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0016/pageID/5/";
+    
+//--> </script>
+
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/mainPublic.js"></script>
+
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/UTRSite/UTRSite.js"></script>
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/overLIB/overlib.js"></script>
+    
+    
+<!-- #GIORGIO -->
+	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<!-- -->
+
+<!-- /////////////////////////////////////  START NAVIGATION STYLESHEET  //////////////////////////////-->
+
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/SglDefault_TwoLevel.css" />
+
+<!-- /////////////////////////////////////  END NAVIGATION STYLESHEET   //////////////////////////////-->
+</head>
+
+<body onload="" style="">
+<!-- Logo and header -->
+<div id="sgl-header">
+        <div id="sgl-header-left">
+        <img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/UTRSite.png" alt="UTRSite Logo" />
+    </div>
+    
+    <div id="sgl-header-right">
+     
+        <div id="headerUserInfo">
+        user: <span class="guest">guest</span>
+        </div>
+        <div id="headerLogAction">
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/logout.gif" alt="login" /></a>
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login">login</a>
+        </div>
+      <!-- -->
+    </div>
+</div>
+
+<!-- tab navigation -->
+<div id="sgl-nav">
+    
+<ul><li><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/default/">Home</a></li>
+<li id="current"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/">Signal Manager</a></li>
+</ul>
+</div>
+<!-- Main layout -->
+<div id="sgl-main">
+<!-- left column -->
+<div id="sgl-blocks-left">
+
+
+
+</div>
+   
+<!-- middle column -->
+<!-- #GIORGIO -->
+<div id="sgl-blocks-middle" style="margin-left:0;margin-right:0;">
+<!-- -->
+<form action="" name="frmSignal" method="post" id="frmSignal">
+    <input name="action" type="hidden" value="" />
+
+    <h1 class="pageTitle">Signal Manager :: View</h1>
+    
+    <table cellspacing="1" cellpadding="5" style="width:auto">
+        <tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>General Information</th>
+        </tr>
+        <tr>
+            <td class="fieldName">ID</td>
+            <td class="fieldValue" colspan="2" style="font-weight:bold;">U0016</td>
+        </tr>
+
+        
+        <tr></tr>
+        <tr>
+            <td class="fieldName">Creation Date</td>
+            <td class="fieldValue" colspan="2">08 May 2000</td>
+        </tr>        <tr>
+            <td class="fieldName">Updating Date</td>
+            <td class="fieldValue" colspan="2">24 September 2009</td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td class="fieldName">Standard Name</td>
+            <td class="fieldValue" colspan="2">SXL binding site</td>
+        </tr>        <tr>
+            <td class="fieldName">UTRSite Pattern</td>
+                        <td class="fieldValue"><pre>((((
+UUUUUUUUUUUUUUUU[0,5,0]|
+UUUUUUUUU 14...14 UUUUUUU 14...14 UUUUUUU 9...9 UUUUUUU)|
+UCUUUUUGUUGUUUUUUUUCUAG)|
+UAUUUUUUUUCACAG)|
+UUUUUUGUUKUKUUUKUU)
+</pre></td>
+            <td class="fieldValue" style="width:0; text-align:center">
+                <img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/info.gif" onmouseover="return overlib('<p>The PatSearch syntax used for this motifs is based on known experimental data and includes five variants (the symbol | stands for OR in PatSearch syntax):</p><ul><li> a poly-U stretch from 11 to 16 nt long (the pattern qualifier [0,5,0] means that up to 5 deletions are tolerated into a stretch of 16 Us. This pattern has been observed in msl-2 5\'UTR (form a and  b; see the Table in the Description)</li></ul><ul><li>the U-rich pattern observed in<i> </i> 3\'UTR (see the Table in the Description)</li></ul><ul><li> the pattern observed in the <i>tra</i> pre-mRNA (see the Table in the Description)</li></ul><ul><li> the pattern obsserved in the sxl pre-mRNA (see the Table in the Description)</li></ul><ul><li> the pattern derived by a SELEX study (Singh et al., 1995)<br /></li></ul>', WIDTH, 250,
+                        CAPTION, 'UTRSite Pattern Note');" onmouseout="return nd();" />
+            </td>
+                    </tr>                
+        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Taxonomy</th>
+        </tr>
+        <tr>
+            <td class="fieldName">UTR Region</td>
+            <td class="fieldValue" colspan="2">All</td>
+        </tr>        <tr>
+            <td class="fieldName">Taxon Range</td>
+            <td class="fieldValue" colspan="2">
+                                    Arthropoda                            </td>
+        </tr>        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Description</th>
+        </tr>
+        <tr>
+            <td class="fieldName" rowspan="2">Description</td>
+            <td class="fieldValue" colspan="2">Sex-lethal (SXL) is a female-specific RNA binding protein of Drosophila
+melanogaster that functions as the master regulator of sex
+determination and X chromosome dosage compensation. SXL regulates the
+expression of downstream target genes via the modulation of splicing
+and translation. SXL controls the splicing of its own pre-mRNA,
+establishing a positive feed-back autoregulatory loop that perpetuates
+its own production in females. Other targets of SXL are tra pre-mRNA,
+which encodes anot......</td>
+        </tr>        <tr>
+            <td class="fieldValue" colspan="2">
+                <input class="moreButton" type="button" name="" value="more ..." onclick="document.location.href='http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0016/frmDescription/complete/pageID/5/'" />            </td>
+        </tr>        
+        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Features</th>
+        </tr>
+        <tr>
+            <td class="fieldName">Feature Key</td>
+            <td class="fieldValue" colspan="2">SXL_BS</td>
+        </tr>        
+                
+        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Transcript(s) / Gene(s)</th>
+        </tr>                    <tr>
+                <td class="fieldName">UTR(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">3'UTR in Drosophila melanogaster CG3241-PA, isoform A (msl-2) mRNA, complete cds.</td>
+                            <td class="subfieldValue" style="width:150px">Drosophila melanogaster</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://utrdb.ba.itb.cnr.it/getutr/3DMER003924" target="Info">UTRef: 3DMER003924</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                <a href="#RefU1">[U1]</a>                            </td>
+                        </tr><tr>
+                            <td class="subfieldValue" style="width:auto">5'UTR in Drosophila melanogaster CG3241-PA, isoform A (msl-2) mRNA, complete cds.</td>
+                            <td class="subfieldValue" style="width:150px">Drosophila melanogaster</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://utrdb.ba.itb.cnr.it/getutr/5DMER003913" target="Info">UTRef: 5DMER003913</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                <a href="#RefU2">[U2]</a>                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>                    <tr>
+                <td class="fieldName">Transcript(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">Drosophila melanogaster CG3241-PA, isoform A (msl-2) mRNA, complete cds</td>
+                            <td class="subfieldValue" style="width:150px">Drosophila melanogaster</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nuccore&amp;id=NM_078743" target="Info">RefSeq: NM_078743</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                <a href="#RefT1">[T1]</a>                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>                    <tr>
+                <td class="fieldName">Gene(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">msl-2</td>
+                            <td class="subfieldValue" style="width:150px">Drosophila melanogaster</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://www.ensembl.org/Homo_sapiens/searchview?species=all&amp;idx=All&amp;q=CG3241" target="Info">ENSEMBL: CG3241</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                <a href="#RefG1">[G1]</a>                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>                <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Protein(s)</th>
+        </tr>                    <tr>
+                <td class="fieldName">Binding Protein(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">Sex-lethal protein (SXL)</td>
+                            <td class="subfieldValue" style="width:150px">Drosophila melanogaster</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+newId+[uniprot-AccNumber:P19339]+-e" target="Info">UniProt: P19339</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                <a href="#RefB1">[B1]</a>                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>                    <tr>
+                <td class="fieldName">Interactor(s) of Binding Protein(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">Sex-lethal interactor (SIN)</td>
+                            <td class="subfieldValue" style="width:150px">Drosophila melanogaster</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+newId+[uniprot-AccNumber:Q9U778]+-e" target="Info">UniProt: Q9U778</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                <a href="#RefP1">[P1]</a>                            </td>
+                        </tr><tr>
+                            <td class="subfieldValue" style="width:auto">U1 small nuclear ribonucleoprotein A (SNF)</td>
+                            <td class="subfieldValue" style="width:150px">Drosophila melanogaster</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+newId+[uniprot-AccNumber:P43332]+-e" target="Info">UniProt: P43332</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                <a href="#RefP2">[P2]</a>                            </td>
+                        </tr><tr>
+                            <td class="subfieldValue" style="width:auto">45 kDa Splicing Factor (SPF45)</td>
+                            <td class="subfieldValue" style="width:150px">Drosophila melanogaster</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+newId+[uniprot-AccNumber:Q96I25]+-e" target="Info">UniProt: Q96I25</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                <a href="#RefP3">[P3]</a>                            </td>
+                        </tr><tr>
+                            <td class="subfieldValue" style="width:auto">Sex-lethal protein (SXL)</td>
+                            <td class="subfieldValue" style="width:150px">Drosophila melanogaster</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+newId+[uniprot-AccNumber:P19339]+-e" target="Info">UniProt: P19339</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                <a href="#RefP4">[P4]</a>                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>        
+                
+        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>References</th>
+        </tr>        <tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref1"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=10545124&amp;dopt=abstract" target="Reference">[1]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Gebauer, F., Corona, D.F., Preiss, T., Becker, P.B. and Hentze, M.W.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Translational control of dosage compensation in Drosophila by Sex- lethal: cooperative silencing via the 5' and 3' UTRs of msl-2 mRNA is independent of the poly(A) tail</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Embo J, 18, 6146-6154</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1999</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref2"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=12554879&amp;dopt=abstract" target="Reference">[2]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Banerjee H, Rahn A, Davis W, Singh R.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Sex lethal and U2 small nuclear ribonucleoprotein auxiliary factor (U2AF65) recognize polypyrimidine tracts using multiple modes of binding.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">RNA 9:88-99.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2003</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref3"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=10220389&amp;dopt=abstract" target="Reference">[3]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Crowder SM, Kanaar R, Rio DC, Alber T.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Absence of interdomain contacts in the crystal structure of the RNA recognition motifs of Sex-lethal.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Proc Natl Acad Sci U S A.  96:4892-7.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1999</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref4"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=10521666&amp;dopt=abstract" target="Reference">[4]</a>                     <a name="RefP1"></a>[P1]                </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Dong Z, Bell LR</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">SIN, a novel Drosophila protein that associates with the RNA binding protein sex-lethal</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Gene 237:421-8</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1999</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref5"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=10217141&amp;dopt=abstract" target="Reference">[5]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Handa N, Nureki O, Kurimoto K, Kim I, Sakamoto H, Shimura Y, Muto Y, Yokoyama S.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Structural basis for recognition of the tra mRNA precursor by the Sex-lethal protein</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Nature 398:579-85</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1999</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref6"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=1690860&amp;dopt=abstract" target="Reference">[6]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Inoue K, Hoshijima K, Sakamoto H, Shimura Y.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Binding of the Drosophila sex-lethal gene product to the alternative splice site of transformer primary transcript</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Nature 344:461-3.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1990</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref7"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=7781064&amp;dopt=abstract" target="Reference">[7]</a>                     <a name="RefU1"></a>[U1] <a name="RefU2"></a>[U2] <a name="RefT1"></a>[T1] <a name="RefG1"></a>[G1]                </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Kelley RL, Solovyeva I, Lyman LM, Richman R, Solovyev V, Kuroda MI.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Expression of msl-2 causes assembly of dosage compensation regulators on the X chromosomes and female lethality in Drosophila.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Cell. 81:867-77.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1995</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref8"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=12015979&amp;dopt=abstract" target="Reference">[8]</a>                     <a name="RefP3"></a>[P3]                </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Lallena MJ, Chalmers KJ, Llamazares S, Lamond AI, Valcarcel J.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Splicing regulation at the second catalytic step by Sex-lethal involves 3' splice site recognition by SPF45.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Cell 109:285-96.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2002</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref9"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=1454517&amp;dopt=abstract" target="Reference">[9]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Sakamoto H, Inoue K, Higuchi I, Ono Y, Shimura Y.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Control of Drosophila Sex-lethal pre-mRNA splicing by its own female-specific product</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Nucleic Acids Res.  20:5533-40.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1992</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref10"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=7524034&amp;dopt=abstract" target="Reference">[10]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Sakashita E, Sakamoto H.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Characterization of RNA binding specificity of the Drosophila sex-lethal protein by in vitro ligand selection.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Nucleic Acids Res. 22:4082-6.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1994</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref11"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=7516476&amp;dopt=abstract" target="Reference">[11]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Samuels ME, Bopp D, Colvin RA, Roscigno RF, Garcia-Blanco MA, Schedl P.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">RNA binding by Sxl proteins in vitro and in vivo.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Mol Cell Biol. 14:4975-90.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1994</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref12"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=9592147&amp;dopt=abstract" target="Reference">[12]</a>                     <a name="RefB1"></a>[B1] <a name="RefP2"></a>[P2] <a name="RefP4"></a>[P4]                </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Samuels M, Deshpande G, Schedl P.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Activities of the Sex-lethal protein in RNA binding and protein:protein interactions. 
+</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Nucleic Acids Res. 26:2625-37.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1998</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref13"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=2503251&amp;dopt=abstract" target="Reference">[13]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Sosnowski BA, Belote JM, McKeown M.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Sex-specific alternative splicing of RNA from the transformer gene results from sequence-dependent splice site blockage.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2"> Cell 58:449-59.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1989</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref14"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=7761834&amp;dopt=abstract" target="Reference">[14]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Singh R, Valcarcel J, Green MR.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Distinct binding specificities and functions of higher eukaryotic polypyrimidine tract-binding proteins.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Science 268:1173-6.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1995</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref15"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=7680770&amp;dopt=abstract" target="Reference">[15]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Valcarcel J, Singh R, Zamore PD, Green MR.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">The protein Sex-lethal antagonizes the splicing factor U2AF to regulate alternative splicing of transformer pre-mRNA.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2"> Nature 362:171-5.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1993</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref16"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=7958879&amp;dopt=abstract" target="Reference">[16]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Wang J, Bell LR.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">The Sex-lethal amino terminus mediates cooperative interactions in RNA binding and is essential for splicing regulation.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2"> Genes Dev.  8:2072-85.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1994</td>
+             </tr>
+        </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </table>
+</form>
+</div>
+
+<!-- right column -->
+<div id="sgl-blocks-right">
+
+
+</div>
+
+</div> <!-- close sgl-main -->
+
+<!-- #GIORGIO -->
+<hr width="50%">
+<!-- -->
+
+<div id="sgl-footer">
+    Powered by <a href="http://seagull.phpkitchen.com" title="Seagull framework homepage">Seagull Framework</a> v 0.4.1<br />
+    
+    </div>
+
+</body>
+</html>

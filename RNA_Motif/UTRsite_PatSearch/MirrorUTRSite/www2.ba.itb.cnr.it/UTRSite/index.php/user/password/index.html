@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>UTRSite :: Retrieve password</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="ROBOTS" content="ALL" />
+<!-- #GIORGIO -->
+	<meta name="author" content="Giorgio Grillo">
+	<meta name="description" content="UTRSite collection of functional sequence patterns located in 5' or 3' UTR sequences">
+	<meta name="keywords" content="utrdb bioinformatic database"> 
+<!-- -->
+    <meta name="Copyright" content="Copyright (c) 2005 Seagull Framework, Demian Turner, and the respective authors" />
+    <meta name="Rating" content="General" />
+    <meta name="Generator" content="Seagull Framework v0.4.1" />
+    <link rel="help" href="http://seagull.phpkitchen.com/docs/" title="Seagull Documentation." />
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/style.php" />
+
+    
+<script type="text/javascript"> <!--
+        var SGL_JS_WEBROOT="http://www2.ba.itb.cnr.it/UTRSite";
+        var SGL_JS_WINHEIGHT=500;
+        var SGL_JS_WINWIDTH=600;
+        var SGL_JS_SESSID="";
+        var SGL_JS_CURRURL="/UTRSite/index.php/user/password/";
+    
+//--> </script>
+
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/mainPublic.js"></script>
+
+    
+    
+<!-- #GIORGIO -->
+	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<!-- -->
+
+<!-- /////////////////////////////////////  START NAVIGATION STYLESHEET  //////////////////////////////-->
+
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/SglDefault_TwoLevel.css" />
+
+<!-- /////////////////////////////////////  END NAVIGATION STYLESHEET   //////////////////////////////-->
+</head>
+
+<body onload="" style="">
+<!-- Logo and header -->
+<div id="sgl-header">
+        <div id="sgl-header-left">
+        <img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/UTRSite.png" alt="UTRSite Logo" />
+    </div>
+    
+    <div id="sgl-header-right">
+     
+        <div id="headerUserInfo">
+        user: <span class="guest">guest</span>
+        </div>
+        <div id="headerLogAction">
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/logout.gif" alt="login" /></a>
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login">login</a>
+        </div>
+      <!-- -->
+    </div>
+</div>
+
+<!-- tab navigation -->
+<div id="sgl-nav">
+    
+<ul><li><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/default/">Home</a></li>
+<li><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/">Signal Manager</a></li>
+</ul>
+</div>
+<!-- Main layout -->
+<div id="sgl-main">
+<!-- left column -->
+<div id="sgl-blocks-left">
+
+
+
+</div>
+   
+<!-- middle column -->
+<!-- #GIORGIO -->
+<div id="sgl-blocks-middle" style="margin-left:0;margin-right:0;">
+<!-- -->
+    <form name="forgotPasswd" method="post" id="forgotPasswd">
+        <input type="hidden" name="action" value="retrieve" />
+
+        <h1 class="pageTitle">Retrieve password</h1><!-- #GIORGIO -->
+        <table class="narrow">
+	        <tr>
+	            <th colspan="2" class="fieldHeader"><span>::</span>Enter the email address you registered with</th>
+	        </tr>
+            <tr>
+                <td class="fieldName"><span class="error">*</span>Email</td>
+                <td class="fieldValue">
+                    <input type="text" size="50" name="frmEmail" value="" maxlength="64" /></td>
+            </tr>
+
+            <tr>
+                <td class="fieldName"><span class="error">*</span>Security question</td>
+                <td class="fieldValue">
+                    <select name="frmQuestion">
+<option value="0"></option>
+<option value="1">Favourite pet's name</option>
+<option value="2">Memorable date (dd/mm/yyyy)</option>
+<option value="3">Memorable place</option>
+<option value="4">Your mother's maiden name</option></select></td>
+            </tr>
+
+            <tr>
+                <td class="fieldName"><span class="error">*</span>Answer</td>
+                <td class="fieldValue">
+                    <input name="frmAnswer" type="password" size="37" value="" /></td>
+            </tr>
+
+            <tr>
+        	<tr></tr>
+                <td class="mandatory" align="center" colspan="2">
+                    <span class="error">*</span> 
+                    <span>denotes required field</span>
+                </td>
+            </tr>
+
+	        <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td colspan="2" align="center"><input class="wideButton" type="submit" name="submitted" value="retrieve" /></td>
+            </tr>
+        </table>
+<!-- -->
+    </form>
+</div>
+
+<!-- right column -->
+<div id="sgl-blocks-right">
+
+
+</div>
+
+</div> <!-- close sgl-main -->
+
+<!-- #GIORGIO -->
+<hr width="50%">
+<!-- -->
+
+<div id="sgl-footer">
+    Powered by <a href="http://seagull.phpkitchen.com" title="Seagull framework homepage">Seagull Framework</a> v 0.4.1<br />
+    
+    </div>
+
+</body>
+</html>

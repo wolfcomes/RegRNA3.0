@@ -1,0 +1,16 @@
+Gene Accession No.	Gene Identifier	Gene Name	Gene Species
+G001805	MOUSE$GSU	alpha GSU	mouse, Mus musculus
+G000282	HS$GRH	GH	human, Homo sapiens
+G000746	RAT$GRH	GH	rat, Rattus norvegicus
+G000764	RAT$LHB	LHbeta	rat, Rattus norvegicus
+G002109	BOVIN$LHB	LHbeta	cattle, Bos taurus
+G002128	HORSE$LHB	LHbeta	horse, Equus spec
+G004531	MOUSE$LHB	LHbeta	mouse, Mus musculus
+G004568	MOUSE$PIT1	Pit1	mouse, Mus musculus
+G002665	HS$PITX2	PITX2	human, Homo sapiens
+G002666	MOUSE$PITX2	PITX2	mouse, Mus musculus
+G000786	RAT$POMC	POMC	rat, Rattus norvegicus
+G000787	RAT$PL	PRL	rat, Rattus norvegicus
+G000368	HS$PL	prl	human, Homo sapiens
+G000408	HS$TSHB	TSHB	human, Homo sapiens
+G000624	MOUSE$TSHB	TSHbeta	mouse, Mus musculus

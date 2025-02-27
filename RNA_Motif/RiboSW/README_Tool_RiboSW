@@ -1,0 +1,81 @@
+This is the user guide to teach user how to use Riboswitch Searcher.
+
+[Compile Main Program]
+
+    g++ -O3 -lpcrecpp search_General.cpp
+
+[Run Main Program]
+
+    ./drive_search.pl -a [fasta_File] [descr_file] > [fasta_file].myResult
+    
+    (descr_file = Descriptor file, ex: RS.Purine.descr)
+
+[Extract result]
+
+    ./HMM_proc.pl [fasta_file] [hmm_model_file] [e-value]
+    
+    (This utility need 3 arguments, fasta file, hmm model file and e-value as input)
+
+
+    ./rbprune.pl [fasta_file].E10.hmmResult
+
+    (In this instance, we get e-value 10 in HMMER result file)
+
+
+====
+In descriptors every fileds describes below:
+
+[TYPE];[Descriptor of Stem]'[Report section]'[Sequence information section]%
+      _                    _                _                              _
+        separator            separator        separator                      end mark
+
+**TYPE:
+    4 types of sub-structure to compose the RNA structure
+
+**Descriptor of stem:
+ swL, swU, sw, sp,     stemLower, stemUpper, loop Lower, loop Upper, bulge, push num,  [wts_m, _M, wte_m, _M]'
+
+ swL/swU:   Slide window lower and upper bound
+ sw:        Size increasing of slide window
+ sp:        Start point (used in stem 1), to describe increasing of starting search point in the whole RNA query sequence
+ stemLower/stemUpper:
+            The lower/upper bound of this stem structure
+ loop Lower/Upper:
+            The lower/upper bound of the loop region
+ bulge:     Bulge permit in this stem structure
+ push_num:  Push the next stem start point into stack (push num=0 if it is the last stem)
+            Push num=1, if next stem is not a branch loop
+            Push num=2, if next stem is a branch loop (push start point of "branch loop" and "the stem outer of the branch loop"
+
+ [parameter below can be ignored]
+ wts:       Where to start, means the interval between this stem and the previous one, can be ignore
+ wte:       Where to end, means the interval between this stem and the next one, can be ignore
+ [wts_m: wts minimal, wts_M: wts Maximal, wte_m: wte minimal, wte_M: wte Maximal]
+
+   |<-outer->|stem|<--loop-->|stem|<-outer->|
+   ..........xxxxxx..........xxxxxx..........
+   |<------------ slide window ------------>|
+
+**Report section & Sequence information section:
+
+ Use "Regular expression" of PCRE to describe.
+
+ o+: outer of 5'-end
+ o-: outer of 3'-end
+    o+0 or o-0 mean whole sequence of 5'-end outer or 3'-end outer
+ h+: helix of 5'-end
+ h-: helix of 3'-end
+ h=0: full helix sequence
+ l+: loop sequence of 5'-end
+ l-: loop sequence of 3'-end
+ l=0: full loop sequence
+
+
+   3'-end                          ___
+         \ 'h+'-->        <---'h-'/   \
+          -yyyyyyXXXXXXXXXXzzzzzz/     | loop sequence
+          -yyyyyyXXXXXXXXXXzzzzzz\     |
+         / 'h+'-->        <---'h-'\   /
+   5'-end                          --- 
+
+

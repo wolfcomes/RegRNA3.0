@@ -1,0 +1,414 @@
+.TH "cmalign" 1 "May 2007" "Infernal 0.81" "Infernal Manual"
+
+.SH NAME
+.TP 
+cmalign - use a CM to make a structured RNA multiple alignment
+
+.SH SYNOPSIS
+.B cmalign
+.I [options]
+.I cmfile
+.I seqfile
+
+.SH DESCRIPTION
+
+.B cmalign
+aligns the RNA sequences in
+.I seqfile
+to the covariance model (CM) in
+.I cmfile,
+and outputs a multiple sequence alignment.
+
+.PP
+Currently, the sequence file must be in FASTA format.
+
+.PP
+CM files are profiles of RNA consensus secondary structure. A
+CM file is produced by the 
+.B cmbuild 
+program, from a given RNA sequence alignment of known 
+consensus structure.
+
+.PP
+The alignment that 
+.B cmalign
+makes is written in Stockholm format.
+It can be redirected to a file
+using the
+.I -o
+option.
+
+By default, the CYK algorithm is used for CM alignment.
+An HMM banded CYK alignment algorithm that offers a significant
+speed-up is enabled with the 
+.I --hbanded 
+option (see below).
+
+.SH OPTIONS
+
+.TP
+.B -h
+Print brief help; includes version number and summary of
+all options, including expert options.
+
+.TP
+.B -l
+Turn on the local alignment algorithm, which allows the alignment
+to span two or more subsequences if necessary (e.g. if the structures
+of the query model and target sequence are only partially shared),
+allowing certain large insertions and deletions in the structure
+to be penalized differently than normal indels.
+The default is to globally align the query model to the target
+sequences.
+
+.TP
+.BI -o " <f>"
+Save the alignment in Stockholm format to a file
+.I <f>.
+The default is to write it to standard output.
+
+.TP
+.B -q
+Quiet; suppress the verbose banner, and only print the resulting
+alignment to stdout. This allows piping the alignment to the input 
+of other programs, for example.
+
+.SH EXPERT OPTIONS
+
+.TP
+.BI --informat " <s>"
+Assert that the input 
+.I seqfile
+is in format
+.I <s>.
+Do not run Babelfish format autodection. This increases
+the reliability of the program somewhat, because 
+the Babelfish can make mistakes; particularly
+recommended for unattended, high-throughput runs
+of Infernal. 
+.I <s>
+is case-insensitive.
+This option is a bit forward-looking;
+.B cmalign
+currently only accepts FASTA format, but
+this will not be true in the future.
+
+.TP
+.B --nosmall
+Use the normal CYK alignment algorithm. The default is
+to use the divide and conquer algorithm described in SR Eddy, 
+BMC Bioinformatics 3:18, 2002. This
+is useful for debugging, and checking that the
+two algorithms give identical results. The "normal" algorithm requires
+too much memory for most uses.
+
+.TP
+.BI --regress " <f>"
+Save regression test information to a file
+.I <f>. 
+This is part of the automated testing procedure at each release. 
+
+.TP
+.B --full
+Include all match columns in the output alignment. By default only
+consensus columns in which at least one sequence has a non-gap character
+are included.
+
+.TP
+.BI --tfile " <f>"
+Dump tabular sequence tracebacks for each individual
+sequence to a file 
+.I <f>.
+Primarily useful for debugging.
+
+.TP
+.BI --banddump " <n>"
+Set verbosity level for debugging print statements related to
+query-dependent bands (QDB) (the
+.B --qdb
+option) to 
+.I <n>. 
+Where 
+.I <n> 
+is 1, 2 or 3. By default debugging print statements are turned off.
+
+.TP
+.BI --dlev " <n>"
+Set verbosity level for general debugging print statements
+.I <n>. 
+Where 
+.I <n> 
+is 1, 2 or 3. By default debugging print statements are turned off.
+
+.TP
+.BI --time
+Print timings for band calculation and alignment for each sequence in 
+.I seqfile.
+
+.TP
+.TP
+.BI --inside
+Instead of aligning the sequences in 
+.I seqfile 
+to the CM with CYK, use the Inside algorithm to score each sequence against
+the CM, and print out scores. Each Inside score is the summed score of
+the all possible alignments of the sequence to the CM. When enabled,
+the output does not include an alignment.
+
+.TP
+.BI --outside
+Instead of aligning the sequences in 
+.I seqfile 
+to the CM with CYK, use the Outside algorithm to score each sequence against
+the CM, and print out scores. Each Outside score is the summed score of
+the all possible alignments of the sequence to the CM. 
+When enabled, the output does not include an alignment.
+
+.TP
+.BI --post
+Calculate "confidence estimates" for each residue of the
+alignment and include them in the alignment. These estimates are based
+on posterior probabilities that each residue aligns at each position
+of the alignment. The posterior probabilites can be determined only
+after running the Inside and Outside algorithms. The alignment is not
+changed when 
+.B --post
+is used, it is still the CYK optimal alignment. The confidence
+estimates appear as "#=GR <seq name> POST" annotation in the output
+Stockholm alignment for each sequence. This annotation includes the
+digits "0-9", "*" and "." characters. A "8" indicates that the
+confidence estimate for the corresponding residue being aligned to the
+corresponding column is between 80
+and 90%. A "7" indicates the
+same, but between 70 and 80%, and so on for the other digits. A "*"
+indicates that the confidence estimate is "very nearly" 100% (it's
+hard to be exact here due to numerical precision issues) A "." 
+indicates that that column aligns to a gap in the corresponding sequence.
+
+.TP
+.BI --checkpost
+Perform a check that the result of the Inside and Outside algorithms
+make sense by ensuring they give the same score to each sequence
+(while allowing for slight differences due to numerical precision issues). This is primarily
+useful for debugging.
+
+.TP
+.BI --zeroinserts
+Set all insert emission scores to 0.0 bits. Default behavior is to
+read them from the CM file. Zeroing inserts is default behavior
+for 
+.B cmsearch.
+
+.TP
+.BI --sub
+Turn on the sub model construction and alignment procedure. For each
+sequence, an HMM is first used to predict the model start and end
+consensus columns, and a new sub CM is constructed that only models
+consensus columns from start to end. The sequence is then aligned to this sub CM.
+This option is useful for aligning sequences that are known to
+truncated, non-full length sequences.
+This "sub CM" procedure is not the same
+as the "sub CMs" described by Weinberg and Ruzzo.
+
+.TP
+.BI --elsilent
+Disallow emissions from the local end (EL) state.
+
+.TP
+.BI --enfstart " <n>"
+Used in combination with 
+.BI --enfseq " <s>"
+to attempt to enforce the subsequence 
+.I <s>
+align beginning at consensus column 
+.I <n>.
+A major limitation to this option is that the consensus columns from (
+.I <n>
+-1) to (
+.I <n> 
++ length(
+.I <s>
+)-1) must all be modelled by MATL nodes. This may change in future versions.
+
+.TP
+.BI --enfseq " <s>"
+Used in combination with 
+.BI --enfstart " <n>"
+to enforce the subsequence 
+.I <s>
+occur beginning at consensus column
+.I <n> as described above. 
+
+.TP
+.B --hbanded
+Score each sequence to an HMM derived from the CM in
+.I cmfile 
+using the Forward and Backward HMM algorithms and calculate posterior
+probabilities each residue aligns to each state of the HMM. Use these
+posterior probabilities to derive constraints (bands) for the CM, and
+use them to accelerate CM alignment. This method sacrifices the
+guarantee that the optimal alignment will be found.
+When not run in local mode with 
+.B -l,
+this option yields a significant speed-up
+(around 25-fold for the average family), while rarely missing the
+optimal alignment. It has not been rigorously tested in local mode
+yet, so use at your own risk with
+.B -l.
+
+.TP
+.BI --tau " <f>"
+Set the tail loss probability used during HMM band calculation to
+.I <f>. 
+This is the amount of probability mass within the HMM posterior
+probabilities that is considered negligible. The default value is 1E-7.
+In general, higher values will result in greater acceleration, but
+increase the chance of missing the optimal alignment due to the HMM
+bands.
+
+.TP
+.B --hsafe
+Must be used in combination with
+.B --hbanded.
+In HMM banded mode, realign any sequences with a negative alignment
+score using non-banded CYK to guarantee finding the optimal
+alignment. Based on empirical tests, the fraction of
+HMM banded alignments that are non-optimal and have negative scores is
+much higher than for those with positive scores.
+
+.TP
+.B --hmmonly
+Align each sequence to an HMM derived from the CM in 
+.I cmfile
+using the Viterbi HMM alignment algorithm. Currently, no alignment is
+printed when this option is enabled, only scores are printed. 
+
+.TP
+.B --qdb
+Accelerate alignment using query-dependent bands (QDB) as described in
+(Nawrocki and Eddy, PLoS Computational Biology 3(3): e56, 2007) to constrain
+the CYK alignment. In practice, acceleration due to
+QDB seems to be significantly less than acceleration due to 
+the 
+.B --hbanded 
+option, and the chance of missing the optimal alignment is slightly
+more with QDB.
+
+.TP
+.BI --beta " <x>"
+Set the tail loss probability of QDB to 
+.I <x>
+The default value is 1E-7.
+In general, higher values will result in greater acceleration, but
+increase the chance of missing the optimal alignment due to the bands.
+
+.TP 
+.BI --withali " <f>"
+Reads an alignment from file 
+.I <f>
+and aligns it as a single object to the CM; e.g. the alignment in 
+.I <f> 
+is held fixed.
+This allows you to align sequences to a model with 
+.B cmalign
+and view them in the context of an existing trusted multiple alignment.
+The alignment in the file
+.I <f> 
+must be exactly the alignment that the CM was built from, or a subset
+of it with the following special property: the definition of consensus
+columns and consensus secondary structure must be identical between 
+.I <f>
+and the alignment the CM was built from. One easy way to achieve this
+is to use the 
+.B --rf
+option to 
+.B cmbuild
+(see man page for 
+.B cmbuild
+) and to maintain the "#=GC RF" annotation in the alignment when
+removing sequences to create the subset alignment 
+.I <f>. 
+To specify that the
+.B --rf
+option to 
+.B cmbuild
+was used enable the
+.B --rf
+option to 
+.B cmalign
+(described below).
+
+.TP 
+.B --rf
+Must be used in combination with 
+.BI --withali " <f>".
+Specify that the alignment in 
+.I <f> 
+has the same "#=GC RF" annotation as the alignment file the CM was
+built from using
+.B cmbuild
+and further that the 
+.B --rf 
+option was supplied to 
+.B cmbuild
+when the CM was constructed.
+
+.TP 
+.BI --gapthresh " <x>"
+Must be used in combination with 
+.BI --withali " <f>".
+Specify that the 
+.BI --gapthresh " <x>"
+option was supplied to 
+.B cmbuild
+when the CM was constructed from the alignment file
+.I <f>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SH SEE ALSO
+
+For complete documentation, see the User's Guide (Userguide.pdf) that
+came with the distribution; or see the Infernal web page,
+http://infernal.wustl.edu/.
+
+.SH COPYRIGHT
+
+.nf
+Copyright (C) 2001-2007 HHMI Janelia Farm.
+Freely distributed under the GNU General Public License (GPL).
+.fi
+See the file COPYING that came with the source
+for details on redistribution conditions.
+
+.SH AUTHOR
+
+.nf
+Sean Eddy
+HHMI/Dept. of Genetics
+Washington Univ. School of Medicine
+4566 Scott Ave.
+St Louis, MO 63110 USA
+http://www.genetics.wustl.edu/eddy/
+

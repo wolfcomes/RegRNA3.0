@@ -1,0 +1,236 @@
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+miRanda v3.0    microRNA Target Scanning Algorithm
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+(c) 2003 Memorial Sloan-Kettering Cancer Center, New York
+
+Authors: Anton Enright, Bino John, Chris Sander and Debora Marks
+(mirnatargets@cbio.mskcc.org - reaches all authors)
+
+Software written by: Anton Enright
+Distributed for anyone to use under the GNU Public License (GPL),
+See the files 'COPYING' and 'LICENSE' for details
+
+If you use this software please cite:
+Enright AJ, John B, Gaul U, Tuschl T, Sander C and Marks DS;
+(2003) Genome Biology; 5(1):R1.
+
+   miRanda comes with ABSOLUTELY NO WARRANTY;
+   This is free software, and you are welcome to redistribute it
+   under certain conditions; type `miranda --license' for details.
+
+Current Settings:
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Query Filename:		seqmir
+Reference Filename:	seqtar
+Gap Open Penalty:	-8.000000
+Gap Extend:		-2.000000
+Score Threshold		50.000000
+Energy Threshold	-5.000000 kcal/mol
+Scaling Parameter:	4.000000
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Read Sequence:hsa-miR-483-3p  MIMAT0002173(21 nt)
+Read Sequence:CTGF  3'UTR(1102 nt)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Performing Scan: hsa-miR-483-3p vs CTGF
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+   Forward:	Score: 115.000000  Q:2 to 20  R:257 to 275 Align Len (18) (61.11%) (66.67%)
+
+   Query:    3' uuCUGCCCUCCUCUCCUCACu 5'
+                  |:|   ||  ||| |||| 
+   Ref:      5' gtGGCTTTAG--GAGCAGTGg 3'
+
+   Energy:  -15.320000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	115.00	-15.32	0.00	0.000000e+00	2 20	257 275	18	61.11%	66.67%
+
+
+   Forward:	Score: 109.000000  Q:2 to 17  R:393 to 415 Align Len (18) (66.67%) (66.67%)
+
+   Query:    3' uucugCCCUCCUC--UCCU-CACu 5'
+                     | ||  ||  |||| ||| 
+   Ref:      5' ccccaGTGA-CAGCTAGGATGTGc 3'
+
+   Energy:  -9.110000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	109.00	-9.11	0.00	0.000000e+00	2 17	393 415	18	66.67%	66.67%
+
+
+   Forward:	Score: 108.000000  Q:2 to 9  R:1 to 13 Align Len (8) (87.50%) (87.50%)
+
+   Query:    3' uucugcccuccucUC-CUCACu 5'
+                             || ||||| 
+   Ref:      5' ---------agccAGAGAGTGa 3'
+
+   Energy:  -10.790000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	108.00	-10.79	0.00	0.000000e+00	2 9	1 13	8	87.50%	87.50%
+
+
+   Forward:	Score: 105.000000  Q:2 to 14  R:831 to 855 Align Len (16) (68.75%) (75.00%)
+
+   Query:    3' uucugcccUCCUCUCC----UCACu 5'
+                        |||:||||    |||| 
+   Ref:      5' gtttgcaaAGGGGAGGCATCAGTGt 3'
+
+   Energy:  -18.100000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	105.00	-18.10	0.00	0.000000e+00	2 14	831 855	16	68.75%	75.00%
+
+
+   Forward:	Score: 100.000000  Q:2 to 7  R:916 to 936 Align Len (5) (100.00%) (100.00%)
+
+   Query:    3' uucugcccuccucucCUCACu 5'
+                               ||||| 
+   Ref:      5' cctttattaaaaactGAGTGa 3'
+
+   Energy:  -7.850000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	100.00	-7.85	0.00	0.000000e+00	2 7	916 936	5	100.00%	100.00%
+
+
+   Forward:	Score: 100.000000  Q:2 to 7  R:1006 to 1026 Align Len (5) (100.00%) (100.00%)
+
+   Query:    3' uucugcccuccucucCUCACu 5'
+                               ||||| 
+   Ref:      5' cagtttatttgttgaGAGTGt 3'
+
+   Energy:  -8.050000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	100.00	-8.05	0.00	0.000000e+00	2 7	1006 1026	5	100.00%	100.00%
+
+
+   Forward:	Score: 96.000000  Q:2 to 14  R:867 to 889 Align Len (15) (66.67%) (66.67%)
+
+   Query:    3' uucugcccUCCUCUCCU---CACu 5'
+                        |||  ||||   ||| 
+   Ref:      5' tgatttctAGG-TAGGAAATGTGg 3'
+
+   Energy:  -11.050000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	96.00	-11.05	0.00	0.000000e+00	2 14	867 889	15	66.67%	66.67%
+
+
+   Forward:	Score: 91.000000  Q:3 to 20  R:273 to 301 Align Len (25) (56.00%) (60.00%)
+
+   Query:    3' uuCUGCCC----UC--CUCUCC--UCAcu 5'
+                  |: |||    ||  || |||  |||  
+   Ref:      5' tgGGAGGGTACCAGCAGAAAGGTTAGTat 3'
+
+   Energy:  -16.530001 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	91.00	-16.53	0.00	0.000000e+00	3 20	273 301	25	56.00%	60.00%
+
+
+   Forward:	Score: 86.000000  Q:3 to 19  R:110 to 130 Align Len (16) (68.75%) (75.00%)
+
+   Query:    3' uucUGCCCUCCUCUCCUCAcu 5'
+                   || ||:||| | || |  
+   Ref:      5' ctaACTGGGGGAAAAGATTcc 3'
+
+   Energy:  -9.070000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	86.00	-9.07	0.00	0.000000e+00	3 19	110 130	16	68.75%	75.00%
+
+
+   Forward:	Score: 83.000000  Q:2 to 20  R:528 to 553 Align Len (23) (56.52%) (60.87%)
+
+   Query:    3' uuCUGCCCUCCU---CUCC--UCACu 5'
+                  ||| |||  :   | ||  |||| 
+   Ref:      5' taGACTGGACAGCTTGTGGCAAGTGa 3'
+
+   Energy:  -14.790000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	83.00	-14.79	0.00	0.000000e+00	2 20	528 553	23	56.52%	60.87%
+
+
+   Forward:	Score: 82.000000  Q:3 to 11  R:420 to 443 Align Len (11) (72.73%) (72.73%)
+
+   Query:    3' uucugcccuccUCUC---CUCAcu 5'
+                           ||||   ||||  
+   Ref:      5' tccagccatcaAGAGACTGAGTca 3'
+
+   Energy:  -7.190000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	82.00	-7.19	0.00	0.000000e+00	3 11	420 443	11	72.73%	72.73%
+
+
+   Forward:	Score: 81.000000  Q:2 to 10  R:181 to 201 Align Len (8) (75.00%) (75.00%)
+
+   Query:    3' uucugcccuccuCUCCUCACu 5'
+                            || || || 
+   Ref:      5' agacactggtttGAAGAATGt 3'
+
+   Energy:  -7.920000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	81.00	-7.92	0.00	0.000000e+00	2 10	181 201	8	75.00%	75.00%
+
+
+   Forward:	Score: 68.000000  Q:2 to 7  R:16 to 36 Align Len (5) (80.00%) (80.00%)
+
+   Query:    3' uucugcccuccucucCUCACu 5'
+                               || || 
+   Ref:      5' gacattaactcattaGACTGg 3'
+
+   Energy:  -6.790000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	68.00	-6.79	0.00	0.000000e+00	2 7	16 36	5	80.00%	80.00%
+
+
+   Forward:	Score: 68.000000  Q:2 to 7  R:354 to 374 Align Len (5) (80.00%) (80.00%)
+
+   Query:    3' uucugcccuccucucCUCACu 5'
+                               | ||| 
+   Ref:      5' agaaggaaaattttaGCGTGc 3'
+
+   Energy:  -5.140000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	68.00	-5.14	0.00	0.000000e+00	2 7	354 374	5	80.00%	80.00%
+
+
+   Forward:	Score: 64.000000  Q:1 to 6  R:197 to 222 Align Len (10) (40.00%) (50.00%)
+
+   Query:    3' uucugcccuccucuccUCACU----- 5'
+                                ||||:     
+   Ref:      5' aatgttaagacttgacAGTGGAACTA 3'
+
+   Energy:  -9.300000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	64.00	-9.30	0.00	0.000000e+00	1 6	197 222	10	40.00%	50.00%
+
+
+   Forward:	Score: 52.000000  Q:1 to 7  R:1006 to 1047 Align Len (27) (18.52%) (18.52%)
+
+   Query:    3' uucugcccuccucucCUCACU--------------------- 5'
+                               |||||                      
+   Ref:      5' cagtttatttgttgaGAGTGTGACCAAAAGTTACATGTTTGC 3'
+
+   Energy:  -10.900000 kCal/Mol
+
+Scores for this hit:
+>hsa-miR-483-3p	CTGF	52.00	-10.90	0.00	0.000000e+00	1 7	1006 1047	27	18.52%	18.52%
+
+Score for this Scan:
+Seq1,Seq2,Tot Score,Tot Energy,Max Score,Max Energy,Strand,Len1,Len2,Positions
+>>hsa-miR-483-3p	CTGF	1408.00	-167.90	115.00	-18.10	1	21	1102	 256 392 0 830 915 1005 866 272 109 527 419 180 15 353 196 1005
+Complete
+
+Scan Complete
+

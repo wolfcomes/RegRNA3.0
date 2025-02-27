@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rhofold
+Version: 0.0.1
+Summary: rhofold
+Home-page: 
+Author: 
+Author-email: 
+Keywords: artificial intelligence,attention mechanism,rna structure prediction
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE

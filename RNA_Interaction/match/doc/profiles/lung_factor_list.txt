@@ -1,0 +1,114 @@
+Factor Accession No.	Factor Name	Factor Species
+T00029	AP-1	human, Homo sapiens
+T00030	AP-1	monkey, Cercopithecus aethiops
+T00031	AP-1	rat, Rattus norvegicus
+T00032	AP-1	mouse, Mus musculus
+T01115	AP-1	hamster
+T01156	AP-1	gibbon ape, Hylobates lar
+T00968	ATF-1	human, Homo sapiens
+T01304	ATF-1	mouse, Mus musculus
+T00167	ATF-2	human, Homo sapiens
+T00065	B-Myb	human, Homo sapiens
+T01587	B-Myb	mouse, Mus musculus
+T00131	c-Jun	mouse, Mus musculus
+T00132	c-Jun	rat, Rattus norvegicus
+T00133	c-Jun	human, Homo sapiens
+T00135	c-Jun	hamster
+T02830	c-Jun	domestic pig, Sus scrofa
+T00104	C/EBPalpha	mouse, Mus musculus
+T00108	C/EBPalpha	rat, Rattus norvegicus
+T00105	C/EBPalpha	human, Homo sapiens
+T00216	C/EBPgamma	mouse, Mus musculus
+T04884	C/EBPgamma	human, Homo sapiens
+T02028	C/EBPgamma	rat, Rattus norvegicus
+T01382	CRE-BP2	rat, Rattus norvegicus
+T00989	CREB	mouse, Mus musculus
+T00164	CREB	rat, Rattus norvegicus
+T00163	CREB	human, Homo sapiens
+T01127	CREB	domestic pig, Sus scrofa
+T01307	CREB	hamster
+T01380	CREB	mink, Mustela vison
+T01385	CREB	cattle, Bos taurus
+T01803	CREMalpha	human, Homo sapiens
+T00174	CTF	human, Homo sapiens
+T00176	CTF-1	human, Homo sapiens
+T00175	CTF-1	domestic pig, Sus scrofa
+T02464	FOXF1	human, Homo sapiens
+T02461	FOXF1	mouse, Mus musculus
+T02465	FOXF2	human, Homo sapiens
+T02520	FOXJ1	rat, Rattus norvegicus
+T02460	FOXJ1	mouse, Mus musculus
+T02417	FOXL1	mouse, Mus musculus
+T02475	FOXL1	human, Homo sapiens
+T00292	Fra-1	mouse, Mus musculus
+T01208	Fra-1	rat, Rattus norvegicus
+T01462	Fra-1	human, Homo sapiens
+T02685	GATA-5	mouse, Mus musculus
+T02688	GATA-5	human, Homo sapiens
+T02686	GATA-6	mouse, Mus musculus
+T02689	GATA-6	human, Homo sapiens
+T02717	GATA-6	rat, Rattus norvegicus
+T00330	GLI1	human, Homo sapiens
+T04961	GLI2alpha	human, Homo sapiens
+T00331	GLI3	human, Homo sapiens
+T00335	GR	mouse, Mus musculus
+T00333	GR	rat, Rattus norvegicus
+T05076	GR	human, Homo sapiens
+T00337	GR-alpha	human, Homo sapiens
+T02512	HNF-3alpha	human, Homo sapiens
+T00371	HNF-3alpha	rat, Rattus norvegicus
+T02513	HNF-3beta	human, Homo sapiens
+T01049	HNF-3beta	rat, Rattus norvegicus
+T02344	HNF-3beta	mouse, Mus musculus
+T00375	HNF3(-like)	rat, Rattus norvegicus
+T01702	HOXA5	human, Homo sapiens
+T00377	HOXA5	mouse, Mus musculus
+T03323	HOXB2	human, Homo sapiens
+T01723	HOXB3	human, Homo sapiens
+T01724	HOXB3	mouse, Mus musculus
+T01727	HOXB4	human, Homo sapiens
+T01728	HOXB4	mouse, Mus musculus
+T01730	HOXB5	human, Homo sapiens
+T01731	HOXB5	mouse, Mus musculus
+T01977	JunB	human, Homo sapiens
+T00436	JunB	mouse, Mus musculus
+T01978	JunD	human, Homo sapiens
+T00437	JunD	mouse, Mus musculus
+T02197	JunD	rat, Rattus norvegicus
+T00539	NF-1	human, Homo sapiens
+T00533	NF-1	cat, Felis silvestris catus
+T00534	NF-1	monkey, Cercopithecus aethiops
+T00535	NF-1	rat, Rattus norvegicus
+T00537	NF-1	mouse, Mus musculus
+T01036	NF-1	hamster
+T01298	NF-1	sheep, Ovis aries
+T00538	NF-1	domestic pig, Sus scrofa
+T00856	Nkx2-1	rat, Rattus norvegicus
+T00857	Nkx2-1	human, Homo sapiens
+T00859	Nkx2-1	mouse, Mus musculus
+T02098	Nkx2-1	dog, Canis canis
+T05372	Nkx2-1	baboon, Papio hamadryas
+T04680	PR	mouse, Mus musculus
+T04681	PR	rat, Rattus norvegicus
+T00696	PR B	human, Homo sapiens
+T00697	PR B	rabbit, Oryctolagus cuniculus
+T01327	RAR-alpha	mouse, Mus musculus
+T05274	RAR-alpha	rat, Rattus norvegicus
+T05299	RAR-alpha	human, Homo sapiens
+T05370	RAR-alpha:RXR-gamma	human, Homo sapiens
+T00720	RAR-gamma	human, Homo sapiens
+T01329	RAR-gamma	mouse, Mus musculus
+T04162	RUSH-1alpha	rabbit, Oryctolagus cuniculus
+T04163	RUSH-1beta	rabbit, Oryctolagus cuniculus
+T01333	RXR-gamma	mouse, Mus musculus
+T04807	RXR-gamma	human, Homo sapiens
+T04845	RXR-gamma	rat, Rattus norvegicus
+T00754	Sp1	rat, Rattus norvegicus
+T00752	Sp1	mouse, Mus musculus
+T00753	Sp1	domestic pig, Sus scrofa
+T00757	Sp1	monkey, Cercopithecus aethiops
+T01228	Sp1	hamster
+T00759	Sp1	human, Homo sapiens
+T02453	Sp3	rat, Rattus norvegicus
+T02338	Sp3	human, Homo sapiens
+T01518	TTF-1	cattle, Bos taurus

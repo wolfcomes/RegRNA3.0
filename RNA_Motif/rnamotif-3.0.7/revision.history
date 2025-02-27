@@ -1,0 +1,554 @@
+3.0.7   2010-apr-03
+    Update grammar to work with bison 2.4.1; fixed some -Wall warnings
+
+3.0.6   2010-mar-13
+    Avoid a name collision with the getline() routine in some stdio.h headers
+
+3.0.4   2005-jan-24
+    Minor fixup to config.h to tell people to get an up-to-date version
+    of bison; plus a corresponding fix to the grammar.
+
+3.0.3	2004-apr-14
+	Added #include <malloc.h> to every source file that uses malloc(),
+	calloc(), etc.  
+
+	Also added proto or mm_regdup() to mm_regexp.h, and
+	#include mm_regexp.h to compile.c  as this might be the cause of
+	the core dump J Smith reported
+
+3.0.2	2004-mar-24
+	Added a new line #RM dfile <descr-file-name> to the header of the
+	output.  Requested by Chris Fields <cjfields@uiuc.edu>
+	
+3.0.1	2003-nov-10
+	Modified rmlex.l to treat \r as white space.
+
+	Added code to mrnamotif.c to collect worker rnamotif errors
+	and report them back to the rank-0 process using messages of
+	MT_ERROR.
+
+3.0.0	2003-jul-27
+	Modified the score section to allow "carry around" variables.  
+	This allows users to write descriptors that can remember the
+	SCORE of previous candiates which allows them to limit the output
+	to a more global "best" solution.
+
+2.4.1	2003-jun-18
+	Fixed bug in compile.c that never bothered to load float variables
+	in str-element parameter settings.  IE pairfrac=PF, where PF is a
+	float valued variable didn't do anything.  Result, the assignments
+	were skipped.
+
+	Fixed bug in compile.c that never converted between int/float in
+	parm (str-element) keywords.  
+
+	Fixed bug! This is a stretch whereby an extremely long sequence
+	would defeat the the seq. buf overflow check because the counter
+	itself overflowed!  Really.  Somebody tried to pipe a TEN BILLION
+	nt randeom seq to rnamotif and at 30,000,000 it stopped filling 
+	the buffer, but 2^31 the cnt went <0 and buffer filling restarted
+	producing ... ugly.  Now check for 32 bit in overflow in addition
+	to buffer size, so there!
+
+	Added new flag -la to rmfmt.  Acts just like -l except the single
+	ID is the ACC# instead of the LOCUS name.  Left -l in because all
+	the tests are based on it.
+
+2.4.0	2003-feb-25
+	Improved the MPI driver so that -v, -s work without other options;
+	-c works so that no search is done; -v, -s, -c do not require data.
+	Also added 2 options -pre Cmd, -post Cmd that will insert Cmd 
+	before/after the worker rnamotif cmd allowing pre/post processing
+	in the search.  -pre gets both the -fmt X values and the file
+	name.  The Cmds must be in your path.
+
+	Moved all prototypes of visible rnamotif functions to rnamot.h.
+	Fixed grammar to use a union on the parse stack to hold either
+	an int (simple values) or a parse tree.  Should be ready for 
+	64 bit addressing now!
+
+2.3.4	2003-jan-20
+	Added code to allow the user to set the size of the maximum input
+	sequence length via the -N size option.  Still defaults to 30000000.
+	Also (finally) added code to create the rev. comp in situ when the
+	user asks to search both strands
+
+2.3.3	2002-nov-29
+	added new score builtin substr() which operates on strings.
+	replaced all calls to tempnan() with mkstemp().
+	moved the long case elements in do_scl() into their own funcs.
+
+2.3.2	2002-nov-24
+	Increase line buffer size in mrnamotif.c:rn_run() so as to not split
+	any long results.
+
+	Fixed off by 1 error in the job count logic in mrnamotif.c
+
+2.3.1	2002-oct-07
+	Simplified mrnamotif.  Use MPI_Bcast() instead of MPI_Send() to
+	set up the searches.  Mapping of search db into actual files is now
+	done via the FMmark_active().
+
+2.3.0	2002-sep-26
+	mrnamotif now actually running faster than serial.  A bug in 
+	RM_getags(): atof() undeclared, resulted in optimization being
+	off for the parallel version, but on for the serial version.
+
+2.2.3	2002-sep-13
+	First parallel version: mrnamotif and MPI driver that will run
+	serrial rnamotif on a set of n/w hosts.  Supports both local and
+	distributed file systems.
+
+2.2.2	2002-aug-17
+	Added to insure that efn()/efn2() are not used on pknots or on 
+	out of bounds bp's that may be involved to do trying to compute
+	the energy of partial structures.
+
+	Resolved inconsistant declaration of rm_wdfname from char [] to
+	char *.  This was causing a very mysterious core dump in the 
+	efn_drv.c program.
+
+2.2.1	2002-aug-11
+	Added code sent by Martin Larose <larosem@IRO.UMontreal.CA> to rm2ct
+	allowing it to product either relaxed .ct files (-t rnamotif, default)
+	or strict .ct files as required by rnaviz (-t rnaviz)
+
+2.2.0	2002-jun-12
+	Moved the most basic defs (TRUE, FALSE, UNDEF, input file types) to
+	rmdefs.h to facilitate sharing dbutil.c with other rnamotif processing
+	programs
+
+	Fixed bug in FN_fgetseq() that caused it read the 1st seq line as 
+	the seq def if the def line was > id (spaces), ie, id with no def
+	and trailing spaces.
+
+2.1.4	2002-may-12
+	Added ability to read GB flat files.
+
+	Fixed bug that sometimes generated a 'syntax' error from cmdline
+	defs, ie -DN=V entries.
+
+2.1.3	2002-apr-11
+	Added new score builtin: loc() which takes a single str-element
+	paramter and returns the actual position (5' = 1) of the 1st
+	nt in that str-element.  The element must have matched a non-zero
+	len string.  The position is always wrt to the current 5' end,
+	which is reversed when the the comp. seq is searched.
+
+2.1.2	2002-mar-08
+	Fixed bug in strict2attr() that used the same attribute for both 3
+	and 5 strictness.
+
+2.1.1	2002-feb-15
+	Extended control over strict helix checking to individual ends of
+	individual helices.
+
+	Fixed bug that required that ends= be in the 1st element of a
+	structural group.
+
+2.1.0	2002-feb-06
+	Re-added, ie uncommented and updated the "strict helices" feature.
+	Set by -sh on the cmd line, it was in the original release.  This
+	feature rejets solutions where any helix could be extended into a
+	surrounding ss region.
+
+2.0.2	2002-jan-07
+	Fixed bug in optimizer that allowed right end of the search region
+	to extend past the end of the sequence.
+
+2.0.1   2001-dec-20
+	Added a section to the Users' Manual explaining the new optimizations.
+
+2.0.0	2001-dec-19
+	Added query optimization that looks for the best fixed subpattern among
+	the seq=, and if this sub pat is long enough, has a bounded prefix and
+	optimization is on, searches each seq in the DB for instances of this
+	subpattern then for each such instance seaches the appropriate
+	containing region for instances of the entire pattern.  Fast!
+
+1.7.1   2001-nov-29
+	Updated Users' Manual to include references and information about
+	efn() and efn2()
+
+1.7.0	2001-oct-29
+	First version with efn2(), a score builtin that evaluates the
+	improved, coaxial stacking Turner rules.
+
+	Fixed bug in rmfmt that failed to insert a space before multi-column
+	scores.
+
+1.6.3	2001-oct-03
+	Fixed bug in efn() that incorrectly indexed tetraloops.
+
+	Fixed bug in setupefn() that used rm_descr[] instead of 
+	rm_xdescr[] to get the ref'd descriptors.
+
+	Fixed bug in bits() that used the wrong log conversion
+	constant.
+	
+1.6.2	2001-sep-10
+	Collected all e-params used in efn() into a structure, EFNDATA_T
+	which will make it relatively easy to do DNA and T != 37 calcs.
+
+	Fixed bug (oversight) in efn() that allows for uninitialized
+	array indexes in 1x2 loops.  
+
+	Added 2d meaning of builtin fncn mismatches().  Takes 2 
+	args, a string and a pattern and evaluates the number of
+	mismatches between the string and the pattern.  Original
+	function with one argument is unchanged.
+
+1.6.1	2001-aug-24
+	Added new function bits() to the score.  Function computes the 
+	compositional complexity of a subsequence of the current match.
+	Was suggested by a reviewer who thought it might be a useful
+	proxy for `fitness'
+		
+	Redid sequence file handling, replacing fastn.c with dbutil.c
+	New code also permits pir input (ie title line between the >-line
+	and the first seq. line.)
+
+1.6.0	2001-jul-31
+	Finished first version of context.  ctx() behaves like any ss()
+	with the same parms, except they are checked after the motif has
+	been found.
+	
+1.5.98	2001-jun-29
+	Initial implementation of context.  Sites work, but score doesn't
+	Context length and sequence are not checked but stubs are in for this.
+
+1.5.3	2001-jun-03
+	Fixed bug that used too short of a buffer for RE's with 
+	many character classes.
+
+1.5.2	2001-may-31
+	Fixed that treated 0-length seqs as EOF in FN_fgetseq().
+
+1.5.1	2001-may-28
+	Fixed bug that limited RE's with mismatches to one character 
+	class.
+	Fixed bug that had the continue stmt branch to the loop test instead
+	of the loop increment.
+
+	Added code to allow break N; and continue N; where N is an integer
+	indicating the number of loops to break out of or continue.  Optional
+	in which case N == 1.  N must be in [1,LD] where LD is the loop depth.
+
+1.5.0	2001-apr-23
+	First public release.  No changes from 1.4.3, but now includes a 
+	user manual!
+
+1.4.3	2001-mar-28
+	Fixed bug (used =, instead ==) in a loop that blitzed the bp array
+	during an eval of efn().  Apparantly only occuring rarely as it was
+	caught by the pknot test code that checks to see if a substructure
+	is improperly nested.  Hurrah for defensive programming!
+
+	Added new filter program rmprune that removes some redundant hits
+	from the output.  Redundant hits are those that have variable
+	length stem and the hits differ only the stem being shorter.  Only
+	the longest such hit is kept.
+
+1.4.2	2001-feb-07
+	Reactivated the heartbeat: -Dshow_progress=N, N > 0, will write
+	a line containing the entry count and entry sid for ecnt % N == 0.
+
+	Made some small changes to rmfmt for use on a farm.  Added options to
+	allow user to set the temp dir for the temp files as well as set an
+	upper bound on the size of the file that will be sorted for -l.
+
+	Modified command line processing to permit use of multiple DB's for
+	rnamotif:
+
+		rnamotif -descr X.descr nt.fastn est.fastn ...
+
+1.4.1	2001-jan-18
+	Added code to facilitate use on a farm.  In particular allow the
+	user to specify the expanded (ie included and cmd-line defs) output
+	file which will be recompiled on the farms boxes.  Use -xdescr 
+	instead of -descr to indicate no preprocessing.
+
+1.4.0	2000-dec-17
+	Added include capabilities to permit file sharing.  Includes 
+	are indicated with #include 'xxx' lines in the source and may
+	be nested to a depth (including the 1st file) of 10.  The
+	argument to the include should be a single or angle (<>) quoted
+	string, as to be consistant double quoted strings are considered
+	to be sequences and any IUPAC chars are expanded.
+
+	Following the C example, 0 or more -Idir arguments may be
+	placed on the command line are the names of directories to be
+	searched in left to right order to find the include files.
+
+	Including is handled by a separate 1st pass over the original
+	source and it along with the includes are writen to a tmp file
+	which is then rescanned by lex/yacc.  Line/file info from the
+	original source is saved as # line N 'xxx' directives.  This
+	mod also allowed the command line defs to be interpolated just
+	before the descr res. word giving the correct semantics that
+	command line defs take effect before any searching.
+
+1.3.4	2000-nov-29
+	Added new builtin sprintf() which works like the awk version.
+	It takes 1+ args, the first of which is a format, and the 2 and
+	subsequent are arguments to be `interpolated' into the format.
+	It returns a character string with is usually assigned to the
+	predefined variable SCORE.
+
+	Also fixed rmfmt to deal with >1 score columns in light of the
+	new ability of rnamotif to create such files.  A single numeric
+	SCORE behaves like the previous versions, >1, but fixed score
+	fields is sorted on name & position only, and >1 but variable is
+	not sorted.
+
+1.3.3	2000-nov-15
+	Several (tricky) modifications done to permit users to set/reset
+	parameters from the cmd line.  The trick was to get the parser to
+	look at the sequence of cmd line defs as several potential defs,
+	like pairsets are rather complicated.  The solution was to collect
+	the defs into a file that is scanned after the descriptor is scanned,
+	this having the salutory effect of making cmd-line defs supercede
+	the defs in the descr.  To this however, required making a input
+	file consisting of entirely a parms section legal, which was done,
+	but covered by insisting that the actual descriptor file have a 
+	descriptor.  A side effect of all of this was to get about 2/3 of
+	the way to allowing includes.
+
+	Fixed oversight in compile.eval() that disallowed negates!
+
+1.3.2	2000-oct-29
+	Fixed bug that caused core dump when using empty sequence "".  
+	Problem didn't affect strings ('').
+
+	Implemented string concatentation (+, +=).
+
+1.3.1	2000-oct-11
+	Fixed memory leak that lost the memory holding the tag in a 
+	tagged stref (eg h5['h1'])
+
+	Replaced interated efn() with a nice clean recursive version.
+
+	Added code to activate using $, expr's inside struct elements in
+	scoring rules.
+
+1.3.0	2000-sep-26
+	Fixed the memory leak in do_ior() and do_and() that lost the
+	memory of a string value arg: if( s1 && s2 ) or if( s1 || s2 )
+	where s1 and s2 are strings, the memory holding the string 
+	value is lost after the op. 
+
+1.2.99	2000-sep-10
+	Added code that applies the turner energy rules to the selected
+	substructure.  The turner data is distribute with rnamotif in
+	the subdirectory ../efndata.  rnamotif first looks to the value
+	of the parm `efn_datadir' and if not '' uses this value as the
+	location of the Turner data.  However, if this value is '', then
+	rnamotif uses the value of the env. var EFNDATA.  If this is not
+	set, rnamotif prints a message that it can't find the efndata,
+	and any call to efn() returns a 0.
+
+	Turner rules are really only for wc+gu, although it is possible
+	to say that any two base are paired.  However, this is dangerous,
+	and probably incorrect as well, and in some case will return an
+	`infinite' value of 160.0 (?)  Nonetheless, rnamotif, provides
+	two additional symbols `efn_usestdbp' and `efn_stdbp'. The first
+	is an int with default value 1, and if !0 says tha the the proposed
+	base pair must be in the pairset efn_stdbp in order to consider it
+	paired for efn().  If efn_usestdbp is 0, then base pairs are set
+	according to the the pairset associated with the current helix.
+	Again, if this pairset is not wc or wc+gu, you are playing with fire
+	and the results are likely to be wrong!
+
+	Finally, a small, but useful change.  I added a new option to the
+	cmd line: -s which prints in the names of the global parms and their
+	default values:
+
+		rnamot -s
+		PARMS:  16 global symbols.
+		wc               = { "a:u", "c:g", "g:c", "u:a" }
+		gu               = { "g:u", "u:g" }
+		 .
+		 .
+		 .
+		efn_usestdbp     = 1
+		efn_stdbp        = { "a:u", "c:g", "g:c", "g:u", "u:a", "u:g" }
+
+	and then exits with value 0. (Normal)  I did this because I could
+	remember all those parameters and got tired of haveing to look at
+	the source just to change something!
+ 
+1.2.7	2000-jul-17
+	Fixed faulty logic that incorrectly evaluated the range of an RE,
+	ie, the \{n,m\} construct as its maxlen.  Ridid the code that 
+	found the lengths of the elements from the various *len and seq
+	parameters.
+
+1.2.6	2000-jun-13
+	Added code to accept 0-length W/C helices. Since a countably
+	infinite number of such helices surround every base, there use
+	must be judicious or you are going to find all sorts of stuff!
+
+1.2.5	2000-jun-11
+	Fixed bug that treated '\0' as a legit mismatch in string compares.
+
+	Redid rmfmt to produce alignements of rnamot output in fastn format
+	if the -a swicth is set. 
+
+1.2.4	2000-apr-27
+	Fixed bugs in pairfrac calc's that 1) created the mplim 1 less than
+	it was supposed to be and 2) had problems with float division in
+	which 1.*(hl-mpr)/hl is NOT pairfrac even thought mathematically it
+	is.  Fixed 1 with addition of .5 before assignment to int mplim and
+	fixed 2 by checking for < pairfrac - EPS (1e-6)
+
+	Redid score section to permit indexing over all descriptors:
+
+		for( i = 1; i <= NSE; i++ )
+			SCORE += mispairs( ss[i] );
+
+	Although the original implementation didn't permit things like
+	h5['name',p,l], based on a comment from Ranga, put it in. 
+
+1.2.3	2000-mar-31
+	Fixed bug in fastn.c that failed to convert u's in the input to t's.
+
+1.2.2	2000-mar-28
+	Implemented <pair> in <pairset>:
+	
+		s = h5[1,i,1]:h3[3,len-i+1,1] in {"g:c","c:g"};
+
+	These two operations, : and in were the only op's unimplemented
+	from the original rnamotif design, thus this release completes
+	that design (Hoorah!)
+
+	Also added new operation of [] which is an indexed ref to the
+	substring of the current match that is associated with the 
+	specified descriptor. One to three parameters are allowed which
+	are the id, (a string or int), the pos (int valued) and the lenght,
+	also (int valued.)  One parameter is id, two is id,pos and three
+	is id,pos,len. h5[1] is the entire matrch, h5[1,2] is the string
+	from 2 to its end and h5[1,2,3] is 3 chars beginnin at 2.
+
+	Also removed from the grammar the implied list of strings:
+
+		s = e1:e2:...:eN;
+
+	which can now only occur in the context of a site, either in the
+	site section or in the score section.
+
+1.2.1	2000-mar-19
+	Replaced incorrect greedy match_wchlx() that returned only the
+	longest helix in the interval [minlen,maxlen] with correct code
+	that returns a vector of all helices in the interval [minlen,maxlen].
+
+	Extended input language to accept single quote string 'xxx' as well
+	as double quote strings "xxx".  Single quote strings are uninterpreted
+	except for the usual C escapes (\t,\n,\f,\',\ooo, etc).  Double quote
+	strings however are DNA-sequences and all are forced to lower, all u's
+	are converted to t's and the iupac codes are converted into the 
+	equivalent RE's (n = .; r = [ag], etc).  
+
+	Implemented the match/don't match operator in the score section.
+	Changed the grammar so that the in operator is always site in pairset,
+	so it looks just like site.  This operator is not yet implemented.
+
+1.2.0   2000-feb-09
+	Removed restriction on pknots that limited them to two helices. This
+	required modifications to both the compile phase (compile.c) and
+	the search phase (find_motif.c)  The new search algorithm fixes an
+	(apparantly) overlooked bug in the old search algorithm that joined
+	the loop over the 3' end of the 1st helix with the 3' end of the 
+	region in which the pknot must be found.  The new algorithm correctly
+	treats these loops as independent; as a result many more pknots are
+	found.
+
+	Also redid fastn.c to read fastn records char by char rather than
+	line by line.  The original line by line method incorrectly handled
+	defintion lines that were longer than the line buf.  The new fastn.c
+	routine adds chars from the def line to line buf until line buf is
+	full, then discards the rest of the def line with a message to stderr
+	that the def line was XXXX chars long and was truncated to TTTT chars.
+
+	Fixed bug that considered the descriptor score indexes to be on the
+	interval [0,n_descr) to put them on the correct interval [1,n_descr]
+
+	Finally, added new builtin symbol 'show_progress' which is normally
+	0, but when set to 1 will print the name of each entry as it is read
+	by the main loop.  I added it to make sure that the new pknot finder
+	which is slower than the old one was actually working!
+
+1.1.1	1999-nov-08
+	Modified helix finding codes to allow a helix to begin and/or end with
+	a mismatch.  This is normally off, but may be turned on at two levels:
+	If the *_ends variable (* = {wc, phlx, tr, qu}) is set its value becomes
+	the default end condition for all helices of the specified type.  The
+	values of these variables are the strings "pp", "pm", "mp" and "mm"
+	(case doesn't matter) which mean 5'&3' paired; 5' paired, 3' mispair OK;
+	5' mispair OK, 3' paired; and mispairs OK at either or both 5'&3'.  Note
+	that mispairs are not required, just permitted.  To select for a mispair
+	at that position use the score section.  The default value is "pp".  In
+	addition, the ends may be specified at the str-el level using the ends=
+	parameter.  This uses the same values as the global symbols, but the
+	scope is limited to that str-el.
+
+1.1.0	1999-oct-23
+	Added builtins mispairs(), mismatches() and paired() to score
+	system.
+
+	Added new variables NSE (number of structure elements) and SCORE.
+	NSE is used to loop over the descr elements.
+	SCORE is used to hold the value of the candidate's score and is
+	printed by print_match() when the candidate is acccepted.
+
+1.0.5	1999-oct-08
+	Added code to implement pairfrac to the p*, h*, t* and q*
+	structure elements.
+
+	First released version that has a working score system.  Scoring
+	system can examine subseqeunces of the sequences that match the
+	descriptor elements for the current match candidate.
+
+1.0.4	1999-sep-28
+	Added float parms pairfrac & matchfrac to strels.  Reorganized 
+	eval() to use the scheme (T_IJ()) used in score().
+
+	Fixed bug that was setting the offset to the matched string in the
+	3' part of wc-hlx to the 3' most base instead of the 5' most base.
+
+1.0.3	1999-sep-10
+	Added awk-like score section to the grammar & lex input.  Currently
+	score takes no action.
+
+	Changed input slightly:
+		1. the = between the sites and the pairset is now required
+		   to be the res. word "in"
+		2. parameter defs must now end with semicolon.
+
+	Fixed bug that was checking if the outermost w/c helix could be
+	extended.
+
+	Fixed bug that assumed no spaces between the > and the id in a fastn
+	file.
+
+1.0.2	1999-sep-03
+	Added code to section that checks for seq= matches that converts
+	any u's in the input data to t's allowing it work on rna as well as
+	dna data.
+
+	fixed (apparantly) unreported bug that stopped checking an sites,
+	as the chk_site() code was called by chk_motif() which was commented
+	out as chk_motif() was too strict
+
+1.0.1	1999-aug-27
+	Reformatted output for fastn input to include 2 lines
+	for each hit. Line 1 is the `def' line from the fastn
+	file (must begin with >) and line 2 is the sequence
+	as before except that the name is now the 1st word
+	minus the > of the fastn line
+
+	Also fixed bug in find_triplex() that computed the 
+	length of the 2d interior as 1 too small.
+
+1.0.0	1999-aug-03
+	First working version that included all the features. 
+	

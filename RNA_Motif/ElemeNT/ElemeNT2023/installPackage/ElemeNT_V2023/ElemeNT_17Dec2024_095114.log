@@ -1,0 +1,38 @@
+ElemeNT command line tool V2023
+local date and time: Tue, 17 Dec 2024, 09:51:14
+
+input: /home/RegRNA/public_html/Results/1734400274.input.fas
+output: /home/RegRNA/public_html/Results/1734400274.CorePromoter.result
+run on anti-sense seq: no
+extract coordinates: no
+TSS at position: 0
+smoothing window (bp): 200
+GC content (%): 50
+
+processed elements and cutoff scores
+hInr: 0.7
+MTE: 8.5
+bridge1: 0.78
+bridge2: 0.78
+DPE: 0.7
+dInr: 2.3
+GAGA: 6.7
+BREu: 5.8
+TATA: 6.0
+BREd: 4.2
+XCPE1: 4.0
+XCPE2: 6.0
+Motif1: 11.0
+hTCT: 6.0
+dTCT: 9.5
+PB: 7.6
+BBCABW: 3.6
+
+processed successfully: >testSeq
+
+1 sequences processed
+
+Please cite the following paper if you found this program useful- 
+ElemeNT: A Computational Tool for Detecting Core Promoter Elements.
+Sloutskin A, Danino YM, Orenstein Y, Zehavi Y, Doniger T, Shamir R, and Juven-Gershon T.
+Transcription (2015)

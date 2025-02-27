@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>UTRSite :: Signal Manager :: View</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="ROBOTS" content="ALL" />
+<!-- #GIORGIO -->
+	<meta name="author" content="Giorgio Grillo">
+	<meta name="description" content="UTRSite collection of functional sequence patterns located in 5' or 3' UTR sequences">
+	<meta name="keywords" content="utrdb bioinformatic database"> 
+<!-- -->
+    <meta name="Copyright" content="Copyright (c) 2005 Seagull Framework, Demian Turner, and the respective authors" />
+    <meta name="Rating" content="General" />
+    <meta name="Generator" content="Seagull Framework v0.4.1" />
+    <link rel="help" href="http://seagull.phpkitchen.com/docs/" title="Seagull Documentation." />
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/style.php" />
+
+    
+<script type="text/javascript"> <!--
+        var SGL_JS_WEBROOT="http://www2.ba.itb.cnr.it/UTRSite";
+        var SGL_JS_WINHEIGHT=500;
+        var SGL_JS_WINWIDTH=600;
+        var SGL_JS_SESSID="";
+        var SGL_JS_CURRURL="/UTRSite/index.php/UTRSite signal/Signal/action/view/frmUTRSiteID/U0004/pageID/6/";
+    
+//--> </script>
+
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/mainPublic.js"></script>
+
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/UTRSite/UTRSite.js"></script>
+        <script type="text/javascript" src="http://www2.ba.itb.cnr.it/UTRSite/js/overLIB/overlib.js"></script>
+    
+    
+<!-- #GIORGIO -->
+	<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<!-- -->
+
+<!-- /////////////////////////////////////  START NAVIGATION STYLESHEET  //////////////////////////////-->
+
+    <link rel="stylesheet" type="text/css" href="http://www2.ba.itb.cnr.it/UTRSite/themes/default/css/SglDefault_TwoLevel.css" />
+
+<!-- /////////////////////////////////////  END NAVIGATION STYLESHEET   //////////////////////////////-->
+</head>
+
+<body onload="" style="">
+<!-- Logo and header -->
+<div id="sgl-header">
+        <div id="sgl-header-left">
+        <img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/UTRSite.png" alt="UTRSite Logo" />
+    </div>
+    
+    <div id="sgl-header-right">
+     
+        <div id="headerUserInfo">
+        user: <span class="guest">guest</span>
+        </div>
+        <div id="headerLogAction">
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login"><img src="http://www2.ba.itb.cnr.it/UTRSite/themes/default/images/logout.gif" alt="login" /></a>
+        <a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/user/login/" title="login">login</a>
+        </div>
+      <!-- -->
+    </div>
+</div>
+
+<!-- tab navigation -->
+<div id="sgl-nav">
+    
+<ul><li><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/default/">Home</a></li>
+<li id="current"><a href="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite signal/Signal/">Signal Manager</a></li>
+</ul>
+</div>
+<!-- Main layout -->
+<div id="sgl-main">
+<!-- left column -->
+<div id="sgl-blocks-left">
+
+
+
+</div>
+   
+<!-- middle column -->
+<!-- #GIORGIO -->
+<div id="sgl-blocks-middle" style="margin-left:0;margin-right:0;">
+<!-- -->
+<form action="" name="frmSignal" method="post" id="frmSignal">
+    <input name="action" type="hidden" value="" />
+
+    <h1 class="pageTitle">Signal Manager :: View</h1>
+    
+    <table cellspacing="1" cellpadding="5" style="width:auto">
+        <tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>General Information</th>
+        </tr>
+        <tr>
+            <td class="fieldName">ID</td>
+            <td class="fieldValue" colspan="2" style="font-weight:bold;">U0004</td>
+        </tr>
+
+        
+        <tr></tr>
+        <tr>
+            <td class="fieldName">Creation Date</td>
+            <td class="fieldValue" colspan="2">30 July 1997</td>
+        </tr>        <tr>
+            <td class="fieldName">Updating Date</td>
+            <td class="fieldValue" colspan="2">10 August 2006</td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td class="fieldName">Standard Name</td>
+            <td class="fieldValue" colspan="2">Selenocysteine Insertion Sequence - type 2 (SECIS2)</td>
+        </tr>        <tr>
+            <td class="fieldName">UTRSite Pattern</td>
+                        <td class="fieldValue" colspan="2"><pre>r1={au,ua,gc,cg,gu,ug}
+p1=4...19
+p2=2...9 a
+ugan
+p3=8...12  p3:(((^rr | ^mc) | ^su) 6...10 )
+p4=0...3 p5=aav p6=11...14 p6:(0...1 p7=2...7 3...6 r1~p7 0...3$)
+(((r1~p3[1,0,0] | r1~p3[1,1,0]) | r1~p3[1,0,1]) | r1~p3[0,1,1])
+ngan
+p10=2...9
+r1~p1
+</pre></td>
+                    </tr>                <tr>
+            <td class="fieldName">Random Expectation</td>
+            <td class="fieldValue" colspan="2">0.0 hits/kb</td>
+        </tr>
+        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Taxonomy</th>
+        </tr>
+        <tr>
+            <td class="fieldName">UTR Region</td>
+            <td class="fieldValue" colspan="2">3'</td>
+        </tr>        <tr>
+            <td class="fieldName">Taxon Range</td>
+            <td class="fieldValue" colspan="2">
+                                    Metazoa                            </td>
+        </tr>        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Description</th>
+        </tr>
+        <tr>
+            <td class="fieldName" rowspan="2">Description</td>
+            <td class="fieldValue" colspan="2">Specific incorporation of selenocysteine in selenoproteins is directed 
+by UGA codons residing within the coding sequence of the corresponding mRNAs. 
+Translation of UGA, usually a termination codon, as selenocysteine requires 
+a conserved stem-loop structure called</td>
+        </tr>        <tr>
+            <td class="fieldValue" colspan="2">
+                            </td>
+        </tr>        <tr>
+            <td class="fieldName">Image</td>
+            <td class="fieldValue" colspan="2"><img style="border: 1px solid" src="http://www2.ba.itb.cnr.it/UTRSite/index.php/UTRSite image/Image/action/view/frmMode/db/frmUTRSiteID/U0004/" /></td>
+        </tr>
+        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Features</th>
+        </tr>
+        <tr>
+            <td class="fieldName">Feature Key</td>
+            <td class="fieldValue" colspan="2">SECIS2</td>
+        </tr>        
+        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Database Cross-references</th>
+        </tr>        <tr>
+            <td class="fieldName">Link</td>
+            <td style="padding:0" colspan="2">
+                <table width="100%" cellspacing="1" cellpadding="5">
+                    <tr>
+                        <td class="subfieldValue" style="width:120px">
+                            <a href="http://www.sanger.ac.uk/cgi-bin/Rfam/getacc?RF00031" target="Link">RFAM: RF00031</a>                        </td>
+                    </tr>                </table>
+            </td>
+        </tr>
+        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Transcript(s) / Gene(s)</th>
+        </tr>                    <tr>
+                <td class="fieldName">UTR(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">3'UTR in Homo sapiens deiodinase, iodothyronine, type II (DIO2), transcript variant 1, mRNA.</td>
+                            <td class="subfieldValue" style="width:150px">Homo sapiens</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://utrdb.ba.itb.cnr.it/getutr/3HSAR026618" target="Info">UTRef: 3HSAR026618</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>                    <tr>
+                <td class="fieldName">Transcript(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">Homo sapiens deiodinase, iodothyronine, type II (DIO2), transcript variant 1, mRNA.</td>
+                            <td class="subfieldValue" style="width:150px">Homo sapiens</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nuccore&amp;id=NM_013989" target="Info">RefSeq: NM_013989</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>                    <tr>
+                <td class="fieldName">Gene(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">Type II iodothyronine deiodinase (EC 1.97.1.10) (Type-II 5'deiodinase) (DIOII) (Type 2 DI) (5DII)</td>
+                            <td class="subfieldValue" style="width:150px">Homo sapiens</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://www.ensembl.org/Homo_sapiens/searchview?species=all&amp;idx=All&amp;q=ENSG00000211448" target="Info">ENSEMBL: ENSG00000211448</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>                <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>Protein(s)</th>
+        </tr>                    <tr>
+                <td class="fieldName">Binding Protein(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">SECIS binding protein 2 (SECISBP2)</td>
+                            <td class="subfieldValue" style="width:150px">Homo sapiens</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+newId+[uniprot-AccNumber:Q96T21]+-e" target="Info">UniProt: Q96T21</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                                            </td>
+                        </tr><tr>
+                            <td class="subfieldValue" style="width:auto">Ribosomal protein L30</td>
+                            <td class="subfieldValue" style="width:150px">Homo sapiens</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+newId+[uniprot-AccNumber:P04645]+-e" target="Info">UniProt: P04645</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>                    <tr>
+                <td class="fieldName">Interactor(s) of Binding Protein(s)</td>
+                <td style="padding:0" colspan="2">
+                    <table width="100%" cellspacing="1" cellpadding="5">
+                        <tr>
+                            <td class="subfieldName">Description</td>
+                            <td class="subfieldName">Species</td>
+                            <td class="subfieldName">Link</td>
+                            <td class="subfieldName">Ref.</td>
+                        </tr>
+                        <tr>
+                            <td class="subfieldValue" style="width:auto">eukaryotic elongation factor, selenocysteine-tRNA-specific (EEFSEC)</td>
+                            <td class="subfieldValue" style="width:150px">Homo sapiens</td>
+                            <td class="subfieldValue" style="width:130px">
+                                <a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-id+newId+[uniprot-AccNumber:P57772]+-e" target="Info">UniProt: P57772</a>                            </td>
+                            <td class="subfieldValue" style="width:30px">
+                                                            </td>
+                        </tr>                    </table>
+                </td>
+            </tr>        
+                
+        <tr>
+            <tr></tr>
+            <th class="fieldHeader" colspan="3"><span>::</span>References</th>
+        </tr>        <tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref1"></a>
+                    [1]                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Walczak R., Westhof E., Carbon P. and Krol A.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">A novel RNA structural motif in the selenocysteine insertion element of eukaryotic selenoprotein mRNAs</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">RNA 2: 367-379</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1996</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref2"></a>
+                    [2]                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Walczak R., Carbon P. and Krol A.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">An essential non-Watson-Crick base pair motif in 3' UTR to mediate selenoprotein translation</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">RNA 4, 74-84</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1998</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref3"></a>
+                    [3]                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Fagegaltier D, Lescure A, Walczak R, Carbon P, Krol A.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Structural analysis of new local features in SECIS RNA hairpins</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Nucleic Acids Res. 28, 2679-89</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2000</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref4"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=11839807&amp;dopt=abstract" target="Reference">[4]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Korotkov KV, Novoselov SV, Hatfield DL, Gladyshev VN.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Mammalian selenoprotein in which selenocysteine (Sec) incorporation is supported by a new form of Sec insertion sequence element.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Mol Cell Biol. 22(5):1402-11</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2002</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref5"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=12110581&amp;dopt=abstract" target="Reference">[5]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Novoselov SV, Rao M, Onoshko NV, Zhi H, Kryukov GV, Xiang Y, Weeks DP, Hatfield DL, Gladyshev VN.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Selenoproteins and selenocysteine insertion system in the model plant cell system, Chlamydomonas reinhardtii.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">EMBO J. 21(14):3681-93.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2002</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref6"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=10637234&amp;dopt=abstract" target="Reference">[6]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Copeland PR, Fletcher JE, Carlson BA, Hatfield DL, Driscoll DM.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">A novel RNA binding protein, SBP2, is required for the translation of mammalian selenoprotein mRNAs.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">EMBO J. 19(2):306-14.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2000</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref7"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=12370018&amp;dopt=abstract" target="Reference">[7]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Lescure A, Fagegaltier D, Carbon P, Krol A.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Protein factors mediating selenoprotein synthesis.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Curr Protein Pept Sci. 3(1):143-51.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2002</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref8"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=12403468&amp;dopt=abstract" target="Reference">[8]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Allmang C, Carbon P, Krol A.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">The SBP2 and 15.5 kD/Snu13p proteins share the same RNA binding domain: identification of SBP2 amino acids important to SECIS RNA binding.
+</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">RNA. 2002 8(10):1308-18.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2002</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref9"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=15821744&amp;dopt=abstract" target="Reference">[9]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Chavatte L, Brown BA, Driscoll DM. 	</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Ribosomal protein L30 is a component of the UGA-selenocysteine recoding machinery in eukaryotes.
+</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Nat Struct Mol Biol. 2005 12(5):408-16. .</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2005</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref10"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=12095701&amp;dopt=abstract" target="Reference">[10]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Lescure A, Allmang C, Yamada K, Carbon P, Krol A. 	</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">cDNA cloning, expression pattern and RNA binding analysis of human selenocysteine insertion sequence (SECIS) binding protein 2.
+</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Gene. 2002 291(1-2):279-85.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2002</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref11"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=12775843&amp;dopt=abstract" target="Reference">[11]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Kryukov GV, Castellano S, Novoselov SV, Lobanov AV, Zehtab O, Guigo R, Gladyshev VN. 	</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Characterization of mammalian selenoproteomes.
+</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">Science. 300(5624):1439-43.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2003</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref12"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=11265756&amp;dopt=abstract" target="Reference">[12]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Tujebajeva RM, Copeland PR, Xu XM, Carlson BA, Harney JW, Driscoll DM, Hatfield DL, Berry MJ.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Decoding apparatus for eukaryotic selenocysteine insertion.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">EMBO Rep. 1(2):158-63.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">2000</td>
+             </tr>
+        </tr><tr>
+            <tr>
+                <td class="fieldName">ID</td>
+                <td class="fieldValue" colspan="2">
+                    <a name="Ref13"></a>
+                    <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&amp;cmd=Retrieve&amp;list_uids=10334333&amp;dopt=abstract" target="Reference">[13]</a>                                    </td>
+            </tr>
+            <tr>
+                <td class="fieldName">Authors</td>
+                <td class="fieldValue" colspan="2">Grundner-Culemann E, Martin GW 3rd, Harney JW, Berry MJ.</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Title</td>
+                <td class="fieldValue" colspan="2">Two distinct SECIS structures capable of directing selenocysteine incorporation in eukaryotes.
+</td>
+            </tr>
+            <tr>
+                <td class="fieldName">Citation</td>
+                <td class="fieldValue" colspan="2">RNA. 5(5):625-35.</td>
+             </tr>
+            <tr>
+                <td class="fieldName">Year</td>
+                <td class="fieldValue" colspan="2">1999</td>
+             </tr>
+        </tr>                                                                                                                                                                                                                                                                                        </table>
+</form>
+</div>
+
+<!-- right column -->
+<div id="sgl-blocks-right">
+
+
+</div>
+
+</div> <!-- close sgl-main -->
+
+<!-- #GIORGIO -->
+<hr width="50%">
+<!-- -->
+
+<div id="sgl-footer">
+    Powered by <a href="http://seagull.phpkitchen.com" title="Seagull framework homepage">Seagull Framework</a> v 0.4.1<br />
+    
+    </div>
+
+</body>
+</html>

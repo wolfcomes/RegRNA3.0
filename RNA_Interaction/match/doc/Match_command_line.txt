@@ -1,0 +1,460 @@
+Match(TM) command line documentation
+
+
+Content
+
+* INTRODUCTION
+
+* HOW TO USE MATCH(TM) FROM COMMAND LINE
+
+* SEQUENCE INPUT FORMAT
+
+* PROFILES (MATRIX SET WITH CUT-OFFS)
+
+* CUT-OFFS
+
+* MATCH RESULT OUTPUT
+
+* HOW TO CITE MATCH(TM)
+
+
+For additional information, please see also the online documentation in
+your TRANSFAC(r) (BKL) online account and the reference at the end of this file.
+
+**************************************************************************
+
+* INTRODUCTION
+
+The Match(TM) tool is designed for searching potential binding sites for
+transcription factors (TF binding sites) in any DNA sequence which may be 
+of interest. Match(TM)  uses a library of mononucleotide weight matrices
+from TRANSFAC(r). 
+Match(TM) allows you to specify your search by using profiles. We use the 
+term "profile" for a specific subset of weight matrices from the 
+TRANSFAC(r) library with core similarity cut-off values and matrix 
+similarity cut-off values for each matrix.
+
+>From release to release, results obtained with Match(TM) can change, due 
+to the addition of new matrices, matrix and profile updates, and improved 
+cut-offs. Therefore, please always note the release / version number of 
+TRANSFAC(r) Professional / Match(TM) which you used for your analysis. 
+Although we advise to use always the latest release of TRANSFAC(r) 
+Professional, in case you are doing a large analysis for which you want to 
+assure that the conditions stay constant, it is advisable to do the whole 
+analysis with one and the same locally installed version (same Match(TM) 
+binary and same data files, i.e. same matrix.dat as well as same 
+profiles).
+
+Match(TM) is designed for binding site search in single sequences, i.e.
+all sequences (from the submitted FASTA file) are analyzed individually.
+Comparative analysis for overrepresented binding sites in a set of
+sequences vs. a background set is provided in the ExPlain(TM)
+Analysis System. For information on the ExPlain(TM) Analysis System,
+please see the BIOBASE website: http://www.biobase-international.com/
+
+**************************************************************************
+
+* HOW TO USE MATCH(TM) FROM COMMAND LINE
+
+
+Please note: Currently only the binding site search of Match(TM) can be
+provided as command line tool. For accessory functionalities like creation
+of user-defined profiles or matrices, please refer to the online version 
+of Match(TM) or ExPlain(TM).
+
+Command line use can be subject to change without notice.
+For the full paramter list of your current version, please check
+description on command line, when you type 'match' without parameters.
+
+Currently the following Match(TM) command line versions are available
+(see bin subdirectory in the match directory, after you downloaded
+and extracted the TRANSFAC flat file download package):
+
+match           (for Linux)
+match_linux64   (for Linux 64)
+match.exe       (for Windows)
+match_irix      (for Irix)
+match_solaris   (for Solaris)
+match_true64    (for True64)
+
+The synopsis for command line usage is:
+(For additional parameters, please see parameter list, when you type
+'match', i.e. without any paramters, on command line.)
+
+match <mxlib> <seq> <out> <mxprf>
+
+
+match:  	Match(TM) binary
+
+mxlib:		library of transcription factor weight matrices
+		(matrix.dat) in TFP_<release>_data/match/data/matrix.dat
+
+seq: 		input sequence in EMBL-Format or FASTA
+		(the input file may contain several sequences);
+		for testing you can use the following example file:
+		TFP_<release>_data/match/data/default.seq.EXAMPLE
+
+out: 		file to which Match(TM) shall write its output
+                (If the specified file already exists,
+                it will be overwritten without any notice!)
+
+mxprf:		file containing a selection of matrices (profile)
+                with defined cut-offs
+		
+
+For command line use of Match(TM) the cut-offs for the matrices
+have to be specified in the profile (please see below)!
+
+**************************************************************************
+
+* SEQUENCE INPUT FORMAT
+
+
+FASTA format:
+
+>seq1
+acagctagctacgatgatcgatcgatgctacgtcgtagtacgatcgtacg
+ctagctacgatgatcgatcgatgacagctagctacgatgatcgatcgatg
+>seq2
+ctagctacgatgatcgatcgatgacagctagctacgatgatcgatcgatg
+acagctagctacgatgatcgatcgatgctacgtcgtagtacgatcgtacg
+>seq3
+acagctagctacgatgatcgatcgatgctacgtcgtagtacgatcgtacg
+ctagctacgatgatcgatcgatgacagctagctacgatgatcgatcgatg
+
+
+
+EMBL format:
+(Only the fields essentially needed to recognize an entry in EMBL format 
+are shown. More fields may be included.)
+
+ID   EXAMPLE standard; DNA; PLN; 360 BP.
+XX 
+SQ   Sequence 360 BP; 63 A; 92 C; 97 G; 108 T; 0 other;
+     ctgcagcccc ggtttcgcaa agttaataat tttcagccgc gcacgtggtt ggccaaaccg 60
+     caccctcctt cccgtcgttt cccatctctt cctcctttag agctaccact atataaatca 120
+     gggctcattt tctcgctcct cacaggctca tctcgctttg gatcgattgg tttcgtaact 180
+     ggtgagggac tgagggtctc ggagtggatt gatttgggat tctgttcgaa gatttgcgga 240
+     ggggggcaat ggcgaccgcg gggaaggtga tcaagtgcaa aggtccgcct tgtttctcct 300
+     ctgtctcttg atctgactaa tcttggttta tgattcgttg agtaattttg gggaaagctt 360
+//
+
+**************************************************************************
+
+* PROFILES (MATRIX SETS WITH CUT-OFFS)
+
+We use the term "profile" for a specific subset of weight matrices from 
+the TRANSFAC(r) library with core similarity cut-off values and matrix 
+similarity cut-off values for each matrix.
+
+Match(TM) will search only matrices that are specified in the profile.
+It will return only hits with scores that are equal or higher than
+the cut-offs specified in the profile.
+
+Match(TM) offers a number of predefined profiles with cut-offs
+
+- to minimize false negative matches:
+match/data/minFN<VERSION>.prf (all TRANSFAC matrices)
+match/data/minFN_good<VERSION>.prf (only high quality matrices)
+
+- to minimize false positive matches: 
+match/data/minFP<VERSION>.prf (all TRANSFAC matrices)
+match/data/minFP_good<VERSION>.prf (only high quality matrices)
+
+- to minimize the sum of both error rates:
+match/data/minSUM<VERSION>.prf (all TRANSFAC matrices)
+match/data/minSUM_good<VERSION>.prf (only high quality matrices)
+
+In the directory match/data/prfs you will also find profiles for different
+taxons (vertebrates, plants, fungi, insects, nematodes) and a number of
+tissue and condition/process-specific profiles for vertebrates.
+Cut-off in these profiles is minFN (to minimize number of false negatives).
+To change the cut-off or the composition of a profile, please see below.
+
+
+
+You can generate your own profiles with the help of the profile generation
+tool in the web interface of the online version of Match(TM) in the following ways:
+
+- Based on a matrix search result in TRANSFAC(r) (BKL) a profile can be
+  created: Select the matrices in the database search result list to be
+  included in the profile and then click on the "MATCH PROFILE" button 
+  on top of the table to be redirected to the Profile Generation Tool
+  in the Match(TM) interface, where the cut-offs for the profile can be defined.
+
+- New profiles can be created in the Profile Generation Tool of the
+  Match(TM) interface by selecting or searching from/in the listed matrices.
+
+- Based on already existing profiles new ones can be created in the
+  Match(TM) interface, by adding or removing matrices and/or by changing
+  the cut-offs.
+  
+For details, please see the respective sections in the Match(TM) online
+documentation.
+
+To download in the Match(TM) interface a profile for command line use,
+please click the "Download" button on top of the page after you generated
+a new profile, or go to the Profile generation page, select one of your
+previously saved profiles and then click on "Download".
+
+- Profiles for command line use can also be created in and exported from
+  the ExPlain(TM) Analysis System.
+
+- Finally, new profiles can be created or existing ones modified with the
+  help of a text editor. (For example, vertebrate profiles can be generated
+  by removing with help of the search/replace function of your editor all
+  those lines/matrices with identifiers other than "V$..."
+  from the provided profiles minFP<VERSION>.prf, minSUM<VERSION>.prf, ...)
+
+
+
+A profile should have the following format:
+
+________________________________
+TATA box and SP-1 sites
+tata.prf
+ MIN_LENGTH 300
+0.0
+1.000000 0.6 0.5 M00216 V$TATA_C
+1.000000 1.0 0.5 M00008 V$SP1_01
+//
+________________________________
+
+Description:
+
+1.line:    profile description
+2.line:    profile  name
+3.line:    relevant for the use with other programs,
+           but should also not be left out for Match(TM).
+4.line:    relevant for the use with other programs,
+           but should be contained in every profile.
+5.-n.line: a line for each of the included matrices     
+           containing the following information:
+	   1.000000: needed by Match 
+	   core similarity cut-off
+	   matrix similarity cut-off
+	   TRANSFAC(r) accession number of the matrix
+	   TRANSFAC(r) identifier of the matrix
+last line: symbol for the profile end
+
+**************************************************************************
+
+* CUT-OFFS 
+
+
+Cut-offs are defined in the profile. Cut-offs can be changed with the help
+of the Profile Generation Tool in the Match(TM) online version by
+modification of an already existing profile and then saving it under a new
+name. After it has been saved, the new profile can be exported via the
+"Download" on top of the page.
+
+
+Cut-offs for core and matrix similarity:
+
+MSS (Matrix Similarity Score)
+The matrix similarity is a score that describes the quality of a match
+between a matrix and an arbitrary part of the input sequences. 
+
+CSS (Core Similarity Score)
+The core similarity score denotes the quality of a match between the core 
+sequence of a matrix (i.e. the five consecutive most conserved positions 
+within a matrix) and a part of the input sequence.
+
+A match has to contain the "core sequence" of a matrix, i.e. the core 
+sequence has to match with a score higher than or equal to the core 
+similarity cut-off. In addition, only those matches which score higher 
+than or equal to the matrix similarity threshold appear in the output.
+
+For the minFP, minFN, and minSUM cut-offs, first the core similarity score 
+is calculated, and then using this core similarity score the matrix 
+similarity score is calculated. 
+
+
+Precalculated cut-offs:
+
+minFN (Cut-off to minimize false negative matches): 
+The false negative rate was measured, as far as available, on known 
+genomic binding sites for the transcription factors. In case not 
+sufficient (less than 10) genomic binding sites were available, SELEX 
+sites or sets of generated oligonucleotides were used for estimating the 
+cut-offs to minimize the false negative rate, using actual weight matrices 
+to calculate the probability of a nucleotide occurring at a certain 
+position of a binding site. For each matrix we applied the Match(TM)  
+algorithm to the test sequences without using any matrix similarity 
+cut-offs. Then we set the cut-off to a value that provides recognition of 
+at least 90% of oligonucleotides. We decided to tolerate an error rate of 
+10%. We call this set of cut-offs minFN (=FN10) cut-offs.
+Applying the minFN cut-offs, the user will find most genomic binding 
+sites, but in this case a high rate of false positives should be taken 
+into account as well. The minFN cut-offs are useful for the detailed 
+analysis of relatively short DNA fragments. 
+
+minFP (Cut-off to minimize false positive matches): 
+In order to estimate this cut-off, which will reduce the number of random 
+sites found by Match(TM), we applied the Match(TM) algorithm to promoter 
+sequences from TRANSPRO. That score which gives 1% of hits in these 
+sequences relative to the number of hits received when using the minFN 
+score (calculated above) is defined as minFP.
+When a minFP cut-off is applied for searching a DNA sequence, the 
+algorithm will find a relatively low number of matches per nucleotide. In 
+the output the user will only find putative sites with a good similarity 
+to the weight matrix; however, some known genomic binding sites could not 
+be recognized. This kind of cut-off is useful, for example, for searching 
+the most promising potential binding sites in the extended genomic DNA 
+sequences. 
+
+minSUM (Cut-off to minimize the sum of both error rates): 
+We compute a sum of both error rates to find cut-offs that give an optimal 
+number of false positives and false negatives. To do so, we compute the 
+number of matches found in promoter sequences for each matrix using a cut-
+off allowing 10% of false negative matches (minFN=FN10). This number is 
+defined as 100% of false positives. The sum of corresponding percentages 
+for false positives and false negatives is then computed for every cut-off 
+ranging from minFN10 to minFP. We refer to the cut-off that gives the 
+minimum sum as minSum cut-off. 
+  
+FN10 (=minFN)
+This cut-off allows a false negative rate of 10%.
+For calculation, please see minFN above.
+  
+FN30:
+This cut-off allows a false negative rate of 30%.
+  
+FN50:
+This cut-off allows a false negative rate of 50%. 
+  
+FN70:
+This cut-off allows a false negative rate of 70%.  
+  
+FN90:
+This cut-off allows a false negative rate of 90%.   
+
+
+Matrix "Quality": Matrices producing less than 10 hits (FP) per 1000 
+nucleotides (in sequences, 10,000 to 5,000 nucleotides upstream of the 
+transcription start sites) at minSUM are defined as "high quality 
+matrices". About 5% of the current matrices producing higher FP rate, can 
+be excluded as "highly abundant" / "low quality"; these 5% of matrices 
+give about 50% of all FP hits.
+  
+
+The cut-offs and the quality (high/low) of a matrix is stored in the 
+"index" file:
+
+example line from the index file:
+M00008|V$SP1_01|Sp1|T00759;T08484|0.819|0.957|0.819|0.851|0.819|0.914|high|0|0.851|7.161|0.887|2.486|0.922|0.790|0.954|0.117|0.973|0.018|
+
+description:
+matrix accession number
+matrix identifier
+matrix name
+factor list
+minFP core cut-off
+minFP matrix cut-off
+minFN core cut-off
+minFN matrix cut-off
+minSUM core cut-off
+minSUM matrix cut-off
+matrix quality (high, low)
+matrix type (not in use, always 0)
+matrix cut-off of false negative rate 10%
+FP hits (per 1kb nucleotides) at false negative rate of 10%
+matrix cut-off of false negative rate 30%
+FP hits (per 1kb nucleotides) at false negative rate of 30%
+matrix cut-off of false negative rate 50%
+FP hits (per 1kb nucleotides) at false negative rate of 50%
+matrix cut-off of false negative rate 70%
+FP hits (per 1kb nucleotides) at false negative rate of 70%
+matrix cut-off of false negative rate 90%
+FP hits (per 1kb nucleotides) at false negative rate of 90% 
+
+These values are also shown when you view or generate a profile in
+the web interface of the online Match(TM).
+
+**************************************************************************
+
+* MATCH RESULT OUTPUT
+
+
+If you run Match(TM) in the match/bin directory in the following way:
+
+match ../../data/matrix.dat ../data/default.seq.EXAMPLE result ../data/minFP_good<VERSION>.prf
+
+you will get a results file similar to the following one:
+
+--------------------------------------------------------------------------
+Search for sites by WeightMatrix library: ../../data/matrix.dat
+Sequence file: ../data/default.seq.EXAMPLE
+Site selection profile: ../data/minFP_good<VERSION>.prf 
+prf to minimize false positives, high qual.
+
+
+Inspecting sequence ID   RNTATFL
+
+ V$VMYB_01         |  1143 (-) |  1.000 |  0.966 | aaCCGTTact
+ V$VMYB_01         | 11517 (-) |  1.000 |  0.961 | taCCGTTgtc
+ V$ELK1_01         |  7227 (+) |  1.000 |  0.931 | ccagcaGGAAGttcat
+ V$ELK1_01         |  9432 (+) |  1.000 |  0.931 | ataacaGGAAGcccaa
+ I$KR_01           |  2676 (-) |  1.000 |  1.000 | ttAACCCgtt
+ I$KR_01           |  7833 (-) |  1.000 |  0.966 | ttAACCCact
+ F$MATA1_01        |  9800 (-) |  1.000 |  0.996 | atgtaCATCA
+ V$VMAF_01         |  6289 (+) |  0.910 |  0.931 | tgatGATGActgagcaggg
+ V$VMAF_01         |  8318 (-) |  1.000 |  0.889 | agcttctgcgTCAGCgcca
+ V$NFKAPPAB65_01   |   331 (-) |  1.000 |  1.000 | GGAAAttccc
+ V$CREL_01         |   331 (-) |  1.000 |  0.990 | GGAAAttccc
+ V$NFKAPPAB_01     |   331 (-) |  1.000 |  1.000 | ggaaaTTCCC
+ V$MYOGNF1_01      |  7526 (+) |  0.929 |  0.813 | ctgaagttacagTTGGTtgtgagccaact
+ V$TAL1BETAE47_01  |  5124 (+) |  1.000 |  0.994 | ggaaaCAGATggtgcg
+ V$TAL1ALPHAE47_01 |  5124 (+) |  1.000 |  0.994 | ggaaaCAGATggtgcg
+ V$TAL1BETAITF2_01 |  5124 (+) |  1.000 |  0.997 | ggaaaCAGATggtgcg
+ V$EVI1_04         |   834 (+) |  0.842 |  0.788 | atataaaacAAGTTa
+ V$EVI1_04         |  1900 (-) |  0.842 |  0.767 | tATTTTattatttta
+ ...
+
+
+ Total sequences length=11973
+
+ Total number of found sites=1155
+
+ Frequency of sites per nucleotide=0.096467
+
+--------------------------------------------------------------------------
+
+Result output description
+
+The first three lines of the results file show which matrix library file,
+which sequence file and which profile file have been used for this search.
+Following this is a list of matches found in the searched sequence.
+
+The first column gives the TRANSFAC(r) identifier of the matching matrix,
+then comes the position and the strand where the respective match has been
+found. The core similarity score is given in column three, the matrix
+similarity score in column four. The last column gives the matching
+sequence.
+
+If the input sequence file contains several sequences, such a listing of
+matches will be given for each sequence in the input file. Each listing
+starts with the respective sequence identifier.
+
+The last three lines of the file give the total length of all sequences
+which have been searched, the total number of sites that have been found
+and the frequency of sites per nucleotide.
+
+Note: In contrast to the Match(TM) online version, the raw result on
+command line gives the matches by matrix not by location.
+
+For additional results and graphical outputs, please see the online
+Match(TM) tool and the Match(TM) functionality and related tools in the 
+ExPlain(TM) Analysis System.
+
+**************************************************************************
+
+* HOW TO CITE MATCH(TM)
+
+Kel, A. E.; Goessling, E.; Reuter, I.; Cheremushkin, E.; Kel-Margoulis, O. 
+V.; Wingender, E. (2003) "Match(TM) : A tool for searching transcription 
+factor binding sites in DNA sequences" Nucleic Acids Res. 31, 3576-3579.
+
+Additionally, please refer to BIOBASE GmbH as the creator of this tool.
+
+**************************************************************************

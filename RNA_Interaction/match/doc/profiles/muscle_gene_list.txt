@@ -1,0 +1,29 @@
+Gene Accession No.	Gene Identifier	Gene Name	Gene Species
+G000200	HS$ANF	ANF	human, Homo sapiens
+G010127	SHEEP$ANF	ANF	sheep, Ovis aries
+G000201	HS$ANT1	ANT1	human, Homo sapiens
+G001079	HS$BMHC	beta-MyHC	human, Homo sapiens
+G001080	MOUSE$BMHC	beta-MyHC	mouse, Mus musculus
+G000193	HS$AAC	CA-ACT	human, Homo sapiens
+G001942	MOUSE$CAMHC	CAMHC	mouse, Mus musculus
+G013498	RAT$CPT1B	CPT1B	rat, Rattus norvegicus
+G001442	MOUSE$CTNC	cTnC	mouse, Mus musculus
+G001078	MOUSE$2BMHC	IIB MyHC	mouse, Mus musculus
+G000348	HS$MYOGL	Mb	human, Homo sapiens
+G000557	MOUSE$MCK	mck	mouse, Mus musculus
+G000347	HS$MLC	MLC	human, Homo sapiens
+G001916	MOUSE$MLC2	MLC2	mouse, Mus musculus
+G001909	MOUSE$MRF4	MRF4	mouse, Mus musculus
+G001943	HS$MYF4	Myf4	human, Homo sapiens
+G000196	HS$CAMHC	MYH6	human, Homo sapiens
+G000576	MOUSE$MYOD	MyoD	mouse, Mus musculus
+G000702	RAT$ANF	NPPA	rat, Rattus norvegicus
+G001116	HS$PFKM	PFKM	human, Homo sapiens
+G000194	HS$AACS	SA-ACT	human, Homo sapiens
+G000465	MOUSE$SAACT	SA-ACT	mouse, Mus musculus
+G002913	HS$SMAACT	sm a-actin	human, Homo sapiens
+G002023	MOUSE$SM22ALPHA	SM22ALPHA	mouse, Mus musculus
+G001836	MOUSE$TNIS	TnIs	mouse, Mus musculus
+G001178	HS$TNNC1	TNNC1	human, Homo sapiens
+G001927	HS$TNNC2	TNNC2	human, Homo sapiens
+G000418	HS$VLC1	VLC1	human, Homo sapiens

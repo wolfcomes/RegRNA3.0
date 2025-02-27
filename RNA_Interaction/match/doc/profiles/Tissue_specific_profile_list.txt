@@ -1,0 +1,54 @@
+Tissue-specific profiles provided by Match(TM):
+
+We provide with Match(TM) a number of tissue-specific profiles and a cell
+cycle-specific profile. Groups of transcription factors known to be active
+in a particular tissue have been collected for each profile from
+TRANSFAC(r). The matrices linked to these transcription factors in TRANSFAC(r)
+were then used to build a profile. The cut-offs used in the tissue
+specific profiles are those that minimize false negative matches.
+
+
+We provide the following tissue-/process-specific profiles:
+
+* immune cell-specific profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of genes whose transcription is induced upon immune
+  response in T-cells, B-cells, mast cells, myeloid cells, natural killer
+  cells, and macrophages.
+
+* cell cycle-specific profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of genes whose expression is dependent on the stage
+  of cell cycle.
+
+* muscle-specific profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of muscle-specific genes.
+
+* liver-specific profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of liver-enriched genes.
+
+* pancreatic beta-cell-specific profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of pancreatic beta-cell-specific genes.
+
+* adipocyte-specific profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of adipocyte-specific genes.
+
+* pituitary-specific profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of pituitary-specific genes.
+
+* nerve system-specific profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of nerve system-specific genes.
+
+* lung-specific profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of lung-specific genes.
+
+* redox-sensitive profile
+  This profile is designed to search for potential binding sites within
+  regulatory regions of genes whose expression is redox-sensitive.

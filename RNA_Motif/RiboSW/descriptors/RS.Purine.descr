@@ -1,0 +1,12 @@
+# type;
+# swL, swU, sw, sp,     stemLower, stemUpper, loop Lower, loop Upper, bulge, push num,  [wts_m, _M, wte_m, _M]'
+# report section:
+#   loop, helix, outer
+# sequence information section:
+#   loop, helix, outer
+#1;65,80,2,3,5,9,38,59,2,1'l+3,l-2'l-au$|ac$|gc$|uc$,l+^uaa|^uau|^uac%
+#1;65,80,2,3,5,9,38,59,2,1'l+3,l-2'l-au$|ac$|gc$|uc$%
+1;65,80,1,3,5,9,38,59,2,1'l+3,l-2'l-au$|ac$|gc$|uc$%
+
+2;12,24,1,0,4,7,6,10,2,1,0,1'o+0,l=0',%
+2;16,35,1,0,5,7,6,11,2,0,8,10,0,1'o+0,l=0,o-0',%

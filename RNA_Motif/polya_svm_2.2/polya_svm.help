@@ -1,0 +1,108 @@
+PolyA_SVM: prediction of mRNA polyadenylation sites by Support Vector Machine
+Ver. 2.2
+
+INTRODUCTION:
+
+This program takes a file containing DNA/RNA sequences in the FASTA format as input, and makes predictions for putative mRNA polyadenylation sites [or poly(A) sites] or generates results indicating the occurrences of different cis-elements. The program is implemented in PERL and runs under UNIX/LINUX systems. It requires the LIBSVM library (also included in the package). 
+
+DOWNLOAD & INSTALLATION:
+
+1. Download the current version of polya_svm (polya_svm_2.2.tar.gz) to a directory, e.g. /home/polya_svm/.
+2. Extract the tar file to the directory by typing tar -zxvf polya_svm_2.2.tar.gz 
+3. A directory named "polya_svm_2.2" under /home/polya_svm/ will appear. Switch to it by typing cd polya_svm_2.2 
+4. Type ./polya_svm to run the program. 
+
+USAGE INSTRUCTIONS:
+
+Usage: perl polya_svm.pl -i input [-o output] [-e cutoff] [-m mode] [-l location]
+
+Options:
+
+-i input	input file containing sequence(s) in the FASTA format. 
+
+-o output	output file with output format based on the running mode. Default is "junk.out".
+
+-e cutoff	e-value cutoff for prediction. The lower the e-value, the more stringent for the prediction. The default cutoff is 0.5.
+
+-m mode		running mode: 
+		if 'e', prediction mode, which returns prediction results. This is the default mode.
+		if 's', matching element mode, which returns matching results for 15 cis-elements.
+	
+-l location 	if a position number is given, the program will make only one prediction at the specified position. 
+
+OUTPUT FORMAT:
+
+A. When the running mode is 'e', the default mode, the output file will include the following information:
+1. Three marked lines indicating:
+	1) Number of sequences in the file
+	2) Number of sequences predicted to be positive.
+	3) The e-value used for prediction. 
+
+2. For each sequence, the predicted result will include:
+	1) sequence id
+   	2) result line: +/-    From     To      Max-Location    E-value
+		+/- indicates positive or negative prediction for the sequence.
+		From and To indicates the positive region window.
+		Max_Location indicates the middle point of the high probability region.
+		E-value is the e-value for the high probability region.
+
+NOTE:
+
+1. The program does not make predictions for sequences shorter than 120 nt. Negative result is given in this case. it is too short for prediction. No result is given.
+  
+2. Multiple positive regions are reported on different lines. 
+
+B. When the running mode is 's', the format file contains matching results for all cis-elements. The following symbols are used for similarity to the consensus:
+
+	+,  highly similar, over the 75th percentile of all possible positive scores.
+	|,  very similar, between the 50th-75th percentiles of all possible positive scores.
+	:,  similar, between the 25th-50th percentiles of all possible positive scores. 
+	.,  somewhat similar, 0-25th percentiles of all possible positive scores.
+	-,  negative score.
+
+C. When '-l location' is specified, the -100 to +100 nt region surrounding the position will be used to make a single prediction. 
+	
+EXAMPLES:
+
+1. Make poly(A) site prediction for the input sequences:
+>polya_svm.pl -i test.fa -o test.out -m e 
+2. Find occurrences of 15 cis elements in the input sequences:
+>polya_svm.pl -i test.fa -o test.out -m s
+3. Make a poly(A) site prediction at the position 100:
+>polya_svm.pl -i test.fa -o test.out -m e -l 100
+
+REFERENCES:
+
+Cheng, Y., Miura, R.M., and Tian, B. Accurate prediction of mRNA polyadenylation site by support vector machine. Submitted to Bioinformatics.
+
+Hu, J., Lutz, C.S., Wilusz, J., and Tian, B. (2005). Bioinformatic identification of candidate cis-regulatory elements involved in human mRNA polyadenylation. RNA 11: 1485-1493.
+
+Chang, C.-C. and Lin, C.-J. (2005) LIBSVM: a Library for Support Vector Machines (www.csie.ntu.edu.tw/~cjlin/libsvm).
+
+CONTACT INFO:
+
+Please contact Yiming Cheng (yc34@njit.edu) or Bin Tian (btian@umdnj.edu) for comments/suggestions. 
+
+
+Version History:
+1.0 polya_svm.pl initial release
+1.1 bugfix incorrect number of columns were printed to screen
+        affected mode e
+        Changes:
+        match_seq.pl: changed for loop under match_mat function
+2.0 consolidated separate scripts
+	use hpr=32nt only now
+	use -log2(probability) ie default cutoff=6, corresponds to prob=2^(-6)
+	mean/sd information hard coded
+2.1 hpr can merge with nearby hprs and the best is taken.
+	new option -b generates both 's' and 'e' outputs
+	usage of 'settings.inf' file for easier use
+	added range functionality, speeds up calculations for larger data if range is known.
+	added neg sequence function, where a seq's reverse-complement is used for prediction
+	translates all U's to T's
+2.2 bugfix non-AUTCG sequences caused incorrect output.
+	Added criteria to scaled mat-scores for inclusion in svm-predictions, failure results in discarding the tuple
+		must have at least 2 scores >0 for AUE .. ADE
+		must have avg > -1 for AUE .. ADE
+
+

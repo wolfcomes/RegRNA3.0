@@ -1,0 +1,91 @@
+######Ribocentral switch ######
+
+##51 riboswitch cm file saved in /home/RegRNA/public_html/program/RiboSW/Ribocenter_switch/51CMs_HMMs
+## /home/RegRNA/public_html/program/RiboSW/Ribocenter_switch/list
+## 2dG-II.cm          c-di-GMP-II-GAG.cm  Glutamine.cm      Magnesium-II.cm  preQ1-II.cm   SAM-IV.cm   TPP.cm
+## AdoCbl.cm          c-di-GMP-II-GCG.cm  Glutamine-II.cm   Manganese.cm     PreQ1-III.cm  SAM-SAH.cm  Xanthine.cm
+## AdoCbl-II.cm       c-di-GMP-I-UAU.cm   Glycine.cm        Molybdenum.cm    Purine.cm     SAM_V.cm    ZMP-ZTP.cm
+## azaaromatic.cm     Cobalamin.cm        Guanidine-I.cm    nadA.cm          SAH.cm        SAM_VI.cm
+## c-di-AMP.cm        Fibro-purF.cm       Guanidine-II.cm   nhaA-I.cm        SAM_alpha.cm  Sodium.cm
+## c-di-GMP-I.cm      Fluoride.cm         Guanidine-III.cm  nhaA-II.cm       SAM.cm        T-box.cm
+## c-di-GMP-I-GGC.cm  FMN.cm              Lysine.cm         NiCo.cm          SAM-III.cm    THF.cm
+## c-di-GMP-II.cm     glmS.cm             Magnesium.cm      PreQ1.cm         SAM-I-IV.cm   THF-II.cm
+
+#suppose the input sequence is target_sequence.fasta
+## python run_cmsearch.py target_sequence.fasta cpmbined.output
+python /home/RegRNA/public_html/program/RiboSW/Ribocenter_switch/run_cmsearch.py  /home/RegRNA/public_html/program/RiboSW/Ribocenter_switch/target_sequence.fasta  /home/RegRNA/public_html/program/RiboSW/Ribocenter_switch/Ribocenter_switch.result
+### output:/home/RegRNA/public_html/program/RiboSW/Ribocenter_switch/combined.output
+### output:combined.output
+### motif_name start end score 
+### motif_name start end score 
+###AdoCbl-II	(Cobalamin/B12)	riboswitch	aptamer 80 148 22.7
+
+
+
+
+
+
+####### AREsite2.0 #######
+### previousl ARED 5 motif 
+#ARED  Cluster1_pattern AUUUAUUUAUUUAUUUAUUUA
+#ARED  Cluetr2_pattern AUUUAUUUAUUUAUUUA
+#ARED  Cluster3_pattern AUUUAUUUAUUUA
+#ARED  Clusetr4_pattern WWAUUUAUUUAWW
+#ARED  Cluster5_pattern WWWUAUUUAUWWW
+
+### cluster 3 and cluster 5 are included in newely added cluster, so can delete them in previous code 
+
+###newely added 9 motif and previous ARED 3 motif are saved in /home/RegRNA/public_html/program/AREDsite2_ARED_plus
+#ARED  Cluster1_pattern AUUUAUUUAUUUAUUUAUUUA
+#ARED  Cluetr2_pattern AUUUAUUUAUUUAUUUA
+#ARED  Clusetr4_pattern WWAUUUAUUUAWW
+
+#AREsite2.0 Cluster6_pattern WUUUW
+#AREsite2.0 Cluster7_pattern GUUUG
+#AREsite2.0 Cluster8_pattern WWUUUWW
+#AREsite2.0 Cluster9_pattern WWWUUUWWW
+#AREsite2.0 Cluster10_pattern WWWWUUUWWWW
+#AREsite2.0 Cluster11_pattern WWWWWUUUWWWWW
+#AREsite2.0 Cluster12_pattern WUUSUUW
+#AREsite2.0 Cluster13_pattern WUUAUUW
+#AREsite2.0 Cluster14_pattern AWTAAA
+
+### take ARED_cluster13.descr as an example 
+/home/RegRNA/public_html/program/rnamotif-3.0.0/src/rnamotif -descr /home/RegRNA/public_html/program/AREDsite2_ARED_plus/ARED_cluster14.descr  /home/RegRNA/public_html/program/AREDsite2_ARED_plus/target.fasta >> /home/RegRNA/public_html/program/AREDsite2_ARED_plus/result.data
+###############################
+
+
+
+
+
+
+###### SplicAid_F ######
+### perl search_AEdbMotif.pl target_sequence.fa SpliceAid_F_motif_all.txt unknown unknown Homo sapiens, human > /home/RegRNA/public_html/program/SpliceAid_F/SpliceAid_F.result1
+perl /home/RegRNA/public_html/program/search_AEdbMotif.pl /home/RegRNA/public_html/program/SpliceAid_F/target_sequence.fa /home/RegRNA/public_html/program/SpliceAid_F/SpliceAid_F_motif_all.txt unknown unknown Homo sapiens, human > /home/RegRNA/public_html/program/SpliceAid_F/SpliceAid_F.result1
+
+
+
+
+
+
+
+
+
+
+
+
+
+###### UTRdb2 ######
+## sequence blast test_query.fasta
+###.././makeblastdb -in Homo_sapines.GRCh38.107.cleaned.utrs -dbtype nucl -out human_UTR_blastdb
+/home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/blastn \
+-query /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/target_sequence \
+-db /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/all_UTR_blastdb \
+-out /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/UTRdb2.result1 \
+-outfmt 6 \
+-evalue 1e-6
+
+## rewrite result
+python /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/rewrite.py /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/target_sequence /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/UTRdb2.result1 /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/UTRdb2.result2
+python /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/rm_duplicate.py /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/UTRdb2.result2 /home/RegRNA/public_html/program/ncbi-blast-2.16.0+/bin/UTRdb2/UTRdb2.result3
+#############################

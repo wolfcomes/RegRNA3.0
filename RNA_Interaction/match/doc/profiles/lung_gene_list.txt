@@ -1,0 +1,16 @@
+Gene Accession No.	Gene Identifier	Gene Name	Gene Species
+G002818	MOUSE$CC10	CC10	mouse, Mus musculus
+G001149	RAT$CCSP	CCSP	rat, Rattus norvegicus
+G004912	MOUSE$SPA	SP-A	mouse, Mus musculus
+G004952	RAT$SPA	SP-A	rat, Rattus norvegicus
+G004944	PAPHA$SPA1	SP-A1	baboon, Papio hamadryas
+G004919	HS$SPA2	SP-A2	human, Homo sapiens
+G004945	PAPHA$SPA2	SP-A2	baboon, Papio hamadryas
+G001045	HS$SPB	SP-B	human, Homo sapiens
+G004739	RABBIT$SPB	SP-B	rabbit, Oryctolagus cuniculus
+G004934	MOUSE$SPB	SP-B	mouse, Mus musculus
+G004900	MOUSE$SPC	SP-C	mouse, Mus musculus
+G004925	HS$SPD	SP-D	human, Homo sapiens
+G004905	MOUSE$TTF1	TTF-1	mouse, Mus musculus
+G000679	RABBIT$UG	Ug	rabbit, Oryctolagus cuniculus
+G004977	MOUSE$WNT7B	Wnt7b	mouse, Mus musculus

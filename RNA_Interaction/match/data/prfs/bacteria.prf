@@ -1,0 +1,7 @@
+bacteria.prf
+Matrices of bacteria with cut offs to minimize false negative rates
+ MIN_LENGTH 300
+0.0
+ 1.000 0.638 0.708 M00202 B$CRP_C
+ 1.000 0.844 0.910 M01309 B$TRAM_01
+//

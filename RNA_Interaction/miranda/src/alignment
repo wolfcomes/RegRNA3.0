@@ -1,0 +1,112 @@
+miranda.c:			 fprintf(stdout, "score %f %s\n", hit->score,hit->alignment[2]);
+output.c:	alignment_length = strlen (hit->alignment[0]);
+output.c:		if (hit->alignment[1][i] == '|')
+output.c:		if (hit->alignment[1][i] == ':')
+output.c:		 hit->score, 
+output.c:		 (seqlen1_global-hit->query_end + 1), (seqlen1_global - hit->query_start +1), /*Doron - changed the reporting coordinates see Code_notes*/
+output.c:		 hit->ref_start + 1, hit->ref_end + 1, alignment_length, identity,
+output.c:				 hit->score, hit->query_end + 1, hit->query_start + 1,
+output.c:				 hit->ref_start + 1, hit->ref_end + 1);
+output.c:	revstring (hit->alignment[0]);
+output.c:	revstring (hit->alignment[1]);
+output.c:	revstring (hit->alignment[2]);
+output.c:			 hit->rest[0], hit->alignment[0], hit->rest[3], hit->rest[2],
+output.c:			 hit->alignment[1], hit->rest[5], hit->rest[1], hit->alignment[2],
+output.c:			 hit->rest[4]);
+output.c:			 query, reference, hit->score, energy, z_score, p_value,
+output.c:			 (seqlen1_global - hit->query_end + 1), (seqlen1_global - hit->query_start + 1), /*Doron - changed coordinate - see code_notes*/
+output.c:			 hit->ref_start + 1,
+output.c:			 hit->ref_end + 1, alignment_length, identity, similarity);
+output.c:	alignment_length = strlen (hit->alignment[0]);
+output.c:		if (hit->alignment[1][i] == '|')
+output.c:		if (hit->alignment[1][i] == ':')
+output.c:	revstring (hit->alignment[0]);
+output.c:	revstring (hit->alignment[1]);
+output.c:	revstring (hit->alignment[2]);
+output.c:			 hit->score,
+output.c:			 hit->query_start + 1, 
+output.c:			 hit->query_end + 1, 
+output.c:			 hit->ref_start + 1,
+output.c:			 hit->ref_end + 1, 
+output.c:			 hit->rest[0], hit->alignment[0], hit->rest[3],
+output.c:			 hit->rest[2], hit->alignment[1], hit->rest[5],
+output.c:			 hit->rest[1], hit->alignment[2], hit->rest[4] 
+scan.c:									   hit->ref_start,hit->ref_end);
+scan.c:				good_ones_starts_j[good_ones_count]=hit->ref_start;
+scan.c:				good_ones_ends_j[good_ones_count]=hit->ref_end;
+scan.c:			if (hit->query_start >= 1)
+scan.c:				for (j = 0; j <= hit->query_start - 1; j++)
+scan.c:					diff = hit->query_start - j;
+scan.c:					hit->rest[0][j] = tolower(query[j]);
+scan.c:					tmp_integer=hit->ref_start - diff;
+scan.c:						hit->rest[1][j] = tolower(reference[tmp_integer]);
+scan.c:						hit->rest[1][j] = '-';
+scan.c:					hit->rest[2][j] = ' ';
+scan.c:			} /* if hit->query_start >= 1) */
+scan.c:			if ((hit->query_end) < seqlen1)
+scan.c:				for (j = hit->query_end; j < seqlen1; j++)
+scan.c:					diff = j - hit->query_end;
+scan.c:					hit->rest[3][j - hit->query_end] = tolower(query[j]);
+scan.c:					tmp_integer=hit->ref_end + diff;
+scan.c:						hit->rest[4][j - hit->query_end] =
+scan.c:						hit->rest[4][j - hit->query_end] = '-';
+scan.c:					hit->rest[5][j - hit->query_end] = ' ';
+scan.c:			}/* if hit->query_end <seqlen1) */
+scan.c:			hit->ref_end+=(utr_offset5p-1);
+scan.c:			hit->ref_start-=utr_offset3p;
+scan.c:			sprintf (strop1, "%s%s%s", hit->rest[3], hit->alignment[0],
+scan.c:					 hit->rest[0]);
+scan.c:			sprintf (strop2, "%s%s%s", hit->rest[5], hit->alignment[1],
+scan.c:					 hit->rest[2]);
+scan.c:					 hit->alignment[0], 
+scan.c:					 hit->alignment[1], 
+scan.c:					 hit->alignment[2]);
+scan.c:			for (j = 0; j < strlen (hit->alignment[0]); j++)
+scan.c:				if (hit->alignment[1][j] == '|')
+scan.c:			}/* for (j = 0; j < strlen (hit->alignment[0]); j++) */
+scan.c:			identity = (identity / strlen (hit->alignment[0])) * 100;
+scan.c:				p_value=1-((exp(-exp(-(((hit->score)-location)/scale)))));
+scan.c:					printf("Score: %f\tP-Value: %f [%e] [location=%f scale=%f]\n",hit->score,p_value,p_value,location,scale);
+scan.c:				z_score = (hit->score - average) / stdev;
+scan.c:					hit_cluster[valid_hits] = hit->ref_start;
+scan.c:					cmax = hit->ref_start;
+scan.c:					cmin = hit->ref_start;
+scan.c:					hit_cluster[valid_hits] = hit->ref_start;
+scan.c:							 finalscore->positional, hit->ref_start);
+scan.c:					finalscore->total_score += hit->score;
+scan.c:					if (hit->score > finalscore->max_score)
+scan.c:						finalscore->max_score = hit->score;
+thermo.c:  revstring (hit->alignment[0]);
+thermo.c:  revstring (hit->rest[1]);
+thermo.c:  revstring (hit->rest[4]);
+thermo.c:  for (i = 0; i < strlen (hit->rest[0]); i++)
+thermo.c:      foldsequence[j] = hit->rest[0][i];
+thermo.c:  for (i = 0; i < strlen (hit->alignment[0]); i++)
+thermo.c:      if (hit->alignment[0][i] != '-')
+thermo.c:	  foldsequence[j] = hit->alignment[0][i];
+thermo.c:  for (i = 0; i < strlen (hit->rest[3]); i++)
+thermo.c:      foldsequence[j] = hit->rest[3][i];
+thermo.c:  for (i = 0; i < strlen (hit->rest[4]); i++)
+thermo.c:      foldsequence[j] = hit->rest[4][i];
+thermo.c:  for (i = 0; i < strlen (hit->alignment[2]); i++)
+thermo.c:      if (hit->alignment[2][i] != '-')
+thermo.c:	  foldsequence[j] = hit->alignment[2][i];
+thermo.c:  for (i = 0; i < strlen (hit->rest[1]); i++)
+thermo.c:      foldsequence[j] = hit->rest[1][i];
+thermo.c:  revstring (hit->alignment[0]);
+thermo.c:  revstring (hit->rest[1]);
+thermo.c:  revstring (hit->rest[4]);
+utils.c:  hit->score = 0;
+utils.c:  hit->query_start = 0;
+utils.c:  hit->query_end = 0;
+utils.c:  hit->ref_start = 0;
+utils.c:  hit->ref_end = 0;
+utils.c:  memset (hit->alignment[0], '\0', seqlen1 + seqlen2);
+utils.c:  memset (hit->alignment[1], '\0', seqlen1 + seqlen2);
+utils.c:  memset (hit->alignment[2], '\0', seqlen1 + seqlen2);
+utils.c:  memset (hit->rest[0], '\0', 30);
+utils.c:  memset (hit->rest[1], '\0', 30);
+utils.c:  memset (hit->rest[2], '\0', 30);
+utils.c:  memset (hit->rest[3], '\0', 30);
+utils.c:  memset (hit->rest[4], '\0', 30);
+utils.c:  memset (hit->rest[5], '\0', 30);

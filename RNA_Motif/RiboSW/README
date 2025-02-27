@@ -1,0 +1,4 @@
+1. Step 1: generate a.out executalbe file
+    g++ -O3 -lpcrecpp search_General.cpp
+2. Step 2:
+

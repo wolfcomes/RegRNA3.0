@@ -1,0 +1,3 @@
+                NewStart     Stop      RibosomeBindingSite                                OldStart 
+    GeneID      Position    Position     Pattern Position     NewStartCodon    Shift   Codon Position
+     gene1           139        1902       CCTGT       89          ATG           105     GTG       34

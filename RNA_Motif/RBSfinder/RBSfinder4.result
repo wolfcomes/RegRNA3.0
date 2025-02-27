@@ -1,0 +1,7 @@
+                NewStart     Stop      RibosomeBindingSite                                OldStart 
+    GeneID      Position    Position     Pattern Position     NewStartCodon    Shift   Codon Position
+      ORF1           739        1125         ---        0          ATG             0     ATG      739
+      ORF2          3011        3274         ---        0          ATG             0     ATG     3011
+      ORF3          6037        7233       AGGAG     6025          ATG            72     ATG     5965
+      ORF4          7246        8208       AGGAG     7234          ATG             0     ATG     7246
+      ORF5          8289        8561       AGGAG     8277          ATG             0     ATG     8289

@@ -1,0 +1,4 @@
+r1={au,ua,gc,cg,gu,ug} 
+                 r2={au,ua,gu,ug}
+                 p1=5...6 p2=3...4 p3=n p4=d p5=n p6=5...5 r1~p5 r2~p4 r1~p3 p7=0...2 r1~p1
+                 p1/p2/p3/p4/p5/p6/p7:(p8=uuacuuuggaatgr)

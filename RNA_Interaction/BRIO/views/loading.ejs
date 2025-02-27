@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+   <!-- STUB, now waits for 10 seconds and then tries to redirect.
+   -->
+<head>
+	
+</head>
+<body>
+	<div class='container'>
+	<%- include ("partials/header.ejs") %>
+	<h2 class="text-primary">Loading</h2>
+	<div>
+		<h4>Run ID: <%= userID %></h4><br/>
+	    progress:<br/><br/>
+		<pre><%= progress %></pre>
+	</div>
+	<br/>
+	<div>
+	    <h5>Please take note of the run ID, or of the following link, to be able to retrieve your results in the future.</h5>
+		<a href='/waiting?uid=<%= userID %>'>/waiting?uid=<%= userID %></a>
+	</div>
+
+	<%- include ("partials/footer.ejs") %>
+	<form action="/waiting" id="run_data" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="uid" value="<%= userID %>">
+	</form>
+	</div>
+</body>
+<script src="/js/loading.js"></script>
+</html>

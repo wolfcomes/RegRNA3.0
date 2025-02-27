@@ -1,0 +1,24 @@
+CM 1: SEED
+CM lambda and K undefined -- no statistics
+Using CM score cutoff of 31.00
+>U51115.1/15592-15691uuUUU
+
+  Plus strand results:
+
+ Query = 1 - 102, Target = 1 - 100
+ Score = 74.83, GC =  43
+
+           :::::::::::::::::((((((((,,,<<<<<<<_______>>>>>>>,,,,,,,,<<<
+         1 aaaaaaaaaaaaaaaaacacuCgUAUAAucccgggAAUAUGGcccgggaGUuUCUACCag 60      
+               AAA+ AAAA A   :CUC:UAUAAU  :GGGAAUAUGGCCC:  AGUUUCUACC:G
+         1 ---GAAAUCAAAACACGACCUCAUAUAAUCUUGGGAAUAUGGCCCAUAAGUUUCUACCCG 57      
+
+           <<<<_______>>>>>>>,,)))).))))::::::::::::::
+        61 gcaaCCGUAAAuugccuGACUAcG.agugaaauuauuaaaaaa 102     
+           GCAACCGUAAAUUGCC:GACUA:G AG: AA U AU  A+AAA
+        58 GCAACCGUAAAUUGCCGGACUAUGcAGGGAAGUGAUCGAUAAA 100     
+
+
+//
+Fin
+

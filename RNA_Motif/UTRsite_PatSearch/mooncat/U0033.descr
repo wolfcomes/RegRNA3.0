@@ -1,0 +1,1 @@
+aug p1=60...9999 ((uaa | uag) | uga) length(p1) mod 3 

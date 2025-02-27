@@ -1,0 +1,4 @@
+282 289 | U0023 | K-Box (KB)| 3UTR Metazoa | ttgtgata  
+2153 2159 | U0024 | Brd-Box (Brd)| 3UTR Metazoa | agcttta 
+2356 2362 | U0025 | GY-Box (GY)| 3UTR Metazoa | gtcttcc 
+1151 1155 | U0035 | Musashi binding element (MBE)| 3UTR Metazoa | g t agt 

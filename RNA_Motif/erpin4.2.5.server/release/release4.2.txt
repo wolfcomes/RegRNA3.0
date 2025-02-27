@@ -1,0 +1,159 @@
+
+15/04/04
+
+Cette revision resulte d'un travail portant sur 3 points:
+
+1/ Introduction d'une ponderation des sequences de la base d'entrainement, les
+essais effectues sont, pour l'instant, abandonnes (on conserve ces essais dans
+le repertoire 'WORKmars04' des distributions precedentes).
+2/ Introduction de matrices de substitution destinees a decrire les mutations
+possibles dans un alignement multiple.
+Les matrices de substitution concernent les simples brins (matrices de poids)
+et les helices (profils de paires de bases). Les profils sont modifies, profon-
+dement dans le cas des exclusions.
+
+ log(P(i)/Q(i))
+
+ P(i) = somme_sur_j { P(i,j) }
+      = somme_sur_j { P(i|j)P(j) }
+
+ P(i) -> (1 - w).P(i) + w.somme_sur_j { Sij*P(j) }
+
+ w est le poids des "pseudo-comptes"
+
+3/ L'introduction des pseudo-comptes dans les profils rend l'approximation
+de la distribution des scores des profils d'helices par la loi normale proble-
+matique. On abandonne cette approximation au profit d'un calcul direct de la
+distribution des scores base sur l'iteration du produit de convolution des
+distributions associees aux colonnes (supposees statistiquement independantes)
+des profils.
+Les tests effectues (voir le contenu du repertoire 'test') sont tres positifs.
+
+--------------------------------
+22/04/04
+correction de bug
+
+dans 'libsrc/fstat.c' on restreint la mesure des longueurs de sequences aux seuls
+caracteres alphabetiques. Ceci se traduit par exemple par l'exclusion des '\n'
+dont le decompte provoquait precedemment des erreurs (appreciables sur les grands
+fichiers).
+
+Cette modification a ete portee dans la distrib. du repertoire 'erpin4.0.3' qui
+est conservee comme la derniere utilisant les chaines de Markov.
+
+--------------------------------
+25/04/04
+
+dans 'include/rnaIV.h' on modifie 'DELTA_H', on passe de 0.2 a 0.05, ceci a pour
+effet d'augmenter notablement la precision dans les produits de convolution.
+
+#define DELTA_H   0.05 /* mesure de la division elementaire des histogrammes */
+
+Pour le calcul de la E-Value on traite l'ensemble des brins sans gaps d'un motif
+a l'aide d'un seul profil, obtenu par concatenation des profils de brins.
+(voir le contenu de 'libsrc/hshisto.c')
+
+--------------------------------
+02/05/04
+
+erpin.c est revu, notamment en ce qui concerne la combinaison des options
+de 'direction' (fwd, rev et fwd+rev) et de 'stat' (local, global et uniforme).
+
+un 'makefile' centralise ('erpin.mk') recompile toute la distribution depuis le
+repertoire principal:
+
+make -f erpin.mk
+
+-> Version:  erpin4.2.2
+
+--------------------------------
+05/05/04
+
+mise en ordre et corrections mineures apportee a 'erpin4.2.2'
+
+--------------------------------
+12/05/04
+
+revision de l'echantillonnage des scores de brins avec gaps ('hshisto.c'):
+
+- ne plus separer les scores "finis' des autres.
+- echantillonnage direct avec alignement.
+
+-> erpin4.2.3
+
+--------------------------------
+04/01/05
+
+revision de la construction des matrices de substitutions:
+normalisation amenant la somme des elements des colonnes a 1,
+cette modification retablit la conservation des probabilites lors
+de l'introduction des matrices de substitutions.
+seuls 'hlxsum.c' et 'stsum.c' dans le rep. 'sum' sont modifies.
+
+afin de conserver pour l'utilisateur la meme valeur que precedemment:
+on ajoute dans 'include/rnaIV.h':
+
+#define PSEUDO_COUNTS_FACTOR 2.e-3
+#define PSEUDO_COUNTS_USER   0.1
+
+et l'on supprime:
+#define PSEUDO_COUNTS_WEIGHT 0.1
+
+de sorte que pcw = PSEUDO_COUNTS_FACTOR * PSEUDO_COUNTS_USER
+ait, par defaut, la valeur 1.e-4
+
+GetSumArgs dans 'libsrc/args.c' est revu dans ce sens.
+
+rappel: les poids des pseudo-comptes (brins et helices) sont enregistres
+dans la strusture 'trset' dans la fonction 'ReadSum' de 'libsrc/sum.c'.
+
+-> erpin4.2.4
+
+===============================================================================
+
+ 12/01/05
+
+ On procede a une revision du calcul des scores, lesquels sont utilises de ma-
+ niere intensive par erpin lors des explorations de sequences. On remplace
+ l'utilisation de l'instruction 'switch' par un adressage direct des elements
+ des profils de brins et d'helices par l'intermediaire de tableaux de corres-
+ pondances utilisant le code ascii des caracteres comme indices de tableaux.
+
+ modifications des fichiers 'erpin/libsrc/align.c', 'erpin/libsrc/scores.c',
+ 'erpin/libsrc/profs.c' et 'erpin/libsrc/profsSM.c'
+
+ Declaration des pointeurs 'NtStCode' et 'NtHlxCode' dans 'ntcode.c' avec ini-
+ tialisation a la valeur NULL.
+ Les fonctions qui les manipulent sont creees dans 'ntcodes.c',
+ 'rnaIV.h' est actualisee.
+
+ Dans 'libsrc/profs.c' on ajoute 2 lignes supplementaires aux profils, elles
+ sont initialisees a 0 et LOG_ZERO.
+ On fait de meme dans 'libsrc/profsSM.c'.
+
+ Dans 'libsrc/scores.c' on modifie les fonctions calculant les scores.
+ Dans 'libsrc/align.c' on modifie la fonction 'AlignSProfile'.
+
+ Dans 'libsrc/tscores.c'on modifie les fonctions calculant les scores dans
+ la base d'entrainement: 'GetHlxTScore' et 'GetStTScore'.
+
+ Dans erpin on appelle la fonction 'SetNtCodes()' avec la construction des
+ profils, au niveau de l'appel aux fonctions 'GetPatternProfiles()' et
+ 'GetPatternProfilesSM()' (de 'libsrc/profs.c' et 'libsrc/profsSM.c').
+
+ essais avec controle des scores:
+ --------------------------------------------------------------------------
+ trset      seq             divers              avant (sec)     apres (sec)
+ --------------------------------------------------------------------------
+ trna       ecoli      9.4Mb (fwd+rev)            6.93            3.76
+ trna       ecoli      9.4Mb (fwd+rev) + sum      6.94            3.75
+ Let-7      randseq    10Mb                      29.11           11.79
+ Let-7      randseq    -2,2 10Mb + sum           63.73           31.36
+ trna       Chr22      34.5Mb (fwd)              26.65           15.71
+ trna       Chr22       69Mb (fwd+rev)           52.75           28.44
+ --------------------------------------------------------------------------
+
+Cette modification entraine une division des temps de calcul (exploration des
+sequences) par un facteur d'environ 2.
+
+-> erpin4.2.5

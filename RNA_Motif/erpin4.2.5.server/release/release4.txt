@@ -1,0 +1,376 @@
+02/05/03
+releve des modifications pour l'integration a erpin du calcul de la E-value:
+
+Enregistrement du nombre total de nucleotides visitees:
+=======================================================
+En raison des nombreuses options (fragments de sequences, fwd, reverse ..)
+et des diverses circonstances (seq. courtes ..) il est difficile de prevoir
+le nombre exact de nucleotides explorees effectivement,
+or ceci est necessaire pour connaitre la "E-value finale".
+On dispose de 'PrintStatus()' dans 'msearch.c' peu adapte pour les sequences
+courtes.
+
+modification:
+ 
+dans 'env.c' on cree un compteur global sur le 1er niveau de recherche, mis a 0
+une seule fois au demarrage:
+
+unsigned long long int TotalNucScans = 0;
+
+en ligne 416 de 'msearch.c'
+et ligne 248 de 'dmp.c'
+
+on remplace:
+
+    lo = (ctxt->level == 0 ? 0 : ctxt->mask->min_bgn);
+
+par:
+
+    if (ctxt->level == 0) {
+        lo = 0;
+        TotalNucScans += ScanLen;             /* decompte des bases traitees */
+	}
+	else lo = ctxt->mask->min_bgn;
+
+dans 'fPrintfProcessLog' (ligne 473 de msearch.c) on ajoute la sortie du nombre
+de bases traitees:
+
+       if (i == 0)
+	       fprintf(ctxt->outfile, "%lld bases processed\n", TotalNucScans);
+
+tests sur erpin OK
+
+Exemple de recherche sur 'e.coli' (avec option '-fwd')
+====== at level 1 ======
+4639185 bases processed
+cutoff: 6.87
+4 config. per site
+139 hits
+===============================================================================
+
+05/05/03
+
+le code 'Eval.c' est cree ou est contruit la fonction qui calcule la E-value.
+(pour etre implantee dans 'erpin').
+===============================================================================
+
+07/05/03
+
+La sortie de l'histogramme des detections (non filtrees) etait provisoirement
+activee par l'option '-mute' de 'erpin'.
+On a cree un parametre 'hist' (ON ou OFF) initialise par l'option '-hist' de
+'erpin'
+Il faut ajouter aux structures 'Context' le champ 'hist' pour porter l'ordre
+de creer l'histogramme a l'issue de la recherche.
+L'initialisation des contextes est faite dans 'msearch.c':
+
+void    InitOutputContext(Context *ctxt,
+                          int style, int warnings, int chrono, FILE *outfile);
+void    InitOutputContexts(Context *ctxt, int nmask, int style,
+                           int warnings, int chrono,  FILE *outfile);
+
+Il faudra aussi ajouter a ces fonctions un argument comme on l'a fait pour:
+
+void GetOutputArgs(int argc, char *argv[], int *style, int *warnings,
+                   int *evflag, int *histflag);
+de 'args.c'.
+==>
+void    InitOutputContext(Context *ctxt, int style, int hist,
+                          int warnings, int chrono, FILE *outfile);
+void    InitOutputContexts(Context *ctxt, int nmask, int style, int hist,
+                           int warnings, int chrono,  FILE *outfile);
+
+La sortie de l'histo sera dirigee sur un fichier, par ex: "histo.dat"
+plutot que sur la sortie standard deja sollicitee.
+
+revoir le code des fonctions dans 'lhisto.c',
+placer la saisie de l'histogramme apres la suppression des overlap.
+revoir 'epnstat'
+===============================================================================
+
+10/05/03
+
+Afin d'obtenir le nombre exact de nucleotides qui seront visites par erpin des
+variantes de 'fGetStat' (dans sstat.c) sont creees:
+'fGetShortStat' adaptee aux options '-unifstat' et '-locstat' de 'erpin'
+'fGetLongStat'  adaptee a l'option '-globstat' de 'erpin' (la + utilisee)
+ceci afin de permettre l'obtention de la 'E-value' complete avant le demarrage
+de la recherche.
+Le code de 'sstat.c' est dedouble: creation de 'fstat.c'.
+test par 'xfstat': OK
+===============================================================================
+
+12/05/03
+
+Suite a la revision du 10/05/03 on reecrit le code 'Evals.c' afin de:
+
+- faire afficher par 'erpin' la E-value finale correspondant au cutoff courant
+  du masque principal avant le demarrage de la recherche.
+- faire afficher la E-value de chaque detection (en fonction de son score).
+
+Pour le 2eme point on cree un nouveau champ dans les structures 'Context': eval
+qui sera mis a 'OFF' pour tous les masques sauf le dernier qui sera initialise
+en fonction de l'option '-Eon|Eoff' de 'erpin' dans 'InitOutputContext'  ainsi
+que 'InitOutputContexts' (de 'msearch.c') qui recevront un argument supplemen-
+taire:
+void    InitOutputContext(Context *ctxt, int style, int hist, int eval,
+                          int warnings, int chrono, FILE *outfile);
+une variable globale est creee dans 'rnaII.h':
+Histo MainMaskEval;
+
+Pour afficher la E-value correspondant a chaque detection on modifie la fonction
+'PrintOutput' de 'outputs.c', ajoutant:
+
+if (ctxt->eval == ON) 
+    fprintf(ctxt->outfile, "  %.2e", Evalue(score));
+fprintf(ctxt->outfile, "\n");
+test OK
+===============================================================================
+
+17/05/03
+
+On revise la sortie d'un histogramme des detections du motif principal (dernier
+masque) soumise a l'option '-hist' de 'erpin'.
+
+On ne saisira pas les scores concernes mais incrementera les elements d'un axe.
+Dans include/rnaII.h on cree 2 variables globales:
+
+Histo MainMaskDetects;
+Map   MainMaskMap;
+
+Dans 'InitOutputContexts' on veille a ce que les scores d'un seul masque soient
+saisis.
+L'histogramme sera initialise dans 'InitOutputContext' (appelee dans 'erpin'
+apres le calcul de la E-value)
+
+Comme certaines informations ('hmax' de l'histo) etant issues du calcul de la
+E-value, cette option sera installee (ou '-Eoff' invalidee) si '-hist' a ete
+entre.
+
+Ce controle sera effectue dans la fonction 'GetOutputArgs' de 'args.c'
+
+Il s'agit de l'histogramme des detections independantes: celui-ci est actualise
+apres l'exploration de chaque sequence.
+Ses elements seront incrementes a l'entree de 'PrintOutput' dans 'outputs.c' par
+exemple comme:
+
+  if (ctxt->hist == ON)  Incrementation des chps 'vals' et 'samples'
+  
+L'ancienne version de l'histogramme est supprimee:
+L'appel a 'ShowScoresHisto' est supprimee de 'Search' dans 'dmp.c'.
+'dhisto.c' remplace 'lhisto.c'
+
+A la sortie de 'fPrintfProcessLog' la fonction 'PrintScoresHisto' est appelee
+pour ecrire l'histogramme sur le disque.
+
+#define HISTO_BINS  128    dans 'rnaII.h' est supprime
+===============================================================================
+
+28/05/03
+correction d'un bug.
+
+erpin ~/devc/projets/bio/data/trsetsII/trna-typeI.epn \
+~/devc/projets/bio/data/trsets/trnaII98.db -2,2 -umask 4 -add 6 -add 2 \
+-cutoff 100% 100%
+Erreur de segmentation
+
+Le pb se manifeste lorsque un nombre incomplet d'arguments de l'option 'cutoff'
+termine la ligne de commande:
+Il faut corriger 'GetThresholdsArgs' dans 'thresholds.c':
+empecher toute tentative de lecture au dela des arguments presents.
+
+On apporte une correction analogue a 'GetSeqArgs' dans 'args.c':
+  for (i = 0; i < argc-1; i++) ...
+et 'GetEnvArgs' dans 'args.c', ceci concerne en fait toutes les options de la
+ligne de commandes qui doivent etre suivies de l'entree de parametres.
+
+tests OK
+La nouvelle version est nommee "3.9.3"
+===============================================================================
+
+03/06/03
+
+On essaie de supprimer un pb d'affichage concernant l'etat d'avancement de la
+recherche qui se produit sous windows (alternance de 'stderr' et 'stdout').
+
+on modifie dans 'msearch.c':
+void StartStatus(void);
+void PrintStatus(Context *ctxt, unsigned int *nscans);
+
+et supprime: 'ClearStatus' dans 'fPrintfPostProcess' de 'list.c'
+
+Pour forcer le 'retour en debut de ligne' avant l'affichage on modifie dans
+'outputs.c':
+PrintOutput(Context *ctxt, int detect, Config *cfg, double score)
+
+'\r' est place et tete des chaines a afficher.
+
+test OK  -> version 3.9.4
+===============================================================================
+
+06/06/03
+
+Correction d'un bug dans le calcul du nombre de configurations d'un masque,
+dans la fonction 'GetMaskGapList' dans 'maskcfg.c'.
+Le prog. 'Cfg' dans le repertoire 'tools' s'est avere tres utile pour trouver
+l'erreur: on a un peu etendu les resultats affiches.
+
+test OK -> version 3.9.5
+===============================================================================
+
+07/06/03
+
+On affine l'affichage de l'etat d'avancement d'une recherche de 'erpin'.
+
+test OK -> version 3.9.6
+===============================================================================
+
+18/06/03
+
+Correction d'une erreur dans la fonction 'CopySeq' dans 'Seqs.c' (utilisee par
+'sview'): decallage dans la copie depuis un fichier d'une sous sequence due a
+l'oubli de supprimer les '\n'.
+
+test OK -> version 3.9.7
+===============================================================================
+
+23/06/03
+
+On rajoute dans le repertoire 'test' 2 programmes destines a etudier les corre-
+lations entre les scores d'helices: 'xhcov' et 'xhstat3'
+
+-> version 3.9.8
+===============================================================================
+
+08/07/03
+
+on revient sur l'affichage des resultats, la derniere modif. incluait l'ajout
+de '\r' en tete des affichages sur stdout, ceci implique des 'nouvelle ligne' en
+cas de redirection sur un fichier texte.
+ces '\r' sont supprimes dans 'PrintOutput' de 'output.c'
+
+sur linux: OK --> version 3.9.8.bis
+
+reste a verifier sur une commande lancee depuis windows ??
+test OK -> version 3.9.9
+===============================================================================
+
+30/09/03
+
+Lorsque un brin sans gap est completement conserve (un seul score fini dans le
+profil) les erreurs d'arrondi peuvent provoquer une erreur (-> nan).
+dans histools.c on modifie legerement les valeurs extremes des scores finis me-
+sures (min est utilise apres, comme cutoff):
+*min -= 0.01.
+*max += 0.01.
+OK           -> version 4.0
+
+===============================================================================
+
+29/10/03
+
+correction d'un bug, l'echantillonnage effectue pour obtenir une distribution 
+de scores finis de brins s'est avere insuffisant: aucun score fini pour certains
+brins sans gaps tres conserves (ex: le brin 13 de snoCDu24.epn). 
+Consulter pour les details 'revision.txt' dans 'bugs/bug28.10.03'.
+L'echantillonnage est allonge et un test est ajoute pour continuer l'echantil-
+lonnage jusqu'a obtenir un nombre suffisant de scores finis.
+La fonction 'GetStHist' de 'mhisto.c' est modifiee a cet effet.
+
+OK mais le temps de calcul de la E-value augmente notablement.
+
+===============================================================================
+
+27/12/03
+
+On revient sur le probleme precedent (du 29/10/03) afin de reduire les temps de
+calcul de la E-Value.
+On cree les fonctions 'RandNucl', 'MSamplerMat' et 'MRndFScores' placees dans
+'histools.c'.
+'MRndFScores' cree un echantillonnage de scores finis d'un brin sans gaps, gere
+par un profil de Markov d'ordre 1.
+On revient a la taille de l'echantillon d'avant le 29/10/03.
+
+dans 'include/rnaII.h':
+#define SAMPLES1_SINGLE 500                  /* dans le cas d'un simple brin */
+#define SAMPLES1_DOUBLE 250                /* et dans le cas d'un doule brin */
+
+dans 'histools.c' ajout des fonctions:
+int    RandNucl(double p0, double p1, double p2);
+double **MSamplerMat(Strand *St, double *freqs, int *width, double *prfsc);
+float  *MRndFScores(Strand *St, int samples, double *prfsc);
+
+les fonctions suivantes ne sont plus utilisees:
+void   GetMProfLimits(Strand *St, double *min, double *max);
+float  *GetMRndScores(Strand *St, int *samples, double cutoff, int *fscores);
+
+dans 'mhisto.c' on modifie 'GetMarkovHist' et 'GetStHist'.
+
+apres recompilation, execution de:
+erpin ~/devc/projets/bio/erpin5/erpin4.0.1/bugs/bug28.10.03/snoCDu24.epn \
+      ~/devc/projets/bio/data/sequences/randseq1M.fna -1,1 \
+      -umask 1 -add 5 -add 13 -fwd -chrono
+
+E-value at current cutoff for 1.0Mb single strand data: 4.73e-06
+(resultat instantane !)
+
+avec la version 4.0.1: 3.10e-06 au bout de plusieurs minutes
+
+ -> version 4.0.2
+===============================================================================
+
+ le 07/02/04
+
+  La revision porte sur l'echantillonnage des brins avec gaps en vue d'obtenir
+  l'histogramme des scores finis mesures sur des sequences aleatoires.
+
+  Dans 'histools.c' les 2 fonctions suivantes:
+  double **GetWFScoresProb(Strand *St, double *bkgfreqs);
+  float  *WRndFScores(Strand *St, int samples, double *Prfsc);
+
+  vont se substituer a:
+  void   GetWProfLimits(Strand *St, double *min, double *max);
+  float  *GetWRndScores(Strand *St, int *samples, double cutoff, int *fscores);
+
+  L'amelioration vient de ce que l'echantillonnage ne porte que sur des brins
+  dont le score est fini, ce qui est susceptible de reduire beaucoup les temps
+  de calcul sur les brins longs et tres conserves, pour lesquels la probabilite
+  de score fini est tres faible.
+
+  Dans 'mhisto.c' la fonction 'GetAlnHist' est modifiee pour acueillir les nou-
+  velles fonctions.
+
+  Desormais, pour les brins avec ou sans gaps, l'echantillonnage pour la deter-
+  mination de la E-Value ne porte plus que sur des scores finis, on peut donc
+  revoir a la baisse la taille des echantillons, c'est ce qui est fait dans la
+  fonction 'GetStHist' ou une borne est imposee a 'samples'
+
+  apres recompilation, test:
+
+  erpin ~/devc/projets/bio/erpin5/erpin2004/FMajor/Viroid_PSTVd/PSTVd_aln_ss.epn \
+        ~/devc/projets/bio/data/sequences/ecoli.fna  1,11  -nomask
+	
+Training set:   "/home/lambert/devc/projets/bio/erpin5/erpin2004/FMajor/Viroid_PSTVd/PSTVd_aln_ss.epn":
+                89 sequences of length 361
+Database:       "/home/lambert/devc/projets/bio/data/sequences/ecoli.fna"
+                4638867 nucleotides to be processed in 1 sequence
+                ATGC ratios: 0.246  0.246  0.254  0.254
+Cutoff:         646.71
+
+E-value at current cutoff for 4.6Mb double strand data: 9.03e-204
+...........
+
+ -> version 4.0.3
+===============================================================================
+
+ 10/02/04
+ 
+ Probleme: Lors des essais de la version 4.0.3 on note que la E-Value des brins
+ sans gaps n'est pas correctement evaluee, apres examen on constate que l'echan-
+ tillonnage des brins sans gaps (revision du 27/12/03) introduit un biais qui 
+ modifie l'histogramme des scores finis.
+ 
+ On va modifier erpin pour eliminer la gestion des brins sans gaps par les
+ chaines de Markov.
+ 
+ -> version 4.1.0.alfa  .... a suivre

@@ -1,0 +1,12 @@
+Gene Accession No.	Gene Identifier	Gene Name	Gene Species
+G001926	HS$HNF4A	HNF4A	human, Homo sapiens
+G004820	RAT$HNF4A	HNF4A	rat, Rattus norvegicus
+G000320	HS$INS	ins	human, Homo sapiens
+G000760	RAT$INS1	ins-1	rat, Rattus norvegicus
+G000761	RAT$INS2	ins-2	rat, Rattus norvegicus
+G001246	MOUSE$INS	ins-2	mouse, Mus musculus
+G002249	HS$IPF1	IPF1	human, Homo sapiens
+G002300	MOUSE$IPF1	IPF1	mouse, Mus musculus
+G002301	RAT$IPF1	IPF1	rat, Rattus norvegicus
+G004581	HS$PLTP	PLTP	human, Homo sapiens
+G004774	RAT$SLC2A2	Slc2a2	rat, Rattus norvegicus

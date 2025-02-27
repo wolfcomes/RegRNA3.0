@@ -1,0 +1,5 @@
+I: (U,G) G (C,G) A;I: (G,C) U (C,G) U;GE3;111;8
+I: (U,G) G (C,G) A;I: (G,C) U (C,G) U;GE2;111;8
+I: (U,G) G (C,G) A;I: (G,A) G (U,A) U;TPP;111;9
+I: (U,G) G (C,G) A;I: (U,G) G (G,A) U;TOA;111;22
+I: (U,G) G (C,G) A;I: (U,G) G (G,A) U;2TB;111;22

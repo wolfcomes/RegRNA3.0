@@ -1,0 +1,23 @@
+Gene Accession No.	Gene Identifier	Gene Name	Gene Species
+G001195	RAT$ACS	ACS	rat, Rattus norvegicus
+G000478	MOUSE$AP2	AP2	mouse, Mus musculus
+G003054	HS$APM1	APM1	human, Homo sapiens
+G000207	HS$APOE	apoE	human, Homo sapiens
+G004525	MOUSE$AQP7	AQP 7	mouse, Mus musculus
+G000490	MOUSE$CEBPA	C/EBPalpha	mouse, Mus musculus
+G001192	RAT$CEBPA	C/EBPalpha	rat, Rattus norvegicus
+G001170	HS$CEBPA	C/EBPalpha	human, Homo sapiens
+G002899	HS$CEBPB	C/EBPbeta	human, Homo sapiens
+G002533	MOUSE$CEBPD	C/EBPdelta	mouse, Mus musculus
+G004771	MOUSE$CD36	CD36	mouse, Mus musculus
+G001031	MOUSE$FSP27	FSP27	mouse, Mus musculus
+G000329	HS$LPL	LPL	human, Homo sapiens
+G004762	MOUSE$LPL	LPL	mouse, Mus musculus
+G000782	RAT$PEPCK	PEPCK	rat, Rattus norvegicus
+G004581	HS$PLTP	PLTP	human, Homo sapiens
+G004022	HS$PPARG	PPARG	human, Homo sapiens
+G004879	RAT$PPARG	PPARG	rat, Rattus norvegicus
+G004880	MOUSE$PPARG	PPARG	mouse, Mus musculus
+G004760	MOUSE$SLC27A1	Slc27a1	mouse, Mus musculus
+G000626	MOUSE$UCP	UCP	mouse, Mus musculus
+G001236	RAT$BFUCP	UCP	rat, Rattus norvegicus

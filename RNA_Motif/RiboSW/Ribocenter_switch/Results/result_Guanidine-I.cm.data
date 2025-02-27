@@ -1,0 +1,46 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.4 (Dec 2020)
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /home/RegRNA/public_html/program/RiboSW/Ribocenter_switch/51CMs_HMMs/Guanidine-I.cm
+# target sequence database:              /home/RegRNA/public_html/Results/temp_target_sequence.fasta
+# sequence reporting threshold:          E-value <= 1e-05
+# search top-strand only:                on
+# number of worker threads:              32
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Guanidine-I  [CLEN=107]
+Accession:   RF00442
+Description: Guanidine-I riboswitch aptamer
+Hit scores:
+ rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Hit alignments:
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (107 consensus positions)
+Target sequences:                                                1  (119 residues searched)
+Target sequences re-searched for truncated hits:                 1  (357 residues re-searched)
+Windows   passing  local HMM SSV           filter:               0  (0); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:               0  (0); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:               0  (0); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               0  (0); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               0  (0); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               0  (0); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               0  (0); expected (0.0001)
+Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
+
+# CPU time: 0.03u 0.04s 00:00:00.07 Elapsed: 00:00:00.06
+//
+[ok]

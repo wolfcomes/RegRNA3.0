@@ -1,0 +1,15 @@
+Gene Accession No.	Gene Identifier	Gene Name	Gene Species
+G000189	HS$ALDA	ALDA	human, Homo sapiens
+G002608	HS$ENO1	ENO1	human, Homo sapiens
+G000254	HS$EPO	Epo	human, Homo sapiens
+G000255	HS$ET1	ET-1	human, Homo sapiens
+G000548	MOUSE$LDHA	LDH-A	mouse, Mus musculus
+G001073	MOUSE$INOS	Nos2	mouse, Mus musculus
+G000357	HS$PAI1	PAI-1	human, Homo sapiens
+G000362	HS$PGK1	PGK1	human, Homo sapiens
+G000585	MOUSE$PGK1	PGK1	mouse, Mus musculus
+G002888	HS$PPARA	PPARA	human, Homo sapiens
+G000405	HS$TF	Tf	human, Homo sapiens
+G000406	HS$TFREC	TFREC	human, Homo sapiens
+G002589	RAT$VEGF	VEGF	rat, Rattus norvegicus
+G002597	HS$VEGF	VEGF	human, Homo sapiens

@@ -98,9 +98,8 @@ DOI: [to be published].
 
 ## Contact
 For technical support or inquiries, please contact:  
-Dr. Hsi-Yuan Huang
-2F, Research Building B, The Chinese University of Hong Kong, Shenzhen.
-**Email**: [huanghsiyuan@cuhk.edu.cn]  
+Dr. Hsi-Yuan Huang 2F, Research Building B, The Chinese University of Hong Kong, Shenzhen.
+**Email**: [huanghsiyuan@cuhk.edu.cn]
 ---
 
 ## References

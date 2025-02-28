@@ -140,6 +140,108 @@ RegRNA 3.0 provides comprehensive annotation tools for RNA sequences:
 
 ---
 
+## Tool Usage Guide
+
+### RNA_Motif Tools
+
+#### Splicing Analysis
+```bash
+# GeneSplicer - Splice site prediction
+cd RNA_Motif/GeneSplicer
+./genesplicer input.fasta -f human > output.txt
+
+# SpliceAid_F - Splicing factor binding sites
+cd RNA_Motif/SpliceAid_F
+./spliceaid_f input.fa > output.txt
+```
+
+#### Regulatory Elements
+```bash
+# RiboSW - Riboswitch detection
+cd RNA_Motif/RiboSW
+./ribosw -i input.fasta -o output.txt
+
+# ElemeNT - Core promoter elements
+cd RNA_Motif/ElemeNT
+python3 element.py -i input.fasta -o output.txt
+
+# ARED/AREDsite2 - AU-rich elements
+cd RNA_Motif/AREDsite2_ARED_plus
+./ared_search input.fasta > output.txt
+```
+
+#### RNA Processing
+```bash
+# polya_svm - Polyadenylation sites
+cd RNA_Motif/polya_svm_2.2
+./polya_svm.pl input.fasta > output.txt
+
+# RBSfinder - Ribosome binding sites
+cd RNA_Motif/RBSfinder
+./rbsfinder -i input.fasta -o output.txt
+
+# TransTermHP - Terminators
+cd RNA_Motif/transterm_hp_v2.09
+./transterm --all-context -p expterm.dat input.fasta
+```
+
+#### Structure and Motif
+```bash
+# G4Hunter - G-quadruplex prediction
+cd RNA_Motif/G4Hunter
+python3 g4hunter.py -i input.fasta -o output.txt
+
+# UTRsite search
+cd RNA_Motif/UTRsite_PatSearch
+./patsearch -f input.fasta -p pattern.txt > output.txt
+
+# ERPIN - RNA motif search
+cd RNA_Motif/erpin4.2.5.server
+./erpin -S training.epn input.fasta > output.txt
+
+# Infernal - RNA family annotation
+cd RNA_Motif/infernal-1.1.4
+cmscan Rfam.cm input.fasta > output.txt
+```
+
+### RNA_Interaction Tools
+```bash
+# RNALigands - RNA-ligand interactions
+cd RNA_Interaction/RNALigands
+./rnaligands -i input.fasta -o output.txt
+
+# BRIO - RNA-protein binding
+cd RNA_Interaction/BRIO
+python3 brio.py -i input.fasta -o output.txt
+
+# miRanda - miRNA target prediction
+cd RNA_Interaction/miranda
+./miranda miRNA.fa input.fa -out output.txt
+
+# MATCH - TFBS prediction
+cd RNA_Interaction/match
+./match -f input.fasta -m matrices.dat > output.txt
+```
+
+### RNA_annotation Tools
+```bash
+# RhoFold - 3D structure prediction
+cd RNA_annotation/RhoFold
+python3 rhofold.py --input input.fasta --output output_dir
+
+# Modomics Decoder
+cd RNA_annotation/Modomics_Decoder
+python3 modomics_decoder.py input.fasta > output.txt
+```
+
+### Notes:
+- Replace `input.fasta` with your input file name
+- Output formats vary between tools, check individual tool documentation for details
+- Some tools may require specific input file formats or additional parameters
+- All paths are relative to the RegRNA3.0 installation directory
+
+---
+
 ## User Interface and Workflow
 RegRNA 3.0 offers a user-friendly interface with the following key components:
 1. **Input Section**: Submit RNA sequences in FASTA format (manual entry or file upload).

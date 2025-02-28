@@ -76,7 +76,7 @@ RegRNA 3.0 offers a user-friendly interface with the following key components:
    - **Structure Displays**: 2D and 3D RNA structure visualizations (forward/reverse orientation).
 4. **Export Options**: Download results in tab-delimited or XML formats.
 
-![RegRNA 3.0 Workflow](media/image2.png)
+![RegRNA 3.0 Workflow](Figures/F3.png)
 *Figure 1: RegRNA 3.0 workflow integrating data resources, prediction tools, and visualization modules.*
 
 ---

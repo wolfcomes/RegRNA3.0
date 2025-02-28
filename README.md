@@ -29,6 +29,49 @@ RegRNA 3.0 is a powerful meta-server and computational workflow designed for the
 
 ---
 
+## Directory Structure and Tools
+
+### RNA_Motif/
+RNA motif analysis tools for identifying various regulatory elements and structural motifs in RNA sequences.
+
+- **Splicing Related**
+  - `GeneSplicer/`: Splice site prediction
+  - `SpliceAid_F/`: Splicing factor binding site identification
+
+- **Regulatory Elements**
+  - `RiboSW/`: Riboswitch detection
+  - `ElemeNT/`: Core promoter element prediction
+  - `AREDsite2_ARED_plus/`: AU-rich element identification
+  - `ARED_Patterns/`: AU-rich element pattern matching
+
+- **RNA Processing**
+  - `polya_svm_2.2/`: Polyadenylation site prediction
+  - `RBSfinder/`: Ribosome binding site detection
+  - `transterm_hp_v2.09/`: Rho-independent terminator prediction
+
+- **Structure and Motif**
+  - `G4Hunter/`: G-quadruplex prediction
+  - `UTRsite_PatSearch/`: UTR motif search
+  - `erpin4.2.5.server/`: RNA motif search using profiles
+  - `infernal-1.1.4/`: RNA family and structure annotation
+  - `rnamotif-3.0.7/`: RNA motif pattern matching
+
+### RNA_Interaction/
+Tools for predicting RNA interactions with various molecules.
+
+- `RNALigands/`: RNA-ligand interaction prediction
+- `BRIO/`: RNA-protein binding site prediction
+- `miranda/`: miRNA target prediction
+- `match/`: Transcription factor binding site prediction
+
+### RNA_annotation/
+Tools for RNA annotation and structural analysis.
+
+- `RhoFold/`: RNA 3D structure prediction
+- `Modomics_Decoder/`: RNA modification site analysis
+
+---
+
 ## Environment Setup
 
 RegRNA 3.0 requires several dependencies. Here are the main requirements:

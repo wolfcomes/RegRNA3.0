@@ -29,6 +29,40 @@ RegRNA 3.0 is a powerful meta-server and computational workflow designed for the
 
 ---
 
+## Environment Setup
+
+RegRNA 3.0 requires several dependencies. Here are the main requirements:
+
+### Core Dependencies
+- Python 3.8
+- PyTorch 1.11.0 (CUDA 10.2)
+- CUDA Toolkit 10.2
+- TensorFlow 2.7.0
+
+### Key Python Packages
+- numpy==1.23.0
+- scipy==1.8.1
+- pandas==1.2.5
+- biopython==1.78
+- matplotlib==3.7.2
+- tqdm==4.66.5
+
+### Bioinformatics Tools
+- ViennaRNA 2.4.7
+- TransTermHP 2.09
+- BLAST
+
+### Installation
+You can set up the environment using conda:
+
+```bash
+conda env create -f regrna_environment.yml
+conda activate regrna
+```
+
+
+---
+
 ## Integrated Tools and Databases
 
 ### RNA Functional Motif Prediction

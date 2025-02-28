@@ -96,12 +96,6 @@ DOI: [insert DOI upon publication].
 
 ---
 
-## Data Availability
-- **RegRNA 3.0 Web Server**: [http://awi.cuhk.edu.cn/~RegRNA](http://awi.cuhk.edu.cn/~RegRNA)
-- **Supplementary Data**: Available online at NAR.
-
----
-
 ## Contact
 For technical support or inquiries, please contact:  
 **Email**: [insert correspondence email]  

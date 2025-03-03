@@ -206,8 +206,8 @@ cd RNA_Motif/G4Hunter
 python3 G4Hunter.py -i input.fasta -o output_dir -w 25 -s 1.5
 
 # UTRsite search
-cd RNA_Motif/UTRsite_PatSearch
-./patsearch -f input.fasta -p pattern.txt > output.txt
+cd RNA_Motif/UTRsite_PatSearch/
+./exe_PatSearch_UTRsite.pl UTRsite_motifs_list.txt input.fas UTRsite.temp UTRsite.result
 
 # ERPIN - RNA motif search
 cd RNA_Motif/erpin4.2.5.server
@@ -231,7 +231,7 @@ python3 _completeWithDotBracketAndBEAR.py input.txt background.txt user_id "hg19
 
 # miRanda - miRNA target prediction
 cd RNA_Interaction/miranda
-./miranda miRNA.fa input.fa -out output.txt
+./src/miranda \"./miRBase/$miRNA_species.miRNA.fas\" $seqfile miRNA.process_percent -en $miRNA_FE -sc $score -out miRNA.result
 
 # MATCH - TFBS prediction
 cd RNA_Interaction/match

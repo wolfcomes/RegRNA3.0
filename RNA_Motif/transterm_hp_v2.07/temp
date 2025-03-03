@@ -1,0 +1,30 @@
+TransTermHP v2.07 (built on Jan 21 2009)
+25 bins; sample size is 20000000
+--pval-conf=expterm.dat
+
+--gc=-2.3 --au=-0.9 --gu=1.3 --mm=3.5 --gap=6
+--max-len=59 --min-stem=4 --max-loop=13 --min-loop=3
+--uwin-length=6 --uwin-require=3 --max-hp-score=-2 --max-tail-score=-2.5
+--loop-penalty=1,2,3,4,5,6,7,8,9,10,11
+--start-cut=0 --end-cut=25
+
+Genes: 1 %AT, 2 nt, 0 terms.
+Intergenic: 0.562007 %AT, H2T: 2411 nt, 35 terms; T2T: 0 nt, 0 terms; H2H: 0 nt, 0 terms. 
+
+Each terminator entry starts in column 3 and is of the form:
+  term #       start - end      +/-  regionconf   hp     tail | notes
+Followed by the sequence of the 5' tail, 5' stem, loop, 3' stem, and 3' tail.
+Genes are interspersed, and start the first column.
+
+
+SEQUENCE X83878|B.subtilis xpt and pbuX genes|operon; xanthine permease; xanthine phosphoribosyltransferase (length 2413)
+
+Start               1 - 1        + | 
+  TERM 1          264 - 277      + F    77  -2.3 -5.34555 | opp_overlap 264
+  GGGTGAGCAATGGAA               CCGCA CGTG TACGG                TTTTTTGTGATATCA
+  TERM 2          293 - 325      + F   100 -12.1 -5.89921 | opp_overlap 293
+  TTTTTTGTGATATCA      GCATTGCTTGCTC TTTATTT GAGCGGGCAATGC      TTTTTTTATTCTCAT
+  TERM 3         2255 - 2270     + F   100 -10.4 -5.83822 | 
+  AAAACAGCAGTCTAA              CTCCGC CGCG GCGGAG               TTTTTTTTGCATATA
+End              2413 - 2413     + | 
+

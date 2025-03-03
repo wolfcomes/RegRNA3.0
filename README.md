@@ -159,7 +159,7 @@ cd RNA_Motif/SpliceAid_F
 ```bash
 # RiboSW - Riboswitch detection
 cd RNA_Motif/RiboSW
-./ribosw -i input.fasta -o output.txt
+python Ribocenter_switch/run_cmsearch.py  input.fas  output_dir
 
 # Core Promoter Element Analysis (ElemeNT2023)
 # Navigate to ElemeNT directory
@@ -187,15 +187,15 @@ cd RNA_Motif/AREDsite2_ARED_plus
 ```bash
 # polya_svm - Polyadenylation sites
 cd RNA_Motif/polya_svm_2.2
-./polya_svm.pl input.fasta > output.txt
+perl ./polya_svm.pl -i input.fas
 
 # RBSfinder - Ribosome binding sites
 cd RNA_Motif/RBSfinder
-./rbsfinder -i input.fasta -o output.txt
+perl ./RBSfinder/rbs_finder.pl input.fas RBSfinder_annotation.crd RBSfinder.result 50
 
 # TransTermHP - Terminators
 cd RNA_Motif/transterm_hp_v2.09
-./transterm --all-context -p expterm.dat input.fasta
+./transterm_hp_v2.07/transterm -p expterm.dat input.fas transterm_annotation.crd > transterm.result
 ```
 
 #### Structure and Motif

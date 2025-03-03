@@ -161,9 +161,22 @@ cd RNA_Motif/SpliceAid_F
 cd RNA_Motif/RiboSW
 ./ribosw -i input.fasta -o output.txt
 
-# ElemeNT - Core promoter elements
-cd RNA_Motif/ElemeNT
-python3 element.py -i input.fasta -o output.txt
+# Core Promoter Element Analysis (ElemeNT2023)
+# Navigate to ElemeNT directory
+cd RNA_Motif/ElemeNT/ElemeNT2023/installPackage/ElemeNT_V2023
+
+# Set execution permissions
+chmod +x ElemeNT_V2023_binary
+
+# Configure input and output file paths
+sed -i "s|InputFileName: .*|InputFileName: input.txt;|" "Config.txt"
+sed -i "s|OutputFileName: .*|OutputFileName: output.txt;|" "Config.txt"
+
+# Run analysis
+./ElemeNT_V2023_binary
+
+# Convert output format
+python ElemeNT_output_convert.py -i output.txt -o output_converted
 
 # ARED/AREDsite2 - AU-rich elements
 cd RNA_Motif/AREDsite2_ARED_plus
@@ -186,10 +199,11 @@ cd RNA_Motif/transterm_hp_v2.09
 ```
 
 #### Structure and Motif
+
 ```bash
 # G4Hunter - G-quadruplex prediction
 cd RNA_Motif/G4Hunter
-python3 g4hunter.py -i input.fasta -o output.txt
+python3 G4Hunter.py -i input.fasta -o output_dir -w 25 -s 1.5
 
 # UTRsite search
 cd RNA_Motif/UTRsite_PatSearch
@@ -207,12 +221,13 @@ cmscan Rfam.cm input.fasta > output.txt
 ### RNA_Interaction Tools
 ```bash
 # RNALigands - RNA-ligand interactions
-cd RNA_Interaction/RNALigands
-./rnaligands -i input.fasta -o output.txt
+cd RNA_Interaction/RNALigands/Package
+chmod +x run.pl
+./run.pl -f input.fasta -o output_dir
 
 # BRIO - RNA-protein binding
-cd RNA_Interaction/BRIO
-python3 brio.py -i input.fasta -o output.txt
+cd RNA_Interaction/BRIO/scripts
+python3 _completeWithDotBracketAndBEAR.py input.txt background.txt user_id "hg19,mm10" "PAR,eCLIP,HITS" "" output/tab_sequences.txt
 
 # miRanda - miRNA target prediction
 cd RNA_Interaction/miranda
@@ -227,11 +242,15 @@ cd RNA_Interaction/match
 ```bash
 # RhoFold - 3D structure prediction
 cd RNA_annotation/RhoFold
-python3 rhofold.py --input input.fasta --output output_dir
+python3 inference.py --input_fas input.fasta \
+                   --single_seq_pred True \
+                   --output_dir output_dir \
+                   --ckpt ./pretrained/RhoFold_pretrained.pt \
+                   --relax_steps 0
 
 # Modomics Decoder
 cd RNA_annotation/Modomics_Decoder
-python3 modomics_decoder.py input.fasta > output.txt
+python Modomics_Decoder.py -f input.fasta -a > output.txt
 ```
 
 ### Notes:
